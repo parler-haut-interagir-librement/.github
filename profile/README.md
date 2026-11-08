@@ -168,11 +168,11 @@ latest status report (7 November 2026). The only released package is published o
 <summary><b>Content &amp; text</b> — 🧪 12 · 🗓️ 25</summary>
 
 - `phil/content-bundle` · 🧪 80% — Pages and articles stored by locale, stage and version, published from draft to live
-- `phil/ujo` · 🧪 90% — Editor.js documents read strictly, checked block by block, rendered as safe HTML
+- `phil/ujo` · 🧪 90% — UJO (Universal JSON Output) documents read strictly, checked block by block, rendered as safe HTML
 - `phil/ujo-bundle` · 🧪 95% — UJO documents in Doctrine, forms and Twig
 - `phil/markup` · 🧪 81% — Markdown, BBCode, MediaWiki, DokuWiki, Creole, HTML or plain text turned into safe HTML
 - `phil/markup-bundle` · 🧪 85% — Markup formats rendered safely in Twig and converted to UJO, as Symfony services
-- `phil/block-editor-bundle` · 🧪 87% — A block editor for Symfony forms in Stimulus, writing Editor.js data checked on the server
+- `phil/block-editor-bundle` · 🧪 87% — A block editor for Symfony forms in Stimulus, writing UJO (Universal JSON Output) checked on the server
 - `phil/edit-lock-bundle` · 🧪 92% — One writer per block: edit leases, presence and saves pushed through Mercure
 - `phil/comments-bundle` · 🧪 81% — Comments and suggested changes anchored to passages, following the text as it changes
 - `phil/text-diff` · 🧪 90% — What changed between two texts, word by word, paragraph by paragraph or block by block
@@ -708,11 +708,11 @@ tirées de notre dernier rapport d'avancement (7 novembre 2026). Le seul paquet 
 <summary><b>Contenu et texte</b> — 🧪 12 · 🗓️ 25</summary>
 
 - `phil/content-bundle` · 🧪 80 % — Pages et articles gardés par langue, étape et version, publiés du brouillon à la mise en ligne
-- `phil/ujo` · 🧪 90 % — Des documents Editor.js lus strictement, vérifiés bloc par bloc, rendus en HTML sûr
+- `phil/ujo` · 🧪 90 % — Des documents UJO (Universal JSON Output) lus strictement, vérifiés bloc par bloc, rendus en HTML sûr
 - `phil/ujo-bundle` · 🧪 95 % — Les documents UJO dans Doctrine, les formulaires et Twig
 - `phil/markup` · 🧪 81 % — Markdown, BBCode, MediaWiki, DokuWiki, Creole, HTML ou texte brut rendus en HTML sûr
 - `phil/markup-bundle` · 🧪 85 % — Les formats de balisage rendus sans danger dans Twig et convertis en UJO, en services Symfony
-- `phil/block-editor-bundle` · 🧪 87 % — Un éditeur par blocs pour les formulaires Symfony, en Stimulus, qui écrit des données Editor.js vérifiées au serveur
+- `phil/block-editor-bundle` · 🧪 87 % — Un éditeur par blocs pour les formulaires Symfony, en Stimulus, qui écrit de l'UJO (Universal JSON Output) vérifié au serveur
 - `phil/edit-lock-bundle` · 🧪 92 % — Un seul rédacteur par bloc : baux d'édition, présence et enregistrements poussés par Mercure
 - `phil/comments-bundle` · 🧪 81 % — Commentaires et suggestions ancrés à des passages, qui suivent le texte quand il change
 - `phil/text-diff` · 🧪 90 % — Ce qui a changé entre deux textes, mot à mot, paragraphe par paragraphe ou bloc par bloc
