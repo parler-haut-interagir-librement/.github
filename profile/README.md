@@ -93,9 +93,23 @@ PHIL UX goes through the [Symfony UX Toolkit](https://ux.symfony.com/toolkit): n
 
 | Repository | What it holds | State |
 |---|---|---|
-| [ux-kit](https://github.com/parler-haut-interagir-librement/ux-kit) | The PHIL UX kit: the same recipes as the Toolkit's Shadcn kit — names, props, Twig blocks, Stimulus controllers — with HTML and CSS written from scratch and styled with phil-ux. `php bin/console ux:install <recipe> --kit=github.com/parler-haut-interagir-librement/ux-kit` | 🗓️ skeleton |
-| [ux-css](https://github.com/parler-haut-interagir-librement/ux-css) | phil-ux, the CSS framework: real, mostly classless CSS with `--phil-*` tokens, light and dark, and `isX`/`hasX` state classes; for AssetMapper (Composer) and npm | 🗓️ skeleton |
-| [ux-kit-shadcn](https://github.com/parler-haut-interagir-librement/ux-kit-shadcn) | Tailwind versions, in the Shadcn style, of the recipes PHIL UX adds | 🗓️ skeleton |
+| [ux-kit](https://github.com/parler-haut-interagir-librement/ux-kit) | The PHIL UX kit: the same recipes as the Toolkit's Shadcn kit — names, props, Twig blocks, Stimulus controllers — with HTML and CSS written from scratch and styled with phil-ux. `php bin/console ux:install <recipe> --kit=github.com/parler-haut-interagir-librement/ux-kit` | 🧪 incubation, ~10% |
+| [ux-css](https://github.com/parler-haut-interagir-librement/ux-css) | phil-ux, the CSS framework: real, mostly classless CSS with `--phil-*` tokens, light and dark, and `isX`/`hasX` state classes; for AssetMapper (Composer) and npm | 🧪 incubation, ~30% |
+| [ux-kit-shadcn](https://github.com/parler-haut-interagir-librement/ux-kit-shadcn) | Tailwind versions, in the Shadcn style, of the recipes PHIL UX adds | 🧪 incubation, ~25% |
+
+Available so far, in the incubator:
+
+- **Logo** — a logo with its WebP source and alternative text, linked home when given an `href`, one per theme and
+  language.
+- **AnimatedHeadline** — a headline whose words take turns, in a Stimulus controller; under `prefers-reduced-motion`,
+  nothing moves.
+- **Illustration** — a figure showing one picture chosen on the server among candidates, at random or by seed.
+- **ComingSoon**, a block — a "coming soon" page built from the three recipes above.
+- **Layout utilities** in phil-ux — `isStack`, `isCluster`, `isCenter`, `isNarrow`, `isSplit`, `isCover`, `isBleed` and
+  their kin, with gaps read from the tokens.
+- **Themes** in phil-ux — light and dark, from an OKLCH palette whose pairs are checked against a contrast rule.
+
+The Shadcn kit's components come next, starting with the ones our bundles need.
 
 Because the recipes share the Shadcn kit's names and props, every PHIL bundle renders with PHIL UX **or** with the
 Shadcn kit: keep Tailwind if you like it.
@@ -113,7 +127,7 @@ Shadcn kit: keep Tailwind if you like it.
 
 ✅ **released** · 🧪 **written, in incubation** (approximate completion) · 🗓️ **planned**
 
-**322 packages:** 1 released, 91 in incubation, 230 planned. Percentages are estimates from our
+**325 packages:** 1 released, 94 in incubation, 230 planned. Percentages are estimates from our
 latest status report (7 November 2026). The only released package is published on Packagist as
 [`ph-il/enums`](https://packagist.org/packages/ph-il/enums); it will continue as `phil/enums`.
 `phil/identity-provider-*` stands for one package per sign-in provider.
@@ -519,9 +533,12 @@ latest status report (7 November 2026). The only released package is published o
 </details>
 
 <details>
-<summary><b>UX &amp; interface</b> — 🧪 3 · 🗓️ 9</summary>
+<summary><b>UX &amp; interface</b> — 🧪 6 · 🗓️ 9</summary>
 
 - `phil/ux-bundle` · 🧪 35% — PHIL UX components, being rewritten as a kit for the Symfony UX Toolkit and the phil-ux CSS
+- `phil/ux-css` · 🧪 30% — phil-ux, the CSS framework: OKLCH tokens, light and dark themes, classless elements, layout utilities
+- `phil/ux-kit` · 🧪 10% — The PHIL UX kit for the Symfony UX Toolkit: Logo, AnimatedHeadline, Illustration and the ComingSoon block so far
+- `phil/ux-kit-shadcn` · 🧪 25% — Tailwind versions, in the Shadcn style, of the recipes PHIL UX adds
 - `phil/forms-bundle` · 🧪 90% — Forms defined in the database, entries kept only as long as needed
 - `phil/menu-bundle` · 🧪 95% — Navigation menus and breadcrumbs, with the current page marked
 - `phil/data-table-bundle` · 🗓️ planned — Live Component tables: sorting, filters, inline editing, stacked on mobile
@@ -632,9 +649,24 @@ PHIL UX passe par le [Toolkit de Symfony UX](https://ux.symfony.com/toolkit) : p
 
 | Dépôt | Ce qu'il contient | État |
 |---|---|---|
-| [ux-kit](https://github.com/parler-haut-interagir-librement/ux-kit) | Le kit PHIL UX : les mêmes recettes que le kit Shadcn du Toolkit — noms, props, blocs Twig, contrôleurs Stimulus — avec un HTML et un CSS écrits de zéro, habillés par phil-ux. `php bin/console ux:install <recette> --kit=github.com/parler-haut-interagir-librement/ux-kit` | 🗓️ squelette |
-| [ux-css](https://github.com/parler-haut-interagir-librement/ux-css) | phil-ux, le cadre CSS : du vrai CSS, presque sans classe, aux jetons `--phil-*`, clair et sombre, avec les classes d'état `isX`/`hasX` ; pour AssetMapper (Composer) et npm | 🗓️ squelette |
-| [ux-kit-shadcn](https://github.com/parler-haut-interagir-librement/ux-kit-shadcn) | Les versions Tailwind, à la façon de Shadcn, des recettes que PHIL UX ajoute | 🗓️ squelette |
+| [ux-kit](https://github.com/parler-haut-interagir-librement/ux-kit) | Le kit PHIL UX : les mêmes recettes que le kit Shadcn du Toolkit — noms, props, blocs Twig, contrôleurs Stimulus — avec un HTML et un CSS écrits de zéro, habillés par phil-ux. `php bin/console ux:install <recette> --kit=github.com/parler-haut-interagir-librement/ux-kit` | 🧪 incubation, ~10 % |
+| [ux-css](https://github.com/parler-haut-interagir-librement/ux-css) | phil-ux, le cadre CSS : du vrai CSS, presque sans classe, aux jetons `--phil-*`, clair et sombre, avec les classes d'état `isX`/`hasX` ; pour AssetMapper (Composer) et npm | 🧪 incubation, ~30 % |
+| [ux-kit-shadcn](https://github.com/parler-haut-interagir-librement/ux-kit-shadcn) | Les versions Tailwind, à la façon de Shadcn, des recettes que PHIL UX ajoute | 🧪 incubation, ~25 % |
+
+Déjà disponibles, dans l'incubateur :
+
+- **Logo** — un logo avec sa source WebP et son texte de remplacement, lié à l'accueil s'il a un `href`, un par thème
+  et par langue.
+- **AnimatedHeadline** — un titre dont les mots se relaient, par un contrôleur Stimulus ; sous
+  `prefers-reduced-motion`, rien ne bouge.
+- **Illustration** — une figure qui montre une image choisie au serveur parmi des candidates, au hasard ou par graine.
+- **ComingSoon**, un bloc — une page « bientôt » bâtie des trois recettes ci-dessus.
+- **Les utilitaires de mise en page** de phil-ux — `isStack`, `isCluster`, `isCenter`, `isNarrow`, `isSplit`, `isCover`,
+  `isBleed` et leurs semblables, aux écarts tirés des jetons.
+- **Les thèmes** de phil-ux — clair et sombre, sur une palette OKLCH dont les paires sont vérifiées par une règle de
+  contraste.
+
+Les composants du kit Shadcn suivent, à commencer par ceux dont nos bundles ont besoin.
 
 Comme les recettes reprennent les noms et les props du kit Shadcn, chaque bundle PHIL se rend avec PHIL UX **ou** avec
 le kit Shadcn : gardez Tailwind si vous l'aimez.
@@ -653,7 +685,7 @@ le kit Shadcn : gardez Tailwind si vous l'aimez.
 
 ✅ **publié** · 🧪 **écrit, en incubation** (avancement approximatif) · 🗓️ **prévu**
 
-**322 paquets :** 1 publié, 91 en incubation, 230 prévus. Les pourcentages sont des estimations
+**325 paquets :** 1 publié, 94 en incubation, 230 prévus. Les pourcentages sont des estimations
 tirées de notre dernier rapport d'avancement (7 novembre 2026). Le seul paquet publié l'est sur Packagist sous
 [`ph-il/enums`](https://packagist.org/packages/ph-il/enums) ; il se poursuivra sous `phil/enums`.
 `phil/identity-provider-*` désigne un paquet par fournisseur de connexion.
@@ -1059,9 +1091,12 @@ tirées de notre dernier rapport d'avancement (7 novembre 2026). Le seul paquet 
 </details>
 
 <details>
-<summary><b>UX et interface</b> — 🧪 3 · 🗓️ 9</summary>
+<summary><b>UX et interface</b> — 🧪 6 · 🗓️ 9</summary>
 
 - `phil/ux-bundle` · 🧪 35 % — Les composants PHIL UX, en réécriture en kit pour le Toolkit de Symfony UX et en CSS phil-ux
+- `phil/ux-css` · 🧪 30 % — phil-ux, le cadre CSS : jetons OKLCH, thèmes clair et sombre, éléments sans classe, utilitaires de mise en page
+- `phil/ux-kit` · 🧪 10 % — Le kit PHIL UX pour le Toolkit de Symfony UX : Logo, AnimatedHeadline, Illustration et le bloc ComingSoon pour l'instant
+- `phil/ux-kit-shadcn` · 🧪 25 % — Les versions Tailwind, à la façon de Shadcn, des recettes que PHIL UX ajoute
 - `phil/forms-bundle` · 🧪 90 % — Des formulaires définis en base, leurs réponses gardées le temps nécessaire seulement
 - `phil/menu-bundle` · 🧪 95 % — Menus de navigation et fil d'Ariane, avec la page courante marquée
 - `phil/data-table-bundle` · 🗓️ prévu — Des tableaux en Live Component : tri, filtres, édition en ligne, empilés sur mobile
