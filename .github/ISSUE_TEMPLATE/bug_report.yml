@@ -1,0 +1,76 @@
+name: Bug report
+description: Something does not work as documented.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug. **Security problems never go here**: see the security policy.
+        Vous pouvez écrire en français ou en anglais.
+  - type: input
+    id: package
+    attributes:
+      label: Package
+      description: The package concerned, for example `phil/money`.
+      placeholder: "phil/money"
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Package version or commit
+      placeholder: "0.1.0, or a commit hash"
+    validations:
+      required: true
+  - type: input
+    id: php
+    attributes:
+      label: PHP version
+      placeholder: "8.5.1"
+    validations:
+      required: true
+  - type: input
+    id: symfony
+    attributes:
+      label: Symfony version
+      description: Leave empty if you use the library without Symfony.
+      placeholder: "8.2.0"
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened
+      description: A clear description of the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: How to reproduce it
+      description: The smallest code or the steps that show the problem.
+      render: php
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Errors and logs
+      description: Stack traces or log lines, without any personal data or secret.
+      render: text
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched the existing issues and discussions.
+          required: true
+        - label: This is not a security vulnerability.
+          required: true
+        - label: I removed personal data, credentials and tokens from what I pasted.
+          required: true

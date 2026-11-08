@@ -1,0 +1,52 @@
+name: Feature request
+description: Suggest a new feature or an improvement.
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the suggestion. For an open-ended idea, a discussion may be a better start.
+        Vous pouvez écrire en français ou en anglais.
+  - type: input
+    id: package
+    attributes:
+      label: Package
+      description: The package concerned, or “new package”.
+      placeholder: "phil/money"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: What are you trying to do, and what stops you today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: The proposal
+      description: How you imagine it working, with a short example of the API or the screen if you can.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Other ways to reach the same goal, including the package's extension points.
+  - type: textarea
+    id: considerations
+    attributes:
+      label: Accessibility, languages and privacy
+      description: Anything this feature changes for keyboard or screen-reader users, for other languages and locales, or for personal data.
+  - type: dropdown
+    id: contribute
+    attributes:
+      label: Would you like to work on it?
+      options:
+        - "No"
+        - "Yes, with some guidance"
+        - "Yes"
+    validations:
+      required: true
