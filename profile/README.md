@@ -127,13 +127,13 @@ Shadcn kit: keep Tailwind if you like it.
 
 ✅ **released** · 🧪 **written, in incubation** (approximate completion) · 🗓️ **planned**
 
-**325 packages:** 1 released, 94 in incubation, 230 planned. Percentages are estimates from our
-latest status report (7 November 2026). The only released package is published on Packagist as
+**339 packages:** 1 released, 154 in incubation, 184 planned. Percentages are estimates from our
+latest status report ((8 November 2026)). The only released package is published on Packagist as
 [`ph-il/enums`](https://packagist.org/packages/ph-il/enums); it will continue as `phil/enums`.
 `phil/identity-provider-*` stands for one package per sign-in provider.
 
 <details>
-<summary><b>Data &amp; infrastructure</b> — ✅ 1 · 🧪 24 · 🗓️ 15</summary>
+<summary><b>Data &amp; infrastructure</b> — ✅ 1 · 🧪 31 · 🗓️ 9</summary>
 
 - `phil/enums` · ✅ released — Traits and attributes to list, compare, describe and group PHP enums (released as `ph-il/enums`)
 - `phil/enums-bundle` · 🧪 95% — Enums in Symfony forms, translations, Twig, validation, Doctrine and API contracts
@@ -153,21 +153,22 @@ latest status report (7 November 2026). The only released package is published o
 - `phil/almanac-bundle` · 🧪 90% — Holidays and computed dates in configuration, editable, shown in Twig
 - `phil/scheduler-bundle` · 🧪 95% — Publish and unpublish on a schedule, with nobody online
 - `phil/tenancy-bundle` · 🧪 65% — Which tenant an account acts in, switched instantly and enforced in every query
-- `phil/feature-flags-bundle` · 🧪 85% — Turn features off without a deploy, run A/B tests, stop calling a failing service
+- `phil/feature-flags-bundle` · 🧪 90% — Turn features off without a deploy, run A/B tests, stop calling a failing service
 - `phil/usage-meter` · 🧪 90% — Measure what each subject used and refuse an action past its quota
 - `phil/http-cache-tags-bundle` · 🧪 95% — Cache whole pages in Varnish or a CDN, purge exactly what an edit changed
 - `phil/api-contract` · 🧪 70% — Problem details, deprecation signals and idempotency keys for HTTP APIs
 - `phil/api-contract-bundle` · 🧪 90% — Problem details, replayed idempotent requests and deprecation notices in Symfony
 - `phil/standard-webhooks` · 🧪 90% — Sign and verify webhooks to the Standard Webhooks specification
 - `phil/standard-webhooks-bundle` · 🧪 90% — Verified webhook deliveries as controller arguments, and signed webhooks sent
-- `phil/usage-meter-bundle` · 🗓️ planned — Usage meters stored with DBAL, rate limiters and purge commands
+- `phil/usage-meter-bundle` · 🧪 93% — Usage meters stored with DBAL, rate limiters and purge commands
+- `phil/encrypted-fields` · 🧪 92% — Doctrine columns encrypted with libsodium, blind indexes, key rotation
+- `phil/encrypted-fields-bundle` · 🧪 85% — Encrypted fields configured in Symfony, keys in Symfony secrets or a KMS
+- `phil/circuit-breaker` · 🧪 95% — One circuit breaker for HTTP clients and feature flags
+- `phil/circuit-breaker-bundle` · 🧪 90% — One circuit breaker wired into Symfony HTTP clients and feature flags
+- `phil/rate-limit-bundle` · 🧪 92% — Rate limits declared by attribute on routes, forms and APIs
+- `phil/api-keys-bundle` · 🧪 88% — Personal access tokens for a public API: scopes, expiry, revocation, quotas
 - `phil/idempotency` · 🗓️ planned — Idempotency keys for APIs, Messenger, payment webhooks and double form posts
-- `phil/encrypted-fields` · 🗓️ planned — Doctrine columns encrypted with libsodium, blind indexes, key rotation
-- `phil/encrypted-fields-bundle` · 🗓️ planned — Encrypted fields configured in Symfony, keys in Symfony secrets or a KMS
-- `phil/circuit-breaker` · 🗓️ planned — One circuit breaker for HTTP clients and feature flags
 - `phil/console-bundle` · 🗓️ planned — Console guards per environment and timestamped output
-- `phil/rate-limit-bundle` · 🗓️ planned — Rate limits declared by attribute on routes, forms and APIs
-- `phil/api-keys-bundle` · 🗓️ planned — Personal access tokens for a public API: scopes, expiry, revocation, quotas
 - `phil/spreadsheet` · 🗓️ planned — Read and write XLSX, ODS and CSV
 - `phil/import-wizard` · 🗓️ planned — Guided file import, column by column
 - `phil/json-canvas` · 🗓️ planned — Read and write the open JSON Canvas format
@@ -179,23 +180,29 @@ latest status report (7 November 2026). The only released package is published o
 </details>
 
 <details>
-<summary><b>Content &amp; text</b> — 🧪 12 · 🗓️ 25</summary>
+<summary><b>Content &amp; text</b> — 🧪 21 · 🗓️ 20</summary>
 
-- `phil/content-bundle` · 🧪 80% — Pages and articles stored by locale, stage and version, published from draft to live
-- `phil/ujo` · 🧪 90% — UJO (Universal JSON Output) documents read strictly, checked block by block, rendered as safe HTML
-- `phil/ujo-bundle` · 🧪 95% — UJO documents in Doctrine, forms and Twig
-- `phil/markup` · 🧪 81% — Markdown, BBCode, MediaWiki, DokuWiki, Creole, HTML or plain text turned into safe HTML
-- `phil/markup-bundle` · 🧪 85% — Markup formats rendered safely in Twig and converted to UJO, as Symfony services
-- `phil/block-editor-bundle` · 🧪 87% — A block editor for Symfony forms in Stimulus, writing UJO (Universal JSON Output) checked on the server
-- `phil/edit-lock-bundle` · 🧪 92% — One writer per block: edit leases, presence and saves pushed through Mercure
-- `phil/comments-bundle` · 🧪 81% — Comments and suggested changes anchored to passages, following the text as it changes
-- `phil/text-diff` · 🧪 90% — What changed between two texts, word by word, paragraph by paragraph or block by block
+- `phil/content-bundle` · 🧪 88% — Pages and articles stored by locale, stage and version, published from draft to live
+- `phil/ujo` · 🧪 97% — UJO (Universal JSON Output) documents read strictly, checked block by block, rendered as safe HTML
+- `phil/ujo-bundle` · 🧪 95% — UJO (Universal JSON Output) documents in Doctrine, forms and Twig
+- `phil/markup` · 🧪 87% — Markdown, BBCode, MediaWiki, DokuWiki, Creole, HTML or plain text turned into safe HTML
+- `phil/markup-bundle` · 🧪 93% — Markup formats rendered safely in Twig and converted to UJO (Universal JSON Output), as Symfony services
+- `phil/block-editor-bundle` · 🧪 90% — A block editor for Symfony forms in Stimulus, writing UJO (Universal JSON Output) checked on the server
+- `phil/edit-lock-bundle` · 🧪 94% — One writer per block: edit leases, presence and saves pushed through Mercure
+- `phil/comments-bundle` · 🧪 83% — Comments and suggested changes anchored to passages, following the text as it changes
+- `phil/text-diff` · 🧪 92% — What changed between two texts, word by word, paragraph by paragraph or block by block
 - `phil/highlight` · 🧪 85% — Code in 24 languages coloured on the server, as plain HTML any stylesheet can theme
 - `phil/css-sanitizer` · 🧪 85% — Let people style their pages without their CSS running code, loading what it should not, or leaving its frame
 - `phil/taxonomy-bundle` · 🧪 95% — Tags and a translated category tree for any resource, with form types
-- `phil/svg-sanitizer` · 🗓️ planned — Purify SVG: allow-list of elements and attributes, no script, no external reference
-- `phil/text-diff-bundle` · 🗓️ planned — Text comparison in Twig and Stimulus
-- `phil/highlight-bundle` · 🗓️ planned — Highlighting wired into UJO rendering and Twig, with a theme
+- `phil/svg-sanitizer` · 🧪 94% — Purify SVG: allow-list of elements and attributes, no script, no external reference
+- `phil/latex-mathml` · 🧪 80% — LaTeX formulas turned into the MathML that browsers draw, on the server
+- `phil/svg-chart` · 🧪 90% — Charts drawn as SVG on the server, from the configuration a chart editor already writes
+- `phil/svg-blocks` · 🧪 90% — Formulas, diagrams, charts and QR codes of block documents drawn once, on the server
+- `phil/svg-blocks-bundle` · 🧪 85% — Block drawings made on save in Symfony, with Mermaid in a container
+- `phil/text-diff-bundle` · 🧪 90% — Text comparison in Twig and Stimulus
+- `phil/highlight-bundle` · 🧪 90% — Highlighting wired into UJO (Universal JSON Output) rendering and Twig, with a theme
+- `phil/content-warnings` · 🧪 95% — Content warnings for games, books, articles and events, with a translated base list
+- `phil/content-warnings-bundle` · 🧪 90% — Content warnings in forms, pages and filters
 - `phil/wiki-bundle` · 🗓️ planned — A collaborative wiki: pages, compared revisions, `[[links]]`, block locks
 - `phil/faq-bundle` · 🗓️ planned — Frequently asked questions by section, searchable, with structured data
 - `phil/glossary-bundle` · 🗓️ planned — A glossary whose terms are linked automatically in texts
@@ -205,8 +212,6 @@ latest status report (7 November 2026). The only released package is published o
 - `phil/citations` · 🗓️ planned — Citations and bibliographies in common styles
 - `phil/credits` · 🗓️ planned — The credits page of a work: contributors, roles, order
 - `phil/math` · 🗓️ planned — Mathematical formulas rendered in MathML
-- `phil/content-warnings` · 🗓️ planned — Content warnings for games, books, articles and events, with a translated base list
-- `phil/content-warnings-bundle` · 🗓️ planned — Content warnings in forms, pages and filters
 - `phil/content-templates` · 🗓️ planned — Templates for new content
 - `phil/content-queries` · 🗓️ planned — Content lists defined by a query in the administration
 - `phil/curated-lists` · 🗓️ planned — Hand-picked, annotated lists of content
@@ -224,32 +229,32 @@ latest status report (7 November 2026). The only released package is published o
 <details>
 <summary><b>Languages, translation &amp; typography</b> — 🧪 4 · 🗓️ 2</summary>
 
-- `phil/translation-bundle` · 🧪 81% — A translation screen: segments that survive edits, a memory and a checking glossary
+- `phil/translation-bundle` · 🧪 83% — A translation screen: segments that survive edits, a memory and a checking glossary
 - `phil/translation-memory` · 🧪 87% — Segment-by-segment translation that reuses past work and keeps terms consistent
-- `phil/typography` · 🧪 85% — Real quotes, dashes, French spaces and soft hyphens in your HTML, in every language
-- `phil/typography-bundle` · 🧪 85% — Typography everywhere a Symfony application prints text
+- `phil/typography` · 🧪 89% — Real quotes, dashes, French spaces and soft hyphens in your HTML, in every language
+- `phil/typography-bundle` · 🧪 92% — Typography everywhere a Symfony application prints text
 - `phil/machine-translation` · 🗓️ planned — Machine-suggested translations, always reviewed
 - `phil/translation-ui` · 🗓️ planned — The screen for translating a site's content and messages
 
 </details>
 
 <details>
-<summary><b>Media, documents &amp; print</b> — 🧪 7 · 🗓️ 18</summary>
+<summary><b>Media, documents &amp; print</b> — 🧪 14 · 🗓️ 11</summary>
 
-- `phil/media-bundle` · 🧪 77% — Uploaded files and images, described, versioned and served at signed URLs
-- `phil/document-import` · 🧪 65% — Word-processing documents, Markdown and HTML turned into UJO, with a report of what did not fit
+- `phil/media-bundle` · 🧪 80% — Uploaded files and images, described, versioned and served at signed URLs
+- `phil/document-import` · 🧪 73% — Word-processing documents, Markdown and HTML turned into UJO (Universal JSON Output), with a report of what did not fit
 - `phil/epub` · 🧪 85% — EPUB 3 books from your HTML, valid for EPUBCheck and readable by assistive technologies
-- `phil/fonts` · 🧪 90% — What a font file says about itself — names, weight, embedding licence — and its `@font-face`
-- `phil/paged-media` · 🧪 65% — PDF documents from PHP, with real fonts and paged HTML/CSS engines
-- `phil/paged-media-bundle` · 🧪 80% — PDFs in Symfony, from a native writer or Gotenberg, through one service, now or through Messenger
+- `phil/fonts` · 🧪 95% — What a font file says about itself — names, weight, embedding licence — and its `@font-face`
+- `phil/paged-media` · 🧪 68% — PDF documents from PHP, with real fonts and paged HTML/CSS engines
+- `phil/paged-media-bundle` · 🧪 90% — PDFs in Symfony, from a native writer or Gotenberg, through one service, now or through Messenger
 - `phil/print-preflight` · 🧪 82% — Catch what a printer would refuse before the file reaches it
-- `phil/document-import-bundle` · 🗓️ planned — Document import wired into the media library
-- `phil/fonts-bundle` · 🗓️ planned — Fonts configured for PDF and media
-- `phil/epub-bundle` · 🗓️ planned — EPUB generation in Symfony
-- `phil/print-preflight-bundle` · 🗓️ planned — Preflight wired into PDF generation
-- `phil/print-compositor` · 🗓️ planned — Garment mock-ups and print files, one layer per ink
-- `phil/qr-code` · 🗓️ planned — QR codes written from scratch, Reed-Solomon included, in SVG and PNG
-- `phil/qr-code-bundle` · 🗓️ planned — QR codes in Twig, routes and typed contents (URL, vCard, Wi-Fi, iCalendar)
+- `phil/document-import-bundle` · 🧪 90% — Document import wired into the media library
+- `phil/fonts-bundle` · 🧪 95% — Fonts configured for PDF and media
+- `phil/epub-bundle` · 🧪 95% — EPUB generation in Symfony
+- `phil/print-preflight-bundle` · 🧪 90% — Preflight wired into PDF generation
+- `phil/print-compositor` · 🧪 90% — Garment mock-ups and print files, one layer per ink
+- `phil/qr-code` · 🧪 98% — QR codes written from scratch, Reed-Solomon included, in SVG and PNG
+- `phil/qr-code-bundle` · 🧪 88% — QR codes in Twig, routes and typed contents (URL, vCard, Wi-Fi, iCalendar)
 - `phil/gallery-bundle` · 🗓️ planned — Photo galleries by album and by event
 - `phil/video-bundle` · 🗓️ planned — Hosted or linked videos, subtitles and chapters
 - `phil/podcast-bundle` · 🗓️ planned — Podcasts: episodes, Podcasting 2.0 feeds, chapters, transcripts
@@ -265,22 +270,24 @@ latest status report (7 November 2026). The only released package is published o
 </details>
 
 <details>
-<summary><b>Search, SEO &amp; the open web</b> — 🧪 4 · 🗓️ 15</summary>
+<summary><b>Search, SEO &amp; the open web</b> — 🧪 10 · 🗓️ 11</summary>
 
 - `phil/search-bundle` · 🧪 70% — Full-text search over your own resources, kept up to date at each Doctrine flush
 - `phil/search-loupe` · 🧪 90% — Typo-tolerant search in SQLite files, with no server to run
 - `phil/sitemap` · 🧪 95% — Sitemap XML built from checked pages, cut to the protocol's limits
-- `phil/sitemap-bundle` · 🧪 95% — `/sitemap.xml` from route options, URL providers and an event
+- `phil/sitemap-bundle` · 🧪 96% — `/sitemap.xml` from route options, URL providers and an event
+- `phil/social-cards` · 🧪 88% — Open Graph tags and generated share images
+- `phil/social-cards-bundle` · 🧪 87% — Share metadata and generated cards in Symfony, with a preview of incoming links
+- `phil/structured-data` · 🧪 92% — A page's schema.org graph assembled from JSON-LD pieces
+- `phil/structured-data-bundle` · 🧪 88% — A page's schema.org graph in Symfony, with a command that checks it
+- `phil/redirects-bundle` · 🧪 90% — Managed 301 redirects, 404 tracking, old domains
+- `phil/well-known-bundle` · 🧪 90% — `/.well-known/` endpoints: security.txt, change-password, WebFinger, nodeinfo
 - `phil/search-synonyms` · 🗓️ planned — Search synonyms managed in the administration
-- `phil/social-cards` · 🗓️ planned — Open Graph tags and generated share images
-- `phil/structured-data` · 🗓️ planned — A page's schema.org graph assembled from JSON-LD pieces
 - `phil/feed-bundle` · 🗓️ planned — RSS, Atom and JSON Feed of any content
 - `phil/indexnow` · 🗓️ planned — Notify search engines through IndexNow
 - `phil/seo-check` · 🗓️ planned — SEO checks at publication: title, description, links, structured data
 - `phil/link-checker` · 🗓️ planned — Find and report dead links
-- `phil/redirects-bundle` · 🗓️ planned — Managed 301 redirects, 404 tracking, old domains
 - `phil/short-link-bundle` · 🗓️ planned — Short links on a dedicated domain, visits counted without tracking
-- `phil/well-known-bundle` · 🗓️ planned — `/.well-known/` endpoints: security.txt, change-password, WebFinger, nodeinfo
 - `phil/activitypub-bundle` · 🗓️ planned — Full ActivityPub federation for members (opt-in) and groups
 - `phil/webmention-bundle` · 🗓️ planned — Send and receive Webmentions
 - `phil/oembed-bundle` · 🗓️ planned — An oEmbed provider for your pages
@@ -290,22 +297,24 @@ latest status report (7 November 2026). The only released package is published o
 </details>
 
 <details>
-<summary><b>Identity, access &amp; security</b> — 🧪 4 · 🗓️ 14</summary>
+<summary><b>Identity, access &amp; security</b> — 🧪 10 · 🗓️ 10</summary>
 
-- `phil/user-secrets-bundle` · 🧪 60% — Keys people lend your application, sealed and theirs alone
+- `phil/user-secrets-bundle` · 🧪 80% — Keys people lend your application, sealed and theirs alone
 - `phil/bot-detection-bundle` · 🧪 90% — Tell a robot from a human in the browser, without a CAPTCHA
 - `phil/spam-protection` · 🧪 95% — Spot spam in a form submission without a CAPTCHA, in plain PHP
 - `phil/spam-protection-bundle` · 🧪 95% — Keep spam out of Symfony forms without a CAPTCHA, a third party or an identifier
+- `phil/passwords` · 🧪 90% — A strength meter written from scratch, k-anonymous breach checks, generation
+- `phil/csp-bundle` · 🧪 92% — Content Security Policy with nonces and reports
+- `phil/route-access-check` · 🧪 90% — Fail CI when a route has no access rule
+- `phil/route-access-check-bundle` · 🧪 90% — The route access check as a Symfony command, with a baseline and a strict mode
+- `phil/upload-scan` · 🧪 92% — Antivirus scanning of uploads behind a port
+- `phil/upload-scan-bundle` · 🧪 88% — Upload scanning in Symfony: a file constraint, quarantine and rescans
 - `phil/identity-provider-bundle` · 🗓️ planned — An OpenID Connect provider written from scratch: passkeys, passwords, TOTP, step-up
 - `phil/identity-provider-*` · 🗓️ planned — One package per federated sign-in provider, from Google to Bluesky
 - `phil/identity-client-bundle` · 🗓️ planned — Connect a Symfony site to an OpenID provider, on Symfony 8.2's `oidc_login`
 - `phil/organizations-bundle` · 🗓️ planned — Organisations, roles and invitations
 - `phil/access-bundle` · 🗓️ planned — Access rights per site
 - `phil/webauthn-step-up` · 🗓️ planned — Confirm a sensitive action with a passkey
-- `phil/passwords` · 🗓️ planned — A strength meter written from scratch, k-anonymous breach checks, generation
-- `phil/csp-bundle` · 🗓️ planned — Content Security Policy with nonces and reports
-- `phil/route-access-check` · 🗓️ planned — Fail CI when a route has no access rule
-- `phil/upload-scan` · 🗓️ planned — Antivirus scanning of uploads behind a port
 - `phil/fraud-signals` · 🗓️ planned — Fraud signals on orders and sign-ups
 - `phil/trust-levels` · 🗓️ planned — Trust levels that open rights with activity
 - `phil/verification-marks` · 🗓️ planned — Verified-account marks
@@ -314,15 +323,15 @@ latest status report (7 November 2026). The only released package is published o
 </details>
 
 <details>
-<summary><b>Privacy, accessibility &amp; compliance</b> — 🧪 3 · 🗓️ 9</summary>
+<summary><b>Privacy, accessibility &amp; compliance</b> — 🧪 5 · 🗓️ 7</summary>
 
-- `phil/privacy-bundle` · 🧪 60% — Declare personal fields, redact logs, answer access and erasure requests (Loi 25, GDPR)
+- `phil/privacy-bundle` · 🧪 62% — Declare personal fields, redact logs, answer access and erasure requests (Loi 25, GDPR)
 - `phil/analytics-bundle` · 🧪 85% — Visits counted in daily aggregates, never tied to a person
 - `phil/audit-bundle` · 🧪 60% — An append-only, tamper-evident audit trail that still lets you erase personal information
-- `phil/ip-anonymizer` · 🗓️ planned — Truncate, salt-hash and generalise IP addresses
+- `phil/ip-anonymizer` · 🧪 95% — Truncate, salt-hash and generalise IP addresses
+- `phil/accessibility-check` · 🧪 90% — Accessibility checks at publication: alt texts, heading order, contrast
 - `phil/legal-notices` · 🗓️ planned — A site's legal notices and privacy policy
 - `phil/terms-bundle` · 🗓️ planned — Versioned terms of use and their acceptance
-- `phil/accessibility-check` · 🗓️ planned — Accessibility checks at publication: alt texts, heading order, contrast
 - `phil/accessibility-statement` · 🗓️ planned — A site's accessibility statement
 - `phil/accessibility-info` · 🗓️ planned — Accessibility information for a venue or event
 - `phil/easy-read` · 🗓️ planned — Easy-read versions of content, and their checks
@@ -332,8 +341,11 @@ latest status report (7 November 2026). The only released package is published o
 </details>
 
 <details>
-<summary><b>Community</b> — 🗓️ 34</summary>
+<summary><b>Community</b> — 🧪 3 · 🗓️ 32</summary>
 
+- `phil/poll-bundle` · 🧪 85% — The voting engine: single, multiple or ranked choice
+- `phil/poll` · 🧪 90% — A voting engine: ballots checked against their poll's rules, counted into standings
+- `phil/listings` · 🧪 90% — The listings core: criteria, expiry, replies, moderation
 - `phil/forum-bundle` · 🗓️ planned — Forums by section, with chat, reporting and per-section moderation
 - `phil/moderation-bundle` · 🗓️ planned — One report queue for forums, comments, reactions, listings and messages
 - `phil/reactions-bundle` · 🗓️ planned — Reactions to content, one per member, list chosen per site
@@ -343,7 +355,6 @@ latest status report (7 November 2026). The only released package is published o
 - `phil/groups-bundle` · 🗓️ planned — Member groups
 - `phil/profiles-bundle` · 🗓️ planned — A member's public page: what they show, and to whom
 - `phil/reviews-bundle` · 🗓️ planned — Moderated reviews and ratings of products, games or places
-- `phil/poll-bundle` · 🗓️ planned — The voting engine: single, multiple or ranked choice
 - `phil/survey-bundle` · 🗓️ planned — Questionnaires with sections and conditional logic
 - `phil/ideas-bundle` · 🗓️ planned — An idea box with statuses and votes
 - `phil/qa-bundle` · 🗓️ planned — Questions and answers, the best one accepted
@@ -351,7 +362,6 @@ latest status report (7 November 2026). The only released package is published o
 - `phil/onboarding-bundle` · 🗓️ planned — Welcoming new members: steps, guided tour, checklist
 - `phil/bookmarks-bundle` · 🗓️ planned — Members' bookmarks, sorted into lists
 - `phil/user-lists` · 🗓️ planned — Lists of members kept by a member
-- `phil/listings` · 🗓️ planned — The listings core: criteria, expiry, replies, moderation
 - `phil/classifieds-bundle` · 🗓️ planned — Classified ads between members, without payment
 - `phil/job-board-bundle` · 🗓️ planned — A community's job and contract offers
 - `phil/matchmaking-bundle` · 🗓️ planned — Find partners: criteria, approximate place or online, safety first
@@ -372,27 +382,27 @@ latest status report (7 November 2026). The only released package is published o
 </details>
 
 <details>
-<summary><b>Learning &amp; credentials</b> — 🗓️ 5</summary>
+<summary><b>Learning &amp; credentials</b> — 🧪 3 · 🗓️ 2</summary>
 
-- `phil/open-badges` · 🗓️ planned — Issue, sign, verify, bake and revoke Open Badges 3.0 credentials
-- `phil/open-badges-bundle` · 🗓️ planned — Issuer profile, public key and verification page for Open Badges
-- `phil/certificates-bundle` · 🗓️ planned — Verifiable certificates: criteria, PDF with QR code, public registry
+- `phil/open-badges` · 🧪 90% — Issue, sign, verify, bake and revoke Open Badges 3.0 credentials
+- `phil/open-badges-bundle` · 🧪 85% — Issuer profile, public key and verification page for Open Badges
+- `phil/certificates-bundle` · 🧪 85% — Verifiable certificates: criteria, PDF with QR code, public registry
 - `phil/courses-bundle` · 🗓️ planned — Online courses: modules, lessons, progress
 - `phil/mentoring-bundle` · 🗓️ planned — Mentoring: matching, sessions, follow-up
 
 </details>
 
 <details>
-<summary><b>Notifications, mail &amp; messaging</b> — 🧪 2 · 🗓️ 13</summary>
+<summary><b>Notifications, mail &amp; messaging</b> — 🧪 5 · 🗓️ 10</summary>
 
 - `phil/instant-messenger` · 🧪 95% — Messaging handles per service: WhatsApp, Telegram, Signal, Matrix and more
 - `phil/instant-messenger-bundle` · 🧪 95% — A messaging handle field, a constraint and Twig filters
-- `phil/notifications-bundle` · 🗓️ planned — Toasts, a notification centre, email digests, Web Push, Discord or Slack
+- `phil/notifications-bundle` · 🧪 80% — Toasts, a notification centre, email digests, Web Push, Discord or Slack
+- `phil/bounce-parser` · 🧪 90% — Parse DSN and ARF bounces and auto-replies
+- `phil/email-address` · 🧪 85% — Email address validation
 - `phil/newsletter-bundle` · 🗓️ planned — Newsletters: lists, double opt-in, templates, sending through Symfony Mailer
 - `phil/newsletter-archive` · 🗓️ planned — The public archive of sent newsletters
 - `phil/email-automation` · 🗓️ planned — Newsletter sequences and triggers, never on an open
-- `phil/bounce-parser` · 🗓️ planned — Parse DSN and ARF bounces and auto-replies
-- `phil/email-address` · 🗓️ planned — Email address validation
 - `phil/email-templates-bundle` · 🗓️ planned — Email templates shared between several sites, with conditional blocks
 - `phil/email-preview` · 🗓️ planned — Preview email templates
 - `phil/mail-auth-check` · 🗓️ planned — Test a sending domain's SPF, DKIM and DMARC
@@ -404,15 +414,17 @@ latest status report (7 November 2026). The only released package is published o
 </details>
 
 <details>
-<summary><b>Events, calendar &amp; booking</b> — 🧪 1 · 🗓️ 21</summary>
+<summary><b>Events, calendar &amp; booking</b> — 🧪 5 · 🗓️ 19</summary>
 
-- `phil/calendar-bundle` · 🧪 60% — Events, repeating or not, as a month, week, day, list or posters
+- `phil/calendar-bundle` · 🧪 61% — Events, repeating or not, as a month, week, day, list or posters
+- `phil/reservation` · 🧪 90% — The booking core: resources, slots, rules, conflicts and reminders
+- `phil/reservation-bundle` · 🧪 85% — Bookings in Symfony: resources, slots, conflicts and reminders
+- `phil/checkin-bundle` · 🧪 85% — The shared check-in core: ticket or registration read, attendance noted
+- `phil/checkin` · 🧪 92% — A code read at a door, decided at once, recorded once, online or offline
 - `phil/convention-bundle` · 🗓️ planned — A convention programme: tables, seats, sign-ups, venues and rooms
-- `phil/reservation` · 🗓️ planned — The booking core: resources, slots, rules, conflicts and reminders
 - `phil/booking-bundle` · 🗓️ planned — Appointment booking on the reservation core
 - `phil/scheduling-poll-bundle` · 🗓️ planned — Availability polls, answered by link without an account
 - `phil/shared-timer-bundle` · 🗓️ planned — Shared timers over Mercure, chained, with a remote control
-- `phil/checkin-bundle` · 🗓️ planned — The shared check-in core: ticket or registration read, attendance noted
 - `phil/qr-attendance` · 🗓️ planned — Attendance read from QR codes
 - `phil/waitlist-bundle` · 🗓️ planned — Waiting lists and released places
 - `phil/workshops-bundle` · 🗓️ planned — Workshops: sessions, places, sign-ups
@@ -432,22 +444,22 @@ latest status report (7 November 2026). The only released package is published o
 </details>
 
 <details>
-<summary><b>Commerce</b> — 🧪 12 · 🗓️ 22</summary>
+<summary><b>Commerce</b> — 🧪 14 · 🗓️ 20</summary>
 
 - `phil/money` · 🧪 95% — Amounts of money as exact integers in a known currency, with no float anywhere
 - `phil/money-bundle` · 🧪 95% — Money in Symfony forms, validation, Twig and Doctrine, without floats
 - `phil/tax` · 🧪 95% — Several taxes on one sale, itemised to the cent
-- `phil/commerce-bundle` · 🧪 80% — Orders, prices, taxes, payments and receipts for a Symfony store, with modules on top
+- `phil/commerce-bundle` · 🧪 87% — Orders, prices, taxes, payments and receipts for a Symfony store, with modules on top
 - `phil/commerce-catalog-bundle` · 🧪 55% — Products, price books and promotions
-- `phil/commerce-logistics-bundle` · 🧪 75% — Stock per location, reservations, parcels and delivery methods per zone
+- `phil/commerce-logistics-bundle` · 🧪 77% — Stock per location, reservations, parcels and delivery methods per zone
 - `phil/commerce-pos-bundle` · 🧪 80% — A cash register for counter sales: tills, shifts, cash counts, layaways, offline sales
-- `phil/commerce-returns-bundle` · 🧪 80% — Returns from authorisation to refund, store credit or exchange, line by line
+- `phil/commerce-returns-bundle` · 🧪 82% — Returns from authorisation to refund, store credit or exchange, line by line
 - `phil/commerce-stored-value-bundle` · 🧪 85% — Digital gift cards and store credit, spent as payments of an order
 - `phil/commerce-subscription-bundle` · 🧪 80% — Recurring offers in tiers: trials, renewal, dunning and unlocked features
 - `phil/commerce-syndication-bundle` · 🧪 85% — Resell another shop's products, orders forwarded to the supplier who ships
 - `phil/commerce-wholesale-bundle` · 🧪 90% — Customer groups with their own prices and minimums, sales on credit with net terms
-- `phil/commerce-product-template` · 🗓️ planned — Product templates that generate combinations, SKUs, mock-ups and production sheets
-- `phil/commerce-product-template-bundle` · 🗓️ planned — Product templates in the catalogue and the administration
+- `phil/commerce-product-template` · 🧪 90% — Product templates that generate combinations, SKUs, mock-ups and production sheets
+- `phil/commerce-product-template-bundle` · 🧪 75% — Product templates in the catalogue and the administration
 - `phil/coupons-bundle` · 🗓️ planned — Promo codes usable without the catalogue: donations, tickets, memberships
 - `phil/donations-bundle` · 🗓️ planned — One-off or monthly donations
 - `phil/digital-downloads` · 🗓️ planned — Sell and deliver digital files
@@ -494,22 +506,24 @@ latest status report (7 November 2026). The only released package is published o
 </details>
 
 <details>
-<summary><b>Operations &amp; administration</b> — 🧪 2 · 🗓️ 18</summary>
+<summary><b>Operations &amp; administration</b> — 🧪 9 · 🗓️ 13</summary>
 
 - `phil/migration` · 🧪 90% — Release notes and news that Doctrine migrations send to chat
 - `phil/migration-bundle` · 🧪 90% — Each migration run announced once on your chat channels
+- `phil/backup-bundle` · 🧪 93% — Backups and guarded restores: database, media, encryption, rotation
+- `phil/backup` · 🧪 96% — Back up a database and its media, encrypted and rotated, and prove they restore
+- `phil/monitoring-bundle` · 🧪 90% — Health checks, maintenance mode, uptime, cron and queue health
+- `phil/error-tracking` · 🧪 88% — Self-hosted error tracking, written from scratch
+- `phil/error-tracking-bundle` · 🧪 82% — Error tracking in Symfony: groups, regressions by release, alerts through a queue
+- `phil/reporting-bundle` · 🧪 90% — Dashboards in Twig components, accessible charts, scheduled reports
+- `phil/settings-bundle` · 🧪 88% — Settings that users change themselves
 - `phil/sites-console-bundle` · 🗓️ planned — Run several sites: versions, health, shared configuration, admin accounts
-- `phil/backup-bundle` · 🗓️ planned — Backups and guarded restores: database, media, encryption, rotation
-- `phil/monitoring-bundle` · 🗓️ planned — Health checks, maintenance mode, uptime, cron and queue health
-- `phil/error-tracking` · 🗓️ planned — Self-hosted error tracking, written from scratch
 - `phil/status-page-bundle` · 🗓️ planned — A service status page
 - `phil/performance-budget` · 🗓️ planned — A performance budget checked in CI
 - `phil/broken-flow-alerts` · 🗓️ planned — Alerts when a user journey stops completing
-- `phil/reporting-bundle` · 🗓️ planned — Dashboards in Twig components, accessible charts, scheduled reports
 - `phil/bulk-actions` · 🗓️ planned — Bulk actions in an administration
 - `phil/admin-notes` · 🗓️ planned — Internal admin notes on a record
 - `phil/config-ui` · 🗓️ planned — Site configuration edited in the administration
-- `phil/settings-bundle` · 🗓️ planned — Settings that users change themselves
 - `phil/sandbox-preview` · 🗓️ planned — Preview a change in a sandbox before it goes live
 - `phil/duplicate-detector` · 🗓️ planned — Detect and merge duplicate records
 - `phil/dependency-report` · 🗓️ planned — A package's or site's dependencies and their licences
@@ -527,22 +541,22 @@ latest status report (7 November 2026). The only released package is published o
 - `phil/discord-community` · 🗓️ planned — Link a community to its Discord server: roles, events, announcements
 - `phil/discord-interactions-bundle` · 🗓️ planned — Ed25519-signed Discord interactions: commands, deferred replies
 - `phil/slack-interactions-bundle` · 🗓️ planned — Signed Slack commands and interactions
-- `phil/notion` · 🗓️ planned — Read and write Notion databases, text converted to UJO
+- `phil/notion` · 🗓️ planned — Read and write Notion databases, text converted to UJO (Universal JSON Output)
 - `phil/logseq` · 🗓️ planned — Read and write a Logseq graph
 
 </details>
 
 <details>
-<summary><b>UX &amp; interface</b> — 🧪 6 · 🗓️ 9</summary>
+<summary><b>UX &amp; interface</b> — 🧪 7 · 🗓️ 8</summary>
 
-- `phil/ux-bundle` · 🧪 35% — PHIL UX components, being rewritten as a kit for the Symfony UX Toolkit and the phil-ux CSS
-- `phil/ux-css` · 🧪 30% — phil-ux, the CSS framework: OKLCH tokens, light and dark themes, classless elements, layout utilities
-- `phil/ux-kit` · 🧪 10% — The PHIL UX kit for the Symfony UX Toolkit: Logo, AnimatedHeadline, Illustration and the ComingSoon block so far
-- `phil/ux-kit-shadcn` · 🧪 25% — Tailwind versions, in the Shadcn style, of the recipes PHIL UX adds
+- `phil/ux-bundle` · 🧪 36% — PHIL UX components, being rewritten as a kit for the Symfony UX Toolkit and the phil-ux CSS
+- `phil/ux-css` · 🧪 52% — phil-ux, the CSS framework: OKLCH tokens, light and dark themes, classless elements, layout utilities
+- `phil/ux-kit` · 🧪 22% — The PHIL UX kit for the Symfony UX Toolkit: Logo, AnimatedHeadline, Illustration and the ComingSoon block so far
+- `phil/ux-kit-shadcn` · 🧪 31% — Tailwind versions, in the Shadcn style, of the recipes PHIL UX adds
 - `phil/forms-bundle` · 🧪 90% — Forms defined in the database, entries kept only as long as needed
 - `phil/menu-bundle` · 🧪 95% — Navigation menus and breadcrumbs, with the current page marked
+- `phil/forms-autosave` · 🧪 90% — Form input saved as you go
 - `phil/data-table-bundle` · 🗓️ planned — Live Component tables: sorting, filters, inline editing, stacked on mobile
-- `phil/forms-autosave` · 🗓️ planned — Form input saved as you go
 - `phil/forms-signature` · 🗓️ planned — A handwritten or electronic signature field
 - `phil/pwa-bundle` · 🗓️ planned — Installable, offline-readable sites: manifest, service worker, full screen
 - `phil/theme-builder` · 🗓️ planned — Build a theme from PHIL UX tokens
@@ -685,13 +699,13 @@ le kit Shadcn : gardez Tailwind si vous l'aimez.
 
 ✅ **publié** · 🧪 **écrit, en incubation** (avancement approximatif) · 🗓️ **prévu**
 
-**325 paquets :** 1 publié, 94 en incubation, 230 prévus. Les pourcentages sont des estimations
-tirées de notre dernier rapport d'avancement (7 novembre 2026). Le seul paquet publié l'est sur Packagist sous
+**339 paquets :** 1 publié, 154 en incubation, 184 prévus. Les pourcentages sont des estimations
+tirées de notre dernier rapport d'avancement ((8 novembre 2026)). Le seul paquet publié l'est sur Packagist sous
 [`ph-il/enums`](https://packagist.org/packages/ph-il/enums) ; il se poursuivra sous `phil/enums`.
 `phil/identity-provider-*` désigne un paquet par fournisseur de connexion.
 
 <details>
-<summary><b>Données et infrastructure</b> — ✅ 1 · 🧪 24 · 🗓️ 15</summary>
+<summary><b>Données et infrastructure</b> — ✅ 1 · 🧪 31 · 🗓️ 9</summary>
 
 - `phil/enums` · ✅ publié — Traits et attributs pour lister, comparer, décrire et regrouper les enums PHP (publié sous `ph-il/enums`)
 - `phil/enums-bundle` · 🧪 95 % — Les enums dans les formulaires, traductions, Twig, la validation, Doctrine et les contrats d'API de Symfony
@@ -711,21 +725,22 @@ tirées de notre dernier rapport d'avancement (7 novembre 2026). Le seul paquet 
 - `phil/almanac-bundle` · 🧪 90 % — Fériés et dates calculées en configuration, modifiables, montrés dans Twig
 - `phil/scheduler-bundle` · 🧪 95 % — Publier et retirer à heure fixe, sans personne en ligne
 - `phil/tenancy-bundle` · 🧪 65 % — Le locataire où agit un compte, changé à l'instant et appliqué à chaque requête
-- `phil/feature-flags-bundle` · 🧪 85 % — Couper une fonction sans déploiement, mener un test A/B, cesser d'appeler un service en panne
+- `phil/feature-flags-bundle` · 🧪 90 % — Couper une fonction sans déploiement, mener un test A/B, cesser d'appeler un service en panne
 - `phil/usage-meter` · 🧪 90 % — Mesurer ce que chacun a consommé et refuser une action au-delà de son quota
 - `phil/http-cache-tags-bundle` · 🧪 95 % — Mettre des pages entières en cache Varnish ou CDN, purger exactement ce qu'une modification change
 - `phil/api-contract` · 🧪 70 % — Détails de problème, signaux de dépréciation et clés d'idempotence pour les API HTTP
 - `phil/api-contract-bundle` · 🧪 90 % — Détails de problème, requêtes idempotentes rejouées et avis de dépréciation dans Symfony
 - `phil/standard-webhooks` · 🧪 90 % — Signer et vérifier des webhooks selon la spécification Standard Webhooks
 - `phil/standard-webhooks-bundle` · 🧪 90 % — Les livraisons de webhooks vérifiées en arguments de contrôleur, et l'envoi de webhooks signés
-- `phil/usage-meter-bundle` · 🗓️ prévu — Compteurs d'usage stockés par DBAL, limiteurs de débit et commandes de purge
+- `phil/usage-meter-bundle` · 🧪 93 % — Compteurs d'usage stockés par DBAL, limiteurs de débit et commandes de purge
+- `phil/encrypted-fields` · 🧪 92 % — Colonnes Doctrine chiffrées par libsodium, index aveugles, rotation des clés
+- `phil/encrypted-fields-bundle` · 🧪 85 % — Les champs chiffrés configurés dans Symfony, clés dans les secrets ou un KMS
+- `phil/circuit-breaker` · 🧪 95 % — Un seul disjoncteur pour les clients HTTP et les drapeaux de fonctions
+- `phil/circuit-breaker-bundle` · 🧪 90 % — Le disjoncteur branché dans les clients HTTP et les drapeaux de fonctions de Symfony
+- `phil/rate-limit-bundle` · 🧪 92 % — Limites de débit déclarées par attribut sur les routes, formulaires et API
+- `phil/api-keys-bundle` · 🧪 88 % — Jetons d'accès personnels pour une API publique : portées, expiration, révocation, quotas
 - `phil/idempotency` · 🗓️ prévu — Clés d'idempotence pour les API, Messenger, les webhooks de paiement et les doubles envois
-- `phil/encrypted-fields` · 🗓️ prévu — Colonnes Doctrine chiffrées par libsodium, index aveugles, rotation des clés
-- `phil/encrypted-fields-bundle` · 🗓️ prévu — Les champs chiffrés configurés dans Symfony, clés dans les secrets ou un KMS
-- `phil/circuit-breaker` · 🗓️ prévu — Un seul disjoncteur pour les clients HTTP et les drapeaux de fonctions
 - `phil/console-bundle` · 🗓️ prévu — Garde-fous de console par environnement et sortie horodatée
-- `phil/rate-limit-bundle` · 🗓️ prévu — Limites de débit déclarées par attribut sur les routes, formulaires et API
-- `phil/api-keys-bundle` · 🗓️ prévu — Jetons d'accès personnels pour une API publique : portées, expiration, révocation, quotas
 - `phil/spreadsheet` · 🗓️ prévu — Lire et écrire XLSX, ODS et CSV
 - `phil/import-wizard` · 🗓️ prévu — L'import guidé d'un fichier, colonne par colonne
 - `phil/json-canvas` · 🗓️ prévu — Lire et écrire le format ouvert JSON Canvas
@@ -737,23 +752,29 @@ tirées de notre dernier rapport d'avancement (7 novembre 2026). Le seul paquet 
 </details>
 
 <details>
-<summary><b>Contenu et texte</b> — 🧪 12 · 🗓️ 25</summary>
+<summary><b>Contenu et texte</b> — 🧪 21 · 🗓️ 20</summary>
 
-- `phil/content-bundle` · 🧪 80 % — Pages et articles gardés par langue, étape et version, publiés du brouillon à la mise en ligne
-- `phil/ujo` · 🧪 90 % — Des documents UJO (Universal JSON Output) lus strictement, vérifiés bloc par bloc, rendus en HTML sûr
-- `phil/ujo-bundle` · 🧪 95 % — Les documents UJO dans Doctrine, les formulaires et Twig
-- `phil/markup` · 🧪 81 % — Markdown, BBCode, MediaWiki, DokuWiki, Creole, HTML ou texte brut rendus en HTML sûr
-- `phil/markup-bundle` · 🧪 85 % — Les formats de balisage rendus sans danger dans Twig et convertis en UJO, en services Symfony
-- `phil/block-editor-bundle` · 🧪 87 % — Un éditeur par blocs pour les formulaires Symfony, en Stimulus, qui écrit de l'UJO (Universal JSON Output) vérifié au serveur
-- `phil/edit-lock-bundle` · 🧪 92 % — Un seul rédacteur par bloc : baux d'édition, présence et enregistrements poussés par Mercure
-- `phil/comments-bundle` · 🧪 81 % — Commentaires et suggestions ancrés à des passages, qui suivent le texte quand il change
-- `phil/text-diff` · 🧪 90 % — Ce qui a changé entre deux textes, mot à mot, paragraphe par paragraphe ou bloc par bloc
+- `phil/content-bundle` · 🧪 88 % — Pages et articles gardés par langue, étape et version, publiés du brouillon à la mise en ligne
+- `phil/ujo` · 🧪 97 % — Des documents UJO (Universal JSON Output) lus strictement, vérifiés bloc par bloc, rendus en HTML sûr
+- `phil/ujo-bundle` · 🧪 95 % — Les documents UJO (Universal JSON Output) dans Doctrine, les formulaires et Twig
+- `phil/markup` · 🧪 87 % — Markdown, BBCode, MediaWiki, DokuWiki, Creole, HTML ou texte brut rendus en HTML sûr
+- `phil/markup-bundle` · 🧪 93 % — Les formats de balisage rendus sans danger dans Twig et convertis en UJO (Universal JSON Output), en services Symfony
+- `phil/block-editor-bundle` · 🧪 90 % — Un éditeur par blocs pour les formulaires Symfony, en Stimulus, qui écrit de l'UJO (Universal JSON Output) vérifié au serveur
+- `phil/edit-lock-bundle` · 🧪 94 % — Un seul rédacteur par bloc : baux d'édition, présence et enregistrements poussés par Mercure
+- `phil/comments-bundle` · 🧪 83 % — Commentaires et suggestions ancrés à des passages, qui suivent le texte quand il change
+- `phil/text-diff` · 🧪 92 % — Ce qui a changé entre deux textes, mot à mot, paragraphe par paragraphe ou bloc par bloc
 - `phil/highlight` · 🧪 85 % — Du code en 24 langages coloré au serveur, en HTML simple que toute feuille de style habille
 - `phil/css-sanitizer` · 🧪 85 % — Laisser les gens habiller leurs pages sans que leur CSS exécute du code, charge ce qu'il ne doit pas ou sorte de son cadre
 - `phil/taxonomy-bundle` · 🧪 95 % — Étiquettes et arbre de catégories traduit pour toute ressource, avec leurs types de formulaire
-- `phil/svg-sanitizer` · 🗓️ prévu — Purifier le SVG : liste blanche d'éléments et d'attributs, ni script ni référence externe
-- `phil/text-diff-bundle` · 🗓️ prévu — La comparaison de textes dans Twig et Stimulus
-- `phil/highlight-bundle` · 🗓️ prévu — La coloration branchée dans le rendu UJO et dans Twig, avec un thème
+- `phil/svg-sanitizer` · 🧪 94 % — Purifier le SVG : liste blanche d'éléments et d'attributs, ni script ni référence externe
+- `phil/latex-mathml` · 🧪 80 % — Des formules LaTeX converties, au serveur, en MathML que les navigateurs dessinent
+- `phil/svg-chart` · 🧪 90 % — Des graphiques dessinés en SVG au serveur, d'après la configuration qu'écrit déjà un éditeur de graphiques
+- `phil/svg-blocks` · 🧪 90 % — Les formules, schémas, graphiques et codes QR des documents par blocs, dessinés une fois au serveur
+- `phil/svg-blocks-bundle` · 🧪 85 % — Les dessins des blocs faits à l'enregistrement dans Symfony, Mermaid dans un conteneur
+- `phil/text-diff-bundle` · 🧪 90 % — La comparaison de textes dans Twig et Stimulus
+- `phil/highlight-bundle` · 🧪 90 % — La coloration branchée dans le rendu UJO (Universal JSON Output) et dans Twig, avec un thème
+- `phil/content-warnings` · 🧪 95 % — Avertissements de contenu pour jeux, livres, articles et événements, sur une liste de base traduite
+- `phil/content-warnings-bundle` · 🧪 90 % — Les avertissements de contenu dans les formulaires, les pages et les filtres
 - `phil/wiki-bundle` · 🗓️ prévu — Un wiki collaboratif : pages, révisions comparées, liens `[[ ]]`, verrous par bloc
 - `phil/faq-bundle` · 🗓️ prévu — Les questions fréquentes par section, cherchables, en données structurées
 - `phil/glossary-bundle` · 🗓️ prévu — Un glossaire dont les termes se lient seuls dans les textes
@@ -763,8 +784,6 @@ tirées de notre dernier rapport d'avancement (7 novembre 2026). Le seul paquet 
 - `phil/citations` · 🗓️ prévu — Citations et bibliographie dans les styles courants
 - `phil/credits` · 🗓️ prévu — La page des crédits d'une œuvre : contributeurs, rôles, ordre
 - `phil/math` · 🗓️ prévu — Formules mathématiques rendues en MathML
-- `phil/content-warnings` · 🗓️ prévu — Avertissements de contenu pour jeux, livres, articles et événements, sur une liste de base traduite
-- `phil/content-warnings-bundle` · 🗓️ prévu — Les avertissements de contenu dans les formulaires, les pages et les filtres
 - `phil/content-templates` · 🗓️ prévu — Les gabarits d'un nouveau contenu
 - `phil/content-queries` · 🗓️ prévu — Des listes de contenus définies par une requête dans l'administration
 - `phil/curated-lists` · 🗓️ prévu — Des listes de contenus choisies et commentées
@@ -782,32 +801,32 @@ tirées de notre dernier rapport d'avancement (7 novembre 2026). Le seul paquet 
 <details>
 <summary><b>Langues, traduction et typographie</b> — 🧪 4 · 🗓️ 2</summary>
 
-- `phil/translation-bundle` · 🧪 81 % — Un écran de traduction : segments qui survivent aux modifications, mémoire et glossaire qui vérifie
+- `phil/translation-bundle` · 🧪 83 % — Un écran de traduction : segments qui survivent aux modifications, mémoire et glossaire qui vérifie
 - `phil/translation-memory` · 🧪 87 % — Traduction par segments qui réutilise l'acquis et garde les termes constants
-- `phil/typography` · 🧪 85 % — Vrais guillemets, tirets, espaces françaises et césure dans votre HTML, dans toutes les langues
-- `phil/typography-bundle` · 🧪 85 % — La typographie partout où une application Symfony écrit du texte
+- `phil/typography` · 🧪 89 % — Vrais guillemets, tirets, espaces françaises et césure dans votre HTML, dans toutes les langues
+- `phil/typography-bundle` · 🧪 92 % — La typographie partout où une application Symfony écrit du texte
 - `phil/machine-translation` · 🗓️ prévu — Des traductions proposées par la machine, toujours relues
 - `phil/translation-ui` · 🗓️ prévu — L'interface de traduction des contenus et des messages d'un site
 
 </details>
 
 <details>
-<summary><b>Médias, documents et impression</b> — 🧪 7 · 🗓️ 18</summary>
+<summary><b>Médias, documents et impression</b> — 🧪 14 · 🗓️ 11</summary>
 
-- `phil/media-bundle` · 🧪 77 % — Fichiers et images téléversés, décrits, versionnés et servis à des URL signées
-- `phil/document-import` · 🧪 65 % — Documents de traitement de texte, Markdown et HTML convertis en UJO, avec le relevé de ce qui n'a pas passé
+- `phil/media-bundle` · 🧪 80 % — Fichiers et images téléversés, décrits, versionnés et servis à des URL signées
+- `phil/document-import` · 🧪 73 % — Documents de traitement de texte, Markdown et HTML convertis en UJO (Universal JSON Output), avec le relevé de ce qui n'a pas passé
 - `phil/epub` · 🧪 85 % — Des livres EPUB 3 tirés de votre HTML, valides pour EPUBCheck et lisibles par les aides techniques
-- `phil/fonts` · 🧪 90 % — Ce qu'un fichier de police dit de lui-même — noms, graisse, licence d'intégration — et sa règle `@font-face`
-- `phil/paged-media` · 🧪 65 % — Des PDF depuis PHP, avec de vraies polices et des moteurs HTML/CSS paginés
-- `phil/paged-media-bundle` · 🧪 80 % — Les PDF dans Symfony, par un écrivain natif ou Gotenberg, par un seul service, tout de suite ou par Messenger
+- `phil/fonts` · 🧪 95 % — Ce qu'un fichier de police dit de lui-même — noms, graisse, licence d'intégration — et sa règle `@font-face`
+- `phil/paged-media` · 🧪 68 % — Des PDF depuis PHP, avec de vraies polices et des moteurs HTML/CSS paginés
+- `phil/paged-media-bundle` · 🧪 90 % — Les PDF dans Symfony, par un écrivain natif ou Gotenberg, par un seul service, tout de suite ou par Messenger
 - `phil/print-preflight` · 🧪 82 % — Repérer ce qu'un imprimeur refuserait avant que le fichier lui parvienne
-- `phil/document-import-bundle` · 🗓️ prévu — L'import de documents branché dans la médiathèque
-- `phil/fonts-bundle` · 🗓️ prévu — Les polices configurées pour le PDF et les médias
-- `phil/epub-bundle` · 🗓️ prévu — La génération d'EPUB dans Symfony
-- `phil/print-preflight-bundle` · 🗓️ prévu — Le contrôle prépresse branché dans la génération de PDF
-- `phil/print-compositor` · 🗓️ prévu — Maquettes de vêtements et fichiers d'impression, une couche par encre
-- `phil/qr-code` · 🗓️ prévu — Des codes QR écrits de zéro, Reed-Solomon compris, en SVG et PNG
-- `phil/qr-code-bundle` · 🗓️ prévu — Les codes QR dans Twig, les routes et les contenus typés (URL, vCard, Wi-Fi, iCalendar)
+- `phil/document-import-bundle` · 🧪 90 % — L'import de documents branché dans la médiathèque
+- `phil/fonts-bundle` · 🧪 95 % — Les polices configurées pour le PDF et les médias
+- `phil/epub-bundle` · 🧪 95 % — La génération d'EPUB dans Symfony
+- `phil/print-preflight-bundle` · 🧪 90 % — Le contrôle prépresse branché dans la génération de PDF
+- `phil/print-compositor` · 🧪 90 % — Maquettes de vêtements et fichiers d'impression, une couche par encre
+- `phil/qr-code` · 🧪 98 % — Des codes QR écrits de zéro, Reed-Solomon compris, en SVG et PNG
+- `phil/qr-code-bundle` · 🧪 88 % — Les codes QR dans Twig, les routes et les contenus typés (URL, vCard, Wi-Fi, iCalendar)
 - `phil/gallery-bundle` · 🗓️ prévu — Des galeries de photos par album et par événement
 - `phil/video-bundle` · 🗓️ prévu — Des vidéos hébergées ou liées, sous-titres et chapitres
 - `phil/podcast-bundle` · 🗓️ prévu — Un balado : épisodes, flux Podcasting 2.0, chapitres, transcriptions
@@ -823,22 +842,24 @@ tirées de notre dernier rapport d'avancement (7 novembre 2026). Le seul paquet 
 </details>
 
 <details>
-<summary><b>Recherche, référencement et Web ouvert</b> — 🧪 4 · 🗓️ 15</summary>
+<summary><b>Recherche, référencement et Web ouvert</b> — 🧪 10 · 🗓️ 11</summary>
 
 - `phil/search-bundle` · 🧪 70 % — La recherche plein texte dans vos ressources, tenue à jour à chaque flush de Doctrine
 - `phil/search-loupe` · 🧪 90 % — Une recherche tolérante aux fautes dans des fichiers SQLite, sans serveur
 - `phil/sitemap` · 🧪 95 % — Des plans de site XML bâtis de pages vérifiées, coupés aux limites du protocole
-- `phil/sitemap-bundle` · 🧪 95 % — `/sitemap.xml` tiré des options de route, de fournisseurs d'URL et d'un événement
+- `phil/sitemap-bundle` · 🧪 96 % — `/sitemap.xml` tiré des options de route, de fournisseurs d'URL et d'un événement
+- `phil/social-cards` · 🧪 88 % — Balises Open Graph et images de partage générées
+- `phil/social-cards-bundle` · 🧪 87 % — Les métadonnées de partage et les cartes générées dans Symfony, avec l'aperçu des liens entrants
+- `phil/structured-data` · 🧪 92 % — Le graphe schema.org d'une page, assemblé de morceaux JSON-LD
+- `phil/structured-data-bundle` · 🧪 88 % — Le graphe schema.org d'une page dans Symfony, avec une commande qui le vérifie
+- `phil/redirects-bundle` · 🧪 90 % — Redirections 301 gérées, suivi des 404, anciens domaines
+- `phil/well-known-bundle` · 🧪 90 % — Les adresses `/.well-known/` : security.txt, change-password, WebFinger, nodeinfo
 - `phil/search-synonyms` · 🗓️ prévu — Les synonymes de la recherche, gérés par l'administration
-- `phil/social-cards` · 🗓️ prévu — Balises Open Graph et images de partage générées
-- `phil/structured-data` · 🗓️ prévu — Le graphe schema.org d'une page, assemblé de morceaux JSON-LD
 - `phil/feed-bundle` · 🗓️ prévu — Flux RSS, Atom et JSON Feed de tout contenu
 - `phil/indexnow` · 🗓️ prévu — Prévenir les moteurs de recherche par IndexNow
 - `phil/seo-check` · 🗓️ prévu — Le contrôle de référencement à la publication : titre, description, liens, données structurées
 - `phil/link-checker` · 🗓️ prévu — Trouver et signaler les liens morts
-- `phil/redirects-bundle` · 🗓️ prévu — Redirections 301 gérées, suivi des 404, anciens domaines
 - `phil/short-link-bundle` · 🗓️ prévu — Des liens courts sur un domaine dédié, visites comptées sans pistage
-- `phil/well-known-bundle` · 🗓️ prévu — Les adresses `/.well-known/` : security.txt, change-password, WebFinger, nodeinfo
 - `phil/activitypub-bundle` · 🗓️ prévu — La fédération ActivityPub complète pour les membres (sur option) et les groupes
 - `phil/webmention-bundle` · 🗓️ prévu — Envoyer et recevoir des Webmention
 - `phil/oembed-bundle` · 🗓️ prévu — Un fournisseur oEmbed pour vos pages
@@ -848,22 +869,24 @@ tirées de notre dernier rapport d'avancement (7 novembre 2026). Le seul paquet 
 </details>
 
 <details>
-<summary><b>Identité, accès et sécurité</b> — 🧪 4 · 🗓️ 14</summary>
+<summary><b>Identité, accès et sécurité</b> — 🧪 10 · 🗓️ 10</summary>
 
-- `phil/user-secrets-bundle` · 🧪 60 % — Les clés que les gens prêtent à votre application, scellées et à eux seuls
+- `phil/user-secrets-bundle` · 🧪 80 % — Les clés que les gens prêtent à votre application, scellées et à eux seuls
 - `phil/bot-detection-bundle` · 🧪 90 % — Distinguer un robot d'un humain dans le navigateur, sans CAPTCHA
 - `phil/spam-protection` · 🧪 95 % — Repérer le pourriel d'un formulaire sans CAPTCHA, en PHP simple
 - `phil/spam-protection-bundle` · 🧪 95 % — Garder le pourriel hors des formulaires Symfony sans CAPTCHA, ni tiers, ni identifiant
+- `phil/passwords` · 🧪 90 % — Une jauge de robustesse écrite de zéro, vérification des fuites par k-anonymat, génération
+- `phil/csp-bundle` · 🧪 92 % — La politique de sécurité du contenu, ses nonces et ses rapports
+- `phil/route-access-check` · 🧪 90 % — Faire échouer la CI quand une route n'a pas de règle d'accès
+- `phil/route-access-check-bundle` · 🧪 90 % — Le contrôle d'accès des routes en commande Symfony, avec baseline et mode strict
+- `phil/upload-scan` · 🧪 92 % — L'antivirus des téléversements derrière un port
+- `phil/upload-scan-bundle` · 🧪 88 % — L'analyse des téléversements dans Symfony : contrainte de fichier, quarantaine et nouvelles analyses
 - `phil/identity-provider-bundle` · 🗓️ prévu — Un fournisseur OpenID Connect écrit de zéro : passkeys, mots de passe, TOTP, step-up
 - `phil/identity-provider-*` · 🗓️ prévu — Un paquet par fournisseur de connexion fédérée, de Google à Bluesky
 - `phil/identity-client-bundle` · 🗓️ prévu — Brancher un site Symfony à un fournisseur OpenID, sur `oidc_login` de Symfony 8.2
 - `phil/organizations-bundle` · 🗓️ prévu — Organisations, rôles et invitations
 - `phil/access-bundle` · 🗓️ prévu — Les droits d'accès par site
 - `phil/webauthn-step-up` · 🗓️ prévu — Confirmer une action sensible par une clé d'accès
-- `phil/passwords` · 🗓️ prévu — Une jauge de robustesse écrite de zéro, vérification des fuites par k-anonymat, génération
-- `phil/csp-bundle` · 🗓️ prévu — La politique de sécurité du contenu, ses nonces et ses rapports
-- `phil/route-access-check` · 🗓️ prévu — Faire échouer la CI quand une route n'a pas de règle d'accès
-- `phil/upload-scan` · 🗓️ prévu — L'antivirus des téléversements derrière un port
 - `phil/fraud-signals` · 🗓️ prévu — Les signaux de fraude d'une commande ou d'une inscription
 - `phil/trust-levels` · 🗓️ prévu — Des niveaux de confiance qui ouvrent des droits avec l'activité
 - `phil/verification-marks` · 🗓️ prévu — La marque d'un compte vérifié
@@ -872,15 +895,15 @@ tirées de notre dernier rapport d'avancement (7 novembre 2026). Le seul paquet 
 </details>
 
 <details>
-<summary><b>Vie privée, accessibilité et conformité</b> — 🧪 3 · 🗓️ 9</summary>
+<summary><b>Vie privée, accessibilité et conformité</b> — 🧪 5 · 🗓️ 7</summary>
 
-- `phil/privacy-bundle` · 🧪 60 % — Déclarer les champs personnels, caviarder les journaux, répondre aux demandes d'accès et d'effacement (Loi 25, RGPD)
+- `phil/privacy-bundle` · 🧪 62 % — Déclarer les champs personnels, caviarder les journaux, répondre aux demandes d'accès et d'effacement (Loi 25, RGPD)
 - `phil/analytics-bundle` · 🧪 85 % — Les visites comptées en agrégats quotidiens, jamais liées à une personne
 - `phil/audit-bundle` · 🧪 60 % — Un journal d'audit en ajout seul, qui montre toute altération et permet quand même d'effacer les renseignements personnels
-- `phil/ip-anonymizer` · 🗓️ prévu — Tronquer, hacher avec sel et généraliser les adresses IP
+- `phil/ip-anonymizer` · 🧪 95 % — Tronquer, hacher avec sel et généraliser les adresses IP
+- `phil/accessibility-check` · 🧪 90 % — Le contrôle d'accessibilité à la publication : textes de remplacement, ordre des titres, contraste
 - `phil/legal-notices` · 🗓️ prévu — Les mentions légales et la politique de confidentialité d'un site
 - `phil/terms-bundle` · 🗓️ prévu — Des conditions d'utilisation versionnées et leur acceptation
-- `phil/accessibility-check` · 🗓️ prévu — Le contrôle d'accessibilité à la publication : textes de remplacement, ordre des titres, contraste
 - `phil/accessibility-statement` · 🗓️ prévu — La déclaration d'accessibilité d'un site
 - `phil/accessibility-info` · 🗓️ prévu — Les renseignements d'accessibilité d'un lieu ou d'un événement
 - `phil/easy-read` · 🗓️ prévu — La version en langage simplifié d'un contenu, et sa vérification
@@ -890,8 +913,11 @@ tirées de notre dernier rapport d'avancement (7 novembre 2026). Le seul paquet 
 </details>
 
 <details>
-<summary><b>Communauté</b> — 🗓️ 34</summary>
+<summary><b>Communauté</b> — 🧪 3 · 🗓️ 32</summary>
 
+- `phil/poll-bundle` · 🧪 85 % — Le moteur de vote : choix unique, multiple ou classé
+- `phil/poll` · 🧪 90 % — Un moteur de vote : des bulletins vérifiés selon les règles de leur scrutin, comptés en classements
+- `phil/listings` · 🧪 90 % — Le noyau des annonces : critères, expiration, réponses, modération
 - `phil/forum-bundle` · 🗓️ prévu — Des forums par section, leur clavardage, le signalement et la modération par section
 - `phil/moderation-bundle` · 🗓️ prévu — Une seule file de signalements pour forums, commentaires, réactions, annonces et messages
 - `phil/reactions-bundle` · 🗓️ prévu — Les réactions à un contenu, une par membre, liste choisie par site
@@ -901,7 +927,6 @@ tirées de notre dernier rapport d'avancement (7 novembre 2026). Le seul paquet 
 - `phil/groups-bundle` · 🗓️ prévu — Des groupes de membres
 - `phil/profiles-bundle` · 🗓️ prévu — La page publique d'un membre : ce qu'il y montre, et à qui
 - `phil/reviews-bundle` · 🗓️ prévu — Avis et notes modérés sur un produit, un jeu ou un lieu
-- `phil/poll-bundle` · 🗓️ prévu — Le moteur de vote : choix unique, multiple ou classé
 - `phil/survey-bundle` · 🗓️ prévu — Des questionnaires à sections et à logique conditionnelle
 - `phil/ideas-bundle` · 🗓️ prévu — Une boîte à idées avec statuts et votes
 - `phil/qa-bundle` · 🗓️ prévu — Des questions et leurs réponses, la meilleure acceptée
@@ -909,7 +934,6 @@ tirées de notre dernier rapport d'avancement (7 novembre 2026). Le seul paquet 
 - `phil/onboarding-bundle` · 🗓️ prévu — L'accueil d'un nouveau membre : étapes, visite guidée, liste à cocher
 - `phil/bookmarks-bundle` · 🗓️ prévu — Les signets d'un membre, rangés en listes
 - `phil/user-lists` · 🗓️ prévu — Les listes de membres qu'un membre tient
-- `phil/listings` · 🗓️ prévu — Le noyau des annonces : critères, expiration, réponses, modération
 - `phil/classifieds-bundle` · 🗓️ prévu — Des petites annonces entre membres, sans paiement
 - `phil/job-board-bundle` · 🗓️ prévu — Les offres d'emploi et de contrat d'une communauté
 - `phil/matchmaking-bundle` · 🗓️ prévu — Trouver des partenaires : critères, lieu approximatif ou en ligne, sécurité d'abord
@@ -930,27 +954,27 @@ tirées de notre dernier rapport d'avancement (7 novembre 2026). Le seul paquet 
 </details>
 
 <details>
-<summary><b>Apprentissage et attestations</b> — 🗓️ 5</summary>
+<summary><b>Apprentissage et attestations</b> — 🧪 3 · 🗓️ 2</summary>
 
-- `phil/open-badges` · 🗓️ prévu — Émettre, signer, vérifier, cuire et révoquer des justificatifs Open Badges 3.0
-- `phil/open-badges-bundle` · 🗓️ prévu — Profil de l'émetteur, clé publique et page de vérification des Open Badges
-- `phil/certificates-bundle` · 🗓️ prévu — Des certificats vérifiables : critères, PDF à code QR, registre public
+- `phil/open-badges` · 🧪 90 % — Émettre, signer, vérifier, cuire et révoquer des justificatifs Open Badges 3.0
+- `phil/open-badges-bundle` · 🧪 85 % — Profil de l'émetteur, clé publique et page de vérification des Open Badges
+- `phil/certificates-bundle` · 🧪 85 % — Des certificats vérifiables : critères, PDF à code QR, registre public
 - `phil/courses-bundle` · 🗓️ prévu — Des cours en ligne : modules, leçons, progression
 - `phil/mentoring-bundle` · 🗓️ prévu — Le mentorat : jumelage, séances, suivi
 
 </details>
 
 <details>
-<summary><b>Notifications, courriel et messagerie</b> — 🧪 2 · 🗓️ 13</summary>
+<summary><b>Notifications, courriel et messagerie</b> — 🧪 5 · 🗓️ 10</summary>
 
 - `phil/instant-messenger` · 🧪 95 % — Les identifiants de messagerie par service : WhatsApp, Telegram, Signal, Matrix et d'autres
 - `phil/instant-messenger-bundle` · 🧪 95 % — Un champ d'identifiant de messagerie, une contrainte et des filtres Twig
-- `phil/notifications-bundle` · 🗓️ prévu — Toasts, centre de notifications, résumés par courriel, Web Push, Discord ou Slack
+- `phil/notifications-bundle` · 🧪 80 % — Toasts, centre de notifications, résumés par courriel, Web Push, Discord ou Slack
+- `phil/bounce-parser` · 🧪 90 % — Lire les rebonds DSN et ARF et les réponses automatiques
+- `phil/email-address` · 🧪 85 % — La validation des adresses de courriel
 - `phil/newsletter-bundle` · 🗓️ prévu — L'infolettre : listes, double inscription, gabarits, envoi par Symfony Mailer
 - `phil/newsletter-archive` · 🗓️ prévu — L'archive publique des infolettres envoyées
 - `phil/email-automation` · 🗓️ prévu — Séquences et déclencheurs d'infolettre, jamais sur une ouverture
-- `phil/bounce-parser` · 🗓️ prévu — Lire les rebonds DSN et ARF et les réponses automatiques
-- `phil/email-address` · 🗓️ prévu — La validation des adresses de courriel
 - `phil/email-templates-bundle` · 🗓️ prévu — Des gabarits de courriel partagés entre plusieurs sites, à blocs conditionnels
 - `phil/email-preview` · 🗓️ prévu — L'aperçu des gabarits de courriel
 - `phil/mail-auth-check` · 🗓️ prévu — Tester SPF, DKIM et DMARC d'un domaine d'envoi
@@ -962,15 +986,17 @@ tirées de notre dernier rapport d'avancement (7 novembre 2026). Le seul paquet 
 </details>
 
 <details>
-<summary><b>Événements, calendrier et réservation</b> — 🧪 1 · 🗓️ 21</summary>
+<summary><b>Événements, calendrier et réservation</b> — 🧪 5 · 🗓️ 19</summary>
 
-- `phil/calendar-bundle` · 🧪 60 % — Des événements, répétés ou non, en mois, semaine, jour, liste ou affiches
+- `phil/calendar-bundle` · 🧪 61 % — Des événements, répétés ou non, en mois, semaine, jour, liste ou affiches
+- `phil/reservation` · 🧪 90 % — Le noyau de réservation : ressources, créneaux, règles, conflits et rappels
+- `phil/reservation-bundle` · 🧪 85 % — Les réservations dans Symfony : ressources, plages, conflits et rappels
+- `phil/checkin-bundle` · 🧪 85 % — Le noyau d'accueil commun : billet ou inscription lus, présence notée
+- `phil/checkin` · 🧪 92 % — Un code lu à une porte, décidé aussitôt, noté une fois, en ligne ou hors ligne
 - `phil/convention-bundle` · 🗓️ prévu — Le programme d'une convention : tables, places, inscriptions, lieux et salles
-- `phil/reservation` · 🗓️ prévu — Le noyau de réservation : ressources, créneaux, règles, conflits et rappels
 - `phil/booking-bundle` · 🗓️ prévu — La prise de rendez-vous sur le noyau de réservation
 - `phil/scheduling-poll-bundle` · 🗓️ prévu — Le sondage de disponibilités, répondu par lien sans compte
 - `phil/shared-timer-bundle` · 🗓️ prévu — Une minuterie partagée par Mercure, enchaînée, avec télécommande
-- `phil/checkin-bundle` · 🗓️ prévu — Le noyau d'accueil commun : billet ou inscription lus, présence notée
 - `phil/qr-attendance` · 🗓️ prévu — La présence lue au code QR
 - `phil/waitlist-bundle` · 🗓️ prévu — Les listes d'attente et la libération des places
 - `phil/workshops-bundle` · 🗓️ prévu — Des ateliers : sessions, places, inscriptions
@@ -990,22 +1016,22 @@ tirées de notre dernier rapport d'avancement (7 novembre 2026). Le seul paquet 
 </details>
 
 <details>
-<summary><b>Commerce</b> — 🧪 12 · 🗓️ 22</summary>
+<summary><b>Commerce</b> — 🧪 14 · 🗓️ 20</summary>
 
 - `phil/money` · 🧪 95 % — Des montants en entiers exacts dans une devise connue, sans aucun nombre flottant
 - `phil/money-bundle` · 🧪 95 % — L'argent dans les formulaires, la validation, Twig et Doctrine de Symfony, sans flottants
 - `phil/tax` · 🧪 95 % — Plusieurs taxes sur une vente, détaillées au cent
-- `phil/commerce-bundle` · 🧪 80 % — Commandes, prix, taxes, paiements et reçus pour une boutique Symfony, avec des modules par-dessus
+- `phil/commerce-bundle` · 🧪 87 % — Commandes, prix, taxes, paiements et reçus pour une boutique Symfony, avec des modules par-dessus
 - `phil/commerce-catalog-bundle` · 🧪 55 % — Produits, listes de prix et promotions
-- `phil/commerce-logistics-bundle` · 🧪 75 % — Stock par emplacement, réservations, colis et modes de livraison par zone
+- `phil/commerce-logistics-bundle` · 🧪 77 % — Stock par emplacement, réservations, colis et modes de livraison par zone
 - `phil/commerce-pos-bundle` · 🧪 80 % — Une caisse pour la vente au comptoir : tiroirs, quarts, comptes de caisse, mises de côté, ventes hors ligne
-- `phil/commerce-returns-bundle` · 🧪 80 % — Les retours, de l'autorisation au remboursement, au crédit ou à l'échange, ligne par ligne
+- `phil/commerce-returns-bundle` · 🧪 82 % — Les retours, de l'autorisation au remboursement, au crédit ou à l'échange, ligne par ligne
 - `phil/commerce-stored-value-bundle` · 🧪 85 % — Cartes-cadeaux numériques et crédit en boutique, dépensés comme paiements d'une commande
 - `phil/commerce-subscription-bundle` · 🧪 80 % — Offres récurrentes par paliers : essais, renouvellement, relances et fonctions débloquées
 - `phil/commerce-syndication-bundle` · 🧪 85 % — Revendre les produits d'une autre boutique, commandes transmises au fournisseur qui expédie
 - `phil/commerce-wholesale-bundle` · 🧪 90 % — Groupes de clients à prix et minimums propres, ventes à crédit à terme net
-- `phil/commerce-product-template` · 🗓️ prévu — Des gabarits de produit qui génèrent combinaisons, SKU, maquettes et bons de production
-- `phil/commerce-product-template-bundle` · 🗓️ prévu — Les gabarits de produit dans le catalogue et l'administration
+- `phil/commerce-product-template` · 🧪 90 % — Des gabarits de produit qui génèrent combinaisons, SKU, maquettes et bons de production
+- `phil/commerce-product-template-bundle` · 🧪 75 % — Les gabarits de produit dans le catalogue et l'administration
 - `phil/coupons-bundle` · 🗓️ prévu — Des codes promotionnels utilisables sans le catalogue : dons, billets, adhésions
 - `phil/donations-bundle` · 🗓️ prévu — Les dons ponctuels ou mensuels
 - `phil/digital-downloads` · 🗓️ prévu — Vendre et livrer des fichiers numériques
@@ -1052,22 +1078,24 @@ tirées de notre dernier rapport d'avancement (7 novembre 2026). Le seul paquet 
 </details>
 
 <details>
-<summary><b>Exploitation et administration</b> — 🧪 2 · 🗓️ 18</summary>
+<summary><b>Exploitation et administration</b> — 🧪 9 · 🗓️ 13</summary>
 
 - `phil/migration` · 🧪 90 % — Notes de version et nouvelles que les migrations Doctrine envoient au clavardage
 - `phil/migration-bundle` · 🧪 90 % — Chaque passage des migrations annoncé une fois sur vos canaux de clavardage
+- `phil/backup-bundle` · 🧪 93 % — Sauvegarde et restauration protégée : base, médias, chiffrement, rotation
+- `phil/backup` · 🧪 96 % — Sauvegarder une base et ses médias, chiffrés et en rotation, et prouver qu'ils se restaurent
+- `phil/monitoring-bundle` · 🧪 90 % — Points de santé, mode maintenance, disponibilité, tâches planifiées et files
+- `phil/error-tracking` · 🧪 88 % — Le suivi des erreurs chez soi, écrit de zéro
+- `phil/error-tracking-bundle` · 🧪 82 % — Le suivi des erreurs dans Symfony : groupes, régressions par version, alertes par une file
+- `phil/reporting-bundle` · 🧪 90 % — Tableaux de bord en composants Twig, graphiques accessibles, rapports planifiés
+- `phil/settings-bundle` · 🧪 88 % — Les réglages qu'un usager modifie lui-même
 - `phil/sites-console-bundle` · 🗓️ prévu — Gérer plusieurs sites : versions, santé, configuration commune, comptes d'administration
-- `phil/backup-bundle` · 🗓️ prévu — Sauvegarde et restauration protégée : base, médias, chiffrement, rotation
-- `phil/monitoring-bundle` · 🗓️ prévu — Points de santé, mode maintenance, disponibilité, tâches planifiées et files
-- `phil/error-tracking` · 🗓️ prévu — Le suivi des erreurs chez soi, écrit de zéro
 - `phil/status-page-bundle` · 🗓️ prévu — La page d'état des services
 - `phil/performance-budget` · 🗓️ prévu — Un budget de performance vérifié en CI
 - `phil/broken-flow-alerts` · 🗓️ prévu — L'alerte quand un parcours cesse d'aboutir
-- `phil/reporting-bundle` · 🗓️ prévu — Tableaux de bord en composants Twig, graphiques accessibles, rapports planifiés
 - `phil/bulk-actions` · 🗓️ prévu — Les actions en lot dans une administration
 - `phil/admin-notes` · 🗓️ prévu — Les notes internes de l'administration sur une fiche
 - `phil/config-ui` · 🗓️ prévu — La configuration d'un site éditée dans l'administration
-- `phil/settings-bundle` · 🗓️ prévu — Les réglages qu'un usager modifie lui-même
 - `phil/sandbox-preview` · 🗓️ prévu — Voir un changement dans un bac à sable avant sa mise en ligne
 - `phil/duplicate-detector` · 🗓️ prévu — Détecter et fusionner les fiches en double
 - `phil/dependency-report` · 🗓️ prévu — Les dépendances d'un paquet ou d'un site et leurs licences
@@ -1085,22 +1113,22 @@ tirées de notre dernier rapport d'avancement (7 novembre 2026). Le seul paquet 
 - `phil/discord-community` · 🗓️ prévu — Lier une communauté à son serveur Discord : rôles, événements, annonces
 - `phil/discord-interactions-bundle` · 🗓️ prévu — Les interactions Discord signées Ed25519 : commandes, réponses différées
 - `phil/slack-interactions-bundle` · 🗓️ prévu — Les commandes et interactions Slack signées
-- `phil/notion` · 🗓️ prévu — Lire et écrire une base Notion, le texte converti en UJO
+- `phil/notion` · 🗓️ prévu — Lire et écrire une base Notion, le texte converti en UJO (Universal JSON Output)
 - `phil/logseq` · 🗓️ prévu — Lire et écrire un graphe Logseq
 
 </details>
 
 <details>
-<summary><b>UX et interface</b> — 🧪 6 · 🗓️ 9</summary>
+<summary><b>UX et interface</b> — 🧪 7 · 🗓️ 8</summary>
 
-- `phil/ux-bundle` · 🧪 35 % — Les composants PHIL UX, en réécriture en kit pour le Toolkit de Symfony UX et en CSS phil-ux
-- `phil/ux-css` · 🧪 30 % — phil-ux, le cadre CSS : jetons OKLCH, thèmes clair et sombre, éléments sans classe, utilitaires de mise en page
-- `phil/ux-kit` · 🧪 10 % — Le kit PHIL UX pour le Toolkit de Symfony UX : Logo, AnimatedHeadline, Illustration et le bloc ComingSoon pour l'instant
-- `phil/ux-kit-shadcn` · 🧪 25 % — Les versions Tailwind, à la façon de Shadcn, des recettes que PHIL UX ajoute
+- `phil/ux-bundle` · 🧪 36 % — Les composants PHIL UX, en réécriture en kit pour le Toolkit de Symfony UX et en CSS phil-ux
+- `phil/ux-css` · 🧪 52 % — phil-ux, le cadre CSS : jetons OKLCH, thèmes clair et sombre, éléments sans classe, utilitaires de mise en page
+- `phil/ux-kit` · 🧪 22 % — Le kit PHIL UX pour le Toolkit de Symfony UX : Logo, AnimatedHeadline, Illustration et le bloc ComingSoon pour l'instant
+- `phil/ux-kit-shadcn` · 🧪 31 % — Les versions Tailwind, à la façon de Shadcn, des recettes que PHIL UX ajoute
 - `phil/forms-bundle` · 🧪 90 % — Des formulaires définis en base, leurs réponses gardées le temps nécessaire seulement
 - `phil/menu-bundle` · 🧪 95 % — Menus de navigation et fil d'Ariane, avec la page courante marquée
+- `phil/forms-autosave` · 🧪 90 % — La saisie d'un formulaire gardée en cours de route
 - `phil/data-table-bundle` · 🗓️ prévu — Des tableaux en Live Component : tri, filtres, édition en ligne, empilés sur mobile
-- `phil/forms-autosave` · 🗓️ prévu — La saisie d'un formulaire gardée en cours de route
 - `phil/forms-signature` · 🗓️ prévu — Un champ de signature manuscrite ou électronique
 - `phil/pwa-bundle` · 🗓️ prévu — Des sites installables et lisibles hors ligne : manifeste, service worker, plein écran
 - `phil/theme-builder` · 🗓️ prévu — Composer un thème à partir des jetons PHIL UX
