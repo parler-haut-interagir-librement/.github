@@ -130,7 +130,7 @@ Shadcn kit: keep Tailwind if you like it.
 ✅ **released** · 🧪 **written, in incubation** (approximate completion) · 🦴 **skeleton in incubation** (the package
 exists, its code is not written yet: ≈ 0 %) · 🗓️ **planned**
 
-**423 packages:** 83 released, 335 in incubation (92 written, 243 skeletons near 0 %), 5 planned. Percentages are estimates from our
+**418 packages:** 83 released, 335 in incubation (92 written, 243 skeletons near 0 %), 0 planned. Percentages are estimates from our
 latest status report (11 November 2026). The released packages are developed in the public monorepo
 [`phil`](https://github.com/parler-haut-interagir-librement/phil), each split into its own read-only repository and
 published on Packagist; `phil/enums` continues [`ph-il/enums`](https://packagist.org/packages/ph-il/enums). **The
@@ -194,7 +194,7 @@ showcase continues by small daily groups** of two to four packages, dependencies
 </details>
 
 <details>
-<summary><b>Content &amp; text</b> — ✅ 17 · 🧪 5 · 🦴 28 · 🗓️ 1</summary>
+<summary><b>Content &amp; text</b> — ✅ 17 · 🧪 5 · 🦴 28</summary>
 
 - [`phil/ujo`](https://github.com/parler-haut-interagir-librement/ujo) · ✅ released ([Packagist](https://packagist.org/packages/phil/ujo)) — UJO (Universal JSON Output) documents read strictly, checked block by block, rendered as safe HTML
 - [`phil/ujo-bundle`](https://github.com/parler-haut-interagir-librement/ujo-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/ujo-bundle)) — UJO (Universal JSON Output) documents in Doctrine, forms and Twig
@@ -246,7 +246,6 @@ showcase continues by small daily groups** of two to four packages, dependencies
 - `phil/suggested-edits` · 🦴 skeleton, ≈ 0% — Suggested edits to a message or to a whole piece of content
 - `phil/live-preview-bundle` · 🦴 skeleton, ≈ 0% — Live preview on several targets and device sizes, morphed in place by Turbo
 - `phil/form-logic` · 🦴 skeleton, ≈ 0% — Conditional form logic evaluated the same way in PHP and Stimulus, the server as judge
-- `phil/math` · 🗓️ planned — Mathematical formulas rendered in MathML
 
 </details>
 
@@ -457,7 +456,7 @@ showcase continues by small daily groups** of two to four packages, dependencies
 </details>
 
 <details>
-<summary><b>Notifications, mail &amp; messaging</b> — ✅ 3 · 🧪 2 · 🦴 11 · 🗓️ 1</summary>
+<summary><b>Notifications, mail &amp; messaging</b> — ✅ 3 · 🧪 2 · 🦴 11</summary>
 
 - [`phil/instant-messenger`](https://github.com/parler-haut-interagir-librement/instant-messenger) · ✅ released ([Packagist](https://packagist.org/packages/phil/instant-messenger)) — Messaging handles per service: WhatsApp, Telegram, Signal, Matrix and more
 - [`phil/instant-messenger-bundle`](https://github.com/parler-haut-interagir-librement/instant-messenger-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/instant-messenger-bundle)) — A messaging handle field, a constraint and Twig filters
@@ -475,7 +474,6 @@ showcase continues by small daily groups** of two to four packages, dependencies
 - `phil/live-chat` · 🦴 skeleton, ≈ 0% — Live chat with a visitor
 - `phil/mime-reader` · 🦴 skeleton, ≈ 0% — MIME email reading, shared by bounce parsing and inbound mail
 - `phil/email-address-bundle` · 🦴 skeleton, ≈ 0% — Email addresses in Symfony: a constraint, bounce rules and IMAP reading
-- `phil/email-automation` · 🗓️ planned — Newsletter sequences and triggers, never on an open
 
 </details>
 
@@ -591,7 +589,7 @@ showcase continues by small daily groups** of two to four packages, dependencies
 </details>
 
 <details>
-<summary><b>Operations &amp; administration</b> — ✅ 6 · 🧪 4 · 🦴 11 · 🗓️ 3</summary>
+<summary><b>Operations &amp; administration</b> — ✅ 6 · 🧪 4 · 🦴 11</summary>
 
 - [`phil/migration`](https://github.com/parler-haut-interagir-librement/migration) · ✅ released ([Packagist](https://packagist.org/packages/phil/migration)) — Release notes and news that Doctrine migrations send to chat
 - [`phil/migration-bundle`](https://github.com/parler-haut-interagir-librement/migration-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/migration-bundle)) — Each migration run announced once on your chat channels
@@ -614,9 +612,6 @@ showcase continues by small daily groups** of two to four packages, dependencies
 - `phil/automations` · 🦴 skeleton, ≈ 0% — No-code automations triggered by site events
 - `phil/data-table-export` · 🦴 skeleton, ≈ 0% — Rows exported as CSV, then XLSX
 - `phil/expenses-bundle` · 🦴 skeleton, ≈ 0% — Expense claims: displayed policy, nobody approves their own, private receipts
-- `phil/performance-budget` · 🗓️ planned — A performance budget checked in CI
-- `phil/config-ui` · 🗓️ planned — Site configuration edited in the administration
-- `phil/sandbox-preview` · 🗓️ planned — Preview a change in a sandbox before it goes live
 
 </details>
 
@@ -638,8 +633,8 @@ showcase continues by small daily groups** of two to four packages, dependencies
 
 - [`phil/menu-bundle`](https://github.com/parler-haut-interagir-librement/menu-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/menu-bundle)) — Navigation menus and breadcrumbs, with the current page marked
 - `phil/ux-bundle` · 🧪 37% — PHIL UX components, being rewritten as a kit for the Symfony UX Toolkit and the phil-ux CSS
-- `phil/ux-css` · 🧪 52% — phil-ux, the CSS framework: OKLCH tokens, light and dark themes, classless elements, layout utilities
-- `phil/ux-kit` · 🧪 22% — The PHIL UX kit for the Symfony UX Toolkit: Logo, AnimatedHeadline, Illustration and the ComingSoon block so far
+- `phil/ux-css` · 🧪 97% — phil-ux, the CSS framework: OKLCH tokens, light and dark themes, classless elements, layout utilities
+- `phil/ux-kit` · 🧪 88% — The PHIL UX kit for the Symfony UX Toolkit: Logo, AnimatedHeadline, Illustration and the ComingSoon block so far
 - `phil/ux-kit-shadcn` · 🧪 88% — Tailwind versions, in the Shadcn style, of the recipes PHIL UX adds
 - `phil/forms-bundle` · 🧪 90% — Forms defined in the database, entries kept only as long as needed
 - `phil/data-table-bundle` · 🧪 88% — Live Component tables: sorting, filters, inline editing, stacked on mobile
@@ -788,7 +783,7 @@ le kit Shadcn : gardez Tailwind si vous l'aimez.
 ✅ **publié** · 🧪 **écrit, en incubation** (avancement approximatif) · 🦴 **squelette en incubation** (le paquet
 existe, son code n'est pas encore écrit : ≈ 0 %) · 🗓️ **prévu**
 
-**423 paquets :** 83 publiés, 335 en incubation (92 écrits, 243 squelettes à près de 0 %), 5 prévus. Les pourcentages sont des estimations
+**418 paquets :** 83 publiés, 335 en incubation (92 écrits, 243 squelettes à près de 0 %), 0 prévus. Les pourcentages sont des estimations
 tirées de notre dernier rapport d'avancement (11 novembre 2026). Les paquets publiés sont développés dans le monodépôt
 public [`phil`](https://github.com/parler-haut-interagir-librement/phil), scindés chacun dans son propre dépôt en
 lecture seule et publiés sur Packagist ; `phil/enums` poursuit
@@ -853,7 +848,7 @@ quotidiens** de deux à quatre paquets, les dépendances d'abord.
 </details>
 
 <details>
-<summary><b>Contenu et texte</b> — ✅ 17 · 🧪 5 · 🦴 28 · 🗓️ 1</summary>
+<summary><b>Contenu et texte</b> — ✅ 17 · 🧪 5 · 🦴 28</summary>
 
 - [`phil/ujo`](https://github.com/parler-haut-interagir-librement/ujo) · ✅ publié ([Packagist](https://packagist.org/packages/phil/ujo)) — Des documents UJO (Universal JSON Output) lus strictement, vérifiés bloc par bloc, rendus en HTML sûr
 - [`phil/ujo-bundle`](https://github.com/parler-haut-interagir-librement/ujo-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/ujo-bundle)) — Les documents UJO (Universal JSON Output) dans Doctrine, les formulaires et Twig
@@ -905,7 +900,6 @@ quotidiens** de deux à quatre paquets, les dépendances d'abord.
 - `phil/suggested-edits` · 🦴 squelette, ≈ 0 % — Des modifications suggérées à un message ou à tout un contenu
 - `phil/live-preview-bundle` · 🦴 squelette, ≈ 0 % — L'aperçu en direct sur plusieurs cibles et tailles d'appareil, remplacé sur place par Turbo
 - `phil/form-logic` · 🦴 squelette, ≈ 0 % — La logique conditionnelle des formulaires, évaluée de la même façon en PHP et en Stimulus, le serveur faisant foi
-- `phil/math` · 🗓️ prévu — Formules mathématiques rendues en MathML
 
 </details>
 
@@ -1116,7 +1110,7 @@ quotidiens** de deux à quatre paquets, les dépendances d'abord.
 </details>
 
 <details>
-<summary><b>Notifications, courriel et messagerie</b> — ✅ 3 · 🧪 2 · 🦴 11 · 🗓️ 1</summary>
+<summary><b>Notifications, courriel et messagerie</b> — ✅ 3 · 🧪 2 · 🦴 11</summary>
 
 - [`phil/instant-messenger`](https://github.com/parler-haut-interagir-librement/instant-messenger) · ✅ publié ([Packagist](https://packagist.org/packages/phil/instant-messenger)) — Les identifiants de messagerie par service : WhatsApp, Telegram, Signal, Matrix et d'autres
 - [`phil/instant-messenger-bundle`](https://github.com/parler-haut-interagir-librement/instant-messenger-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/instant-messenger-bundle)) — Un champ d'identifiant de messagerie, une contrainte et des filtres Twig
@@ -1134,7 +1128,6 @@ quotidiens** de deux à quatre paquets, les dépendances d'abord.
 - `phil/live-chat` · 🦴 squelette, ≈ 0 % — Le clavardage en direct avec un visiteur
 - `phil/mime-reader` · 🦴 squelette, ≈ 0 % — La lecture des courriels MIME, partagée par l'analyse des rebonds et le courriel entrant
 - `phil/email-address-bundle` · 🦴 squelette, ≈ 0 % — Les adresses courriel dans Symfony : une contrainte, des règles de rebond et la lecture IMAP
-- `phil/email-automation` · 🗓️ prévu — Séquences et déclencheurs d'infolettre, jamais sur une ouverture
 
 </details>
 
@@ -1250,7 +1243,7 @@ quotidiens** de deux à quatre paquets, les dépendances d'abord.
 </details>
 
 <details>
-<summary><b>Exploitation et administration</b> — ✅ 6 · 🧪 4 · 🦴 11 · 🗓️ 3</summary>
+<summary><b>Exploitation et administration</b> — ✅ 6 · 🧪 4 · 🦴 11</summary>
 
 - [`phil/migration`](https://github.com/parler-haut-interagir-librement/migration) · ✅ publié ([Packagist](https://packagist.org/packages/phil/migration)) — Notes de version et nouvelles que les migrations Doctrine envoient au clavardage
 - [`phil/migration-bundle`](https://github.com/parler-haut-interagir-librement/migration-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/migration-bundle)) — Chaque passage des migrations annoncé une fois sur vos canaux de clavardage
@@ -1273,9 +1266,6 @@ quotidiens** de deux à quatre paquets, les dépendances d'abord.
 - `phil/automations` · 🦴 squelette, ≈ 0 % — Des automatisations sans code déclenchées par les événements du site
 - `phil/data-table-export` · 🦴 squelette, ≈ 0 % — Des lignes exportées en CSV, puis en XLSX
 - `phil/expenses-bundle` · 🦴 squelette, ≈ 0 % — Les notes de frais : politique affichée, personne n'approuve la sienne, reçus privés
-- `phil/performance-budget` · 🗓️ prévu — Un budget de performance vérifié en CI
-- `phil/config-ui` · 🗓️ prévu — La configuration d'un site éditée dans l'administration
-- `phil/sandbox-preview` · 🗓️ prévu — Voir un changement dans un bac à sable avant sa mise en ligne
 
 </details>
 
@@ -1297,8 +1287,8 @@ quotidiens** de deux à quatre paquets, les dépendances d'abord.
 
 - [`phil/menu-bundle`](https://github.com/parler-haut-interagir-librement/menu-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/menu-bundle)) — Menus de navigation et fil d'Ariane, avec la page courante marquée
 - `phil/ux-bundle` · 🧪 37 % — Les composants PHIL UX, en réécriture en kit pour le Toolkit de Symfony UX et en CSS phil-ux
-- `phil/ux-css` · 🧪 52 % — phil-ux, le cadre CSS : jetons OKLCH, thèmes clair et sombre, éléments sans classe, utilitaires de mise en page
-- `phil/ux-kit` · 🧪 22 % — Le kit PHIL UX pour le Toolkit de Symfony UX : Logo, AnimatedHeadline, Illustration et le bloc ComingSoon pour l'instant
+- `phil/ux-css` · 🧪 97 % — phil-ux, le cadre CSS : jetons OKLCH, thèmes clair et sombre, éléments sans classe, utilitaires de mise en page
+- `phil/ux-kit` · 🧪 88 % — Le kit PHIL UX pour le Toolkit de Symfony UX : Logo, AnimatedHeadline, Illustration et le bloc ComingSoon pour l'instant
 - `phil/ux-kit-shadcn` · 🧪 88 % — Les versions Tailwind, à la façon de Shadcn, des recettes que PHIL UX ajoute
 - `phil/forms-bundle` · 🧪 90 % — Des formulaires définis en base, leurs réponses gardées le temps nécessaire seulement
 - `phil/data-table-bundle` · 🧪 88 % — Des tableaux en Live Component : tri, filtres, édition en ligne, empilés sur mobile
