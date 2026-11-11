@@ -5,7 +5,7 @@
 ### Proclaim Honestly, Interact Liberally
 *Parler Haut, Interagir Librement*
 
-[![ph-il/enums on Packagist](https://img.shields.io/packagist/v/ph-il/enums?label=ph-il%2Fenums&logo=packagist&logoColor=white)](https://packagist.org/packages/ph-il/enums)
+[![phil/enums on Packagist](https://img.shields.io/packagist/v/phil/enums?label=phil%2Fenums&logo=packagist&logoColor=white)](https://packagist.org/packages/phil/enums)
 [![Licence: MIT](https://img.shields.io/badge/licence-MIT-blue)](https://opensource.org/license/mit)
 [![PHP 8.5+](https://img.shields.io/badge/PHP-8.5%2B-777BB4?logo=php&logoColor=white)](https://www.php.net)
 [![Symfony 8.2+](https://img.shields.io/badge/Symfony-8.2%2B-000000?logo=symfony&logoColor=white)](https://symfony.com)
@@ -44,7 +44,8 @@ The game and gamification packages — dice, generators, points, badges, quests 
 Shops, conventions, clubs, publishers and online communities keep needing the same bricks: a catalogue and a cash
 register, a calendar, a forum, a newsletter, a privacy policy that is actually applied. We would rather write each
 brick once, carefully, in the open, than glue the same parts together on every site. And we would rather tell you
-plainly how far along each brick is: **today, one package is released; the others are being written or planned.**
+plainly how far along each brick is: **today, 28 packages are released; the others are being written or planned,
+and they follow by small daily groups.**
 
 ## Principles
 
@@ -81,8 +82,8 @@ plainly how far along each brick is: **today, one package is released; the other
 - **Incubation.** New packages are written in a private monorepo, `phil-prerelease`, the permanent incubator, where
   changes that span several packages are made and tested together.
 - **Release.** A finished package moves to the public monorepo
-  [`parler-haut-interagir-librement/phil`](https://github.com/parler-haut-interagir-librement/phil) (not created
-  yet), from which each package is split into its own read-only repository and published on
+  [`parler-haut-interagir-librement/phil`](https://github.com/parler-haut-interagir-librement/phil), where it is
+  developed from then on, and from which each package is split into its own read-only repository and published on
   [Packagist](https://packagist.org).
 - **Versions.** Semantic versioning; each package keeps a [Keep a Changelog](https://keepachangelog.com) file.
 
@@ -119,7 +120,8 @@ Shadcn kit: keep Tailwind if you like it.
 - **`phil/dev-tools`** — the shared configurations of PHP-CS-Fixer, PHPStan, Rector, Deptrac, Arkitect, Infection,
   PHPUnit and PHPBench; the Composer scripts that run them; documentation checks; real MySQL, PostgreSQL and
   Gotenberg servers in Docker for integration tests; replayable HTTP recordings; the PHP and Symfony version matrix;
-  and the skeleton of a new package. Written and in use; to be published here under the MIT licence.
+  and the skeleton of a new package. Published under the MIT licence:
+  [dev-tools](https://github.com/parler-haut-interagir-librement/dev-tools).
 - **Project skeletons** — [MicroSymfony](https://github.com/parler-haut-interagir-librement/MicroSymfony) (based on
   `strangebuzz/MicroSymfony`) and [WebSymfony](https://github.com/parler-haut-interagir-librement/WebSymfony).
 
@@ -127,44 +129,46 @@ Shadcn kit: keep Tailwind if you like it.
 
 ✅ **released** · 🧪 **written, in incubation** (approximate completion) · 🗓️ **planned**
 
-**339 packages:** 1 released, 154 in incubation, 184 planned. Percentages are estimates from our
-latest status report ((8 November 2026)). The only released package is published on Packagist as
-[`ph-il/enums`](https://packagist.org/packages/ph-il/enums); it will continue as `phil/enums`.
+**339 packages:** 28 released, 127 in incubation, 184 planned. Percentages are estimates from our
+latest status report (8 November 2026). The released packages are developed in the public monorepo
+[`phil`](https://github.com/parler-haut-interagir-librement/phil), each split into its own read-only repository and
+published on Packagist; `phil/enums` continues [`ph-il/enums`](https://packagist.org/packages/ph-il/enums). **The
+showcase continues by small daily groups** of two to four packages, dependencies first.
 `phil/identity-provider-*` stands for one package per sign-in provider.
 
 <details>
-<summary><b>Data &amp; infrastructure</b> — ✅ 1 · 🧪 31 · 🗓️ 9</summary>
+<summary><b>Data &amp; infrastructure</b> — ✅ 12 · 🧪 20 · 🗓️ 9</summary>
 
-- `phil/enums` · ✅ released — Traits and attributes to list, compare, describe and group PHP enums (released as `ph-il/enums`)
-- `phil/enums-bundle` · 🧪 95% — Enums in Symfony forms, translations, Twig, validation, Doctrine and API contracts
-- `phil/resource` · 🧪 100% — Point at any record by its kind and identifier, such as `page:42`
-- `phil/ddd-bundle` · 🧪 80% — Shared domain types: identifiers, domain events, errors, command and query buses
+- [`phil/enums`](https://github.com/parler-haut-interagir-librement/enums) · ✅ released ([Packagist](https://packagist.org/packages/phil/enums)) — Traits and attributes to list, compare, describe and group PHP enums (formerly `ph-il/enums`)
+- [`phil/enums-bundle`](https://github.com/parler-haut-interagir-librement/enums-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/enums-bundle)) — Enums in Symfony forms, translations, Twig, validation, Doctrine and API contracts
+- [`phil/resource`](https://github.com/parler-haut-interagir-librement/resource) · ✅ released ([Packagist](https://packagist.org/packages/phil/resource)) — Point at any record by its kind and identifier, such as `page:42`
+- [`phil/ddd-bundle`](https://github.com/parler-haut-interagir-librement/ddd-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/ddd-bundle)) — Shared domain types: identifiers, domain events, errors, command and query buses
+- [`phil/slug`](https://github.com/parler-haut-interagir-librement/slug) · ✅ released ([Packagist](https://packagist.org/packages/phil/slug)) — URL slugs from titles and names, as a type that accepts nothing else
+- [`phil/slug-bundle`](https://github.com/parler-haut-interagir-librement/slug-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/slug-bundle)) — Named sluggers declared in configuration, autowired and usable in Twig
+- [`phil/recurrence`](https://github.com/parler-haut-interagir-librement/recurrence) · ✅ released ([Packagist](https://packagist.org/packages/phil/recurrence)) — Repeating dates from RFC 5545 rules: read, check, write, list occurrences
+- [`phil/recurrence-bundle`](https://github.com/parler-haut-interagir-librement/recurrence-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/recurrence-bundle)) — A form for repeating events, a column for the rule, and the rule in words
+- [`phil/standard-webhooks`](https://github.com/parler-haut-interagir-librement/standard-webhooks) · ✅ released ([Packagist](https://packagist.org/packages/phil/standard-webhooks)) — Sign and verify webhooks to the Standard Webhooks specification
+- [`phil/standard-webhooks-bundle`](https://github.com/parler-haut-interagir-librement/standard-webhooks-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/standard-webhooks-bundle)) — Verified webhook deliveries as controller arguments, and signed webhooks sent
+- [`phil/circuit-breaker`](https://github.com/parler-haut-interagir-librement/circuit-breaker) · ✅ released ([Packagist](https://packagist.org/packages/phil/circuit-breaker)) — One circuit breaker for HTTP clients and feature flags
+- [`phil/circuit-breaker-bundle`](https://github.com/parler-haut-interagir-librement/circuit-breaker-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/circuit-breaker-bundle)) — One circuit breaker wired into Symfony HTTP clients and feature flags
 - `phil/doctrine-behaviours` · 🧪 55% — Opt-in timestamps, blame, soft delete and trees for Doctrine entities
 - `phil/doctrine-behaviours-bundle` · 🧪 60% — Entity behaviours switched on by configuration in Symfony
-- `phil/slug` · 🧪 95% — URL slugs from titles and names, as a type that accepts nothing else
-- `phil/slug-bundle` · 🧪 95% — Named sluggers declared in configuration, autowired and usable in Twig
 - `phil/url` · 🧪 95% — Web addresses as normalised values, their kind detected: Mastodon, YouTube, a website
 - `phil/url-bundle` · 🧪 95% — Link fields that detect their kind, a constraint, a column type and Twig filters
 - `phil/references-bundle` · 🧪 95% — Know where each resource is used, and refuse to delete one still needed
 - `phil/trash-bundle` · 🧪 95% — A trash for deleted resources: restore them, or purge them after a set time
-- `phil/recurrence` · 🧪 95% — Repeating dates from RFC 5545 rules: read, check, write, list occurrences
-- `phil/recurrence-bundle` · 🧪 95% — A form for repeating events, a column for the rule, and the rule in words
 - `phil/almanac` · 🧪 85% — Easter, Moon phases, seasons and dates in words, for any year
 - `phil/almanac-bundle` · 🧪 90% — Holidays and computed dates in configuration, editable, shown in Twig
-- `phil/scheduler-bundle` · 🧪 95% — Publish and unpublish on a schedule, with nobody online
+- `phil/scheduled-transitions-bundle` · 🧪 95% — Publish and unpublish on a schedule, with nobody online
 - `phil/tenancy-bundle` · 🧪 65% — Which tenant an account acts in, switched instantly and enforced in every query
 - `phil/feature-flags-bundle` · 🧪 90% — Turn features off without a deploy, run A/B tests, stop calling a failing service
 - `phil/usage-meter` · 🧪 90% — Measure what each subject used and refuse an action past its quota
 - `phil/http-cache-tags-bundle` · 🧪 95% — Cache whole pages in Varnish or a CDN, purge exactly what an edit changed
 - `phil/api-contract` · 🧪 70% — Problem details, deprecation signals and idempotency keys for HTTP APIs
 - `phil/api-contract-bundle` · 🧪 90% — Problem details, replayed idempotent requests and deprecation notices in Symfony
-- `phil/standard-webhooks` · 🧪 90% — Sign and verify webhooks to the Standard Webhooks specification
-- `phil/standard-webhooks-bundle` · 🧪 90% — Verified webhook deliveries as controller arguments, and signed webhooks sent
 - `phil/usage-meter-bundle` · 🧪 93% — Usage meters stored with DBAL, rate limiters and purge commands
 - `phil/encrypted-fields` · 🧪 92% — Doctrine columns encrypted with libsodium, blind indexes, key rotation
 - `phil/encrypted-fields-bundle` · 🧪 85% — Encrypted fields configured in Symfony, keys in Symfony secrets or a KMS
-- `phil/circuit-breaker` · 🧪 95% — One circuit breaker for HTTP clients and feature flags
-- `phil/circuit-breaker-bundle` · 🧪 90% — One circuit breaker wired into Symfony HTTP clients and feature flags
 - `phil/rate-limit-bundle` · 🧪 92% — Rate limits declared by attribute on routes, forms and APIs
 - `phil/api-keys-bundle` · 🧪 88% — Personal access tokens for a public API: scopes, expiry, revocation, quotas
 - `phil/idempotency` · 🗓️ planned — Idempotency keys for APIs, Messenger, payment webhooks and double form posts
@@ -180,19 +184,20 @@ latest status report ((8 November 2026)). The only released package is published
 </details>
 
 <details>
-<summary><b>Content &amp; text</b> — 🧪 21 · 🗓️ 20</summary>
+<summary><b>Content &amp; text</b> — ✅ 6 · 🧪 15 · 🗓️ 20</summary>
 
+- [`phil/ujo`](https://github.com/parler-haut-interagir-librement/ujo) · ✅ released ([Packagist](https://packagist.org/packages/phil/ujo)) — UJO (Universal JSON Output) documents read strictly, checked block by block, rendered as safe HTML
+- [`phil/ujo-bundle`](https://github.com/parler-haut-interagir-librement/ujo-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/ujo-bundle)) — UJO (Universal JSON Output) documents in Doctrine, forms and Twig
+- [`phil/text-diff`](https://github.com/parler-haut-interagir-librement/text-diff) · ✅ released ([Packagist](https://packagist.org/packages/phil/text-diff)) — What changed between two texts, word by word, paragraph by paragraph or block by block
+- [`phil/highlight`](https://github.com/parler-haut-interagir-librement/highlight) · ✅ released ([Packagist](https://packagist.org/packages/phil/highlight)) — Code in 24 languages coloured on the server, as plain HTML any stylesheet can theme
+- [`phil/css-sanitizer`](https://github.com/parler-haut-interagir-librement/css-sanitizer) · ✅ released ([Packagist](https://packagist.org/packages/phil/css-sanitizer)) — Let people style their pages without their CSS running code, loading what it should not, or leaving its frame
+- [`phil/highlight-bundle`](https://github.com/parler-haut-interagir-librement/highlight-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/highlight-bundle)) — Highlighting wired into UJO (Universal JSON Output) rendering and Twig, with a theme
 - `phil/content-bundle` · 🧪 88% — Pages and articles stored by locale, stage and version, published from draft to live
-- `phil/ujo` · 🧪 97% — UJO (Universal JSON Output) documents read strictly, checked block by block, rendered as safe HTML
-- `phil/ujo-bundle` · 🧪 95% — UJO (Universal JSON Output) documents in Doctrine, forms and Twig
 - `phil/markup` · 🧪 87% — Markdown, BBCode, MediaWiki, DokuWiki, Creole, HTML or plain text turned into safe HTML
 - `phil/markup-bundle` · 🧪 93% — Markup formats rendered safely in Twig and converted to UJO (Universal JSON Output), as Symfony services
 - `phil/block-editor-bundle` · 🧪 90% — A block editor for Symfony forms in Stimulus, writing UJO (Universal JSON Output) checked on the server
 - `phil/edit-lock-bundle` · 🧪 94% — One writer per block: edit leases, presence and saves pushed through Mercure
 - `phil/comments-bundle` · 🧪 83% — Comments and suggested changes anchored to passages, following the text as it changes
-- `phil/text-diff` · 🧪 92% — What changed between two texts, word by word, paragraph by paragraph or block by block
-- `phil/highlight` · 🧪 85% — Code in 24 languages coloured on the server, as plain HTML any stylesheet can theme
-- `phil/css-sanitizer` · 🧪 85% — Let people style their pages without their CSS running code, loading what it should not, or leaving its frame
 - `phil/taxonomy-bundle` · 🧪 95% — Tags and a translated category tree for any resource, with form types
 - `phil/svg-sanitizer` · 🧪 94% — Purify SVG: allow-list of elements and attributes, no script, no external reference
 - `phil/latex-mathml` · 🧪 80% — LaTeX formulas turned into the MathML that browsers draw, on the server
@@ -200,7 +205,6 @@ latest status report ((8 November 2026)). The only released package is published
 - `phil/svg-blocks` · 🧪 90% — Formulas, diagrams, charts and QR codes of block documents drawn once, on the server
 - `phil/svg-blocks-bundle` · 🧪 85% — Block drawings made on save in Symfony, with Mermaid in a container
 - `phil/text-diff-bundle` · 🧪 90% — Text comparison in Twig and Stimulus
-- `phil/highlight-bundle` · 🧪 90% — Highlighting wired into UJO (Universal JSON Output) rendering and Twig, with a theme
 - `phil/content-warnings` · 🧪 95% — Content warnings for games, books, articles and events, with a translated base list
 - `phil/content-warnings-bundle` · 🧪 90% — Content warnings in forms, pages and filters
 - `phil/wiki-bundle` · 🗓️ planned — A collaborative wiki: pages, compared revisions, `[[links]]`, block locks
@@ -227,20 +231,21 @@ latest status report ((8 November 2026)). The only released package is published
 </details>
 
 <details>
-<summary><b>Languages, translation &amp; typography</b> — 🧪 4 · 🗓️ 2</summary>
+<summary><b>Languages, translation &amp; typography</b> — ✅ 2 · 🧪 2 · 🗓️ 2</summary>
 
+- [`phil/typography`](https://github.com/parler-haut-interagir-librement/typography) · ✅ released ([Packagist](https://packagist.org/packages/phil/typography)) — Real quotes, dashes, French spaces and soft hyphens in your HTML, in every language
+- [`phil/typography-bundle`](https://github.com/parler-haut-interagir-librement/typography-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/typography-bundle)) — Typography everywhere a Symfony application prints text
 - `phil/translation-bundle` · 🧪 83% — A translation screen: segments that survive edits, a memory and a checking glossary
 - `phil/translation-memory` · 🧪 87% — Segment-by-segment translation that reuses past work and keeps terms consistent
-- `phil/typography` · 🧪 89% — Real quotes, dashes, French spaces and soft hyphens in your HTML, in every language
-- `phil/typography-bundle` · 🧪 92% — Typography everywhere a Symfony application prints text
 - `phil/machine-translation` · 🗓️ planned — Machine-suggested translations, always reviewed
 - `phil/translation-ui` · 🗓️ planned — The screen for translating a site's content and messages
 
 </details>
 
 <details>
-<summary><b>Media, documents &amp; print</b> — 🧪 14 · 🗓️ 11</summary>
+<summary><b>Media, documents &amp; print</b> — ✅ 1 · 🧪 13 · 🗓️ 11</summary>
 
+- [`phil/qr-code`](https://github.com/parler-haut-interagir-librement/qr-code) · ✅ released ([Packagist](https://packagist.org/packages/phil/qr-code)) — QR codes written from scratch, Reed-Solomon included, in SVG and PNG
 - `phil/media-bundle` · 🧪 80% — Uploaded files and images, described, versioned and served at signed URLs
 - `phil/document-import` · 🧪 73% — Word-processing documents, Markdown and HTML turned into UJO (Universal JSON Output), with a report of what did not fit
 - `phil/epub` · 🧪 85% — EPUB 3 books from your HTML, valid for EPUBCheck and readable by assistive technologies
@@ -253,7 +258,6 @@ latest status report ((8 November 2026)). The only released package is published
 - `phil/epub-bundle` · 🧪 95% — EPUB generation in Symfony
 - `phil/print-preflight-bundle` · 🧪 90% — Preflight wired into PDF generation
 - `phil/print-compositor` · 🧪 90% — Garment mock-ups and print files, one layer per ink
-- `phil/qr-code` · 🧪 98% — QR codes written from scratch, Reed-Solomon included, in SVG and PNG
 - `phil/qr-code-bundle` · 🧪 88% — QR codes in Twig, routes and typed contents (URL, vCard, Wi-Fi, iCalendar)
 - `phil/gallery-bundle` · 🗓️ planned — Photo galleries by album and by event
 - `phil/video-bundle` · 🗓️ planned — Hosted or linked videos, subtitles and chapters
@@ -297,12 +301,12 @@ latest status report ((8 November 2026)). The only released package is published
 </details>
 
 <details>
-<summary><b>Identity, access &amp; security</b> — 🧪 10 · 🗓️ 10</summary>
+<summary><b>Identity, access &amp; security</b> — ✅ 3 · 🧪 7 · 🗓️ 10</summary>
 
+- [`phil/bot-detection-bundle`](https://github.com/parler-haut-interagir-librement/bot-detection-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/bot-detection-bundle)) — Tell a robot from a human in the browser, without a CAPTCHA
+- [`phil/spam-protection`](https://github.com/parler-haut-interagir-librement/spam-protection) · ✅ released ([Packagist](https://packagist.org/packages/phil/spam-protection)) — Spot spam in a form submission without a CAPTCHA, in plain PHP
+- [`phil/spam-protection-bundle`](https://github.com/parler-haut-interagir-librement/spam-protection-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/spam-protection-bundle)) — Keep spam out of Symfony forms without a CAPTCHA, a third party or an identifier
 - `phil/user-secrets-bundle` · 🧪 80% — Keys people lend your application, sealed and theirs alone
-- `phil/bot-detection-bundle` · 🧪 90% — Tell a robot from a human in the browser, without a CAPTCHA
-- `phil/spam-protection` · 🧪 95% — Spot spam in a form submission without a CAPTCHA, in plain PHP
-- `phil/spam-protection-bundle` · 🧪 95% — Keep spam out of Symfony forms without a CAPTCHA, a third party or an identifier
 - `phil/passwords` · 🧪 90% — A strength meter written from scratch, k-anonymous breach checks, generation
 - `phil/csp-bundle` · 🧪 92% — Content Security Policy with nonces and reports
 - `phil/route-access-check` · 🧪 90% — Fail CI when a route has no access rule
@@ -444,10 +448,10 @@ latest status report ((8 November 2026)). The only released package is published
 </details>
 
 <details>
-<summary><b>Commerce</b> — 🧪 14 · 🗓️ 20</summary>
+<summary><b>Commerce</b> — ✅ 2 · 🧪 12 · 🗓️ 20</summary>
 
-- `phil/money` · 🧪 95% — Amounts of money as exact integers in a known currency, with no float anywhere
-- `phil/money-bundle` · 🧪 95% — Money in Symfony forms, validation, Twig and Doctrine, without floats
+- [`phil/money`](https://github.com/parler-haut-interagir-librement/money) · ✅ released ([Packagist](https://packagist.org/packages/phil/money)) — Amounts of money as exact integers in a known currency, with no float anywhere
+- [`phil/money-bundle`](https://github.com/parler-haut-interagir-librement/money-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/money-bundle)) — Money in Symfony forms, validation, Twig and Doctrine, without floats
 - `phil/tax` · 🧪 95% — Several taxes on one sale, itemised to the cent
 - `phil/commerce-bundle` · 🧪 87% — Orders, prices, taxes, payments and receipts for a Symfony store, with modules on top
 - `phil/commerce-catalog-bundle` · 🧪 55% — Products, price books and promotions
@@ -484,12 +488,12 @@ latest status report ((8 November 2026)). The only released package is published
 </details>
 
 <details>
-<summary><b>Places, contacts &amp; directories</b> — 🧪 12 · 🗓️ 4</summary>
+<summary><b>Places, contacts &amp; directories</b> — ✅ 2 · 🧪 10 · 🗓️ 4</summary>
 
+- [`phil/phone`](https://github.com/parler-haut-interagir-librement/phone) · ✅ released ([Packagist](https://packagist.org/packages/phil/phone)) — Phone numbers read as typed, checked against their country's plan, and formatted
+- [`phil/phone-bundle`](https://github.com/parler-haut-interagir-librement/phone-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/phone-bundle)) — A phone field, a constraint, a column type and Twig filters
 - `phil/address` · 🧪 95% — Postal addresses checked and written the way each country writes them
 - `phil/address-bundle` · 🧪 95% — An address form whose fields follow the chosen country
-- `phil/phone` · 🧪 95% — Phone numbers read as typed, checked against their country's plan, and formatted
-- `phil/phone-bundle` · 🧪 95% — A phone field, a constraint, a column type and Twig filters
 - `phil/contact` · 🧪 85% — Contact cards for people and organisations, as vCard or JSON-LD
 - `phil/contact-bundle` · 🧪 95% — A contact card form, a JSON column and vCard downloads
 - `phil/contact-form-bundle` · 🧪 95% — A "write to us" page, protected from spam without a CAPTCHA
@@ -611,8 +615,8 @@ Les paquets de jeu et de ludification — dés, générateurs, points, badges, q
 Boutiques, conventions, clubs, éditeurs et communautés en ligne ont sans cesse besoin des mêmes briques : un
 catalogue et une caisse, un calendrier, un forum, une infolettre, une politique de confidentialité vraiment
 appliquée. Nous préférons écrire chaque brique une fois, avec soin et à découvert, plutôt que recoller les mêmes
-morceaux sur chaque site. Et nous préférons vous dire franchement où en est chacune : **aujourd'hui, un paquet est
-publié ; les autres sont en écriture ou prévus.**
+morceaux sur chaque site. Et nous préférons vous dire franchement où en est chacune : **aujourd'hui, 28 paquets
+sont publiés ; les autres sont en écriture ou prévus, et suivent par petits groupes quotidiens.**
 
 ### Principes
 
@@ -651,8 +655,8 @@ publié ; les autres sont en écriture ou prévus.**
 - **L'incubation.** Les nouveaux paquets s'écrivent dans un monodépôt privé, `phil-prerelease`, l'incubateur
   permanent, où un changement qui touche plusieurs paquets se fait et se teste d'un coup.
 - **La sortie.** Un paquet fini passe au monodépôt public
-  [`parler-haut-interagir-librement/phil`](https://github.com/parler-haut-interagir-librement/phil) (pas encore
-  créé), d'où chaque paquet est scindé dans son propre dépôt en lecture seule et publié sur
+  [`parler-haut-interagir-librement/phil`](https://github.com/parler-haut-interagir-librement/phil), où il est
+  développé ensuite, et d'où chaque paquet est scindé dans son propre dépôt en lecture seule et publié sur
   [Packagist](https://packagist.org).
 - **Les versions.** Versionnage sémantique ; chaque paquet tient un fichier [Keep a Changelog](https://keepachangelog.com).
 
@@ -690,8 +694,8 @@ le kit Shadcn : gardez Tailwind si vous l'aimez.
 - **`phil/dev-tools`** — les configurations partagées de PHP-CS-Fixer, PHPStan, Rector, Deptrac, Arkitect, Infection,
   PHPUnit et PHPBench ; les scripts Composer qui les lancent ; les vérifications de la documentation ; de vrais
   serveurs MySQL, PostgreSQL et Gotenberg en Docker pour les tests d'intégration ; des enregistrements HTTP rejouables ;
-  la matrice des versions de PHP et de Symfony ; et le squelette d'un nouveau paquet. Écrit et en usage ; à publier ici
-  sous licence MIT.
+  la matrice des versions de PHP et de Symfony ; et le squelette d'un nouveau paquet. Publié sous licence MIT :
+  [dev-tools](https://github.com/parler-haut-interagir-librement/dev-tools).
 - **Les squelettes de projet** — [MicroSymfony](https://github.com/parler-haut-interagir-librement/MicroSymfony)
   (issu de `strangebuzz/MicroSymfony`) et [WebSymfony](https://github.com/parler-haut-interagir-librement/WebSymfony).
 
@@ -699,44 +703,47 @@ le kit Shadcn : gardez Tailwind si vous l'aimez.
 
 ✅ **publié** · 🧪 **écrit, en incubation** (avancement approximatif) · 🗓️ **prévu**
 
-**339 paquets :** 1 publié, 154 en incubation, 184 prévus. Les pourcentages sont des estimations
-tirées de notre dernier rapport d'avancement ((8 novembre 2026)). Le seul paquet publié l'est sur Packagist sous
-[`ph-il/enums`](https://packagist.org/packages/ph-il/enums) ; il se poursuivra sous `phil/enums`.
+**339 paquets :** 28 publiés, 127 en incubation, 184 prévus. Les pourcentages sont des estimations
+tirées de notre dernier rapport d'avancement (8 novembre 2026). Les paquets publiés sont développés dans le monodépôt
+public [`phil`](https://github.com/parler-haut-interagir-librement/phil), scindés chacun dans son propre dépôt en
+lecture seule et publiés sur Packagist ; `phil/enums` poursuit
+[`ph-il/enums`](https://packagist.org/packages/ph-il/enums). **La vitrine se poursuit par petits groupes
+quotidiens** de deux à quatre paquets, les dépendances d'abord.
 `phil/identity-provider-*` désigne un paquet par fournisseur de connexion.
 
 <details>
-<summary><b>Données et infrastructure</b> — ✅ 1 · 🧪 31 · 🗓️ 9</summary>
+<summary><b>Données et infrastructure</b> — ✅ 12 · 🧪 20 · 🗓️ 9</summary>
 
-- `phil/enums` · ✅ publié — Traits et attributs pour lister, comparer, décrire et regrouper les enums PHP (publié sous `ph-il/enums`)
-- `phil/enums-bundle` · 🧪 95 % — Les enums dans les formulaires, traductions, Twig, la validation, Doctrine et les contrats d'API de Symfony
-- `phil/resource` · 🧪 100 % — Désigner n'importe quel enregistrement par sa sorte et son identifiant, comme `page:42`
-- `phil/ddd-bundle` · 🧪 80 % — Types de domaine communs : identifiants, événements, erreurs, bus de commandes et de requêtes
+- [`phil/enums`](https://github.com/parler-haut-interagir-librement/enums) · ✅ publié ([Packagist](https://packagist.org/packages/phil/enums)) — Traits et attributs pour lister, comparer, décrire et regrouper les enums PHP (anciennement `ph-il/enums`)
+- [`phil/enums-bundle`](https://github.com/parler-haut-interagir-librement/enums-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/enums-bundle)) — Les enums dans les formulaires, traductions, Twig, la validation, Doctrine et les contrats d'API de Symfony
+- [`phil/resource`](https://github.com/parler-haut-interagir-librement/resource) · ✅ publié ([Packagist](https://packagist.org/packages/phil/resource)) — Désigner n'importe quel enregistrement par sa sorte et son identifiant, comme `page:42`
+- [`phil/ddd-bundle`](https://github.com/parler-haut-interagir-librement/ddd-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/ddd-bundle)) — Types de domaine communs : identifiants, événements, erreurs, bus de commandes et de requêtes
+- [`phil/slug`](https://github.com/parler-haut-interagir-librement/slug) · ✅ publié ([Packagist](https://packagist.org/packages/phil/slug)) — Des slugs d'URL tirés des titres et des noms, en type qui n'accepte rien d'autre
+- [`phil/slug-bundle`](https://github.com/parler-haut-interagir-librement/slug-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/slug-bundle)) — Des générateurs de slugs nommés en configuration, injectés et utilisables dans Twig
+- [`phil/recurrence`](https://github.com/parler-haut-interagir-librement/recurrence) · ✅ publié ([Packagist](https://packagist.org/packages/phil/recurrence)) — Des dates répétées par les règles RFC 5545 : lire, vérifier, écrire, énumérer les occurrences
+- [`phil/recurrence-bundle`](https://github.com/parler-haut-interagir-librement/recurrence-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/recurrence-bundle)) — Un formulaire d'événements répétés, une colonne pour la règle, et la règle en toutes lettres
+- [`phil/standard-webhooks`](https://github.com/parler-haut-interagir-librement/standard-webhooks) · ✅ publié ([Packagist](https://packagist.org/packages/phil/standard-webhooks)) — Signer et vérifier des webhooks selon la spécification Standard Webhooks
+- [`phil/standard-webhooks-bundle`](https://github.com/parler-haut-interagir-librement/standard-webhooks-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/standard-webhooks-bundle)) — Les livraisons de webhooks vérifiées en arguments de contrôleur, et l'envoi de webhooks signés
+- [`phil/circuit-breaker`](https://github.com/parler-haut-interagir-librement/circuit-breaker) · ✅ publié ([Packagist](https://packagist.org/packages/phil/circuit-breaker)) — Un seul disjoncteur pour les clients HTTP et les drapeaux de fonctions
+- [`phil/circuit-breaker-bundle`](https://github.com/parler-haut-interagir-librement/circuit-breaker-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/circuit-breaker-bundle)) — Le disjoncteur branché dans les clients HTTP et les drapeaux de fonctions de Symfony
 - `phil/doctrine-behaviours` · 🧪 55 % — Horodatage, auteur, suppression douce et arbres pour les entités Doctrine, chacun sur option
 - `phil/doctrine-behaviours-bundle` · 🧪 60 % — Les comportements d'entité activés par configuration dans Symfony
-- `phil/slug` · 🧪 95 % — Des slugs d'URL tirés des titres et des noms, en type qui n'accepte rien d'autre
-- `phil/slug-bundle` · 🧪 95 % — Des générateurs de slugs nommés en configuration, injectés et utilisables dans Twig
 - `phil/url` · 🧪 95 % — Des adresses Web en valeurs normalisées, leur sorte détectée : Mastodon, YouTube, un site
 - `phil/url-bundle` · 🧪 95 % — Des champs de lien qui détectent leur sorte, une contrainte, un type de colonne et des filtres Twig
 - `phil/references-bundle` · 🧪 95 % — Savoir où chaque ressource est employée, et refuser d'effacer celle qui sert encore
 - `phil/trash-bundle` · 🧪 95 % — Une corbeille pour les ressources effacées : les restaurer, ou les purger après un délai
-- `phil/recurrence` · 🧪 95 % — Des dates répétées par les règles RFC 5545 : lire, vérifier, écrire, énumérer les occurrences
-- `phil/recurrence-bundle` · 🧪 95 % — Un formulaire d'événements répétés, une colonne pour la règle, et la règle en toutes lettres
 - `phil/almanac` · 🧪 85 % — Pâques, phases de la Lune, saisons et dates en toutes lettres, pour toute année
 - `phil/almanac-bundle` · 🧪 90 % — Fériés et dates calculées en configuration, modifiables, montrés dans Twig
-- `phil/scheduler-bundle` · 🧪 95 % — Publier et retirer à heure fixe, sans personne en ligne
+- `phil/scheduled-transitions-bundle` · 🧪 95 % — Publier et retirer à heure fixe, sans personne en ligne
 - `phil/tenancy-bundle` · 🧪 65 % — Le locataire où agit un compte, changé à l'instant et appliqué à chaque requête
 - `phil/feature-flags-bundle` · 🧪 90 % — Couper une fonction sans déploiement, mener un test A/B, cesser d'appeler un service en panne
 - `phil/usage-meter` · 🧪 90 % — Mesurer ce que chacun a consommé et refuser une action au-delà de son quota
 - `phil/http-cache-tags-bundle` · 🧪 95 % — Mettre des pages entières en cache Varnish ou CDN, purger exactement ce qu'une modification change
 - `phil/api-contract` · 🧪 70 % — Détails de problème, signaux de dépréciation et clés d'idempotence pour les API HTTP
 - `phil/api-contract-bundle` · 🧪 90 % — Détails de problème, requêtes idempotentes rejouées et avis de dépréciation dans Symfony
-- `phil/standard-webhooks` · 🧪 90 % — Signer et vérifier des webhooks selon la spécification Standard Webhooks
-- `phil/standard-webhooks-bundle` · 🧪 90 % — Les livraisons de webhooks vérifiées en arguments de contrôleur, et l'envoi de webhooks signés
 - `phil/usage-meter-bundle` · 🧪 93 % — Compteurs d'usage stockés par DBAL, limiteurs de débit et commandes de purge
 - `phil/encrypted-fields` · 🧪 92 % — Colonnes Doctrine chiffrées par libsodium, index aveugles, rotation des clés
 - `phil/encrypted-fields-bundle` · 🧪 85 % — Les champs chiffrés configurés dans Symfony, clés dans les secrets ou un KMS
-- `phil/circuit-breaker` · 🧪 95 % — Un seul disjoncteur pour les clients HTTP et les drapeaux de fonctions
-- `phil/circuit-breaker-bundle` · 🧪 90 % — Le disjoncteur branché dans les clients HTTP et les drapeaux de fonctions de Symfony
 - `phil/rate-limit-bundle` · 🧪 92 % — Limites de débit déclarées par attribut sur les routes, formulaires et API
 - `phil/api-keys-bundle` · 🧪 88 % — Jetons d'accès personnels pour une API publique : portées, expiration, révocation, quotas
 - `phil/idempotency` · 🗓️ prévu — Clés d'idempotence pour les API, Messenger, les webhooks de paiement et les doubles envois
@@ -752,19 +759,20 @@ tirées de notre dernier rapport d'avancement ((8 novembre 2026)). Le seul paque
 </details>
 
 <details>
-<summary><b>Contenu et texte</b> — 🧪 21 · 🗓️ 20</summary>
+<summary><b>Contenu et texte</b> — ✅ 6 · 🧪 15 · 🗓️ 20</summary>
 
+- [`phil/ujo`](https://github.com/parler-haut-interagir-librement/ujo) · ✅ publié ([Packagist](https://packagist.org/packages/phil/ujo)) — Des documents UJO (Universal JSON Output) lus strictement, vérifiés bloc par bloc, rendus en HTML sûr
+- [`phil/ujo-bundle`](https://github.com/parler-haut-interagir-librement/ujo-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/ujo-bundle)) — Les documents UJO (Universal JSON Output) dans Doctrine, les formulaires et Twig
+- [`phil/text-diff`](https://github.com/parler-haut-interagir-librement/text-diff) · ✅ publié ([Packagist](https://packagist.org/packages/phil/text-diff)) — Ce qui a changé entre deux textes, mot à mot, paragraphe par paragraphe ou bloc par bloc
+- [`phil/highlight`](https://github.com/parler-haut-interagir-librement/highlight) · ✅ publié ([Packagist](https://packagist.org/packages/phil/highlight)) — Du code en 24 langages coloré au serveur, en HTML simple que toute feuille de style habille
+- [`phil/css-sanitizer`](https://github.com/parler-haut-interagir-librement/css-sanitizer) · ✅ publié ([Packagist](https://packagist.org/packages/phil/css-sanitizer)) — Laisser les gens habiller leurs pages sans que leur CSS exécute du code, charge ce qu'il ne doit pas ou sorte de son cadre
+- [`phil/highlight-bundle`](https://github.com/parler-haut-interagir-librement/highlight-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/highlight-bundle)) — La coloration branchée dans le rendu UJO (Universal JSON Output) et dans Twig, avec un thème
 - `phil/content-bundle` · 🧪 88 % — Pages et articles gardés par langue, étape et version, publiés du brouillon à la mise en ligne
-- `phil/ujo` · 🧪 97 % — Des documents UJO (Universal JSON Output) lus strictement, vérifiés bloc par bloc, rendus en HTML sûr
-- `phil/ujo-bundle` · 🧪 95 % — Les documents UJO (Universal JSON Output) dans Doctrine, les formulaires et Twig
 - `phil/markup` · 🧪 87 % — Markdown, BBCode, MediaWiki, DokuWiki, Creole, HTML ou texte brut rendus en HTML sûr
 - `phil/markup-bundle` · 🧪 93 % — Les formats de balisage rendus sans danger dans Twig et convertis en UJO (Universal JSON Output), en services Symfony
 - `phil/block-editor-bundle` · 🧪 90 % — Un éditeur par blocs pour les formulaires Symfony, en Stimulus, qui écrit de l'UJO (Universal JSON Output) vérifié au serveur
 - `phil/edit-lock-bundle` · 🧪 94 % — Un seul rédacteur par bloc : baux d'édition, présence et enregistrements poussés par Mercure
 - `phil/comments-bundle` · 🧪 83 % — Commentaires et suggestions ancrés à des passages, qui suivent le texte quand il change
-- `phil/text-diff` · 🧪 92 % — Ce qui a changé entre deux textes, mot à mot, paragraphe par paragraphe ou bloc par bloc
-- `phil/highlight` · 🧪 85 % — Du code en 24 langages coloré au serveur, en HTML simple que toute feuille de style habille
-- `phil/css-sanitizer` · 🧪 85 % — Laisser les gens habiller leurs pages sans que leur CSS exécute du code, charge ce qu'il ne doit pas ou sorte de son cadre
 - `phil/taxonomy-bundle` · 🧪 95 % — Étiquettes et arbre de catégories traduit pour toute ressource, avec leurs types de formulaire
 - `phil/svg-sanitizer` · 🧪 94 % — Purifier le SVG : liste blanche d'éléments et d'attributs, ni script ni référence externe
 - `phil/latex-mathml` · 🧪 80 % — Des formules LaTeX converties, au serveur, en MathML que les navigateurs dessinent
@@ -772,7 +780,6 @@ tirées de notre dernier rapport d'avancement ((8 novembre 2026)). Le seul paque
 - `phil/svg-blocks` · 🧪 90 % — Les formules, schémas, graphiques et codes QR des documents par blocs, dessinés une fois au serveur
 - `phil/svg-blocks-bundle` · 🧪 85 % — Les dessins des blocs faits à l'enregistrement dans Symfony, Mermaid dans un conteneur
 - `phil/text-diff-bundle` · 🧪 90 % — La comparaison de textes dans Twig et Stimulus
-- `phil/highlight-bundle` · 🧪 90 % — La coloration branchée dans le rendu UJO (Universal JSON Output) et dans Twig, avec un thème
 - `phil/content-warnings` · 🧪 95 % — Avertissements de contenu pour jeux, livres, articles et événements, sur une liste de base traduite
 - `phil/content-warnings-bundle` · 🧪 90 % — Les avertissements de contenu dans les formulaires, les pages et les filtres
 - `phil/wiki-bundle` · 🗓️ prévu — Un wiki collaboratif : pages, révisions comparées, liens `[[ ]]`, verrous par bloc
@@ -799,20 +806,21 @@ tirées de notre dernier rapport d'avancement ((8 novembre 2026)). Le seul paque
 </details>
 
 <details>
-<summary><b>Langues, traduction et typographie</b> — 🧪 4 · 🗓️ 2</summary>
+<summary><b>Langues, traduction et typographie</b> — ✅ 2 · 🧪 2 · 🗓️ 2</summary>
 
+- [`phil/typography`](https://github.com/parler-haut-interagir-librement/typography) · ✅ publié ([Packagist](https://packagist.org/packages/phil/typography)) — Vrais guillemets, tirets, espaces françaises et césure dans votre HTML, dans toutes les langues
+- [`phil/typography-bundle`](https://github.com/parler-haut-interagir-librement/typography-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/typography-bundle)) — La typographie partout où une application Symfony écrit du texte
 - `phil/translation-bundle` · 🧪 83 % — Un écran de traduction : segments qui survivent aux modifications, mémoire et glossaire qui vérifie
 - `phil/translation-memory` · 🧪 87 % — Traduction par segments qui réutilise l'acquis et garde les termes constants
-- `phil/typography` · 🧪 89 % — Vrais guillemets, tirets, espaces françaises et césure dans votre HTML, dans toutes les langues
-- `phil/typography-bundle` · 🧪 92 % — La typographie partout où une application Symfony écrit du texte
 - `phil/machine-translation` · 🗓️ prévu — Des traductions proposées par la machine, toujours relues
 - `phil/translation-ui` · 🗓️ prévu — L'interface de traduction des contenus et des messages d'un site
 
 </details>
 
 <details>
-<summary><b>Médias, documents et impression</b> — 🧪 14 · 🗓️ 11</summary>
+<summary><b>Médias, documents et impression</b> — ✅ 1 · 🧪 13 · 🗓️ 11</summary>
 
+- [`phil/qr-code`](https://github.com/parler-haut-interagir-librement/qr-code) · ✅ publié ([Packagist](https://packagist.org/packages/phil/qr-code)) — Des codes QR écrits de zéro, Reed-Solomon compris, en SVG et PNG
 - `phil/media-bundle` · 🧪 80 % — Fichiers et images téléversés, décrits, versionnés et servis à des URL signées
 - `phil/document-import` · 🧪 73 % — Documents de traitement de texte, Markdown et HTML convertis en UJO (Universal JSON Output), avec le relevé de ce qui n'a pas passé
 - `phil/epub` · 🧪 85 % — Des livres EPUB 3 tirés de votre HTML, valides pour EPUBCheck et lisibles par les aides techniques
@@ -825,7 +833,6 @@ tirées de notre dernier rapport d'avancement ((8 novembre 2026)). Le seul paque
 - `phil/epub-bundle` · 🧪 95 % — La génération d'EPUB dans Symfony
 - `phil/print-preflight-bundle` · 🧪 90 % — Le contrôle prépresse branché dans la génération de PDF
 - `phil/print-compositor` · 🧪 90 % — Maquettes de vêtements et fichiers d'impression, une couche par encre
-- `phil/qr-code` · 🧪 98 % — Des codes QR écrits de zéro, Reed-Solomon compris, en SVG et PNG
 - `phil/qr-code-bundle` · 🧪 88 % — Les codes QR dans Twig, les routes et les contenus typés (URL, vCard, Wi-Fi, iCalendar)
 - `phil/gallery-bundle` · 🗓️ prévu — Des galeries de photos par album et par événement
 - `phil/video-bundle` · 🗓️ prévu — Des vidéos hébergées ou liées, sous-titres et chapitres
@@ -869,12 +876,12 @@ tirées de notre dernier rapport d'avancement ((8 novembre 2026)). Le seul paque
 </details>
 
 <details>
-<summary><b>Identité, accès et sécurité</b> — 🧪 10 · 🗓️ 10</summary>
+<summary><b>Identité, accès et sécurité</b> — ✅ 3 · 🧪 7 · 🗓️ 10</summary>
 
+- [`phil/bot-detection-bundle`](https://github.com/parler-haut-interagir-librement/bot-detection-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/bot-detection-bundle)) — Distinguer un robot d'un humain dans le navigateur, sans CAPTCHA
+- [`phil/spam-protection`](https://github.com/parler-haut-interagir-librement/spam-protection) · ✅ publié ([Packagist](https://packagist.org/packages/phil/spam-protection)) — Repérer le pourriel d'un formulaire sans CAPTCHA, en PHP simple
+- [`phil/spam-protection-bundle`](https://github.com/parler-haut-interagir-librement/spam-protection-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/spam-protection-bundle)) — Garder le pourriel hors des formulaires Symfony sans CAPTCHA, ni tiers, ni identifiant
 - `phil/user-secrets-bundle` · 🧪 80 % — Les clés que les gens prêtent à votre application, scellées et à eux seuls
-- `phil/bot-detection-bundle` · 🧪 90 % — Distinguer un robot d'un humain dans le navigateur, sans CAPTCHA
-- `phil/spam-protection` · 🧪 95 % — Repérer le pourriel d'un formulaire sans CAPTCHA, en PHP simple
-- `phil/spam-protection-bundle` · 🧪 95 % — Garder le pourriel hors des formulaires Symfony sans CAPTCHA, ni tiers, ni identifiant
 - `phil/passwords` · 🧪 90 % — Une jauge de robustesse écrite de zéro, vérification des fuites par k-anonymat, génération
 - `phil/csp-bundle` · 🧪 92 % — La politique de sécurité du contenu, ses nonces et ses rapports
 - `phil/route-access-check` · 🧪 90 % — Faire échouer la CI quand une route n'a pas de règle d'accès
@@ -1016,10 +1023,10 @@ tirées de notre dernier rapport d'avancement ((8 novembre 2026)). Le seul paque
 </details>
 
 <details>
-<summary><b>Commerce</b> — 🧪 14 · 🗓️ 20</summary>
+<summary><b>Commerce</b> — ✅ 2 · 🧪 12 · 🗓️ 20</summary>
 
-- `phil/money` · 🧪 95 % — Des montants en entiers exacts dans une devise connue, sans aucun nombre flottant
-- `phil/money-bundle` · 🧪 95 % — L'argent dans les formulaires, la validation, Twig et Doctrine de Symfony, sans flottants
+- [`phil/money`](https://github.com/parler-haut-interagir-librement/money) · ✅ publié ([Packagist](https://packagist.org/packages/phil/money)) — Des montants en entiers exacts dans une devise connue, sans aucun nombre flottant
+- [`phil/money-bundle`](https://github.com/parler-haut-interagir-librement/money-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/money-bundle)) — L'argent dans les formulaires, la validation, Twig et Doctrine de Symfony, sans flottants
 - `phil/tax` · 🧪 95 % — Plusieurs taxes sur une vente, détaillées au cent
 - `phil/commerce-bundle` · 🧪 87 % — Commandes, prix, taxes, paiements et reçus pour une boutique Symfony, avec des modules par-dessus
 - `phil/commerce-catalog-bundle` · 🧪 55 % — Produits, listes de prix et promotions
@@ -1056,12 +1063,12 @@ tirées de notre dernier rapport d'avancement ((8 novembre 2026)). Le seul paque
 </details>
 
 <details>
-<summary><b>Lieux, contacts et répertoires</b> — 🧪 12 · 🗓️ 4</summary>
+<summary><b>Lieux, contacts et répertoires</b> — ✅ 2 · 🧪 10 · 🗓️ 4</summary>
 
+- [`phil/phone`](https://github.com/parler-haut-interagir-librement/phone) · ✅ publié ([Packagist](https://packagist.org/packages/phil/phone)) — Des numéros de téléphone lus comme on les tape, vérifiés selon le plan de leur pays, et formatés
+- [`phil/phone-bundle`](https://github.com/parler-haut-interagir-librement/phone-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/phone-bundle)) — Un champ de téléphone, une contrainte, un type de colonne et des filtres Twig
 - `phil/address` · 🧪 95 % — Des adresses postales vérifiées et écrites comme chaque pays les écrit
 - `phil/address-bundle` · 🧪 95 % — Un formulaire d'adresse dont les champs suivent le pays choisi
-- `phil/phone` · 🧪 95 % — Des numéros de téléphone lus comme on les tape, vérifiés selon le plan de leur pays, et formatés
-- `phil/phone-bundle` · 🧪 95 % — Un champ de téléphone, une contrainte, un type de colonne et des filtres Twig
 - `phil/contact` · 🧪 85 % — Fiches de contact de personnes et d'organisations, en vCard ou JSON-LD
 - `phil/contact-bundle` · 🧪 95 % — Un formulaire de fiche de contact, une colonne JSON et le téléchargement en vCard
 - `phil/contact-form-bundle` · 🧪 95 % — Une page « écrivez-nous », protégée du pourriel sans CAPTCHA
