@@ -20,9 +20,9 @@ messages de commit sont en anglais.*
 For anything larger than a small fix, open an issue or a discussion first, so that we can agree on the shape before
 you spend time on it.
 
-## The from-scratch rule
+## Your own code
 
-Every PHIL package is written from scratch.
+The code of a PHIL package is its own; third-party code enters only as a declared Composer dependency.
 
 - **No third-party code is copied** into a package — not a function, not a snippet, whatever its licence. Other
   projects may be studied for their ideas and their behaviour; the code you submit must be your own.

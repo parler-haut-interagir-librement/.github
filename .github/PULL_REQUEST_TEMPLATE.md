@@ -10,7 +10,7 @@ Closes #
 
 ## Checklist
 
-- [ ] I wrote this code myself; no third-party code is copied (see CONTRIBUTING.md, “The from-scratch rule”).
+- [ ] I wrote this code myself; no third-party code is copied (see CONTRIBUTING.md, “Your own code”).
 - [ ] `composer gates` passes.
 - [ ] Tests cover the change, and Infection reaches 100 % of mutants killed.
 - [ ] The tests pass on the floor PHP and Symfony and on the next ones.
