@@ -31,7 +31,7 @@ PHIL is three things:
   [below](#the-packages).
 - **PHIL UX** (`phil-ux`), the design system: a kit for the Symfony UX Toolkit and a CSS framework. Its site will be
   [ux.ph-il.ca](https://ux.ph-il.ca).
-- **The tooling** every package is checked with: `phil/dev-tools` and the project skeletons.
+- **The tooling** every package is checked with: `phil/dev-tools` and the project templates.
 
 [ph-il.ca](https://ph-il.ca) presents the platform and will become the catalogue of the modules: one page per
 package, generated from its README and its documentation, in English and in French.
@@ -44,7 +44,7 @@ The game and gamification packages — dice, generators, points, badges, quests 
 Shops, conventions, clubs, publishers and online communities keep needing the same bricks: a catalogue and a cash
 register, a calendar, a forum, a newsletter, a privacy policy that is actually applied. We would rather write each
 brick once, carefully, in the open, than glue the same parts together on every site. And we would rather tell you
-plainly how far along each brick is: **today, 83 packages are released; the others are being written or planned,
+plainly how far along each brick is: **today, 85 packages are released; the others are being written or planned,
 and they follow by small daily groups.**
 
 ## Principles
@@ -120,24 +120,23 @@ Shadcn kit: keep Tailwind if you like it.
 - **`phil/dev-tools`** — the shared configurations of PHP-CS-Fixer, PHPStan, Rector, Deptrac, Arkitect, Infection,
   PHPUnit and PHPBench; the Composer scripts that run them; documentation checks; real MySQL, PostgreSQL and
   Gotenberg servers in Docker for integration tests; replayable HTTP recordings; the PHP and Symfony version matrix;
-  and the skeleton of a new package. Published under the MIT licence:
+  and the scaffolding of a new package. Published under the MIT licence:
   [dev-tools](https://github.com/parler-haut-interagir-librement/dev-tools).
-- **Project skeletons** — [MicroSymfony](https://github.com/parler-haut-interagir-librement/MicroSymfony) (based on
+- **Project templates** — [MicroSymfony](https://github.com/parler-haut-interagir-librement/MicroSymfony) (based on
   `strangebuzz/MicroSymfony`) and [WebSymfony](https://github.com/parler-haut-interagir-librement/WebSymfony).
 
 ## The packages
 
-✅ **released** · 🧪 **written, in incubation** (approximate completion) · 🦴 **skeleton in incubation** (the package
-exists, its code is not written yet: ≈ 0 %) · 🗓️ **planned**
+✅ **released** · 🧪 **written, in incubation** (approximate completion) · 🗓️ **planned**
 
-**418 packages:** 83 released, 335 in incubation (92 written, 243 skeletons near 0 %), 0 planned. Percentages are estimates from our
+**418 packages:** 85 released, 90 in incubation, 243 planned. Percentages are estimates from our
 latest status report (11 November 2026). The released packages are developed in the public monorepo
 [`phil`](https://github.com/parler-haut-interagir-librement/phil), each split into its own read-only repository and
 published on Packagist; `phil/enums` continues [`ph-il/enums`](https://packagist.org/packages/ph-il/enums). **The
 showcase continues by small daily groups** of two to four packages, dependencies first.
 
 <details>
-<summary><b>Data &amp; infrastructure</b> — ✅ 19 · 🧪 16 · 🦴 16</summary>
+<summary><b>Data &amp; infrastructure</b> — ✅ 19 · 🧪 16 · 🗓️ 16</summary>
 
 - [`phil/enums`](https://github.com/parler-haut-interagir-librement/enums) · ✅ released ([Packagist](https://packagist.org/packages/phil/enums)) — Traits and attributes to list, compare, describe and group PHP enums (formerly `ph-il/enums`)
 - [`phil/enums-bundle`](https://github.com/parler-haut-interagir-librement/enums-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/enums-bundle)) — Enums in Symfony forms, translations, Twig, validation, Doctrine and API contracts
@@ -174,27 +173,27 @@ showcase continues by small daily groups** of two to four packages, dependencies
 - `phil/rate-limit-bundle` · 🧪 97% — Rate limits declared by attribute on routes, forms and APIs
 - `phil/api-keys-bundle` · 🧪 88% — Personal access tokens for a public API: scopes, expiry, revocation, quotas
 - `phil/rate-limit` · 🧪 95% — The production guard of Symfony rate limits: the build fails on a limiter that counts per server
-- `phil/spreadsheet` · 🦴 skeleton, ≈ 0% — Read and write XLSX, ODS and CSV
-- `phil/import-wizard` · 🦴 skeleton, ≈ 0% — Guided file import, column by column
-- `phil/json-canvas` · 🦴 skeleton, ≈ 0% — Read and write the open JSON Canvas format
-- `phil/open-data` · 🦴 skeleton, ≈ 0% — Publish a site's open data
-- `phil/number-words` · 🦴 skeleton, ≈ 0% — Numbers written in words, in every language
-- `phil/natural-dates` · 🦴 skeleton, ≈ 0% — Dates typed in words ("next Thursday 7 pm") understood in each language
-- `phil/timezone-display` · 🦴 skeleton, ≈ 0% — Times shown in the visitor's time zone
-- `phil/safe-http` · 🦴 skeleton, ≈ 0% — A protected HTTP client for packages that read other sites: SSRF protection, size and time limits
-- `phil/rules` · 🦴 skeleton, ≈ 0% — Fixed, composable conditions evaluated without code, read by prices, promotions and access
-- `phil/rules-bundle` · 🦴 skeleton, ≈ 0% — Named rules in Symfony, their conditions as tagged services
-- `phil/measurement` · 🦴 skeleton, ≈ 0% — Units of measure and their conversion, per sales channel
-- `phil/measurement-bundle` · 🦴 skeleton, ≈ 0% — Measures in Symfony forms, Doctrine and Twig
-- `phil/custom-fields` · 🦴 skeleton, ≈ 0% — Custom fields: types, field sets applied by category, protected and formula fields
-- `phil/custom-fields-bundle` · 🦴 skeleton, ≈ 0% — Custom fields in Symfony: generated forms and list filters
-- `phil/field-layout` · 🦴 skeleton, ≈ 0% — Declared layout of edit forms: tabs, widths, visibility conditions
-- `phil/field-layout-bundle` · 🦴 skeleton, ≈ 0% — Field layouts rendered by a Symfony form theme
+- `phil/spreadsheet` · 🗓️ planned — Read and write XLSX, ODS and CSV
+- `phil/import-wizard` · 🗓️ planned — Guided file import, column by column
+- `phil/json-canvas` · 🗓️ planned — Read and write the open JSON Canvas format
+- `phil/open-data` · 🗓️ planned — Publish a site's open data
+- `phil/number-words` · 🗓️ planned — Numbers written in words, in every language
+- `phil/natural-dates` · 🗓️ planned — Dates typed in words ("next Thursday 7 pm") understood in each language
+- `phil/timezone-display` · 🗓️ planned — Times shown in the visitor's time zone
+- `phil/safe-http` · 🗓️ planned — A protected HTTP client for packages that read other sites: SSRF protection, size and time limits
+- `phil/rules` · 🗓️ planned — Fixed, composable conditions evaluated without code, read by prices, promotions and access
+- `phil/rules-bundle` · 🗓️ planned — Named rules in Symfony, their conditions as tagged services
+- `phil/measurement` · 🗓️ planned — Units of measure and their conversion, per sales channel
+- `phil/measurement-bundle` · 🗓️ planned — Measures in Symfony forms, Doctrine and Twig
+- `phil/custom-fields` · 🗓️ planned — Custom fields: types, field sets applied by category, protected and formula fields
+- `phil/custom-fields-bundle` · 🗓️ planned — Custom fields in Symfony: generated forms and list filters
+- `phil/field-layout` · 🗓️ planned — Declared layout of edit forms: tabs, widths, visibility conditions
+- `phil/field-layout-bundle` · 🗓️ planned — Field layouts rendered by a Symfony form theme
 
 </details>
 
 <details>
-<summary><b>Content &amp; text</b> — ✅ 17 · 🧪 5 · 🦴 28</summary>
+<summary><b>Content &amp; text</b> — ✅ 17 · 🧪 5 · 🗓️ 28</summary>
 
 - [`phil/ujo`](https://github.com/parler-haut-interagir-librement/ujo) · ✅ released ([Packagist](https://packagist.org/packages/phil/ujo)) — UJO (Universal JSON Output) documents read strictly, checked block by block, rendered as safe HTML
 - [`phil/ujo-bundle`](https://github.com/parler-haut-interagir-librement/ujo-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/ujo-bundle)) — UJO (Universal JSON Output) documents in Doctrine, forms and Twig
@@ -218,52 +217,52 @@ showcase continues by small daily groups** of two to four packages, dependencies
 - `phil/latex-mathml` · 🧪 80% — LaTeX formulas turned into the MathML that browsers draw, on the server
 - `phil/svg-blocks` · 🧪 90% — Formulas, diagrams, charts and QR codes of block documents drawn once, on the server
 - `phil/svg-blocks-bundle` · 🧪 85% — Block drawings made on save in Symfony, with Mermaid in a container
-- `phil/wiki-bundle` · 🦴 skeleton, ≈ 0% — A collaborative wiki: pages, compared revisions, `[[links]]`, block locks
-- `phil/faq-bundle` · 🦴 skeleton, ≈ 0% — Frequently asked questions by section, searchable, with structured data
-- `phil/glossary-bundle` · 🦴 skeleton, ≈ 0% — A glossary whose terms are linked automatically in texts
-- `phil/timeline-bundle` · 🦴 skeleton, ≈ 0% — Timelines of dated content
-- `phil/series-bundle` · 🦴 skeleton, ≈ 0% — Content series
-- `phil/citations` · 🦴 skeleton, ≈ 0% — Citations and bibliographies in common styles
-- `phil/credits` · 🦴 skeleton, ≈ 0% — The credits page of a work: contributors, roles, order
-- `phil/content-templates` · 🦴 skeleton, ≈ 0% — Templates for new content
-- `phil/content-queries` · 🦴 skeleton, ≈ 0% — Content lists defined by a query in the administration
-- `phil/curated-lists` · 🦴 skeleton, ≈ 0% — Hand-picked, annotated lists of content
-- `phil/related-content` · 🦴 skeleton, ≈ 0% — Related content and related products
-- `phil/content-expiry` · 🦴 skeleton, ≈ 0% — Content that shows its age or expires on a date
-- `phil/content-transfer` · 🦴 skeleton, ≈ 0% — Move content from one site to another with its media and links
-- `phil/editorial-calendar` · 🦴 skeleton, ≈ 0% — The editorial calendar of publications
-- `phil/page-protection` · 🦴 skeleton, ≈ 0% — Pages locked against editing or reserved to roles
-- `phil/reading-progress` · 🦴 skeleton, ≈ 0% — Reading progress through long content
-- `phil/dictionary` · 🦴 skeleton, ≈ 0% — A dictionary and thesaurus behind a port
-- `phil/release-notes` · 🦴 skeleton, ≈ 0% — Announced release notes
-- `phil/publishing` · 🦴 skeleton, ≈ 0% — The PagePublished event and its contract, for the content lifecycle
-- `phil/story-graph` · 🦴 skeleton, ≈ 0% — A branching story graph for branching lessons and gamebooks
-- `phil/content-access` · 🦴 skeleton, ≈ 0% — Content access by entitlement: public, members, tiers, early access, fixed or sliding periods
-- `phil/content-access-bundle` · 🦴 skeleton, ≈ 0% — Content access in Symfony: voters, Twig checks and rule administration
-- `phil/content-archive` · 🦴 skeleton, ≈ 0% — A portable content archive: faithful UJO (Universal JSON Output), readable Markdown, media
-- `phil/share-links` · 🦴 skeleton, ≈ 0% — Named private links to unpublished content, with visit counts and revocation
-- `phil/share-links-bundle` · 🦴 skeleton, ≈ 0% — Share links in Symfony: routes, sandboxed preview, revocation
-- `phil/suggested-edits` · 🦴 skeleton, ≈ 0% — Suggested edits to a message or to a whole piece of content
-- `phil/live-preview-bundle` · 🦴 skeleton, ≈ 0% — Live preview on several targets and device sizes, morphed in place by Turbo
-- `phil/form-logic` · 🦴 skeleton, ≈ 0% — Conditional form logic evaluated the same way in PHP and Stimulus, the server as judge
+- `phil/wiki-bundle` · 🗓️ planned — A collaborative wiki: pages, compared revisions, `[[links]]`, block locks
+- `phil/faq-bundle` · 🗓️ planned — Frequently asked questions by section, searchable, with structured data
+- `phil/glossary-bundle` · 🗓️ planned — A glossary whose terms are linked automatically in texts
+- `phil/timeline-bundle` · 🗓️ planned — Timelines of dated content
+- `phil/series-bundle` · 🗓️ planned — Content series
+- `phil/citations` · 🗓️ planned — Citations and bibliographies in common styles
+- `phil/credits` · 🗓️ planned — The credits page of a work: contributors, roles, order
+- `phil/content-templates` · 🗓️ planned — Templates for new content
+- `phil/content-queries` · 🗓️ planned — Content lists defined by a query in the administration
+- `phil/curated-lists` · 🗓️ planned — Hand-picked, annotated lists of content
+- `phil/related-content` · 🗓️ planned — Related content and related products
+- `phil/content-expiry` · 🗓️ planned — Content that shows its age or expires on a date
+- `phil/content-transfer` · 🗓️ planned — Move content from one site to another with its media and links
+- `phil/editorial-calendar` · 🗓️ planned — The editorial calendar of publications
+- `phil/page-protection` · 🗓️ planned — Pages locked against editing or reserved to roles
+- `phil/reading-progress` · 🗓️ planned — Reading progress through long content
+- `phil/dictionary` · 🗓️ planned — A dictionary and thesaurus behind a port
+- `phil/release-notes` · 🗓️ planned — Announced release notes
+- `phil/publishing` · 🗓️ planned — The PagePublished event and its contract, for the content lifecycle
+- `phil/story-graph` · 🗓️ planned — A branching story graph for branching lessons and gamebooks
+- `phil/content-access` · 🗓️ planned — Content access by entitlement: public, members, tiers, early access, fixed or sliding periods
+- `phil/content-access-bundle` · 🗓️ planned — Content access in Symfony: voters, Twig checks and rule administration
+- `phil/content-archive` · 🗓️ planned — A portable content archive: faithful UJO (Universal JSON Output), readable Markdown, media
+- `phil/share-links` · 🗓️ planned — Named private links to unpublished content, with visit counts and revocation
+- `phil/share-links-bundle` · 🗓️ planned — Share links in Symfony: routes, sandboxed preview, revocation
+- `phil/suggested-edits` · 🗓️ planned — Suggested edits to a message or to a whole piece of content
+- `phil/live-preview-bundle` · 🗓️ planned — Live preview on several targets and device sizes, morphed in place by Turbo
+- `phil/form-logic` · 🗓️ planned — Conditional form logic evaluated the same way in PHP and Stimulus, the server as judge
 
 </details>
 
 <details>
-<summary><b>Languages, translation &amp; typography</b> — ✅ 2 · 🧪 3 · 🦴 2</summary>
+<summary><b>Languages, translation &amp; typography</b> — ✅ 2 · 🧪 3 · 🗓️ 2</summary>
 
 - [`phil/typography`](https://github.com/parler-haut-interagir-librement/typography) · ✅ released ([Packagist](https://packagist.org/packages/phil/typography)) — Real quotes, dashes, French spaces and soft hyphens in your HTML, in every language
 - [`phil/typography-bundle`](https://github.com/parler-haut-interagir-librement/typography-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/typography-bundle)) — Typography everywhere a Symfony application prints text
 - `phil/translation-bundle` · 🧪 83% — A translation screen: segments that survive edits, a memory and a checking glossary
 - `phil/translation-memory` · 🧪 87% — Segment-by-segment translation that reuses past work and keeps terms consistent
 - `phil/locale-dimensions` · 🧪 95% — Locales, versions and declared fallback chains, as plain value objects
-- `phil/machine-translation` · 🦴 skeleton, ≈ 0% — Machine-suggested translations, always reviewed
-- `phil/translation-ui` · 🦴 skeleton, ≈ 0% — The screen for translating a site's content and messages
+- `phil/machine-translation` · 🗓️ planned — Machine-suggested translations, always reviewed
+- `phil/translation-ui` · 🗓️ planned — The screen for translating a site's content and messages
 
 </details>
 
 <details>
-<summary><b>Media, documents &amp; print</b> — ✅ 5 · 🧪 11 · 🦴 18</summary>
+<summary><b>Media, documents &amp; print</b> — ✅ 5 · 🧪 11 · 🗓️ 18</summary>
 
 - [`phil/fonts`](https://github.com/parler-haut-interagir-librement/fonts) · ✅ released ([Packagist](https://packagist.org/packages/phil/fonts)) — What a font file says about itself — names, weight, embedding licence — and its `@font-face`
 - [`phil/print-preflight`](https://github.com/parler-haut-interagir-librement/print-preflight) · ✅ released ([Packagist](https://packagist.org/packages/phil/print-preflight)) — Catch what a printer would refuse before the file reaches it
@@ -281,29 +280,29 @@ showcase continues by small daily groups** of two to four packages, dependencies
 - `phil/print-preflight-bundle` · 🧪 90% — Preflight wired into PDF generation
 - `phil/paged-media-weasyprint` · 🧪 92% — The WeasyPrint engine for paged media: HTML and CSS laid out as PDF, offline
 - `phil/creation-disclosure` · 🧪 90% — How a work was made, declared part by part in the IPTC Digital Source Type vocabulary
-- `phil/gallery-bundle` · 🦴 skeleton, ≈ 0% — Photo galleries by album and by event
-- `phil/video-bundle` · 🦴 skeleton, ≈ 0% — Hosted or linked videos, subtitles and chapters
-- `phil/podcast-bundle` · 🦴 skeleton, ≈ 0% — Podcasts: episodes, Podcasting 2.0 feeds, chapters, transcripts
-- `phil/live-stream-bundle` · 🦴 skeleton, ≈ 0% — Live streams announced, embedded and archived
-- `phil/transcription` · 🦴 skeleton, ≈ 0% — Audio and video transcription behind a port
-- `phil/image-editor` · 🦴 skeleton, ≈ 0% — An image editor: crop, rotate, filters, annotations
-- `phil/avatar` · 🦴 skeleton, ≈ 0% — Generated avatars
-- `phil/document-preview` · 🦴 skeleton, ≈ 0% — Document previews
-- `phil/pdf-watermark` · 🦴 skeleton, ≈ 0% — Personalised watermarks on sold PDFs
-- `phil/braille-export` · 🦴 skeleton, ≈ 0% — Contracted or uncontracted braille export of a document
-- `phil/demo-videos` · 🦴 skeleton, ≈ 0% — Demo videos of a product or package
-- `phil/audio` · 🦴 skeleton, ≈ 0% — Audio: optional transcoding, waveform, clips and an accessible player that works without JavaScript
-- `phil/audio-bundle` · 🦴 skeleton, ≈ 0% — Audio in Symfony: player component, uploads and transcoding jobs
-- `phil/music-bundle` · 🦴 skeleton, ≈ 0% — An artist's or band's music: albums, tracks, sales and listening without purchase
-- `phil/timed-text` · 🦴 skeleton, ≈ 0% — Timed text read and written: WebVTT, SRT, chapters and Podcasting 2.0 transcripts
-- `phil/braille-export-liblouis` · 🦴 skeleton, ≈ 0% — The braille export adapter that calls liblouis
-- `phil/slides` · 🦴 skeleton, ≈ 0% — Slides read from a UJO document, with presenter mode, notes, timer and PDF export
-- `phil/diagram` · 🦴 skeleton, ≈ 0% — Diagrams written as text and rendered as SVG on the server, with a text description
+- `phil/gallery-bundle` · 🗓️ planned — Photo galleries by album and by event
+- `phil/video-bundle` · 🗓️ planned — Hosted or linked videos, subtitles and chapters
+- `phil/podcast-bundle` · 🗓️ planned — Podcasts: episodes, Podcasting 2.0 feeds, chapters, transcripts
+- `phil/live-stream-bundle` · 🗓️ planned — Live streams announced, embedded and archived
+- `phil/transcription` · 🗓️ planned — Audio and video transcription behind a port
+- `phil/image-editor` · 🗓️ planned — An image editor: crop, rotate, filters, annotations
+- `phil/avatar` · 🗓️ planned — Generated avatars
+- `phil/document-preview` · 🗓️ planned — Document previews
+- `phil/pdf-watermark` · 🗓️ planned — Personalised watermarks on sold PDFs
+- `phil/braille-export` · 🗓️ planned — Contracted or uncontracted braille export of a document
+- `phil/demo-videos` · 🗓️ planned — Demo videos of a product or package
+- `phil/audio` · 🗓️ planned — Audio: optional transcoding, waveform, clips and an accessible player that works without JavaScript
+- `phil/audio-bundle` · 🗓️ planned — Audio in Symfony: player component, uploads and transcoding jobs
+- `phil/music-bundle` · 🗓️ planned — An artist's or band's music: albums, tracks, sales and listening without purchase
+- `phil/timed-text` · 🗓️ planned — Timed text read and written: WebVTT, SRT, chapters and Podcasting 2.0 transcripts
+- `phil/braille-export-liblouis` · 🗓️ planned — The braille export adapter that calls liblouis
+- `phil/slides` · 🗓️ planned — Slides read from a UJO document, with presenter mode, notes, timer and PDF export
+- `phil/diagram` · 🗓️ planned — Diagrams written as text and rendered as SVG on the server, with a text description
 
 </details>
 
 <details>
-<summary><b>Search, SEO &amp; the open web</b> — ✅ 5 · 🧪 5 · 🦴 14</summary>
+<summary><b>Search, SEO &amp; the open web</b> — ✅ 5 · 🧪 5 · 🗓️ 14</summary>
 
 - [`phil/sitemap`](https://github.com/parler-haut-interagir-librement/sitemap) · ✅ released ([Packagist](https://packagist.org/packages/phil/sitemap)) — Sitemap XML built from checked pages, cut to the protocol's limits
 - [`phil/sitemap-bundle`](https://github.com/parler-haut-interagir-librement/sitemap-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/sitemap-bundle)) — `/sitemap.xml` from route options, URL providers and an event
@@ -315,25 +314,25 @@ showcase continues by small daily groups** of two to four packages, dependencies
 - `phil/social-cards` · 🧪 89% — Open Graph tags and generated share images
 - `phil/social-cards-bundle` · 🧪 90% — Share metadata and generated cards in Symfony, with a preview of incoming links
 - `phil/structured-data-bundle` · 🧪 95% — A page's schema.org graph in Symfony, with a command that checks it
-- `phil/search-synonyms` · 🦴 skeleton, ≈ 0% — Search synonyms managed in the administration
-- `phil/feed-bundle` · 🦴 skeleton, ≈ 0% — RSS, Atom and JSON Feed of any content
-- `phil/indexnow` · 🦴 skeleton, ≈ 0% — Notify search engines through IndexNow
-- `phil/seo-check` · 🦴 skeleton, ≈ 0% — SEO checks at publication: title, description, links, structured data
-- `phil/link-checker` · 🦴 skeleton, ≈ 0% — Find and report dead links
-- `phil/short-link-bundle` · 🦴 skeleton, ≈ 0% — Short links on a dedicated domain, visits counted without tracking
-- `phil/activitypub-bundle` · 🦴 skeleton, ≈ 0% — Full ActivityPub federation for members (opt-in) and groups
-- `phil/webmention-bundle` · 🦴 skeleton, ≈ 0% — Send and receive Webmentions
-- `phil/oembed-bundle` · 🦴 skeleton, ≈ 0% — An oEmbed provider for your pages
-- `phil/embed-bundle` · 🦴 skeleton, ≈ 0% — Embeddable features for other sites: token, theme, `frame-ancestors`
-- `phil/sitemap-visual` · 🦴 skeleton, ≈ 0% — A visual site map for visitors
-- `phil/search-console` · 🦴 skeleton, ≈ 0% — Google Search Console data, read for any site
-- `phil/search-console-bundle` · 🦴 skeleton, ≈ 0% — Search Console in Symfony: credentials, scheduled fetches, dashboard widgets
-- `phil/feed-import` · 🦴 skeleton, ≈ 0% — RSS and Atom feeds imported as content
+- `phil/search-synonyms` · 🗓️ planned — Search synonyms managed in the administration
+- `phil/feed-bundle` · 🗓️ planned — RSS, Atom and JSON Feed of any content
+- `phil/indexnow` · 🗓️ planned — Notify search engines through IndexNow
+- `phil/seo-check` · 🗓️ planned — SEO checks at publication: title, description, links, structured data
+- `phil/link-checker` · 🗓️ planned — Find and report dead links
+- `phil/short-link-bundle` · 🗓️ planned — Short links on a dedicated domain, visits counted without tracking
+- `phil/activitypub-bundle` · 🗓️ planned — Full ActivityPub federation for members (opt-in) and groups
+- `phil/webmention-bundle` · 🗓️ planned — Send and receive Webmentions
+- `phil/oembed-bundle` · 🗓️ planned — An oEmbed provider for your pages
+- `phil/embed-bundle` · 🗓️ planned — Embeddable features for other sites: token, theme, `frame-ancestors`
+- `phil/sitemap-visual` · 🗓️ planned — A visual site map for visitors
+- `phil/search-console` · 🗓️ planned — Google Search Console data, read for any site
+- `phil/search-console-bundle` · 🗓️ planned — Search Console in Symfony: credentials, scheduled fetches, dashboard widgets
+- `phil/feed-import` · 🗓️ planned — RSS and Atom feeds imported as content
 
 </details>
 
 <details>
-<summary><b>Identity, access &amp; security</b> — ✅ 7 · 🧪 4 · 🦴 13</summary>
+<summary><b>Identity, access &amp; security</b> — ✅ 7 · 🧪 4 · 🗓️ 13</summary>
 
 - [`phil/bot-detection-bundle`](https://github.com/parler-haut-interagir-librement/bot-detection-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/bot-detection-bundle)) — Tell a robot from a human in the browser, without a CAPTCHA
 - [`phil/spam-protection`](https://github.com/parler-haut-interagir-librement/spam-protection) · ✅ released ([Packagist](https://packagist.org/packages/phil/spam-protection)) — Spot spam in a form submission without a CAPTCHA, in plain PHP
@@ -346,24 +345,24 @@ showcase continues by small daily groups** of two to four packages, dependencies
 - `phil/identity-client-bundle` · 🧪 85% — Connect a Symfony site to an OpenID provider, on Symfony 8.2's `oidc_login`
 - `phil/browser-security-bundle` · 🧪 97% — The protections a Symfony application asks of the browser: CSP with nonces, HSTS, signed cookies
 - `phil/upload-scan-bundle` · 🧪 88% — Upload scanning in Symfony: a file constraint, quarantine and rescans
-- `phil/identity-provider-bundle` · 🦴 skeleton, ≈ 0% — An OpenID Connect provider for Symfony: passkeys, passwords, TOTP, step-up
-- `phil/identity-provider-google` · 🦴 skeleton, ≈ 0% — Google sign-in for the identity provider, the first federated sign-in package
-- `phil/organizations-bundle` · 🦴 skeleton, ≈ 0% — Organisations, roles and invitations
-- `phil/access-bundle` · 🦴 skeleton, ≈ 0% — Access rights per site
-- `phil/webauthn-step-up` · 🦴 skeleton, ≈ 0% — Confirm a sensitive action with a passkey
-- `phil/fraud-signals` · 🦴 skeleton, ≈ 0% — Fraud signals on orders and sign-ups
-- `phil/trust-levels` · 🦴 skeleton, ≈ 0% — Trust levels that open rights with activity
-- `phil/verification-marks` · 🦴 skeleton, ≈ 0% — Verified-account marks
-- `phil/invitations` · 🦴 skeleton, ≈ 0% — Member invitations, with limits
-- `phil/resource-permissions` · 🦴 skeleton, ≈ 0% — Per-resource permissions inherited down a tree, the most specific one winning
-- `phil/access-codes` · 🦴 skeleton, ≈ 0% — Single-use codes in named batches, with a redemption page and codes stored hashed
-- `phil/access-links` · 🦴 skeleton, ≈ 0% — Invitations by personal link: token, validity, reminders, editable reply
-- `phil/delegated-accounts` · 🦴 skeleton, ≈ 0% — A parent manages the accounts of their minor children, with age checks
+- `phil/identity-provider-bundle` · 🗓️ planned — An OpenID Connect provider for Symfony: passkeys, passwords, TOTP, step-up
+- `phil/identity-provider-google` · 🗓️ planned — Google sign-in for the identity provider, the first federated sign-in package
+- `phil/organizations-bundle` · 🗓️ planned — Organisations, roles and invitations
+- `phil/access-bundle` · 🗓️ planned — Access rights per site
+- `phil/webauthn-step-up` · 🗓️ planned — Confirm a sensitive action with a passkey
+- `phil/fraud-signals` · 🗓️ planned — Fraud signals on orders and sign-ups
+- `phil/trust-levels` · 🗓️ planned — Trust levels that open rights with activity
+- `phil/verification-marks` · 🗓️ planned — Verified-account marks
+- `phil/invitations` · 🗓️ planned — Member invitations, with limits
+- `phil/resource-permissions` · 🗓️ planned — Per-resource permissions inherited down a tree, the most specific one winning
+- `phil/access-codes` · 🗓️ planned — Single-use codes in named batches, with a redemption page and codes stored hashed
+- `phil/access-links` · 🗓️ planned — Invitations by personal link: token, validity, reminders, editable reply
+- `phil/delegated-accounts` · 🗓️ planned — A parent manages the accounts of their minor children, with age checks
 
 </details>
 
 <details>
-<summary><b>Privacy, accessibility &amp; compliance</b> — 🧪 11 · 🦴 6</summary>
+<summary><b>Privacy, accessibility &amp; compliance</b> — 🧪 11 · 🗓️ 6</summary>
 
 - `phil/privacy-bundle` · 🧪 95% — Declare personal fields, redact logs, answer access and erasure requests (Loi 25, GDPR)
 - `phil/analytics-bundle` · 🧪 95% — Visits counted in daily aggregates, never tied to a person
@@ -376,17 +375,17 @@ showcase continues by small daily groups** of two to four packages, dependencies
 - `phil/accessibility-statement-bundle` · 🧪 89% — A versioned accessibility statement page in English and French, with a footer link
 - `phil/legal-notices-bundle` · 🧪 90% — Legal notice and privacy policy pages, per locale, with every version at its own address
 - `phil/indexing-consent` · 🧪 93% — A public record's reach decided by the person it is about: listed, unindexed or unlisted
-- `phil/accessibility-info` · 🦴 skeleton, ≈ 0% — Accessibility information for a venue or event
-- `phil/easy-read` · 🦴 skeleton, ≈ 0% — Easy-read versions of content, and their checks
-- `phil/age-gate` · 🦴 skeleton, ≈ 0% — Declarative age checks for content or listings
-- `phil/heatmaps` · 🦴 skeleton, ≈ 0% — Aggregated heatmaps, with no identifier
-- `phil/guardian-consent` · 🦴 skeleton, ≈ 0% — Age brackets and parental consent for minors under 14, as Quebec privacy law requires
-- `phil/account-lifecycle` · 🦴 skeleton, ≈ 0% — Inactive accounts warned, deactivated, then deleted or anonymized
+- `phil/accessibility-info` · 🗓️ planned — Accessibility information for a venue or event
+- `phil/easy-read` · 🗓️ planned — Easy-read versions of content, and their checks
+- `phil/age-gate` · 🗓️ planned — Declarative age checks for content or listings
+- `phil/heatmaps` · 🗓️ planned — Aggregated heatmaps, with no identifier
+- `phil/guardian-consent` · 🗓️ planned — Age brackets and parental consent for minors under 14, as Quebec privacy law requires
+- `phil/account-lifecycle` · 🗓️ planned — Inactive accounts warned, deactivated, then deleted or anonymized
 
 </details>
 
 <details>
-<summary><b>Community</b> — ✅ 2 · 🧪 4 · 🦴 41</summary>
+<summary><b>Community</b> — ✅ 2 · 🧪 4 · 🗓️ 41</summary>
 
 - [`phil/poll`](https://github.com/parler-haut-interagir-librement/poll) · ✅ released ([Packagist](https://packagist.org/packages/phil/poll)) — A voting engine: ballots checked against their poll's rules, counted into standings
 - [`phil/listings`](https://github.com/parler-haut-interagir-librement/listings) · ✅ released ([Packagist](https://packagist.org/packages/phil/listings)) — The listings core: criteria, expiry, replies, moderation
@@ -394,132 +393,132 @@ showcase continues by small daily groups** of two to four packages, dependencies
 - `phil/mentions-bundle` · 🧪 88% — @mentions in texts, and their notifications
 - `phil/poll-bundle` · 🧪 85% — The voting engine: single, multiple or ranked choice
 - `phil/onboarding-bundle` · 🧪 90% — Welcoming new members: steps, guided tour, checklist
-- `phil/forum-bundle` · 🦴 skeleton, ≈ 0% — Forums by section, with chat, reporting and per-section moderation
-- `phil/moderation-bundle` · 🦴 skeleton, ≈ 0% — One report queue for forums, comments, reactions, listings and messages
-- `phil/follow-bundle` · 🦴 skeleton, ≈ 0% — Follow content, threads, listings or members
-- `phil/conversation-bundle` · 🦴 skeleton, ≈ 0% — Private messages one-to-one or in groups, encrypted at rest
-- `phil/groups-bundle` · 🦴 skeleton, ≈ 0% — Member groups
-- `phil/profiles-bundle` · 🦴 skeleton, ≈ 0% — A member's public page: what they show, and to whom
-- `phil/reviews-bundle` · 🦴 skeleton, ≈ 0% — Moderated reviews and ratings of products, games or places
-- `phil/survey-bundle` · 🦴 skeleton, ≈ 0% — Questionnaires with sections and conditional logic
-- `phil/ideas-bundle` · 🦴 skeleton, ≈ 0% — An idea box with statuses and votes
-- `phil/qa-bundle` · 🦴 skeleton, ≈ 0% — Questions and answers, the best one accepted
-- `phil/code-of-conduct` · 🦴 skeleton, ≈ 0% — A code of conduct, its acceptance and its reports
-- `phil/bookmarks-bundle` · 🦴 skeleton, ≈ 0% — Members' bookmarks, sorted into lists
-- `phil/user-lists` · 🦴 skeleton, ≈ 0% — Lists of members kept by a member
-- `phil/classifieds-bundle` · 🦴 skeleton, ≈ 0% — Classified ads between members, without payment
-- `phil/job-board-bundle` · 🦴 skeleton, ≈ 0% — A community's job and contract offers
-- `phil/matchmaking-bundle` · 🦴 skeleton, ≈ 0% — Find partners: criteria, approximate place or online, safety first
-- `phil/tasks-bundle` · 🦴 skeleton, ≈ 0% — Team tasks and kanban boards
-- `phil/roadmap-bundle` · 🦴 skeleton, ≈ 0% — A public roadmap and its votes
-- `phil/collab-whiteboard` · 🦴 skeleton, ≈ 0% — A shared real-time whiteboard
-- `phil/mind-map` · 🦴 skeleton, ≈ 0% — A shared mind map
-- `phil/family-tree` · 🦴 skeleton, ≈ 0% — A family tree
-- `phil/secret-santa` · 🦴 skeleton, ≈ 0% — Gift exchanges drawn at random
-- `phil/expense-split` · 🦴 skeleton, ≈ 0% — Split a group's expenses
-- `phil/ownership-transfer` · 🦴 skeleton, ≈ 0% — Transfer ownership of content or a group to another member
-- `phil/membership-bundle` · 🦴 skeleton, ≈ 0% — Membership of an organisation: dues, member card, renewal
-- `phil/assembly-bundle` · 🦴 skeleton, ≈ 0% — General assemblies: notice, proposals, votes, minutes
-- `phil/budget-transparency` · 🦴 skeleton, ≈ 0% — An organisation's budget published and explained
-- `phil/sponsors-bundle` · 🦴 skeleton, ≈ 0% — Sponsors and their tiers
-- `phil/press-kit-bundle` · 🦴 skeleton, ≈ 0% — A press kit: logos, photos, biographies, releases
-- `phil/spaces` · 🦴 skeleton, ≈ 0% — A registry of the modules a group or an organization switches on
-- `phil/ranking` · 🦴 skeleton, ≈ 0% — Popular, active, controversial and best-of sorts, shared by forum, ideas and Q&A
-- `phil/reputation` · 🦴 skeleton, ≈ 0% — Reputation from peer votes, with a daily cap and no downvotes
-- `phil/community-notes` · 🦴 skeleton, ≈ 0% — Community notes published by an explainable cross-agreement rule
-- `phil/user-blocks` · 🦴 skeleton, ≈ 0% — Ignore or mute a member, group, domain or keywords
-- `phil/watched-words` · 🦴 skeleton, ≈ 0% — Watched words that block, hold, flag, replace or tag
-- `phil/incident-mode` · 🦴 skeleton, ≈ 0% — A standalone incident mode: presets, mandatory duration, automatic lifting
-- `phil/elections-bundle` · 🦴 skeleton, ≈ 0% — Moderator elections by single transferable vote
-- `phil/watch-party` · 🦴 skeleton, ≈ 0% — Listen or watch together in sync, with a moderated chat
-- `phil/milestones` · 🦴 skeleton, ≈ 0% — Milestones on a counter and a production threshold for an item
-- `phil/milestones-bundle` · 🦴 skeleton, ≈ 0% — Milestones in Symfony: counters tied to site events, progress in Twig
-- `phil/habits` · 🦴 skeleton, ≈ 0% — A habit tracker with streaks and a smoothed strength score
+- `phil/forum-bundle` · 🗓️ planned — Forums by section, with chat, reporting and per-section moderation
+- `phil/moderation-bundle` · 🗓️ planned — One report queue for forums, comments, reactions, listings and messages
+- `phil/follow-bundle` · 🗓️ planned — Follow content, threads, listings or members
+- `phil/conversation-bundle` · 🗓️ planned — Private messages one-to-one or in groups, encrypted at rest
+- `phil/groups-bundle` · 🗓️ planned — Member groups
+- `phil/profiles-bundle` · 🗓️ planned — A member's public page: what they show, and to whom
+- `phil/reviews-bundle` · 🗓️ planned — Moderated reviews and ratings of products, games or places
+- `phil/survey-bundle` · 🗓️ planned — Questionnaires with sections and conditional logic
+- `phil/ideas-bundle` · 🗓️ planned — An idea box with statuses and votes
+- `phil/qa-bundle` · 🗓️ planned — Questions and answers, the best one accepted
+- `phil/code-of-conduct` · 🗓️ planned — A code of conduct, its acceptance and its reports
+- `phil/bookmarks-bundle` · 🗓️ planned — Members' bookmarks, sorted into lists
+- `phil/user-lists` · 🗓️ planned — Lists of members kept by a member
+- `phil/classifieds-bundle` · 🗓️ planned — Classified ads between members, without payment
+- `phil/job-board-bundle` · 🗓️ planned — A community's job and contract offers
+- `phil/matchmaking-bundle` · 🗓️ planned — Find partners: criteria, approximate place or online, safety first
+- `phil/tasks-bundle` · 🗓️ planned — Team tasks and kanban boards
+- `phil/roadmap-bundle` · 🗓️ planned — A public roadmap and its votes
+- `phil/collab-whiteboard` · 🗓️ planned — A shared real-time whiteboard
+- `phil/mind-map` · 🗓️ planned — A shared mind map
+- `phil/family-tree` · 🗓️ planned — A family tree
+- `phil/secret-santa` · 🗓️ planned — Gift exchanges drawn at random
+- `phil/expense-split` · 🗓️ planned — Split a group's expenses
+- `phil/ownership-transfer` · 🗓️ planned — Transfer ownership of content or a group to another member
+- `phil/membership-bundle` · 🗓️ planned — Membership of an organisation: dues, member card, renewal
+- `phil/assembly-bundle` · 🗓️ planned — General assemblies: notice, proposals, votes, minutes
+- `phil/budget-transparency` · 🗓️ planned — An organisation's budget published and explained
+- `phil/sponsors-bundle` · 🗓️ planned — Sponsors and their tiers
+- `phil/press-kit-bundle` · 🗓️ planned — A press kit: logos, photos, biographies, releases
+- `phil/spaces` · 🗓️ planned — A registry of the modules a group or an organization switches on
+- `phil/ranking` · 🗓️ planned — Popular, active, controversial and best-of sorts, shared by forum, ideas and Q&A
+- `phil/reputation` · 🗓️ planned — Reputation from peer votes, with a daily cap and no downvotes
+- `phil/community-notes` · 🗓️ planned — Community notes published by an explainable cross-agreement rule
+- `phil/user-blocks` · 🗓️ planned — Ignore or mute a member, group, domain or keywords
+- `phil/watched-words` · 🗓️ planned — Watched words that block, hold, flag, replace or tag
+- `phil/incident-mode` · 🗓️ planned — A standalone incident mode: presets, mandatory duration, automatic lifting
+- `phil/elections-bundle` · 🗓️ planned — Moderator elections by single transferable vote
+- `phil/watch-party` · 🗓️ planned — Listen or watch together in sync, with a moderated chat
+- `phil/milestones` · 🗓️ planned — Milestones on a counter and a production threshold for an item
+- `phil/milestones-bundle` · 🗓️ planned — Milestones in Symfony: counters tied to site events, progress in Twig
+- `phil/habits` · 🗓️ planned — A habit tracker with streaks and a smoothed strength score
 
 </details>
 
 <details>
-<summary><b>Learning &amp; credentials</b> — ✅ 1 · 🧪 2 · 🦴 8</summary>
+<summary><b>Learning &amp; credentials</b> — ✅ 1 · 🧪 2 · 🗓️ 8</summary>
 
 - [`phil/open-badges`](https://github.com/parler-haut-interagir-librement/open-badges) · ✅ released ([Packagist](https://packagist.org/packages/phil/open-badges)) — Issue, sign, verify, bake and revoke Open Badges 3.0 credentials
 - `phil/open-badges-bundle` · 🧪 85% — Issuer profile, public key and verification page for Open Badges
 - `phil/certificates-bundle` · 🧪 85% — Verifiable certificates: criteria, PDF with QR code, public registry
-- `phil/courses-bundle` · 🦴 skeleton, ≈ 0% — Online courses: modules, lessons, progress
-- `phil/mentoring-bundle` · 🦴 skeleton, ≈ 0% — Mentoring: matching, sessions, follow-up
-- `phil/assessment` · 🦴 skeleton, ≈ 0% — Assessment: question types, certainty-based marking, a versioned question bank
-- `phil/assessment-bundle` · 🦴 skeleton, ≈ 0% — Assessment in Symfony: quiz screens, attempts and question bank administration
-- `phil/competencies` · 🦴 skeleton, ≈ 0% — Competency frameworks, learning plans and Open Badges alignments
-- `phil/peer-review` · 🦴 skeleton, ≈ 0% — Peer assessment in phases, with a double grade and optional grader calibration
-- `phil/proposal-review` · 🦴 skeleton, ≈ 0% — One jury review engine for calls, courses and contests, with pairwise voting
-- `phil/spaced-repetition` · 🦴 skeleton, ≈ 0% — Generic spaced repetition: the FSRS algorithm, cards and reviews
+- `phil/courses-bundle` · 🗓️ planned — Online courses: modules, lessons, progress
+- `phil/mentoring-bundle` · 🗓️ planned — Mentoring: matching, sessions, follow-up
+- `phil/assessment` · 🗓️ planned — Assessment: question types, certainty-based marking, a versioned question bank
+- `phil/assessment-bundle` · 🗓️ planned — Assessment in Symfony: quiz screens, attempts and question bank administration
+- `phil/competencies` · 🗓️ planned — Competency frameworks, learning plans and Open Badges alignments
+- `phil/peer-review` · 🗓️ planned — Peer assessment in phases, with a double grade and optional grader calibration
+- `phil/proposal-review` · 🗓️ planned — One jury review engine for calls, courses and contests, with pairwise voting
+- `phil/spaced-repetition` · 🗓️ planned — Generic spaced repetition: the FSRS algorithm, cards and reviews
 
 </details>
 
 <details>
-<summary><b>Notifications, mail &amp; messaging</b> — ✅ 3 · 🧪 2 · 🦴 11</summary>
+<summary><b>Notifications, mail &amp; messaging</b> — ✅ 3 · 🧪 2 · 🗓️ 11</summary>
 
 - [`phil/instant-messenger`](https://github.com/parler-haut-interagir-librement/instant-messenger) · ✅ released ([Packagist](https://packagist.org/packages/phil/instant-messenger)) — Messaging handles per service: WhatsApp, Telegram, Signal, Matrix and more
 - [`phil/instant-messenger-bundle`](https://github.com/parler-haut-interagir-librement/instant-messenger-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/instant-messenger-bundle)) — A messaging handle field, a constraint and Twig filters
 - [`phil/bounce-parser`](https://github.com/parler-haut-interagir-librement/bounce-parser) · ✅ released ([Packagist](https://packagist.org/packages/phil/bounce-parser)) — Parse DSN and ARF bounces and auto-replies
 - `phil/notifications-bundle` · 🧪 81% — Toasts, a notification centre, email digests, Web Push, Discord or Slack
 - `phil/email-address` · 🧪 92% — Email address validation
-- `phil/newsletter-bundle` · 🦴 skeleton, ≈ 0% — Newsletters: lists, double opt-in, templates, sending through Symfony Mailer
-- `phil/newsletter-archive` · 🦴 skeleton, ≈ 0% — The public archive of sent newsletters
-- `phil/email-templates-bundle` · 🦴 skeleton, ≈ 0% — Email templates shared between several sites, with conditional blocks
-- `phil/email-preview` · 🦴 skeleton, ≈ 0% — Preview email templates
-- `phil/mail-auth-check` · 🦴 skeleton, ≈ 0% — Test a sending domain's SPF, DKIM and DMARC
-- `phil/inbound-mail-bundle` · 🦴 skeleton, ≈ 0% — Inbound mail, parsed and routed
-- `phil/sms-bundle` · 🦴 skeleton, ≈ 0% — Send and receive SMS on Symfony Notifier
-- `phil/audience-segments` · 🦴 skeleton, ≈ 0% — Audience segments defined by rules, for newsletters and notifications
-- `phil/live-chat` · 🦴 skeleton, ≈ 0% — Live chat with a visitor
-- `phil/mime-reader` · 🦴 skeleton, ≈ 0% — MIME email reading, shared by bounce parsing and inbound mail
-- `phil/email-address-bundle` · 🦴 skeleton, ≈ 0% — Email addresses in Symfony: a constraint, bounce rules and IMAP reading
+- `phil/newsletter-bundle` · 🗓️ planned — Newsletters: lists, double opt-in, templates, sending through Symfony Mailer
+- `phil/newsletter-archive` · 🗓️ planned — The public archive of sent newsletters
+- `phil/email-templates-bundle` · 🗓️ planned — Email templates shared between several sites, with conditional blocks
+- `phil/email-preview` · 🗓️ planned — Preview email templates
+- `phil/mail-auth-check` · 🗓️ planned — Test a sending domain's SPF, DKIM and DMARC
+- `phil/inbound-mail-bundle` · 🗓️ planned — Inbound mail, parsed and routed
+- `phil/sms-bundle` · 🗓️ planned — Send and receive SMS on Symfony Notifier
+- `phil/audience-segments` · 🗓️ planned — Audience segments defined by rules, for newsletters and notifications
+- `phil/live-chat` · 🗓️ planned — Live chat with a visitor
+- `phil/mime-reader` · 🗓️ planned — MIME email reading, shared by bounce parsing and inbound mail
+- `phil/email-address-bundle` · 🗓️ planned — Email addresses in Symfony: a constraint, bounce rules and IMAP reading
 
 </details>
 
 <details>
-<summary><b>Events, calendar &amp; booking</b> — ✅ 2 · 🧪 3 · 🦴 30</summary>
+<summary><b>Events, calendar &amp; booking</b> — ✅ 2 · 🧪 3 · 🗓️ 30</summary>
 
 - [`phil/reservation`](https://github.com/parler-haut-interagir-librement/reservation) · ✅ released ([Packagist](https://packagist.org/packages/phil/reservation)) — The booking core: resources, slots, rules, conflicts and reminders
 - [`phil/checkin`](https://github.com/parler-haut-interagir-librement/checkin) · ✅ released ([Packagist](https://packagist.org/packages/phil/checkin)) — A code read at a door, decided at once, recorded once, online or offline
 - `phil/calendar-bundle` · 🧪 61% — Events, repeating or not, as a month, week, day, list or posters
 - `phil/reservation-bundle` · 🧪 85% — Bookings in Symfony: resources, slots, conflicts and reminders
 - `phil/checkin-bundle` · 🧪 85% — The shared check-in core: ticket or registration read, attendance noted
-- `phil/convention-bundle` · 🦴 skeleton, ≈ 0% — A convention programme: tables, seats, sign-ups, venues and rooms
-- `phil/booking-bundle` · 🦴 skeleton, ≈ 0% — Appointment booking on the reservation core
-- `phil/scheduling-poll-bundle` · 🦴 skeleton, ≈ 0% — Availability polls, answered by link without an account
-- `phil/shared-timer-bundle` · 🦴 skeleton, ≈ 0% — Shared timers over Mercure, chained, with a remote control
-- `phil/qr-attendance` · 🦴 skeleton, ≈ 0% — Attendance read from QR codes
-- `phil/waitlist-bundle` · 🦴 skeleton, ≈ 0% — Waiting lists and released places
-- `phil/workshops-bundle` · 🦴 skeleton, ≈ 0% — Workshops: sessions, places, sign-ups
-- `phil/carpool-bundle` · 🦴 skeleton, ≈ 0% — Carpooling to an event
-- `phil/lodging-bundle` · 🦴 skeleton, ≈ 0% — Event lodging: rooms, beds, assignments
-- `phil/meal-planning` · 🦴 skeleton, ≈ 0% — Event meals: menus, allergies, quantities
-- `phil/equipment-rental` · 🦴 skeleton, ≈ 0% — Equipment rental on the reservation core
-- `phil/event-weather` · 🦴 skeleton, ≈ 0% — Forecast weather for an outdoor event
-- `phil/participant-safety-info` · 🦴 skeleton, ≈ 0% — Participants' safety information, encrypted, read by organisers only
-- `phil/press-accreditation` · 🦴 skeleton, ≈ 0% — Media accreditation for an event
-- `phil/lost-and-found` · 🦴 skeleton, ≈ 0% — An event's lost and found
-- `phil/schedule-app` · 🦴 skeleton, ≈ 0% — An event programme as an installable offline app with a personal schedule
-- `phil/digital-signage` · 🦴 skeleton, ≈ 0% — Digital signage: schedules and announcements on screens
-- `phil/virtual-queue` · 🦴 skeleton, ≈ 0% — A virtual queue for a booth or an activity
-- `phil/qr-menu` · 🦴 skeleton, ≈ 0% — A menu read from a QR code
-- `phil/calendar-sync` · 🦴 skeleton, ≈ 0% — External calendars synced: busy times blocked from ICS and CalDAV
-- `phil/calendar-activitypub` · 🦴 skeleton, ≈ 0% — Calendar events federated through ActivityPub
-- `phil/availability` · 🦴 skeleton, ≈ 0% — Absences with handover, date exceptions and holidays imported from ICS
-- `phil/reservation-teams` · 🦴 skeleton, ≈ 0% — Collective reservations: weighted round robin, groups and reassignment
-- `phil/call-for-papers-bundle` · 🦴 skeleton, ≈ 0% — A call for proposals: deadlines by session type, co-presenters, review cycle
-- `phil/speakers-bundle` · 🦴 skeleton, ≈ 0% — Speakers with no account required, their profile reused from event to event
-- `phil/shifts` · 🦴 skeleton, ≈ 0% — Volunteer shifts, three assignment modes, a swap board and a reserve
-- `phil/shifts-bundle` · 🦴 skeleton, ≈ 0% — Volunteer shifts in Symfony: sign-up, swap board, coordination screens
-- `phil/signup-rounds` · 🦴 skeleton, ≈ 0% — Sign-up groups with capacities, and ranked choices processed in rounds
-- `phil/assignment` · 🦴 skeleton, ≈ 0% — Assignment by ranked preferences: ranked-choice rounds, then global optimization
-- `phil/stockroom` · 🦴 skeleton, ≈ 0% — A props stockroom: containers, items, movements and packing lists
+- `phil/convention-bundle` · 🗓️ planned — A convention programme: tables, seats, sign-ups, venues and rooms
+- `phil/booking-bundle` · 🗓️ planned — Appointment booking on the reservation core
+- `phil/scheduling-poll-bundle` · 🗓️ planned — Availability polls, answered by link without an account
+- `phil/shared-timer-bundle` · 🗓️ planned — Shared timers over Mercure, chained, with a remote control
+- `phil/qr-attendance` · 🗓️ planned — Attendance read from QR codes
+- `phil/waitlist-bundle` · 🗓️ planned — Waiting lists and released places
+- `phil/workshops-bundle` · 🗓️ planned — Workshops: sessions, places, sign-ups
+- `phil/carpool-bundle` · 🗓️ planned — Carpooling to an event
+- `phil/lodging-bundle` · 🗓️ planned — Event lodging: rooms, beds, assignments
+- `phil/meal-planning` · 🗓️ planned — Event meals: menus, allergies, quantities
+- `phil/equipment-rental` · 🗓️ planned — Equipment rental on the reservation core
+- `phil/event-weather` · 🗓️ planned — Forecast weather for an outdoor event
+- `phil/participant-safety-info` · 🗓️ planned — Participants' safety information, encrypted, read by organisers only
+- `phil/press-accreditation` · 🗓️ planned — Media accreditation for an event
+- `phil/lost-and-found` · 🗓️ planned — An event's lost and found
+- `phil/schedule-app` · 🗓️ planned — An event programme as an installable offline app with a personal schedule
+- `phil/digital-signage` · 🗓️ planned — Digital signage: schedules and announcements on screens
+- `phil/virtual-queue` · 🗓️ planned — A virtual queue for a booth or an activity
+- `phil/qr-menu` · 🗓️ planned — A menu read from a QR code
+- `phil/calendar-sync` · 🗓️ planned — External calendars synced: busy times blocked from ICS and CalDAV
+- `phil/calendar-activitypub` · 🗓️ planned — Calendar events federated through ActivityPub
+- `phil/availability` · 🗓️ planned — Absences with handover, date exceptions and holidays imported from ICS
+- `phil/reservation-teams` · 🗓️ planned — Collective reservations: weighted round robin, groups and reassignment
+- `phil/call-for-papers-bundle` · 🗓️ planned — A call for proposals: deadlines by session type, co-presenters, review cycle
+- `phil/speakers-bundle` · 🗓️ planned — Speakers with no account required, their profile reused from event to event
+- `phil/shifts` · 🗓️ planned — Volunteer shifts, three assignment modes, a swap board and a reserve
+- `phil/shifts-bundle` · 🗓️ planned — Volunteer shifts in Symfony: sign-up, swap board, coordination screens
+- `phil/signup-rounds` · 🗓️ planned — Sign-up groups with capacities, and ranked choices processed in rounds
+- `phil/assignment` · 🗓️ planned — Assignment by ranked preferences: ranked-choice rounds, then global optimization
+- `phil/stockroom` · 🗓️ planned — A props stockroom: containers, items, movements and packing lists
 
 </details>
 
 <details>
-<summary><b>Commerce</b> — ✅ 4 · 🧪 11 · 🦴 27</summary>
+<summary><b>Commerce</b> — ✅ 4 · 🧪 11 · 🗓️ 27</summary>
 
 - [`phil/money`](https://github.com/parler-haut-interagir-librement/money) · ✅ released ([Packagist](https://packagist.org/packages/phil/money)) — Amounts of money as exact integers in a known currency, with no float anywhere
 - [`phil/money-bundle`](https://github.com/parler-haut-interagir-librement/money-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/money-bundle)) — Money in Symfony forms, validation, Twig and Doctrine, without floats
@@ -536,38 +535,38 @@ showcase continues by small daily groups** of two to four packages, dependencies
 - `phil/commerce-wholesale-bundle` · 🧪 94% — Customer groups with their own prices and minimums, sales on credit with net terms
 - `phil/commerce-product-template-bundle` · 🧪 75% — Product templates in the catalogue and the administration
 - `phil/licensing-bundle` · 🧪 96% — Licences for a work or a digital product
-- `phil/coupons-bundle` · 🦴 skeleton, ≈ 0% — Promo codes usable without the catalogue: donations, tickets, memberships
-- `phil/donations-bundle` · 🦴 skeleton, ≈ 0% — One-off or monthly donations
-- `phil/digital-downloads` · 🦴 skeleton, ≈ 0% — Sell and deliver digital files
-- `phil/product-bundles` · 🦴 skeleton, ≈ 0% — Products sold together
-- `phil/preorders-bundle` · 🦴 skeleton, ≈ 0% — Pre-orders, charged at release
-- `phil/receipt-email` · 🦴 skeleton, ≈ 0% — Payment receipts and donation tax receipts by email
-- `phil/invoicing-bundle` · 🦴 skeleton, ≈ 0% — Invoices and their payments
-- `phil/accounting-export` · 🦴 skeleton, ≈ 0% — Export sales and payments to accounting
-- `phil/affiliates-bundle` · 🦴 skeleton, ≈ 0% — Affiliate links, commissions and payouts
-- `phil/abandoned-cart` · 🦴 skeleton, ≈ 0% — Abandoned-cart reminders, with the customer's consent
-- `phil/inventory-alerts` · 🦴 skeleton, ≈ 0% — Low-stock and back-in-stock alerts
-- `phil/local-pickup` · 🦴 skeleton, ≈ 0% — Pick up an order in store or at a convention booth
-- `phil/trade-in-bundle` · 🦴 skeleton, ≈ 0% — Trade in used items for credit
-- `phil/auctions` · 🦴 skeleton, ≈ 0% — Auctions: bids, reserve price, closing, payment
-- `phil/product-feeds` · 🦴 skeleton, ≈ 0% — Catalogue feeds for comparison sites and marketplaces
-- `phil/shoppable-images` · 🦴 skeleton, ≈ 0% — Images whose objects link to their product
-- `phil/currency-display` · 🦴 skeleton, ≈ 0% — Prices shown in the visitor's currency
-- `phil/contracts-bundle` · 🦴 skeleton, ≈ 0% — Contracts generated, sent and tracked
-- `phil/crm-lite` · 🦴 skeleton, ≈ 0% — A customer book and the history of exchanges
-- `phil/commerce-promotions-bundle` · 🦴 skeleton, ≈ 0% — Automatic promotions: buy X get Y, free shipping, usage limits
-- `phil/commerce-payment-plans-bundle` · 🦴 skeleton, ≈ 0% — Payment plans with a grace period; nothing ships before the last payment
-- `phil/commerce-quick-order-bundle` · 🦴 skeleton, ≈ 0% — Quick ordering by SKU or barcode, pasted lines, reorders and shared lists
-- `phil/commerce-embed` · 🦴 skeleton, ≈ 0% — A buy button and widget to embed in another page
-- `phil/barcode` · 🦴 skeleton, ≈ 0% — EAN, UPC, ISBN, Code 128 and GS1 barcodes
-- `phil/barcode-bundle` · 🦴 skeleton, ≈ 0% — Barcodes in Symfony: Twig rendering, validation, scanner input
-- `phil/benefit-deliverables` · 🦴 skeleton, ≈ 0% — Benefits owed to each member as a per-period checklist
-- `phil/external-entitlements` · 🦴 skeleton, ≈ 0% — Dated entitlements granted by external support platforms
+- `phil/coupons-bundle` · 🗓️ planned — Promo codes usable without the catalogue: donations, tickets, memberships
+- `phil/donations-bundle` · 🗓️ planned — One-off or monthly donations
+- `phil/digital-downloads` · 🗓️ planned — Sell and deliver digital files
+- `phil/product-bundles` · 🗓️ planned — Products sold together
+- `phil/preorders-bundle` · 🗓️ planned — Pre-orders, charged at release
+- `phil/receipt-email` · 🗓️ planned — Payment receipts and donation tax receipts by email
+- `phil/invoicing-bundle` · 🗓️ planned — Invoices and their payments
+- `phil/accounting-export` · 🗓️ planned — Export sales and payments to accounting
+- `phil/affiliates-bundle` · 🗓️ planned — Affiliate links, commissions and payouts
+- `phil/abandoned-cart` · 🗓️ planned — Abandoned-cart reminders, with the customer's consent
+- `phil/inventory-alerts` · 🗓️ planned — Low-stock and back-in-stock alerts
+- `phil/local-pickup` · 🗓️ planned — Pick up an order in store or at a convention booth
+- `phil/trade-in-bundle` · 🗓️ planned — Trade in used items for credit
+- `phil/auctions` · 🗓️ planned — Auctions: bids, reserve price, closing, payment
+- `phil/product-feeds` · 🗓️ planned — Catalogue feeds for comparison sites and marketplaces
+- `phil/shoppable-images` · 🗓️ planned — Images whose objects link to their product
+- `phil/currency-display` · 🗓️ planned — Prices shown in the visitor's currency
+- `phil/contracts-bundle` · 🗓️ planned — Contracts generated, sent and tracked
+- `phil/crm-lite` · 🗓️ planned — A customer book and the history of exchanges
+- `phil/commerce-promotions-bundle` · 🗓️ planned — Automatic promotions: buy X get Y, free shipping, usage limits
+- `phil/commerce-payment-plans-bundle` · 🗓️ planned — Payment plans with a grace period; nothing ships before the last payment
+- `phil/commerce-quick-order-bundle` · 🗓️ planned — Quick ordering by SKU or barcode, pasted lines, reorders and shared lists
+- `phil/commerce-embed` · 🗓️ planned — A buy button and widget to embed in another page
+- `phil/barcode` · 🗓️ planned — EAN, UPC, ISBN, Code 128 and GS1 barcodes
+- `phil/barcode-bundle` · 🗓️ planned — Barcodes in Symfony: Twig rendering, validation, scanner input
+- `phil/benefit-deliverables` · 🗓️ planned — Benefits owed to each member as a per-period checklist
+- `phil/external-entitlements` · 🗓️ planned — Dated entitlements granted by external support platforms
 
 </details>
 
 <details>
-<summary><b>Places, contacts &amp; directories</b> — ✅ 9 · 🧪 3 · 🦴 4</summary>
+<summary><b>Places, contacts &amp; directories</b> — ✅ 9 · 🧪 3 · 🗓️ 4</summary>
 
 - [`phil/address`](https://github.com/parler-haut-interagir-librement/address) · ✅ released ([Packagist](https://packagist.org/packages/phil/address)) — Postal addresses checked and written the way each country writes them
 - [`phil/address-bundle`](https://github.com/parler-haut-interagir-librement/address-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/address-bundle)) — An address form whose fields follow the chosen country
@@ -581,15 +580,15 @@ showcase continues by small daily groups** of two to four packages, dependencies
 - `phil/contact` · 🧪 85% — Contact cards for people and organisations, as vCard or JSON-LD
 - `phil/contact-bundle` · 🧪 95% — A contact card form, a JSON column and vCard downloads
 - `phil/directory-bundle` · 🧪 92% — A directory of listings that members write and administrators publish
-- `phil/map-bundle` · 🦴 skeleton, ≈ 0% — Leaflet maps in Stimulus, on tracking-free tiles
-- `phil/contact-sync` · 🦴 skeleton, ≈ 0% — Contact synchronisation over CardDAV
-- `phil/portfolio-bundle` · 🦴 skeleton, ≈ 0% — A portfolio, one listing per project
-- `phil/library-bundle` · 🦴 skeleton, ≈ 0% — A game or book library: catalogue, loans, returns
+- `phil/map-bundle` · 🗓️ planned — Leaflet maps in Stimulus, on tracking-free tiles
+- `phil/contact-sync` · 🗓️ planned — Contact synchronisation over CardDAV
+- `phil/portfolio-bundle` · 🗓️ planned — A portfolio, one listing per project
+- `phil/library-bundle` · 🗓️ planned — A game or book library: catalogue, loans, returns
 
 </details>
 
 <details>
-<summary><b>Operations &amp; administration</b> — ✅ 6 · 🧪 4 · 🦴 11</summary>
+<summary><b>Operations &amp; administration</b> — ✅ 6 · 🧪 4 · 🗓️ 11</summary>
 
 - [`phil/migration`](https://github.com/parler-haut-interagir-librement/migration) · ✅ released ([Packagist](https://packagist.org/packages/phil/migration)) — Release notes and news that Doctrine migrations send to chat
 - [`phil/migration-bundle`](https://github.com/parler-haut-interagir-librement/migration-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/migration-bundle)) — Each migration run announced once on your chat channels
@@ -601,52 +600,52 @@ showcase continues by small daily groups** of two to four packages, dependencies
 - `phil/error-tracking-bundle` · 🧪 89% — Error tracking in Symfony: groups, regressions by release, alerts through a queue
 - `phil/broken-flow-alerts` · 🧪 90% — Alerts when a user journey stops completing
 - `phil/settings-bundle` · 🧪 88% — Settings that users change themselves
-- `phil/sites-console-bundle` · 🦴 skeleton, ≈ 0% — Run several sites: versions, health, shared configuration, admin accounts
-- `phil/status-page-bundle` · 🦴 skeleton, ≈ 0% — A service status page
-- `phil/bulk-actions` · 🦴 skeleton, ≈ 0% — Bulk actions in an administration
-- `phil/admin-notes` · 🦴 skeleton, ≈ 0% — Internal admin notes on a record
-- `phil/duplicate-detector` · 🦴 skeleton, ≈ 0% — Detect and merge duplicate records
-- `phil/dependency-report` · 🦴 skeleton, ≈ 0% — A package's or site's dependencies and their licences
-- `phil/secrets-rotation` · 🦴 skeleton, ≈ 0% — Rotate an application's secrets
-- `phil/helpdesk-bundle` · 🦴 skeleton, ≈ 0% — A help desk: requests, queues, canned replies
-- `phil/automations` · 🦴 skeleton, ≈ 0% — No-code automations triggered by site events
-- `phil/data-table-export` · 🦴 skeleton, ≈ 0% — Rows exported as CSV, then XLSX
-- `phil/expenses-bundle` · 🦴 skeleton, ≈ 0% — Expense claims: displayed policy, nobody approves their own, private receipts
+- `phil/sites-console-bundle` · 🗓️ planned — Run several sites: versions, health, shared configuration, admin accounts
+- `phil/status-page-bundle` · 🗓️ planned — A service status page
+- `phil/bulk-actions` · 🗓️ planned — Bulk actions in an administration
+- `phil/admin-notes` · 🗓️ planned — Internal admin notes on a record
+- `phil/duplicate-detector` · 🗓️ planned — Detect and merge duplicate records
+- `phil/dependency-report` · 🗓️ planned — A package's or site's dependencies and their licences
+- `phil/secrets-rotation` · 🗓️ planned — Rotate an application's secrets
+- `phil/helpdesk-bundle` · 🗓️ planned — A help desk: requests, queues, canned replies
+- `phil/automations` · 🗓️ planned — No-code automations triggered by site events
+- `phil/data-table-export` · 🗓️ planned — Rows exported as CSV, then XLSX
+- `phil/expenses-bundle` · 🗓️ planned — Expense claims: displayed policy, nobody approves their own, private receipts
 
 </details>
 
 <details>
-<summary><b>Integrations &amp; AI</b> — 🧪 1 · 🦴 6</summary>
+<summary><b>Integrations &amp; AI</b> — 🧪 1 · 🗓️ 6</summary>
 
 - `phil/ai-bundle` · 🧪 70% — Language-model tasks that propose and never impose, counted to the token, forgetful of every word
-- `phil/mcp-bundle` · 🦴 skeleton, ≈ 0% — An MCP server on Symfony AI, within the user's rights, audited
-- `phil/slack-interactions-bundle` · 🦴 skeleton, ≈ 0% — Signed Slack commands and interactions
-- `phil/notion` · 🦴 skeleton, ≈ 0% — Read and write Notion databases, text converted to UJO (Universal JSON Output)
-- `phil/logseq` · 🦴 skeleton, ≈ 0% — Read and write a Logseq graph
-- `phil/chat-community` · 🦴 skeleton, ≈ 0% — Link a community to a chat service: linked roles, mirrored events, announcements
-- `phil/chat-interactions-bundle` · 🦴 skeleton, ≈ 0% — Signed chat-service interactions: Ed25519 checks, commands, deferred replies
+- `phil/mcp-bundle` · 🗓️ planned — An MCP server on Symfony AI, within the user's rights, audited
+- `phil/slack-interactions-bundle` · 🗓️ planned — Signed Slack commands and interactions
+- `phil/notion` · 🗓️ planned — Read and write Notion databases, text converted to UJO (Universal JSON Output)
+- `phil/logseq` · 🗓️ planned — Read and write a Logseq graph
+- `phil/chat-community` · 🗓️ planned — Link a community to a chat service: linked roles, mirrored events, announcements
+- `phil/chat-interactions-bundle` · 🗓️ planned — Signed chat-service interactions: Ed25519 checks, commands, deferred replies
 
 </details>
 
 <details>
-<summary><b>UX &amp; interface</b> — ✅ 1 · 🧪 7 · 🦴 8</summary>
+<summary><b>UX &amp; interface</b> — ✅ 3 · 🧪 5 · 🗓️ 8</summary>
 
+- [`phil/ux-css`](https://github.com/parler-haut-interagir-librement/ux-css) · ✅ released ([Packagist](https://packagist.org/packages/phil/ux-css)) — phil-ux, the CSS framework: OKLCH tokens, light and dark themes, classless elements, layout utilities
+- [`phil/ux-kit`](https://github.com/parler-haut-interagir-librement/ux-kit) · ✅ released ([Packagist](https://packagist.org/packages/phil/ux-kit)) — The PHIL UX kit for the Symfony UX Toolkit: the recipes of the Shadcn kit and its own, styled with phil-ux
 - [`phil/menu-bundle`](https://github.com/parler-haut-interagir-librement/menu-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/menu-bundle)) — Navigation menus and breadcrumbs, with the current page marked
 - `phil/ux-bundle` · 🧪 37% — PHIL UX components, being rewritten as a kit for the Symfony UX Toolkit and the phil-ux CSS
-- `phil/ux-css` · 🧪 97% — phil-ux, the CSS framework: OKLCH tokens, light and dark themes, classless elements, layout utilities
-- `phil/ux-kit` · 🧪 88% — The PHIL UX kit for the Symfony UX Toolkit: Logo, AnimatedHeadline, Illustration and the ComingSoon block so far
 - `phil/ux-kit-shadcn` · 🧪 88% — Tailwind versions, in the Shadcn style, of the recipes PHIL UX adds
 - `phil/forms-bundle` · 🧪 90% — Forms defined in the database, entries kept only as long as needed
 - `phil/data-table-bundle` · 🧪 88% — Live Component tables: sorting, filters, inline editing, stacked on mobile
 - `phil/forms-autosave` · 🧪 90% — Form input saved as you go
-- `phil/forms-signature` · 🦴 skeleton, ≈ 0% — A handwritten or electronic signature field
-- `phil/pwa-bundle` · 🦴 skeleton, ≈ 0% — Installable, offline-readable sites: manifest, service worker, full screen
-- `phil/theme-builder` · 🦴 skeleton, ≈ 0% — Build a theme from PHIL UX tokens
-- `phil/page-builder` · 🦴 skeleton, ≈ 0% — Pages composed of blocks, without code
-- `phil/landing-pages` · 🦴 skeleton, ≈ 0% — Landing pages composed in the administration
-- `phil/menu-builder-ui` · 🦴 skeleton, ≈ 0% — Edit menus with the mouse
-- `phil/announcement-bar` · 🦴 skeleton, ≈ 0% — A site announcement bar
-- `phil/ux-translate` · 🦴 skeleton, ≈ 0% — The browser's Translator API in Stimulus and Twig, on demand, never sent to a service
+- `phil/forms-signature` · 🗓️ planned — A handwritten or electronic signature field
+- `phil/pwa-bundle` · 🗓️ planned — Installable, offline-readable sites: manifest, service worker, full screen
+- `phil/theme-builder` · 🗓️ planned — Build a theme from PHIL UX tokens
+- `phil/page-builder` · 🗓️ planned — Pages composed of blocks, without code
+- `phil/landing-pages` · 🗓️ planned — Landing pages composed in the administration
+- `phil/menu-builder-ui` · 🗓️ planned — Edit menus with the mouse
+- `phil/announcement-bar` · 🗓️ planned — A site announcement bar
+- `phil/ux-translate` · 🗓️ planned — The browser's Translator API in Stimulus and Twig, on demand, never sent to a service
 
 </details>
 
@@ -681,7 +680,7 @@ PHIL, c'est trois choses :
   [plus bas](#les-paquets).
 - **PHIL UX** (`phil-ux`), le système de design : un kit pour le Toolkit de Symfony UX et un cadre CSS. Son site sera
   [ux.ph-il.ca](https://ux.ph-il.ca).
-- **L'outillage** qui vérifie chaque paquet : `phil/dev-tools` et les squelettes de projet.
+- **L'outillage** qui vérifie chaque paquet : `phil/dev-tools` et les gabarits de projet.
 
 [ph-il.ca](https://ph-il.ca) présente la plateforme et deviendra le catalogue des modules : une page par paquet,
 générée de son README et de sa documentation, en anglais et en français.
@@ -694,7 +693,7 @@ Les paquets de jeu et de ludification — dés, générateurs, points, badges, q
 Boutiques, conventions, clubs, éditeurs et communautés en ligne ont sans cesse besoin des mêmes briques : un
 catalogue et une caisse, un calendrier, un forum, une infolettre, une politique de confidentialité vraiment
 appliquée. Nous préférons écrire chaque brique une fois, avec soin et à découvert, plutôt que recoller les mêmes
-morceaux sur chaque site. Et nous préférons vous dire franchement où en est chacune : **aujourd'hui, 83 paquets
+morceaux sur chaque site. Et nous préférons vous dire franchement où en est chacune : **aujourd'hui, 85 paquets
 sont publiés ; les autres sont en écriture ou prévus, et suivent par petits groupes quotidiens.**
 
 ### Principes
@@ -773,17 +772,16 @@ le kit Shadcn : gardez Tailwind si vous l'aimez.
 - **`phil/dev-tools`** — les configurations partagées de PHP-CS-Fixer, PHPStan, Rector, Deptrac, Arkitect, Infection,
   PHPUnit et PHPBench ; les scripts Composer qui les lancent ; les vérifications de la documentation ; de vrais
   serveurs MySQL, PostgreSQL et Gotenberg en Docker pour les tests d'intégration ; des enregistrements HTTP rejouables ;
-  la matrice des versions de PHP et de Symfony ; et le squelette d'un nouveau paquet. Publié sous licence MIT :
+  la matrice des versions de PHP et de Symfony ; et la base d'un nouveau paquet. Publié sous licence MIT :
   [dev-tools](https://github.com/parler-haut-interagir-librement/dev-tools).
-- **Les squelettes de projet** — [MicroSymfony](https://github.com/parler-haut-interagir-librement/MicroSymfony)
+- **Les gabarits de projet** — [MicroSymfony](https://github.com/parler-haut-interagir-librement/MicroSymfony)
   (issu de `strangebuzz/MicroSymfony`) et [WebSymfony](https://github.com/parler-haut-interagir-librement/WebSymfony).
 
 ### Les paquets
 
-✅ **publié** · 🧪 **écrit, en incubation** (avancement approximatif) · 🦴 **squelette en incubation** (le paquet
-existe, son code n'est pas encore écrit : ≈ 0 %) · 🗓️ **prévu**
+✅ **publié** · 🧪 **écrit, en incubation** (avancement approximatif) · 🗓️ **prévu**
 
-**418 paquets :** 83 publiés, 335 en incubation (92 écrits, 243 squelettes à près de 0 %), 0 prévus. Les pourcentages sont des estimations
+**418 paquets :** 85 publiés, 90 en incubation, 243 prévus. Les pourcentages sont des estimations
 tirées de notre dernier rapport d'avancement (11 novembre 2026). Les paquets publiés sont développés dans le monodépôt
 public [`phil`](https://github.com/parler-haut-interagir-librement/phil), scindés chacun dans son propre dépôt en
 lecture seule et publiés sur Packagist ; `phil/enums` poursuit
@@ -791,7 +789,7 @@ lecture seule et publiés sur Packagist ; `phil/enums` poursuit
 quotidiens** de deux à quatre paquets, les dépendances d'abord.
 
 <details>
-<summary><b>Données et infrastructure</b> — ✅ 19 · 🧪 16 · 🦴 16</summary>
+<summary><b>Données et infrastructure</b> — ✅ 19 · 🧪 16 · 🗓️ 16</summary>
 
 - [`phil/enums`](https://github.com/parler-haut-interagir-librement/enums) · ✅ publié ([Packagist](https://packagist.org/packages/phil/enums)) — Traits et attributs pour lister, comparer, décrire et regrouper les enums PHP (anciennement `ph-il/enums`)
 - [`phil/enums-bundle`](https://github.com/parler-haut-interagir-librement/enums-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/enums-bundle)) — Les enums dans les formulaires, traductions, Twig, la validation, Doctrine et les contrats d'API de Symfony
@@ -828,27 +826,27 @@ quotidiens** de deux à quatre paquets, les dépendances d'abord.
 - `phil/rate-limit-bundle` · 🧪 97 % — Limites de débit déclarées par attribut sur les routes, formulaires et API
 - `phil/api-keys-bundle` · 🧪 88 % — Jetons d'accès personnels pour une API publique : portées, expiration, révocation, quotas
 - `phil/rate-limit` · 🧪 95 % — La garde de production des limites de débit de Symfony : la construction échoue si un limiteur compte par serveur
-- `phil/spreadsheet` · 🦴 squelette, ≈ 0 % — Lire et écrire XLSX, ODS et CSV
-- `phil/import-wizard` · 🦴 squelette, ≈ 0 % — L'import guidé d'un fichier, colonne par colonne
-- `phil/json-canvas` · 🦴 squelette, ≈ 0 % — Lire et écrire le format ouvert JSON Canvas
-- `phil/open-data` · 🦴 squelette, ≈ 0 % — Publier les données ouvertes d'un site
-- `phil/number-words` · 🦴 squelette, ≈ 0 % — Les nombres en toutes lettres, dans toutes les langues
-- `phil/natural-dates` · 🦴 squelette, ≈ 0 % — Une date écrite en mots (« jeudi prochain 19 h ») comprise dans chaque langue
-- `phil/timezone-display` · 🦴 squelette, ≈ 0 % — Une heure affichée dans le fuseau du visiteur
-- `phil/safe-http` · 🦴 squelette, ≈ 0 % — Un client HTTP protégé pour les paquets qui lisent d'autres sites : protection contre le SSRF, limites de taille et de durée
-- `phil/rules` · 🦴 squelette, ≈ 0 % — Des conditions fixes et composables évaluées sans code, lues par les prix, les promotions et l'accès
-- `phil/rules-bundle` · 🦴 squelette, ≈ 0 % — Des règles nommées dans Symfony, leurs conditions en services étiquetés
-- `phil/measurement` · 🦴 squelette, ≈ 0 % — Les unités de mesure et leur conversion, par canal de vente
-- `phil/measurement-bundle` · 🦴 squelette, ≈ 0 % — Les mesures dans les formulaires, Doctrine et Twig de Symfony
-- `phil/custom-fields` · 🦴 squelette, ≈ 0 % — Les champs personnalisés : types, trousses appliquées par catégorie, champs protégés et à formule
-- `phil/custom-fields-bundle` · 🦴 squelette, ≈ 0 % — Les champs personnalisés dans Symfony : formulaires générés et filtres de listes
-- `phil/field-layout` · 🦴 squelette, ≈ 0 % — La disposition déclarée des formulaires d'édition : onglets, largeurs, conditions de visibilité
-- `phil/field-layout-bundle` · 🦴 squelette, ≈ 0 % — Les dispositions de champs rendues par un thème de formulaire Symfony
+- `phil/spreadsheet` · 🗓️ prévu — Lire et écrire XLSX, ODS et CSV
+- `phil/import-wizard` · 🗓️ prévu — L'import guidé d'un fichier, colonne par colonne
+- `phil/json-canvas` · 🗓️ prévu — Lire et écrire le format ouvert JSON Canvas
+- `phil/open-data` · 🗓️ prévu — Publier les données ouvertes d'un site
+- `phil/number-words` · 🗓️ prévu — Les nombres en toutes lettres, dans toutes les langues
+- `phil/natural-dates` · 🗓️ prévu — Une date écrite en mots (« jeudi prochain 19 h ») comprise dans chaque langue
+- `phil/timezone-display` · 🗓️ prévu — Une heure affichée dans le fuseau du visiteur
+- `phil/safe-http` · 🗓️ prévu — Un client HTTP protégé pour les paquets qui lisent d'autres sites : protection contre le SSRF, limites de taille et de durée
+- `phil/rules` · 🗓️ prévu — Des conditions fixes et composables évaluées sans code, lues par les prix, les promotions et l'accès
+- `phil/rules-bundle` · 🗓️ prévu — Des règles nommées dans Symfony, leurs conditions en services étiquetés
+- `phil/measurement` · 🗓️ prévu — Les unités de mesure et leur conversion, par canal de vente
+- `phil/measurement-bundle` · 🗓️ prévu — Les mesures dans les formulaires, Doctrine et Twig de Symfony
+- `phil/custom-fields` · 🗓️ prévu — Les champs personnalisés : types, trousses appliquées par catégorie, champs protégés et à formule
+- `phil/custom-fields-bundle` · 🗓️ prévu — Les champs personnalisés dans Symfony : formulaires générés et filtres de listes
+- `phil/field-layout` · 🗓️ prévu — La disposition déclarée des formulaires d'édition : onglets, largeurs, conditions de visibilité
+- `phil/field-layout-bundle` · 🗓️ prévu — Les dispositions de champs rendues par un thème de formulaire Symfony
 
 </details>
 
 <details>
-<summary><b>Contenu et texte</b> — ✅ 17 · 🧪 5 · 🦴 28</summary>
+<summary><b>Contenu et texte</b> — ✅ 17 · 🧪 5 · 🗓️ 28</summary>
 
 - [`phil/ujo`](https://github.com/parler-haut-interagir-librement/ujo) · ✅ publié ([Packagist](https://packagist.org/packages/phil/ujo)) — Des documents UJO (Universal JSON Output) lus strictement, vérifiés bloc par bloc, rendus en HTML sûr
 - [`phil/ujo-bundle`](https://github.com/parler-haut-interagir-librement/ujo-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/ujo-bundle)) — Les documents UJO (Universal JSON Output) dans Doctrine, les formulaires et Twig
@@ -872,52 +870,52 @@ quotidiens** de deux à quatre paquets, les dépendances d'abord.
 - `phil/latex-mathml` · 🧪 80 % — Des formules LaTeX converties, au serveur, en MathML que les navigateurs dessinent
 - `phil/svg-blocks` · 🧪 90 % — Les formules, schémas, graphiques et codes QR des documents par blocs, dessinés une fois au serveur
 - `phil/svg-blocks-bundle` · 🧪 85 % — Les dessins des blocs faits à l'enregistrement dans Symfony, Mermaid dans un conteneur
-- `phil/wiki-bundle` · 🦴 squelette, ≈ 0 % — Un wiki collaboratif : pages, révisions comparées, liens `[[ ]]`, verrous par bloc
-- `phil/faq-bundle` · 🦴 squelette, ≈ 0 % — Les questions fréquentes par section, cherchables, en données structurées
-- `phil/glossary-bundle` · 🦴 squelette, ≈ 0 % — Un glossaire dont les termes se lient seuls dans les textes
-- `phil/timeline-bundle` · 🦴 squelette, ≈ 0 % — Des lignes du temps de contenus datés
-- `phil/series-bundle` · 🦴 squelette, ≈ 0 % — Les séries de contenus
-- `phil/citations` · 🦴 squelette, ≈ 0 % — Citations et bibliographie dans les styles courants
-- `phil/credits` · 🦴 squelette, ≈ 0 % — La page des crédits d'une œuvre : contributeurs, rôles, ordre
-- `phil/content-templates` · 🦴 squelette, ≈ 0 % — Les gabarits d'un nouveau contenu
-- `phil/content-queries` · 🦴 squelette, ≈ 0 % — Des listes de contenus définies par une requête dans l'administration
-- `phil/curated-lists` · 🦴 squelette, ≈ 0 % — Des listes de contenus choisies et commentées
-- `phil/related-content` · 🦴 squelette, ≈ 0 % — Les contenus voisins et les produits voisins
-- `phil/content-expiry` · 🦴 squelette, ≈ 0 % — Un contenu qui signale son âge ou expire à une date
-- `phil/content-transfer` · 🦴 squelette, ≈ 0 % — Transférer un contenu d'un site à l'autre avec ses médias et ses liens
-- `phil/editorial-calendar` · 🦴 squelette, ≈ 0 % — Le calendrier éditorial des publications
-- `phil/page-protection` · 🦴 squelette, ≈ 0 % — Des pages verrouillées ou réservées à des rôles
-- `phil/reading-progress` · 🦴 squelette, ≈ 0 % — La progression de lecture d'un long contenu
-- `phil/dictionary` · 🦴 squelette, ≈ 0 % — Un dictionnaire et un thésaurus derrière un port
-- `phil/release-notes` · 🦴 squelette, ≈ 0 % — Les notes de version annoncées
-- `phil/publishing` · 🦴 squelette, ≈ 0 % — L'événement PagePublished et son contrat, pour le cycle de vie du contenu
-- `phil/story-graph` · 🦴 squelette, ≈ 0 % — Un graphe narratif à embranchements pour les leçons à embranchements et les livres-jeux
-- `phil/content-access` · 🦴 squelette, ≈ 0 % — L'accès au contenu par droits : public, membres, paliers, accès anticipé, durées fixes ou glissantes
-- `phil/content-access-bundle` · 🦴 squelette, ≈ 0 % — L'accès au contenu dans Symfony : voters, vérifications Twig et administration des règles
-- `phil/content-archive` · 🦴 squelette, ≈ 0 % — Une archive de contenu portable : UJO (Universal JSON Output) fidèle, Markdown lisible, médias
-- `phil/share-links` · 🦴 squelette, ≈ 0 % — Des liens privés nommés vers du contenu non publié, avec compteur de visites et révocation
-- `phil/share-links-bundle` · 🦴 squelette, ≈ 0 % — Les liens de partage dans Symfony : routes, aperçu en bac à sable, révocation
-- `phil/suggested-edits` · 🦴 squelette, ≈ 0 % — Des modifications suggérées à un message ou à tout un contenu
-- `phil/live-preview-bundle` · 🦴 squelette, ≈ 0 % — L'aperçu en direct sur plusieurs cibles et tailles d'appareil, remplacé sur place par Turbo
-- `phil/form-logic` · 🦴 squelette, ≈ 0 % — La logique conditionnelle des formulaires, évaluée de la même façon en PHP et en Stimulus, le serveur faisant foi
+- `phil/wiki-bundle` · 🗓️ prévu — Un wiki collaboratif : pages, révisions comparées, liens `[[ ]]`, verrous par bloc
+- `phil/faq-bundle` · 🗓️ prévu — Les questions fréquentes par section, cherchables, en données structurées
+- `phil/glossary-bundle` · 🗓️ prévu — Un glossaire dont les termes se lient seuls dans les textes
+- `phil/timeline-bundle` · 🗓️ prévu — Des lignes du temps de contenus datés
+- `phil/series-bundle` · 🗓️ prévu — Les séries de contenus
+- `phil/citations` · 🗓️ prévu — Citations et bibliographie dans les styles courants
+- `phil/credits` · 🗓️ prévu — La page des crédits d'une œuvre : contributeurs, rôles, ordre
+- `phil/content-templates` · 🗓️ prévu — Les gabarits d'un nouveau contenu
+- `phil/content-queries` · 🗓️ prévu — Des listes de contenus définies par une requête dans l'administration
+- `phil/curated-lists` · 🗓️ prévu — Des listes de contenus choisies et commentées
+- `phil/related-content` · 🗓️ prévu — Les contenus voisins et les produits voisins
+- `phil/content-expiry` · 🗓️ prévu — Un contenu qui signale son âge ou expire à une date
+- `phil/content-transfer` · 🗓️ prévu — Transférer un contenu d'un site à l'autre avec ses médias et ses liens
+- `phil/editorial-calendar` · 🗓️ prévu — Le calendrier éditorial des publications
+- `phil/page-protection` · 🗓️ prévu — Des pages verrouillées ou réservées à des rôles
+- `phil/reading-progress` · 🗓️ prévu — La progression de lecture d'un long contenu
+- `phil/dictionary` · 🗓️ prévu — Un dictionnaire et un thésaurus derrière un port
+- `phil/release-notes` · 🗓️ prévu — Les notes de version annoncées
+- `phil/publishing` · 🗓️ prévu — L'événement PagePublished et son contrat, pour le cycle de vie du contenu
+- `phil/story-graph` · 🗓️ prévu — Un graphe narratif à embranchements pour les leçons à embranchements et les livres-jeux
+- `phil/content-access` · 🗓️ prévu — L'accès au contenu par droits : public, membres, paliers, accès anticipé, durées fixes ou glissantes
+- `phil/content-access-bundle` · 🗓️ prévu — L'accès au contenu dans Symfony : voters, vérifications Twig et administration des règles
+- `phil/content-archive` · 🗓️ prévu — Une archive de contenu portable : UJO (Universal JSON Output) fidèle, Markdown lisible, médias
+- `phil/share-links` · 🗓️ prévu — Des liens privés nommés vers du contenu non publié, avec compteur de visites et révocation
+- `phil/share-links-bundle` · 🗓️ prévu — Les liens de partage dans Symfony : routes, aperçu en bac à sable, révocation
+- `phil/suggested-edits` · 🗓️ prévu — Des modifications suggérées à un message ou à tout un contenu
+- `phil/live-preview-bundle` · 🗓️ prévu — L'aperçu en direct sur plusieurs cibles et tailles d'appareil, remplacé sur place par Turbo
+- `phil/form-logic` · 🗓️ prévu — La logique conditionnelle des formulaires, évaluée de la même façon en PHP et en Stimulus, le serveur faisant foi
 
 </details>
 
 <details>
-<summary><b>Langues, traduction et typographie</b> — ✅ 2 · 🧪 3 · 🦴 2</summary>
+<summary><b>Langues, traduction et typographie</b> — ✅ 2 · 🧪 3 · 🗓️ 2</summary>
 
 - [`phil/typography`](https://github.com/parler-haut-interagir-librement/typography) · ✅ publié ([Packagist](https://packagist.org/packages/phil/typography)) — Vrais guillemets, tirets, espaces françaises et césure dans votre HTML, dans toutes les langues
 - [`phil/typography-bundle`](https://github.com/parler-haut-interagir-librement/typography-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/typography-bundle)) — La typographie partout où une application Symfony écrit du texte
 - `phil/translation-bundle` · 🧪 83 % — Un écran de traduction : segments qui survivent aux modifications, mémoire et glossaire qui vérifie
 - `phil/translation-memory` · 🧪 87 % — Traduction par segments qui réutilise l'acquis et garde les termes constants
 - `phil/locale-dimensions` · 🧪 95 % — Les locales, les versions et les chaînes de repli déclarées, en simples objets-valeurs
-- `phil/machine-translation` · 🦴 squelette, ≈ 0 % — Des traductions proposées par la machine, toujours relues
-- `phil/translation-ui` · 🦴 squelette, ≈ 0 % — L'interface de traduction des contenus et des messages d'un site
+- `phil/machine-translation` · 🗓️ prévu — Des traductions proposées par la machine, toujours relues
+- `phil/translation-ui` · 🗓️ prévu — L'interface de traduction des contenus et des messages d'un site
 
 </details>
 
 <details>
-<summary><b>Médias, documents et impression</b> — ✅ 5 · 🧪 11 · 🦴 18</summary>
+<summary><b>Médias, documents et impression</b> — ✅ 5 · 🧪 11 · 🗓️ 18</summary>
 
 - [`phil/fonts`](https://github.com/parler-haut-interagir-librement/fonts) · ✅ publié ([Packagist](https://packagist.org/packages/phil/fonts)) — Ce qu'un fichier de police dit de lui-même — noms, graisse, licence d'intégration — et sa règle `@font-face`
 - [`phil/print-preflight`](https://github.com/parler-haut-interagir-librement/print-preflight) · ✅ publié ([Packagist](https://packagist.org/packages/phil/print-preflight)) — Repérer ce qu'un imprimeur refuserait avant que le fichier lui parvienne
@@ -935,29 +933,29 @@ quotidiens** de deux à quatre paquets, les dépendances d'abord.
 - `phil/print-preflight-bundle` · 🧪 90 % — Le contrôle prépresse branché dans la génération de PDF
 - `phil/paged-media-weasyprint` · 🧪 92 % — Le moteur WeasyPrint des médias paginés : HTML et CSS mis en page en PDF, sans réseau
 - `phil/creation-disclosure` · 🧪 90 % — La façon dont une œuvre a été faite, déclarée partie par partie dans le vocabulaire Digital Source Type de l'IPTC
-- `phil/gallery-bundle` · 🦴 squelette, ≈ 0 % — Des galeries de photos par album et par événement
-- `phil/video-bundle` · 🦴 squelette, ≈ 0 % — Des vidéos hébergées ou liées, sous-titres et chapitres
-- `phil/podcast-bundle` · 🦴 squelette, ≈ 0 % — Un balado : épisodes, flux Podcasting 2.0, chapitres, transcriptions
-- `phil/live-stream-bundle` · 🦴 squelette, ≈ 0 % — La diffusion en direct annoncée, intégrée et archivée
-- `phil/transcription` · 🦴 squelette, ≈ 0 % — La transcription d'un audio ou d'une vidéo derrière un port
-- `phil/image-editor` · 🦴 squelette, ≈ 0 % — Un éditeur d'image : recadrage, rotation, filtres, annotations
-- `phil/avatar` · 🦴 squelette, ≈ 0 % — Des avatars générés
-- `phil/document-preview` · 🦴 squelette, ≈ 0 % — L'aperçu d'un document
-- `phil/pdf-watermark` · 🦴 squelette, ≈ 0 % — Le filigrane personnalisé d'un PDF vendu
-- `phil/braille-export` · 🦴 squelette, ≈ 0 % — L'export en braille abrégé ou intégral d'un document
-- `phil/demo-videos` · 🦴 squelette, ≈ 0 % — Les vidéos de démonstration d'un produit ou d'un paquet
-- `phil/audio` · 🦴 squelette, ≈ 0 % — L'audio : transcodage facultatif, forme d'onde, extraits et lecteur accessible qui fonctionne sans JavaScript
-- `phil/audio-bundle` · 🦴 squelette, ≈ 0 % — L'audio dans Symfony : composant de lecteur, téléversements et tâches de transcodage
-- `phil/music-bundle` · 🦴 squelette, ≈ 0 % — La musique d'un artiste ou d'un groupe : albums, pistes, ventes et écoute sans achat
-- `phil/timed-text` · 🦴 squelette, ≈ 0 % — Le texte minuté lu et écrit : WebVTT, SRT, chapitres et transcriptions Podcasting 2.0
-- `phil/braille-export-liblouis` · 🦴 squelette, ≈ 0 % — L'adaptateur de l'export braille qui appelle liblouis
-- `phil/slides` · 🦴 squelette, ≈ 0 % — Des diapositives lues dans un document UJO, avec mode présentateur, notes, minuterie et export PDF
-- `phil/diagram` · 🦴 squelette, ≈ 0 % — Des diagrammes écrits en texte et rendus en SVG au serveur, avec une description textuelle
+- `phil/gallery-bundle` · 🗓️ prévu — Des galeries de photos par album et par événement
+- `phil/video-bundle` · 🗓️ prévu — Des vidéos hébergées ou liées, sous-titres et chapitres
+- `phil/podcast-bundle` · 🗓️ prévu — Un balado : épisodes, flux Podcasting 2.0, chapitres, transcriptions
+- `phil/live-stream-bundle` · 🗓️ prévu — La diffusion en direct annoncée, intégrée et archivée
+- `phil/transcription` · 🗓️ prévu — La transcription d'un audio ou d'une vidéo derrière un port
+- `phil/image-editor` · 🗓️ prévu — Un éditeur d'image : recadrage, rotation, filtres, annotations
+- `phil/avatar` · 🗓️ prévu — Des avatars générés
+- `phil/document-preview` · 🗓️ prévu — L'aperçu d'un document
+- `phil/pdf-watermark` · 🗓️ prévu — Le filigrane personnalisé d'un PDF vendu
+- `phil/braille-export` · 🗓️ prévu — L'export en braille abrégé ou intégral d'un document
+- `phil/demo-videos` · 🗓️ prévu — Les vidéos de démonstration d'un produit ou d'un paquet
+- `phil/audio` · 🗓️ prévu — L'audio : transcodage facultatif, forme d'onde, extraits et lecteur accessible qui fonctionne sans JavaScript
+- `phil/audio-bundle` · 🗓️ prévu — L'audio dans Symfony : composant de lecteur, téléversements et tâches de transcodage
+- `phil/music-bundle` · 🗓️ prévu — La musique d'un artiste ou d'un groupe : albums, pistes, ventes et écoute sans achat
+- `phil/timed-text` · 🗓️ prévu — Le texte minuté lu et écrit : WebVTT, SRT, chapitres et transcriptions Podcasting 2.0
+- `phil/braille-export-liblouis` · 🗓️ prévu — L'adaptateur de l'export braille qui appelle liblouis
+- `phil/slides` · 🗓️ prévu — Des diapositives lues dans un document UJO, avec mode présentateur, notes, minuterie et export PDF
+- `phil/diagram` · 🗓️ prévu — Des diagrammes écrits en texte et rendus en SVG au serveur, avec une description textuelle
 
 </details>
 
 <details>
-<summary><b>Recherche, référencement et Web ouvert</b> — ✅ 5 · 🧪 5 · 🦴 14</summary>
+<summary><b>Recherche, référencement et Web ouvert</b> — ✅ 5 · 🧪 5 · 🗓️ 14</summary>
 
 - [`phil/sitemap`](https://github.com/parler-haut-interagir-librement/sitemap) · ✅ publié ([Packagist](https://packagist.org/packages/phil/sitemap)) — Des plans de site XML bâtis de pages vérifiées, coupés aux limites du protocole
 - [`phil/sitemap-bundle`](https://github.com/parler-haut-interagir-librement/sitemap-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/sitemap-bundle)) — `/sitemap.xml` tiré des options de route, de fournisseurs d'URL et d'un événement
@@ -969,25 +967,25 @@ quotidiens** de deux à quatre paquets, les dépendances d'abord.
 - `phil/social-cards` · 🧪 89 % — Balises Open Graph et images de partage générées
 - `phil/social-cards-bundle` · 🧪 90 % — Les métadonnées de partage et les cartes générées dans Symfony, avec l'aperçu des liens entrants
 - `phil/structured-data-bundle` · 🧪 95 % — Le graphe schema.org d'une page dans Symfony, avec une commande qui le vérifie
-- `phil/search-synonyms` · 🦴 squelette, ≈ 0 % — Les synonymes de la recherche, gérés par l'administration
-- `phil/feed-bundle` · 🦴 squelette, ≈ 0 % — Flux RSS, Atom et JSON Feed de tout contenu
-- `phil/indexnow` · 🦴 squelette, ≈ 0 % — Prévenir les moteurs de recherche par IndexNow
-- `phil/seo-check` · 🦴 squelette, ≈ 0 % — Le contrôle de référencement à la publication : titre, description, liens, données structurées
-- `phil/link-checker` · 🦴 squelette, ≈ 0 % — Trouver et signaler les liens morts
-- `phil/short-link-bundle` · 🦴 squelette, ≈ 0 % — Des liens courts sur un domaine dédié, visites comptées sans pistage
-- `phil/activitypub-bundle` · 🦴 squelette, ≈ 0 % — La fédération ActivityPub complète pour les membres (sur option) et les groupes
-- `phil/webmention-bundle` · 🦴 squelette, ≈ 0 % — Envoyer et recevoir des Webmention
-- `phil/oembed-bundle` · 🦴 squelette, ≈ 0 % — Un fournisseur oEmbed pour vos pages
-- `phil/embed-bundle` · 🦴 squelette, ≈ 0 % — Des fonctions intégrables ailleurs : jeton, thème, `frame-ancestors`
-- `phil/sitemap-visual` · 🦴 squelette, ≈ 0 % — Le plan du site dessiné pour les visiteurs
-- `phil/search-console` · 🦴 squelette, ≈ 0 % — Les données de Google Search Console, lues pour tout site
-- `phil/search-console-bundle` · 🦴 squelette, ≈ 0 % — Search Console dans Symfony : identifiants, récupérations planifiées, widgets de tableau de bord
-- `phil/feed-import` · 🦴 squelette, ≈ 0 % — Des fils RSS et Atom importés comme contenu
+- `phil/search-synonyms` · 🗓️ prévu — Les synonymes de la recherche, gérés par l'administration
+- `phil/feed-bundle` · 🗓️ prévu — Flux RSS, Atom et JSON Feed de tout contenu
+- `phil/indexnow` · 🗓️ prévu — Prévenir les moteurs de recherche par IndexNow
+- `phil/seo-check` · 🗓️ prévu — Le contrôle de référencement à la publication : titre, description, liens, données structurées
+- `phil/link-checker` · 🗓️ prévu — Trouver et signaler les liens morts
+- `phil/short-link-bundle` · 🗓️ prévu — Des liens courts sur un domaine dédié, visites comptées sans pistage
+- `phil/activitypub-bundle` · 🗓️ prévu — La fédération ActivityPub complète pour les membres (sur option) et les groupes
+- `phil/webmention-bundle` · 🗓️ prévu — Envoyer et recevoir des Webmention
+- `phil/oembed-bundle` · 🗓️ prévu — Un fournisseur oEmbed pour vos pages
+- `phil/embed-bundle` · 🗓️ prévu — Des fonctions intégrables ailleurs : jeton, thème, `frame-ancestors`
+- `phil/sitemap-visual` · 🗓️ prévu — Le plan du site dessiné pour les visiteurs
+- `phil/search-console` · 🗓️ prévu — Les données de Google Search Console, lues pour tout site
+- `phil/search-console-bundle` · 🗓️ prévu — Search Console dans Symfony : identifiants, récupérations planifiées, widgets de tableau de bord
+- `phil/feed-import` · 🗓️ prévu — Des fils RSS et Atom importés comme contenu
 
 </details>
 
 <details>
-<summary><b>Identité, accès et sécurité</b> — ✅ 7 · 🧪 4 · 🦴 13</summary>
+<summary><b>Identité, accès et sécurité</b> — ✅ 7 · 🧪 4 · 🗓️ 13</summary>
 
 - [`phil/bot-detection-bundle`](https://github.com/parler-haut-interagir-librement/bot-detection-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/bot-detection-bundle)) — Distinguer un robot d'un humain dans le navigateur, sans CAPTCHA
 - [`phil/spam-protection`](https://github.com/parler-haut-interagir-librement/spam-protection) · ✅ publié ([Packagist](https://packagist.org/packages/phil/spam-protection)) — Repérer le pourriel d'un formulaire sans CAPTCHA, en PHP simple
@@ -1000,24 +998,24 @@ quotidiens** de deux à quatre paquets, les dépendances d'abord.
 - `phil/identity-client-bundle` · 🧪 85 % — Brancher un site Symfony à un fournisseur OpenID, sur `oidc_login` de Symfony 8.2
 - `phil/browser-security-bundle` · 🧪 97 % — Les protections qu'une application Symfony demande au navigateur : CSP avec nonces, HSTS, témoins signés
 - `phil/upload-scan-bundle` · 🧪 88 % — L'analyse des téléversements dans Symfony : contrainte de fichier, quarantaine et nouvelles analyses
-- `phil/identity-provider-bundle` · 🦴 squelette, ≈ 0 % — Un fournisseur OpenID Connect pour Symfony : passkeys, mots de passe, TOTP, step-up
-- `phil/identity-provider-google` · 🦴 squelette, ≈ 0 % — La connexion Google du fournisseur d'identité, premier paquet de connexion fédérée
-- `phil/organizations-bundle` · 🦴 squelette, ≈ 0 % — Organisations, rôles et invitations
-- `phil/access-bundle` · 🦴 squelette, ≈ 0 % — Les droits d'accès par site
-- `phil/webauthn-step-up` · 🦴 squelette, ≈ 0 % — Confirmer une action sensible par une clé d'accès
-- `phil/fraud-signals` · 🦴 squelette, ≈ 0 % — Les signaux de fraude d'une commande ou d'une inscription
-- `phil/trust-levels` · 🦴 squelette, ≈ 0 % — Des niveaux de confiance qui ouvrent des droits avec l'activité
-- `phil/verification-marks` · 🦴 squelette, ≈ 0 % — La marque d'un compte vérifié
-- `phil/invitations` · 🦴 squelette, ≈ 0 % — L'invitation d'une personne par un membre, avec ses limites
-- `phil/resource-permissions` · 🦴 squelette, ≈ 0 % — Des permissions par ressource héritées le long d'un arbre, la plus précise l'emportant
-- `phil/access-codes` · 🦴 squelette, ≈ 0 % — Des codes à usage unique par lots nommés, avec page d'échange et codes stockés sous forme d'empreinte
-- `phil/access-links` · 🦴 squelette, ≈ 0 % — Les invitations par lien personnel : jeton, validité, rappels, réponse modifiable
-- `phil/delegated-accounts` · 🦴 squelette, ≈ 0 % — Un parent gère les comptes de ses enfants mineurs, avec des vérifications d'âge
+- `phil/identity-provider-bundle` · 🗓️ prévu — Un fournisseur OpenID Connect pour Symfony : passkeys, mots de passe, TOTP, step-up
+- `phil/identity-provider-google` · 🗓️ prévu — La connexion Google du fournisseur d'identité, premier paquet de connexion fédérée
+- `phil/organizations-bundle` · 🗓️ prévu — Organisations, rôles et invitations
+- `phil/access-bundle` · 🗓️ prévu — Les droits d'accès par site
+- `phil/webauthn-step-up` · 🗓️ prévu — Confirmer une action sensible par une clé d'accès
+- `phil/fraud-signals` · 🗓️ prévu — Les signaux de fraude d'une commande ou d'une inscription
+- `phil/trust-levels` · 🗓️ prévu — Des niveaux de confiance qui ouvrent des droits avec l'activité
+- `phil/verification-marks` · 🗓️ prévu — La marque d'un compte vérifié
+- `phil/invitations` · 🗓️ prévu — L'invitation d'une personne par un membre, avec ses limites
+- `phil/resource-permissions` · 🗓️ prévu — Des permissions par ressource héritées le long d'un arbre, la plus précise l'emportant
+- `phil/access-codes` · 🗓️ prévu — Des codes à usage unique par lots nommés, avec page d'échange et codes stockés sous forme d'empreinte
+- `phil/access-links` · 🗓️ prévu — Les invitations par lien personnel : jeton, validité, rappels, réponse modifiable
+- `phil/delegated-accounts` · 🗓️ prévu — Un parent gère les comptes de ses enfants mineurs, avec des vérifications d'âge
 
 </details>
 
 <details>
-<summary><b>Vie privée, accessibilité et conformité</b> — 🧪 11 · 🦴 6</summary>
+<summary><b>Vie privée, accessibilité et conformité</b> — 🧪 11 · 🗓️ 6</summary>
 
 - `phil/privacy-bundle` · 🧪 95 % — Déclarer les champs personnels, caviarder les journaux, répondre aux demandes d'accès et d'effacement (Loi 25, RGPD)
 - `phil/analytics-bundle` · 🧪 95 % — Les visites comptées en agrégats quotidiens, jamais liées à une personne
@@ -1030,17 +1028,17 @@ quotidiens** de deux à quatre paquets, les dépendances d'abord.
 - `phil/accessibility-statement-bundle` · 🧪 89 % — La page de déclaration d'accessibilité versionnée, en anglais et en français, avec un lien de pied de page
 - `phil/legal-notices-bundle` · 🧪 90 % — Les pages d'avis légal et de politique de confidentialité, par langue, chaque version à sa propre adresse
 - `phil/indexing-consent` · 🧪 93 % — La portée d'une fiche publique décidée par la personne qu'elle concerne : listée, non indexée ou non listée
-- `phil/accessibility-info` · 🦴 squelette, ≈ 0 % — Les renseignements d'accessibilité d'un lieu ou d'un événement
-- `phil/easy-read` · 🦴 squelette, ≈ 0 % — La version en langage simplifié d'un contenu, et sa vérification
-- `phil/age-gate` · 🦴 squelette, ≈ 0 % — La vérification d'âge déclarative d'un contenu ou d'une annonce
-- `phil/heatmaps` · 🦴 squelette, ≈ 0 % — Des cartes de chaleur agrégées, sans identifiant
-- `phil/guardian-consent` · 🦴 squelette, ≈ 0 % — Tranches d'âge et consentement parental des mineurs de moins de 14 ans, comme l'exige la loi québécoise
-- `phil/account-lifecycle` · 🦴 squelette, ≈ 0 % — Les comptes inactifs avertis, désactivés, puis supprimés ou anonymisés
+- `phil/accessibility-info` · 🗓️ prévu — Les renseignements d'accessibilité d'un lieu ou d'un événement
+- `phil/easy-read` · 🗓️ prévu — La version en langage simplifié d'un contenu, et sa vérification
+- `phil/age-gate` · 🗓️ prévu — La vérification d'âge déclarative d'un contenu ou d'une annonce
+- `phil/heatmaps` · 🗓️ prévu — Des cartes de chaleur agrégées, sans identifiant
+- `phil/guardian-consent` · 🗓️ prévu — Tranches d'âge et consentement parental des mineurs de moins de 14 ans, comme l'exige la loi québécoise
+- `phil/account-lifecycle` · 🗓️ prévu — Les comptes inactifs avertis, désactivés, puis supprimés ou anonymisés
 
 </details>
 
 <details>
-<summary><b>Communauté</b> — ✅ 2 · 🧪 4 · 🦴 41</summary>
+<summary><b>Communauté</b> — ✅ 2 · 🧪 4 · 🗓️ 41</summary>
 
 - [`phil/poll`](https://github.com/parler-haut-interagir-librement/poll) · ✅ publié ([Packagist](https://packagist.org/packages/phil/poll)) — Un moteur de vote : des bulletins vérifiés selon les règles de leur scrutin, comptés en classements
 - [`phil/listings`](https://github.com/parler-haut-interagir-librement/listings) · ✅ publié ([Packagist](https://packagist.org/packages/phil/listings)) — Le noyau des annonces : critères, expiration, réponses, modération
@@ -1048,132 +1046,132 @@ quotidiens** de deux à quatre paquets, les dépendances d'abord.
 - `phil/mentions-bundle` · 🧪 88 % — Les @mentions dans un texte, et leur notification
 - `phil/poll-bundle` · 🧪 85 % — Le moteur de vote : choix unique, multiple ou classé
 - `phil/onboarding-bundle` · 🧪 90 % — L'accueil d'un nouveau membre : étapes, visite guidée, liste à cocher
-- `phil/forum-bundle` · 🦴 squelette, ≈ 0 % — Des forums par section, leur clavardage, le signalement et la modération par section
-- `phil/moderation-bundle` · 🦴 squelette, ≈ 0 % — Une seule file de signalements pour forums, commentaires, réactions, annonces et messages
-- `phil/follow-bundle` · 🦴 squelette, ≈ 0 % — Suivre un contenu, un fil, une fiche ou un membre
-- `phil/conversation-bundle` · 🦴 squelette, ≈ 0 % — Les messages privés à deux ou en groupe, chiffrés au repos
-- `phil/groups-bundle` · 🦴 squelette, ≈ 0 % — Des groupes de membres
-- `phil/profiles-bundle` · 🦴 squelette, ≈ 0 % — La page publique d'un membre : ce qu'il y montre, et à qui
-- `phil/reviews-bundle` · 🦴 squelette, ≈ 0 % — Avis et notes modérés sur un produit, un jeu ou un lieu
-- `phil/survey-bundle` · 🦴 squelette, ≈ 0 % — Des questionnaires à sections et à logique conditionnelle
-- `phil/ideas-bundle` · 🦴 squelette, ≈ 0 % — Une boîte à idées avec statuts et votes
-- `phil/qa-bundle` · 🦴 squelette, ≈ 0 % — Des questions et leurs réponses, la meilleure acceptée
-- `phil/code-of-conduct` · 🦴 squelette, ≈ 0 % — Un code de conduite, son acceptation et ses signalements
-- `phil/bookmarks-bundle` · 🦴 squelette, ≈ 0 % — Les signets d'un membre, rangés en listes
-- `phil/user-lists` · 🦴 squelette, ≈ 0 % — Les listes de membres qu'un membre tient
-- `phil/classifieds-bundle` · 🦴 squelette, ≈ 0 % — Des petites annonces entre membres, sans paiement
-- `phil/job-board-bundle` · 🦴 squelette, ≈ 0 % — Les offres d'emploi et de contrat d'une communauté
-- `phil/matchmaking-bundle` · 🦴 squelette, ≈ 0 % — Trouver des partenaires : critères, lieu approximatif ou en ligne, sécurité d'abord
-- `phil/tasks-bundle` · 🦴 squelette, ≈ 0 % — Des tâches et des tableaux kanban d'équipe
-- `phil/roadmap-bundle` · 🦴 squelette, ≈ 0 % — Une feuille de route publique et ses votes
-- `phil/collab-whiteboard` · 🦴 squelette, ≈ 0 % — Un tableau blanc partagé en temps réel
-- `phil/mind-map` · 🦴 squelette, ≈ 0 % — Une carte mentale partagée
-- `phil/family-tree` · 🦴 squelette, ≈ 0 % — Un arbre généalogique
-- `phil/secret-santa` · 🦴 squelette, ≈ 0 % — L'échange de cadeaux tiré au sort
-- `phil/expense-split` · 🦴 squelette, ≈ 0 % — Le partage des dépenses d'un groupe
-- `phil/ownership-transfer` · 🦴 squelette, ≈ 0 % — Transférer la propriété d'un contenu ou d'un groupe à un autre membre
-- `phil/membership-bundle` · 🦴 squelette, ≈ 0 % — L'adhésion à une organisation : cotisation, carte de membre, renouvellement
-- `phil/assembly-bundle` · 🦴 squelette, ≈ 0 % — Les assemblées : convocation, propositions, votes, procès-verbal
-- `phil/budget-transparency` · 🦴 squelette, ≈ 0 % — Le budget d'une organisation publié et expliqué
-- `phil/sponsors-bundle` · 🦴 squelette, ≈ 0 % — Les commanditaires et leurs niveaux
-- `phil/press-kit-bundle` · 🦴 squelette, ≈ 0 % — Une trousse de presse : logos, photos, biographies, communiqués
-- `phil/spaces` · 🦴 squelette, ≈ 0 % — Un registre des modules qu'active un groupe ou une organisation
-- `phil/ranking` · 🦴 squelette, ≈ 0 % — Les tris populaire, actif, controversé et meilleur, partagés par le forum, les idées et les questions
-- `phil/reputation` · 🦴 squelette, ≈ 0 % — La réputation issue des votes des pairs, avec un plafond quotidien et sans vote négatif
-- `phil/community-notes` · 🦴 squelette, ≈ 0 % — Des notes communautaires publiées selon une règle d'accord croisé explicable
-- `phil/user-blocks` · 🦴 squelette, ≈ 0 % — Ignorer ou mettre en sourdine un membre, un groupe, un domaine ou des mots-clés
-- `phil/watched-words` · 🦴 squelette, ≈ 0 % — Des mots surveillés qui bloquent, retiennent, signalent, remplacent ou étiquettent
-- `phil/incident-mode` · 🦴 squelette, ≈ 0 % — Un mode d'incident autonome : préréglages, durée obligatoire, levée automatique
-- `phil/elections-bundle` · 🦴 squelette, ≈ 0 % — Les élections de modérateurs par vote unique transférable
-- `phil/watch-party` · 🦴 squelette, ≈ 0 % — Écouter ou regarder ensemble, synchronisés, avec un clavardage modéré
-- `phil/milestones` · 🦴 squelette, ≈ 0 % — Des jalons sur un compteur et le seuil de production d'un article
-- `phil/milestones-bundle` · 🦴 squelette, ≈ 0 % — Les jalons dans Symfony : compteurs reliés aux événements du site, progression dans Twig
-- `phil/habits` · 🦴 squelette, ≈ 0 % — Un suivi d'habitudes avec séries et score de force lissé
+- `phil/forum-bundle` · 🗓️ prévu — Des forums par section, leur clavardage, le signalement et la modération par section
+- `phil/moderation-bundle` · 🗓️ prévu — Une seule file de signalements pour forums, commentaires, réactions, annonces et messages
+- `phil/follow-bundle` · 🗓️ prévu — Suivre un contenu, un fil, une fiche ou un membre
+- `phil/conversation-bundle` · 🗓️ prévu — Les messages privés à deux ou en groupe, chiffrés au repos
+- `phil/groups-bundle` · 🗓️ prévu — Des groupes de membres
+- `phil/profiles-bundle` · 🗓️ prévu — La page publique d'un membre : ce qu'il y montre, et à qui
+- `phil/reviews-bundle` · 🗓️ prévu — Avis et notes modérés sur un produit, un jeu ou un lieu
+- `phil/survey-bundle` · 🗓️ prévu — Des questionnaires à sections et à logique conditionnelle
+- `phil/ideas-bundle` · 🗓️ prévu — Une boîte à idées avec statuts et votes
+- `phil/qa-bundle` · 🗓️ prévu — Des questions et leurs réponses, la meilleure acceptée
+- `phil/code-of-conduct` · 🗓️ prévu — Un code de conduite, son acceptation et ses signalements
+- `phil/bookmarks-bundle` · 🗓️ prévu — Les signets d'un membre, rangés en listes
+- `phil/user-lists` · 🗓️ prévu — Les listes de membres qu'un membre tient
+- `phil/classifieds-bundle` · 🗓️ prévu — Des petites annonces entre membres, sans paiement
+- `phil/job-board-bundle` · 🗓️ prévu — Les offres d'emploi et de contrat d'une communauté
+- `phil/matchmaking-bundle` · 🗓️ prévu — Trouver des partenaires : critères, lieu approximatif ou en ligne, sécurité d'abord
+- `phil/tasks-bundle` · 🗓️ prévu — Des tâches et des tableaux kanban d'équipe
+- `phil/roadmap-bundle` · 🗓️ prévu — Une feuille de route publique et ses votes
+- `phil/collab-whiteboard` · 🗓️ prévu — Un tableau blanc partagé en temps réel
+- `phil/mind-map` · 🗓️ prévu — Une carte mentale partagée
+- `phil/family-tree` · 🗓️ prévu — Un arbre généalogique
+- `phil/secret-santa` · 🗓️ prévu — L'échange de cadeaux tiré au sort
+- `phil/expense-split` · 🗓️ prévu — Le partage des dépenses d'un groupe
+- `phil/ownership-transfer` · 🗓️ prévu — Transférer la propriété d'un contenu ou d'un groupe à un autre membre
+- `phil/membership-bundle` · 🗓️ prévu — L'adhésion à une organisation : cotisation, carte de membre, renouvellement
+- `phil/assembly-bundle` · 🗓️ prévu — Les assemblées : convocation, propositions, votes, procès-verbal
+- `phil/budget-transparency` · 🗓️ prévu — Le budget d'une organisation publié et expliqué
+- `phil/sponsors-bundle` · 🗓️ prévu — Les commanditaires et leurs niveaux
+- `phil/press-kit-bundle` · 🗓️ prévu — Une trousse de presse : logos, photos, biographies, communiqués
+- `phil/spaces` · 🗓️ prévu — Un registre des modules qu'active un groupe ou une organisation
+- `phil/ranking` · 🗓️ prévu — Les tris populaire, actif, controversé et meilleur, partagés par le forum, les idées et les questions
+- `phil/reputation` · 🗓️ prévu — La réputation issue des votes des pairs, avec un plafond quotidien et sans vote négatif
+- `phil/community-notes` · 🗓️ prévu — Des notes communautaires publiées selon une règle d'accord croisé explicable
+- `phil/user-blocks` · 🗓️ prévu — Ignorer ou mettre en sourdine un membre, un groupe, un domaine ou des mots-clés
+- `phil/watched-words` · 🗓️ prévu — Des mots surveillés qui bloquent, retiennent, signalent, remplacent ou étiquettent
+- `phil/incident-mode` · 🗓️ prévu — Un mode d'incident autonome : préréglages, durée obligatoire, levée automatique
+- `phil/elections-bundle` · 🗓️ prévu — Les élections de modérateurs par vote unique transférable
+- `phil/watch-party` · 🗓️ prévu — Écouter ou regarder ensemble, synchronisés, avec un clavardage modéré
+- `phil/milestones` · 🗓️ prévu — Des jalons sur un compteur et le seuil de production d'un article
+- `phil/milestones-bundle` · 🗓️ prévu — Les jalons dans Symfony : compteurs reliés aux événements du site, progression dans Twig
+- `phil/habits` · 🗓️ prévu — Un suivi d'habitudes avec séries et score de force lissé
 
 </details>
 
 <details>
-<summary><b>Apprentissage et attestations</b> — ✅ 1 · 🧪 2 · 🦴 8</summary>
+<summary><b>Apprentissage et attestations</b> — ✅ 1 · 🧪 2 · 🗓️ 8</summary>
 
 - [`phil/open-badges`](https://github.com/parler-haut-interagir-librement/open-badges) · ✅ publié ([Packagist](https://packagist.org/packages/phil/open-badges)) — Émettre, signer, vérifier, cuire et révoquer des justificatifs Open Badges 3.0
 - `phil/open-badges-bundle` · 🧪 85 % — Profil de l'émetteur, clé publique et page de vérification des Open Badges
 - `phil/certificates-bundle` · 🧪 85 % — Des certificats vérifiables : critères, PDF à code QR, registre public
-- `phil/courses-bundle` · 🦴 squelette, ≈ 0 % — Des cours en ligne : modules, leçons, progression
-- `phil/mentoring-bundle` · 🦴 squelette, ≈ 0 % — Le mentorat : jumelage, séances, suivi
-- `phil/assessment` · 🦴 squelette, ≈ 0 % — L'évaluation : types de questions, notation selon la certitude, banque de questions versionnée
-- `phil/assessment-bundle` · 🦴 squelette, ≈ 0 % — L'évaluation dans Symfony : écrans de questionnaire, tentatives et administration de la banque de questions
-- `phil/competencies` · 🦴 squelette, ≈ 0 % — Référentiels de compétences, plans d'apprentissage et alignements Open Badges
-- `phil/peer-review` · 🦴 squelette, ≈ 0 % — L'évaluation par les pairs en phases, avec une double note et un étalonnage facultatif des correcteurs
-- `phil/proposal-review` · 🦴 squelette, ≈ 0 % — Un seul moteur d'évaluation par jury pour appels, cours et concours, avec vote par paires
-- `phil/spaced-repetition` · 🦴 squelette, ≈ 0 % — La répétition espacée générique : l'algorithme FSRS, les cartes et les révisions
+- `phil/courses-bundle` · 🗓️ prévu — Des cours en ligne : modules, leçons, progression
+- `phil/mentoring-bundle` · 🗓️ prévu — Le mentorat : jumelage, séances, suivi
+- `phil/assessment` · 🗓️ prévu — L'évaluation : types de questions, notation selon la certitude, banque de questions versionnée
+- `phil/assessment-bundle` · 🗓️ prévu — L'évaluation dans Symfony : écrans de questionnaire, tentatives et administration de la banque de questions
+- `phil/competencies` · 🗓️ prévu — Référentiels de compétences, plans d'apprentissage et alignements Open Badges
+- `phil/peer-review` · 🗓️ prévu — L'évaluation par les pairs en phases, avec une double note et un étalonnage facultatif des correcteurs
+- `phil/proposal-review` · 🗓️ prévu — Un seul moteur d'évaluation par jury pour appels, cours et concours, avec vote par paires
+- `phil/spaced-repetition` · 🗓️ prévu — La répétition espacée générique : l'algorithme FSRS, les cartes et les révisions
 
 </details>
 
 <details>
-<summary><b>Notifications, courriel et messagerie</b> — ✅ 3 · 🧪 2 · 🦴 11</summary>
+<summary><b>Notifications, courriel et messagerie</b> — ✅ 3 · 🧪 2 · 🗓️ 11</summary>
 
 - [`phil/instant-messenger`](https://github.com/parler-haut-interagir-librement/instant-messenger) · ✅ publié ([Packagist](https://packagist.org/packages/phil/instant-messenger)) — Les identifiants de messagerie par service : WhatsApp, Telegram, Signal, Matrix et d'autres
 - [`phil/instant-messenger-bundle`](https://github.com/parler-haut-interagir-librement/instant-messenger-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/instant-messenger-bundle)) — Un champ d'identifiant de messagerie, une contrainte et des filtres Twig
 - [`phil/bounce-parser`](https://github.com/parler-haut-interagir-librement/bounce-parser) · ✅ publié ([Packagist](https://packagist.org/packages/phil/bounce-parser)) — Lire les rebonds DSN et ARF et les réponses automatiques
 - `phil/notifications-bundle` · 🧪 81 % — Toasts, centre de notifications, résumés par courriel, Web Push, Discord ou Slack
 - `phil/email-address` · 🧪 92 % — La validation des adresses de courriel
-- `phil/newsletter-bundle` · 🦴 squelette, ≈ 0 % — L'infolettre : listes, double inscription, gabarits, envoi par Symfony Mailer
-- `phil/newsletter-archive` · 🦴 squelette, ≈ 0 % — L'archive publique des infolettres envoyées
-- `phil/email-templates-bundle` · 🦴 squelette, ≈ 0 % — Des gabarits de courriel partagés entre plusieurs sites, à blocs conditionnels
-- `phil/email-preview` · 🦴 squelette, ≈ 0 % — L'aperçu des gabarits de courriel
-- `phil/mail-auth-check` · 🦴 squelette, ≈ 0 % — Tester SPF, DKIM et DMARC d'un domaine d'envoi
-- `phil/inbound-mail-bundle` · 🦴 squelette, ≈ 0 % — Le courrier entrant, analysé et routé
-- `phil/sms-bundle` · 🦴 squelette, ≈ 0 % — Envoyer et recevoir des SMS sur Symfony Notifier
-- `phil/audience-segments` · 🦴 squelette, ≈ 0 % — Des segments d'audience définis par des règles, pour l'infolettre et les notifications
-- `phil/live-chat` · 🦴 squelette, ≈ 0 % — Le clavardage en direct avec un visiteur
-- `phil/mime-reader` · 🦴 squelette, ≈ 0 % — La lecture des courriels MIME, partagée par l'analyse des rebonds et le courriel entrant
-- `phil/email-address-bundle` · 🦴 squelette, ≈ 0 % — Les adresses courriel dans Symfony : une contrainte, des règles de rebond et la lecture IMAP
+- `phil/newsletter-bundle` · 🗓️ prévu — L'infolettre : listes, double inscription, gabarits, envoi par Symfony Mailer
+- `phil/newsletter-archive` · 🗓️ prévu — L'archive publique des infolettres envoyées
+- `phil/email-templates-bundle` · 🗓️ prévu — Des gabarits de courriel partagés entre plusieurs sites, à blocs conditionnels
+- `phil/email-preview` · 🗓️ prévu — L'aperçu des gabarits de courriel
+- `phil/mail-auth-check` · 🗓️ prévu — Tester SPF, DKIM et DMARC d'un domaine d'envoi
+- `phil/inbound-mail-bundle` · 🗓️ prévu — Le courrier entrant, analysé et routé
+- `phil/sms-bundle` · 🗓️ prévu — Envoyer et recevoir des SMS sur Symfony Notifier
+- `phil/audience-segments` · 🗓️ prévu — Des segments d'audience définis par des règles, pour l'infolettre et les notifications
+- `phil/live-chat` · 🗓️ prévu — Le clavardage en direct avec un visiteur
+- `phil/mime-reader` · 🗓️ prévu — La lecture des courriels MIME, partagée par l'analyse des rebonds et le courriel entrant
+- `phil/email-address-bundle` · 🗓️ prévu — Les adresses courriel dans Symfony : une contrainte, des règles de rebond et la lecture IMAP
 
 </details>
 
 <details>
-<summary><b>Événements, calendrier et réservation</b> — ✅ 2 · 🧪 3 · 🦴 30</summary>
+<summary><b>Événements, calendrier et réservation</b> — ✅ 2 · 🧪 3 · 🗓️ 30</summary>
 
 - [`phil/reservation`](https://github.com/parler-haut-interagir-librement/reservation) · ✅ publié ([Packagist](https://packagist.org/packages/phil/reservation)) — Le noyau de réservation : ressources, créneaux, règles, conflits et rappels
 - [`phil/checkin`](https://github.com/parler-haut-interagir-librement/checkin) · ✅ publié ([Packagist](https://packagist.org/packages/phil/checkin)) — Un code lu à une porte, décidé aussitôt, noté une fois, en ligne ou hors ligne
 - `phil/calendar-bundle` · 🧪 61 % — Des événements, répétés ou non, en mois, semaine, jour, liste ou affiches
 - `phil/reservation-bundle` · 🧪 85 % — Les réservations dans Symfony : ressources, plages, conflits et rappels
 - `phil/checkin-bundle` · 🧪 85 % — Le noyau d'accueil commun : billet ou inscription lus, présence notée
-- `phil/convention-bundle` · 🦴 squelette, ≈ 0 % — Le programme d'une convention : tables, places, inscriptions, lieux et salles
-- `phil/booking-bundle` · 🦴 squelette, ≈ 0 % — La prise de rendez-vous sur le noyau de réservation
-- `phil/scheduling-poll-bundle` · 🦴 squelette, ≈ 0 % — Le sondage de disponibilités, répondu par lien sans compte
-- `phil/shared-timer-bundle` · 🦴 squelette, ≈ 0 % — Une minuterie partagée par Mercure, enchaînée, avec télécommande
-- `phil/qr-attendance` · 🦴 squelette, ≈ 0 % — La présence lue au code QR
-- `phil/waitlist-bundle` · 🦴 squelette, ≈ 0 % — Les listes d'attente et la libération des places
-- `phil/workshops-bundle` · 🦴 squelette, ≈ 0 % — Des ateliers : sessions, places, inscriptions
-- `phil/carpool-bundle` · 🦴 squelette, ≈ 0 % — Le covoiturage vers un événement
-- `phil/lodging-bundle` · 🦴 squelette, ≈ 0 % — L'hébergement d'un événement : chambres, lits, attributions
-- `phil/meal-planning` · 🦴 squelette, ≈ 0 % — Les repas d'un événement : menus, allergies, quantités
-- `phil/equipment-rental` · 🦴 squelette, ≈ 0 % — La location de matériel sur le noyau de réservation
-- `phil/event-weather` · 🦴 squelette, ≈ 0 % — La météo prévue d'un événement en plein air
-- `phil/participant-safety-info` · 🦴 squelette, ≈ 0 % — Les renseignements de sécurité des participants, chiffrés, lus par les seuls responsables
-- `phil/press-accreditation` · 🦴 squelette, ≈ 0 % — L'accréditation des médias à un événement
-- `phil/lost-and-found` · 🦴 squelette, ≈ 0 % — Les objets perdus et trouvés d'un événement
-- `phil/schedule-app` · 🦴 squelette, ≈ 0 % — Le programme d'un événement en application installable hors ligne, avec horaire personnel
-- `phil/digital-signage` · 🦴 squelette, ≈ 0 % — L'affichage dynamique : horaire et annonces sur des écrans
-- `phil/virtual-queue` · 🦴 squelette, ≈ 0 % — La file d'attente virtuelle d'un kiosque ou d'une activité
-- `phil/qr-menu` · 🦴 squelette, ≈ 0 % — Un menu consultable par code QR
-- `phil/calendar-sync` · 🦴 squelette, ≈ 0 % — La synchronisation des calendriers externes : plages occupées bloquées depuis ICS et CalDAV
-- `phil/calendar-activitypub` · 🦴 squelette, ≈ 0 % — Les événements du calendrier fédérés par ActivityPub
-- `phil/availability` · 🦴 squelette, ≈ 0 % — Les absences avec transfert, les exceptions de dates et les fériés importés d'ICS
-- `phil/reservation-teams` · 🦴 squelette, ≈ 0 % — Les réservations collectives : tourniquet pondéré, groupes et réaffectation
-- `phil/call-for-papers-bundle` · 🦴 squelette, ≈ 0 % — Un appel de propositions : échéances par type de séance, coprésentateurs, cycle d'évaluation
-- `phil/speakers-bundle` · 🦴 squelette, ≈ 0 % — Les présentateurs sans compte requis, leur profil réutilisé d'un événement à l'autre
-- `phil/shifts` · 🦴 squelette, ≈ 0 % — Les quarts de bénévolat, trois modes d'affectation, un tableau d'échanges et une réserve
-- `phil/shifts-bundle` · 🦴 squelette, ≈ 0 % — Les quarts de bénévolat dans Symfony : inscription, tableau d'échanges, écrans de coordination
-- `phil/signup-rounds` · 🦴 squelette, ≈ 0 % — Des groupes d'inscription avec capacités, et des choix classés traités par tours
-- `phil/assignment` · 🦴 squelette, ≈ 0 % — L'affectation par préférences classées : tours de choix classés, puis optimisation globale
-- `phil/stockroom` · 🦴 squelette, ≈ 0 % — Une réserve d'accessoires : contenants, articles, mouvements et listes de chargement
+- `phil/convention-bundle` · 🗓️ prévu — Le programme d'une convention : tables, places, inscriptions, lieux et salles
+- `phil/booking-bundle` · 🗓️ prévu — La prise de rendez-vous sur le noyau de réservation
+- `phil/scheduling-poll-bundle` · 🗓️ prévu — Le sondage de disponibilités, répondu par lien sans compte
+- `phil/shared-timer-bundle` · 🗓️ prévu — Une minuterie partagée par Mercure, enchaînée, avec télécommande
+- `phil/qr-attendance` · 🗓️ prévu — La présence lue au code QR
+- `phil/waitlist-bundle` · 🗓️ prévu — Les listes d'attente et la libération des places
+- `phil/workshops-bundle` · 🗓️ prévu — Des ateliers : sessions, places, inscriptions
+- `phil/carpool-bundle` · 🗓️ prévu — Le covoiturage vers un événement
+- `phil/lodging-bundle` · 🗓️ prévu — L'hébergement d'un événement : chambres, lits, attributions
+- `phil/meal-planning` · 🗓️ prévu — Les repas d'un événement : menus, allergies, quantités
+- `phil/equipment-rental` · 🗓️ prévu — La location de matériel sur le noyau de réservation
+- `phil/event-weather` · 🗓️ prévu — La météo prévue d'un événement en plein air
+- `phil/participant-safety-info` · 🗓️ prévu — Les renseignements de sécurité des participants, chiffrés, lus par les seuls responsables
+- `phil/press-accreditation` · 🗓️ prévu — L'accréditation des médias à un événement
+- `phil/lost-and-found` · 🗓️ prévu — Les objets perdus et trouvés d'un événement
+- `phil/schedule-app` · 🗓️ prévu — Le programme d'un événement en application installable hors ligne, avec horaire personnel
+- `phil/digital-signage` · 🗓️ prévu — L'affichage dynamique : horaire et annonces sur des écrans
+- `phil/virtual-queue` · 🗓️ prévu — La file d'attente virtuelle d'un kiosque ou d'une activité
+- `phil/qr-menu` · 🗓️ prévu — Un menu consultable par code QR
+- `phil/calendar-sync` · 🗓️ prévu — La synchronisation des calendriers externes : plages occupées bloquées depuis ICS et CalDAV
+- `phil/calendar-activitypub` · 🗓️ prévu — Les événements du calendrier fédérés par ActivityPub
+- `phil/availability` · 🗓️ prévu — Les absences avec transfert, les exceptions de dates et les fériés importés d'ICS
+- `phil/reservation-teams` · 🗓️ prévu — Les réservations collectives : tourniquet pondéré, groupes et réaffectation
+- `phil/call-for-papers-bundle` · 🗓️ prévu — Un appel de propositions : échéances par type de séance, coprésentateurs, cycle d'évaluation
+- `phil/speakers-bundle` · 🗓️ prévu — Les présentateurs sans compte requis, leur profil réutilisé d'un événement à l'autre
+- `phil/shifts` · 🗓️ prévu — Les quarts de bénévolat, trois modes d'affectation, un tableau d'échanges et une réserve
+- `phil/shifts-bundle` · 🗓️ prévu — Les quarts de bénévolat dans Symfony : inscription, tableau d'échanges, écrans de coordination
+- `phil/signup-rounds` · 🗓️ prévu — Des groupes d'inscription avec capacités, et des choix classés traités par tours
+- `phil/assignment` · 🗓️ prévu — L'affectation par préférences classées : tours de choix classés, puis optimisation globale
+- `phil/stockroom` · 🗓️ prévu — Une réserve d'accessoires : contenants, articles, mouvements et listes de chargement
 
 </details>
 
 <details>
-<summary><b>Commerce</b> — ✅ 4 · 🧪 11 · 🦴 27</summary>
+<summary><b>Commerce</b> — ✅ 4 · 🧪 11 · 🗓️ 27</summary>
 
 - [`phil/money`](https://github.com/parler-haut-interagir-librement/money) · ✅ publié ([Packagist](https://packagist.org/packages/phil/money)) — Des montants en entiers exacts dans une devise connue, sans aucun nombre flottant
 - [`phil/money-bundle`](https://github.com/parler-haut-interagir-librement/money-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/money-bundle)) — L'argent dans les formulaires, la validation, Twig et Doctrine de Symfony, sans flottants
@@ -1190,38 +1188,38 @@ quotidiens** de deux à quatre paquets, les dépendances d'abord.
 - `phil/commerce-wholesale-bundle` · 🧪 94 % — Groupes de clients à prix et minimums propres, ventes à crédit à terme net
 - `phil/commerce-product-template-bundle` · 🧪 75 % — Les gabarits de produit dans le catalogue et l'administration
 - `phil/licensing-bundle` · 🧪 96 % — Les licences d'une œuvre ou d'un produit numérique
-- `phil/coupons-bundle` · 🦴 squelette, ≈ 0 % — Des codes promotionnels utilisables sans le catalogue : dons, billets, adhésions
-- `phil/donations-bundle` · 🦴 squelette, ≈ 0 % — Les dons ponctuels ou mensuels
-- `phil/digital-downloads` · 🦴 squelette, ≈ 0 % — Vendre et livrer des fichiers numériques
-- `phil/product-bundles` · 🦴 squelette, ≈ 0 % — Les ensembles de produits vendus ensemble
-- `phil/preorders-bundle` · 🦴 squelette, ≈ 0 % — Les précommandes, facturées à la sortie
-- `phil/receipt-email` · 🦴 squelette, ≈ 0 % — Le reçu d'un paiement et le reçu fiscal d'un don par courriel
-- `phil/invoicing-bundle` · 🦴 squelette, ≈ 0 % — Des factures et leurs paiements
-- `phil/accounting-export` · 🦴 squelette, ≈ 0 % — L'export des ventes et paiements vers la comptabilité
-- `phil/affiliates-bundle` · 🦴 squelette, ≈ 0 % — L'affiliation : liens, commissions, versements
-- `phil/abandoned-cart` · 🦴 squelette, ≈ 0 % — La relance d'un panier abandonné, avec le consentement du client
-- `phil/inventory-alerts` · 🦴 squelette, ≈ 0 % — Les alertes de stock bas et de retour en stock
-- `phil/local-pickup` · 🦴 squelette, ≈ 0 % — Le ramassage d'une commande en magasin ou au kiosque d'une convention
-- `phil/trade-in-bundle` · 🦴 squelette, ≈ 0 % — La reprise d'articles usagés contre un crédit
-- `phil/auctions` · 🦴 squelette, ≈ 0 % — Les enchères : mises, prix de réserve, fin, paiement
-- `phil/product-feeds` · 🦴 squelette, ≈ 0 % — Le catalogue en flux pour les comparateurs et places de marché
-- `phil/shoppable-images` · 🦴 squelette, ≈ 0 % — Une image dont chaque objet mène à sa fiche produit
-- `phil/currency-display` · 🦴 squelette, ≈ 0 % — Un prix affiché dans la devise du visiteur
-- `phil/contracts-bundle` · 🦴 squelette, ≈ 0 % — Des contrats générés, envoyés et suivis
-- `phil/crm-lite` · 🦴 squelette, ≈ 0 % — Un carnet de clients et l'historique des échanges
-- `phil/commerce-promotions-bundle` · 🦴 squelette, ≈ 0 % — Les promotions automatiques : achetez X obtenez Y, livraison gratuite, limites d'usage
-- `phil/commerce-payment-plans-bundle` · 🦴 squelette, ≈ 0 % — Les paiements échelonnés avec délai de grâce ; rien n'est expédié avant le dernier paiement
-- `phil/commerce-quick-order-bundle` · 🦴 squelette, ≈ 0 % — La commande rapide par UGS ou code-barres, lignes collées, nouvelles commandes et listes partagées
-- `phil/commerce-embed` · 🦴 squelette, ≈ 0 % — Un bouton d'achat et un widget à intégrer dans une autre page
-- `phil/barcode` · 🦴 squelette, ≈ 0 % — Les codes-barres EAN, UPC, ISBN, Code 128 et GS1
-- `phil/barcode-bundle` · 🦴 squelette, ≈ 0 % — Les codes-barres dans Symfony : rendu Twig, validation, saisie par lecteur
-- `phil/benefit-deliverables` · 🦴 squelette, ≈ 0 % — Les avantages dus à chaque membre, en liste de contrôle par période
-- `phil/external-entitlements` · 🦴 squelette, ≈ 0 % — Des droits datés accordés par des plateformes externes de soutien
+- `phil/coupons-bundle` · 🗓️ prévu — Des codes promotionnels utilisables sans le catalogue : dons, billets, adhésions
+- `phil/donations-bundle` · 🗓️ prévu — Les dons ponctuels ou mensuels
+- `phil/digital-downloads` · 🗓️ prévu — Vendre et livrer des fichiers numériques
+- `phil/product-bundles` · 🗓️ prévu — Les ensembles de produits vendus ensemble
+- `phil/preorders-bundle` · 🗓️ prévu — Les précommandes, facturées à la sortie
+- `phil/receipt-email` · 🗓️ prévu — Le reçu d'un paiement et le reçu fiscal d'un don par courriel
+- `phil/invoicing-bundle` · 🗓️ prévu — Des factures et leurs paiements
+- `phil/accounting-export` · 🗓️ prévu — L'export des ventes et paiements vers la comptabilité
+- `phil/affiliates-bundle` · 🗓️ prévu — L'affiliation : liens, commissions, versements
+- `phil/abandoned-cart` · 🗓️ prévu — La relance d'un panier abandonné, avec le consentement du client
+- `phil/inventory-alerts` · 🗓️ prévu — Les alertes de stock bas et de retour en stock
+- `phil/local-pickup` · 🗓️ prévu — Le ramassage d'une commande en magasin ou au kiosque d'une convention
+- `phil/trade-in-bundle` · 🗓️ prévu — La reprise d'articles usagés contre un crédit
+- `phil/auctions` · 🗓️ prévu — Les enchères : mises, prix de réserve, fin, paiement
+- `phil/product-feeds` · 🗓️ prévu — Le catalogue en flux pour les comparateurs et places de marché
+- `phil/shoppable-images` · 🗓️ prévu — Une image dont chaque objet mène à sa fiche produit
+- `phil/currency-display` · 🗓️ prévu — Un prix affiché dans la devise du visiteur
+- `phil/contracts-bundle` · 🗓️ prévu — Des contrats générés, envoyés et suivis
+- `phil/crm-lite` · 🗓️ prévu — Un carnet de clients et l'historique des échanges
+- `phil/commerce-promotions-bundle` · 🗓️ prévu — Les promotions automatiques : achetez X obtenez Y, livraison gratuite, limites d'usage
+- `phil/commerce-payment-plans-bundle` · 🗓️ prévu — Les paiements échelonnés avec délai de grâce ; rien n'est expédié avant le dernier paiement
+- `phil/commerce-quick-order-bundle` · 🗓️ prévu — La commande rapide par UGS ou code-barres, lignes collées, nouvelles commandes et listes partagées
+- `phil/commerce-embed` · 🗓️ prévu — Un bouton d'achat et un widget à intégrer dans une autre page
+- `phil/barcode` · 🗓️ prévu — Les codes-barres EAN, UPC, ISBN, Code 128 et GS1
+- `phil/barcode-bundle` · 🗓️ prévu — Les codes-barres dans Symfony : rendu Twig, validation, saisie par lecteur
+- `phil/benefit-deliverables` · 🗓️ prévu — Les avantages dus à chaque membre, en liste de contrôle par période
+- `phil/external-entitlements` · 🗓️ prévu — Des droits datés accordés par des plateformes externes de soutien
 
 </details>
 
 <details>
-<summary><b>Lieux, contacts et répertoires</b> — ✅ 9 · 🧪 3 · 🦴 4</summary>
+<summary><b>Lieux, contacts et répertoires</b> — ✅ 9 · 🧪 3 · 🗓️ 4</summary>
 
 - [`phil/address`](https://github.com/parler-haut-interagir-librement/address) · ✅ publié ([Packagist](https://packagist.org/packages/phil/address)) — Des adresses postales vérifiées et écrites comme chaque pays les écrit
 - [`phil/address-bundle`](https://github.com/parler-haut-interagir-librement/address-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/address-bundle)) — Un formulaire d'adresse dont les champs suivent le pays choisi
@@ -1235,15 +1233,15 @@ quotidiens** de deux à quatre paquets, les dépendances d'abord.
 - `phil/contact` · 🧪 85 % — Fiches de contact de personnes et d'organisations, en vCard ou JSON-LD
 - `phil/contact-bundle` · 🧪 95 % — Un formulaire de fiche de contact, une colonne JSON et le téléchargement en vCard
 - `phil/directory-bundle` · 🧪 92 % — Un répertoire de fiches que les membres écrivent et l'administration publie
-- `phil/map-bundle` · 🦴 squelette, ≈ 0 % — Des cartes Leaflet en Stimulus, sur des tuiles sans pistage
-- `phil/contact-sync` · 🦴 squelette, ≈ 0 % — La synchronisation des contacts par CardDAV
-- `phil/portfolio-bundle` · 🦴 squelette, ≈ 0 % — Un portfolio, une fiche par projet
-- `phil/library-bundle` · 🦴 squelette, ≈ 0 % — Une ludothèque ou une bibliothèque : catalogue, prêts, retours
+- `phil/map-bundle` · 🗓️ prévu — Des cartes Leaflet en Stimulus, sur des tuiles sans pistage
+- `phil/contact-sync` · 🗓️ prévu — La synchronisation des contacts par CardDAV
+- `phil/portfolio-bundle` · 🗓️ prévu — Un portfolio, une fiche par projet
+- `phil/library-bundle` · 🗓️ prévu — Une ludothèque ou une bibliothèque : catalogue, prêts, retours
 
 </details>
 
 <details>
-<summary><b>Exploitation et administration</b> — ✅ 6 · 🧪 4 · 🦴 11</summary>
+<summary><b>Exploitation et administration</b> — ✅ 6 · 🧪 4 · 🗓️ 11</summary>
 
 - [`phil/migration`](https://github.com/parler-haut-interagir-librement/migration) · ✅ publié ([Packagist](https://packagist.org/packages/phil/migration)) — Notes de version et nouvelles que les migrations Doctrine envoient au clavardage
 - [`phil/migration-bundle`](https://github.com/parler-haut-interagir-librement/migration-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/migration-bundle)) — Chaque passage des migrations annoncé une fois sur vos canaux de clavardage
@@ -1255,52 +1253,52 @@ quotidiens** de deux à quatre paquets, les dépendances d'abord.
 - `phil/error-tracking-bundle` · 🧪 89 % — Le suivi des erreurs dans Symfony : groupes, régressions par version, alertes par une file
 - `phil/broken-flow-alerts` · 🧪 90 % — L'alerte quand un parcours cesse d'aboutir
 - `phil/settings-bundle` · 🧪 88 % — Les réglages qu'un usager modifie lui-même
-- `phil/sites-console-bundle` · 🦴 squelette, ≈ 0 % — Gérer plusieurs sites : versions, santé, configuration commune, comptes d'administration
-- `phil/status-page-bundle` · 🦴 squelette, ≈ 0 % — La page d'état des services
-- `phil/bulk-actions` · 🦴 squelette, ≈ 0 % — Les actions en lot dans une administration
-- `phil/admin-notes` · 🦴 squelette, ≈ 0 % — Les notes internes de l'administration sur une fiche
-- `phil/duplicate-detector` · 🦴 squelette, ≈ 0 % — Détecter et fusionner les fiches en double
-- `phil/dependency-report` · 🦴 squelette, ≈ 0 % — Les dépendances d'un paquet ou d'un site et leurs licences
-- `phil/secrets-rotation` · 🦴 squelette, ≈ 0 % — La rotation des secrets d'une application
-- `phil/helpdesk-bundle` · 🦴 squelette, ≈ 0 % — Un service d'assistance : demandes, files, réponses types
-- `phil/automations` · 🦴 squelette, ≈ 0 % — Des automatisations sans code déclenchées par les événements du site
-- `phil/data-table-export` · 🦴 squelette, ≈ 0 % — Des lignes exportées en CSV, puis en XLSX
-- `phil/expenses-bundle` · 🦴 squelette, ≈ 0 % — Les notes de frais : politique affichée, personne n'approuve la sienne, reçus privés
+- `phil/sites-console-bundle` · 🗓️ prévu — Gérer plusieurs sites : versions, santé, configuration commune, comptes d'administration
+- `phil/status-page-bundle` · 🗓️ prévu — La page d'état des services
+- `phil/bulk-actions` · 🗓️ prévu — Les actions en lot dans une administration
+- `phil/admin-notes` · 🗓️ prévu — Les notes internes de l'administration sur une fiche
+- `phil/duplicate-detector` · 🗓️ prévu — Détecter et fusionner les fiches en double
+- `phil/dependency-report` · 🗓️ prévu — Les dépendances d'un paquet ou d'un site et leurs licences
+- `phil/secrets-rotation` · 🗓️ prévu — La rotation des secrets d'une application
+- `phil/helpdesk-bundle` · 🗓️ prévu — Un service d'assistance : demandes, files, réponses types
+- `phil/automations` · 🗓️ prévu — Des automatisations sans code déclenchées par les événements du site
+- `phil/data-table-export` · 🗓️ prévu — Des lignes exportées en CSV, puis en XLSX
+- `phil/expenses-bundle` · 🗓️ prévu — Les notes de frais : politique affichée, personne n'approuve la sienne, reçus privés
 
 </details>
 
 <details>
-<summary><b>Intégrations et IA</b> — 🧪 1 · 🦴 6</summary>
+<summary><b>Intégrations et IA</b> — 🧪 1 · 🗓️ 6</summary>
 
 - `phil/ai-bundle` · 🧪 70 % — Des tâches de modèle de langue qui proposent sans imposer, comptées au jeton, sans rien retenir
-- `phil/mcp-bundle` · 🦴 squelette, ≈ 0 % — Un serveur MCP sur Symfony AI, dans les droits de l'usager, audité
-- `phil/slack-interactions-bundle` · 🦴 squelette, ≈ 0 % — Les commandes et interactions Slack signées
-- `phil/notion` · 🦴 squelette, ≈ 0 % — Lire et écrire une base Notion, le texte converti en UJO (Universal JSON Output)
-- `phil/logseq` · 🦴 squelette, ≈ 0 % — Lire et écrire un graphe Logseq
-- `phil/chat-community` · 🦴 squelette, ≈ 0 % — Relier une communauté à un service de clavardage : rôles liés, événements reproduits, annonces
-- `phil/chat-interactions-bundle` · 🦴 squelette, ≈ 0 % — Les interactions signées d'un service de clavardage : signatures Ed25519, commandes, réponses différées
+- `phil/mcp-bundle` · 🗓️ prévu — Un serveur MCP sur Symfony AI, dans les droits de l'usager, audité
+- `phil/slack-interactions-bundle` · 🗓️ prévu — Les commandes et interactions Slack signées
+- `phil/notion` · 🗓️ prévu — Lire et écrire une base Notion, le texte converti en UJO (Universal JSON Output)
+- `phil/logseq` · 🗓️ prévu — Lire et écrire un graphe Logseq
+- `phil/chat-community` · 🗓️ prévu — Relier une communauté à un service de clavardage : rôles liés, événements reproduits, annonces
+- `phil/chat-interactions-bundle` · 🗓️ prévu — Les interactions signées d'un service de clavardage : signatures Ed25519, commandes, réponses différées
 
 </details>
 
 <details>
-<summary><b>UX et interface</b> — ✅ 1 · 🧪 7 · 🦴 8</summary>
+<summary><b>UX et interface</b> — ✅ 3 · 🧪 5 · 🗓️ 8</summary>
 
+- [`phil/ux-css`](https://github.com/parler-haut-interagir-librement/ux-css) · ✅ publié ([Packagist](https://packagist.org/packages/phil/ux-css)) — phil-ux, le cadre CSS : jetons OKLCH, thèmes clair et sombre, éléments sans classe, utilitaires de mise en page
+- [`phil/ux-kit`](https://github.com/parler-haut-interagir-librement/ux-kit) · ✅ publié ([Packagist](https://packagist.org/packages/phil/ux-kit)) — Le kit PHIL UX pour le Toolkit de Symfony UX : les recettes du kit Shadcn et les siennes, habillées par phil-ux
 - [`phil/menu-bundle`](https://github.com/parler-haut-interagir-librement/menu-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/menu-bundle)) — Menus de navigation et fil d'Ariane, avec la page courante marquée
 - `phil/ux-bundle` · 🧪 37 % — Les composants PHIL UX, en réécriture en kit pour le Toolkit de Symfony UX et en CSS phil-ux
-- `phil/ux-css` · 🧪 97 % — phil-ux, le cadre CSS : jetons OKLCH, thèmes clair et sombre, éléments sans classe, utilitaires de mise en page
-- `phil/ux-kit` · 🧪 88 % — Le kit PHIL UX pour le Toolkit de Symfony UX : Logo, AnimatedHeadline, Illustration et le bloc ComingSoon pour l'instant
 - `phil/ux-kit-shadcn` · 🧪 88 % — Les versions Tailwind, à la façon de Shadcn, des recettes que PHIL UX ajoute
 - `phil/forms-bundle` · 🧪 90 % — Des formulaires définis en base, leurs réponses gardées le temps nécessaire seulement
 - `phil/data-table-bundle` · 🧪 88 % — Des tableaux en Live Component : tri, filtres, édition en ligne, empilés sur mobile
 - `phil/forms-autosave` · 🧪 90 % — La saisie d'un formulaire gardée en cours de route
-- `phil/forms-signature` · 🦴 squelette, ≈ 0 % — Un champ de signature manuscrite ou électronique
-- `phil/pwa-bundle` · 🦴 squelette, ≈ 0 % — Des sites installables et lisibles hors ligne : manifeste, service worker, plein écran
-- `phil/theme-builder` · 🦴 squelette, ≈ 0 % — Composer un thème à partir des jetons PHIL UX
-- `phil/page-builder` · 🦴 squelette, ≈ 0 % — Des pages composées de blocs, sans code
-- `phil/landing-pages` · 🦴 squelette, ≈ 0 % — Des pages d'atterrissage composées par l'administration
-- `phil/menu-builder-ui` · 🦴 squelette, ≈ 0 % — L'édition des menus à la souris
-- `phil/announcement-bar` · 🦴 squelette, ≈ 0 % — Le bandeau d'annonce d'un site
-- `phil/ux-translate` · 🦴 squelette, ≈ 0 % — L'API Translator du navigateur en Stimulus et en Twig, à la demande, jamais envoyée à un service
+- `phil/forms-signature` · 🗓️ prévu — Un champ de signature manuscrite ou électronique
+- `phil/pwa-bundle` · 🗓️ prévu — Des sites installables et lisibles hors ligne : manifeste, service worker, plein écran
+- `phil/theme-builder` · 🗓️ prévu — Composer un thème à partir des jetons PHIL UX
+- `phil/page-builder` · 🗓️ prévu — Des pages composées de blocs, sans code
+- `phil/landing-pages` · 🗓️ prévu — Des pages d'atterrissage composées par l'administration
+- `phil/menu-builder-ui` · 🗓️ prévu — L'édition des menus à la souris
+- `phil/announcement-bar` · 🗓️ prévu — Le bandeau d'annonce d'un site
+- `phil/ux-translate` · 🗓️ prévu — L'API Translator du navigateur en Stimulus et en Twig, à la demande, jamais envoyée à un service
 
 </details>
 
