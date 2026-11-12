@@ -44,7 +44,7 @@ The game and gamification packages — dice, generators, points, badges, quests 
 Shops, conventions, clubs, publishers and online communities keep needing the same bricks: a catalogue and a cash
 register, a calendar, a forum, a newsletter, a privacy policy that is actually applied. We would rather write each
 brick once, carefully, in the open, than glue the same parts together on every site. And we would rather tell you
-plainly how far along each brick is: **today, 111 packages are released; the others are in incubation,
+plainly how far along each brick is: **today, 112 packages are released; the others are in incubation,
 and they follow by small daily groups.**
 
 ## Principles
@@ -122,7 +122,7 @@ Shadcn kit: keep Tailwind if you like it.
   PHPUnit and PHPBench; the Composer scripts that run them; documentation checks; real MySQL, PostgreSQL and
   Gotenberg servers in Docker for integration tests; replayable HTTP recordings; the PHP and Symfony version matrix;
   and the scaffolding of a new package. Published under the MIT licence:
-  [dev-tools](https://github.com/parler-haut-interagir-librement/dev-tools).
+  [dev-tools](https://github.com/parler-haut-interagir-librement/dev-tools), and listed with [the packages](#the-packages) under *Tooling*.
 - **Project templates** — [MicroSymfony](https://github.com/parler-haut-interagir-librement/MicroSymfony) (based on
   `strangebuzz/MicroSymfony`) and [WebSymfony](https://github.com/parler-haut-interagir-librement/WebSymfony).
 
@@ -130,7 +130,7 @@ Shadcn kit: keep Tailwind if you like it.
 
 ✅ **released** · 🧪 **in incubation**
 
-**418 packages:** 111 released, 307 in incubation. The released packages are developed in the public monorepo
+**419 packages:** 112 released, 307 in incubation. The released packages are developed in the public monorepo
 [`phil`](https://github.com/parler-haut-interagir-librement/phil), each split into its own read-only repository and
 published on Packagist; `phil/enums` continues [`ph-il/enums`](https://packagist.org/packages/ph-il/enums). **The
 showcase continues by small daily groups** of two to four packages, dependencies first.
@@ -649,6 +649,13 @@ showcase continues by small daily groups** of two to four packages, dependencies
 
 </details>
 
+<details>
+<summary><b>Tooling</b> — ✅ 1</summary>
+
+- [`phil/dev-tools`](https://github.com/parler-haut-interagir-librement/dev-tools) · ✅ released ([Packagist](https://packagist.org/packages/phil/dev-tools)) — The shared quality gates of every PHIL package: configurations, Composer scripts, Docker servers, version matrix, scaffolding (see [Tooling](#tooling))
+
+</details>
+
 
 ## Get involved
 
@@ -693,7 +700,7 @@ Les paquets de jeu et de ludification — dés, générateurs, points, badges, q
 Boutiques, conventions, clubs, éditeurs et communautés en ligne ont sans cesse besoin des mêmes briques : un
 catalogue et une caisse, un calendrier, un forum, une infolettre, une politique de confidentialité vraiment
 appliquée. Nous préférons écrire chaque brique une fois, avec soin et à découvert, plutôt que recoller les mêmes
-morceaux sur chaque site. Et nous préférons vous dire franchement où en est chacune : **aujourd'hui, 111 paquets
+morceaux sur chaque site. Et nous préférons vous dire franchement où en est chacune : **aujourd'hui, 112 paquets
 sont publiés ; les autres sont en incubation et suivent par petits groupes quotidiens.**
 
 ### Principes
@@ -774,7 +781,7 @@ le kit Shadcn : gardez Tailwind si vous l'aimez.
   PHPUnit et PHPBench ; les scripts Composer qui les lancent ; les vérifications de la documentation ; de vrais
   serveurs MySQL, PostgreSQL et Gotenberg en Docker pour les tests d'intégration ; des enregistrements HTTP rejouables ;
   la matrice des versions de PHP et de Symfony ; et la base d'un nouveau paquet. Publié sous licence MIT :
-  [dev-tools](https://github.com/parler-haut-interagir-librement/dev-tools).
+  [dev-tools](https://github.com/parler-haut-interagir-librement/dev-tools), et rangé parmi [les paquets](#les-paquets) sous *Outillage*.
 - **Les gabarits de projet** — [MicroSymfony](https://github.com/parler-haut-interagir-librement/MicroSymfony)
   (issu de `strangebuzz/MicroSymfony`) et [WebSymfony](https://github.com/parler-haut-interagir-librement/WebSymfony).
 
@@ -782,7 +789,7 @@ le kit Shadcn : gardez Tailwind si vous l'aimez.
 
 ✅ **publié** · 🧪 **en incubation**
 
-**418 paquets :** 111 publiés, 307 en incubation. Les paquets publiés sont développés dans le monodépôt
+**419 paquets :** 112 publiés, 307 en incubation. Les paquets publiés sont développés dans le monodépôt
 public [`phil`](https://github.com/parler-haut-interagir-librement/phil), scindés chacun dans son propre dépôt en
 lecture seule et publiés sur Packagist ; `phil/enums` poursuit
 [`ph-il/enums`](https://packagist.org/packages/ph-il/enums). **La vitrine se poursuit par petits groupes
@@ -1299,6 +1306,13 @@ quotidiens** de deux à quatre paquets, les dépendances d'abord.
 - `phil/menu-builder-ui` · 🧪 en incubation — L'édition des menus à la souris
 - `phil/announcement-bar` · 🧪 en incubation — Le bandeau d'annonce d'un site
 - `phil/ux-translate` · 🧪 en incubation — L'API Translator du navigateur en Stimulus et en Twig, à la demande, jamais envoyée à un service
+
+</details>
+
+<details>
+<summary><b>Outillage</b> — ✅ 1</summary>
+
+- [`phil/dev-tools`](https://github.com/parler-haut-interagir-librement/dev-tools) · ✅ publié ([Packagist](https://packagist.org/packages/phil/dev-tools)) — Les portes de qualité communes à tous les paquets de PHIL : configurations, scripts Composer, serveurs Docker, matrice de versions, gabarit de paquet (voir [L'outillage](#loutillage))
 
 </details>
 
