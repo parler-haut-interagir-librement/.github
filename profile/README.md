@@ -44,7 +44,7 @@ The game and gamification packages — dice, generators, points, badges, quests 
 Shops, conventions, clubs, publishers and online communities keep needing the same bricks: a catalogue and a cash
 register, a calendar, a forum, a newsletter, a privacy policy that is actually applied. We would rather write each
 brick once, carefully, in the open, than glue the same parts together on every site. And we would rather tell you
-plainly how far along each brick is: **today, 112 packages are released; the others are in incubation,
+plainly how far along each brick is: **today, 126 packages are released; the others are in incubation,
 and they follow by small daily groups.**
 
 ## Principles
@@ -130,13 +130,13 @@ Shadcn kit: keep Tailwind if you like it.
 
 ✅ **released** · 🧪 **in incubation**
 
-**419 packages:** 112 released, 307 in incubation. The released packages are developed in the public monorepo
+**419 packages:** 126 released, 293 in incubation. The released packages are developed in the public monorepo
 [`phil`](https://github.com/parler-haut-interagir-librement/phil), each split into its own read-only repository and
 published on Packagist; `phil/enums` continues [`ph-il/enums`](https://packagist.org/packages/ph-il/enums). **The
 showcase continues by small daily groups** of two to four packages, dependencies first.
 
 <details>
-<summary><b>Data &amp; infrastructure</b> — ✅ 27 · 🧪 24</summary>
+<summary><b>Data &amp; infrastructure</b> — ✅ 29 · 🧪 22</summary>
 
 - [`phil/enums`](https://github.com/parler-haut-interagir-librement/enums) · ✅ released ([Packagist](https://packagist.org/packages/phil/enums)) — Traits and attributes to list, compare, describe and group PHP enums (formerly `ph-il/enums`)
 - [`phil/enums-bundle`](https://github.com/parler-haut-interagir-librement/enums-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/enums-bundle)) — Enums in Symfony forms, translations, Twig, validation, Doctrine and API contracts
@@ -156,6 +156,8 @@ showcase continues by small daily groups** of two to four packages, dependencies
 - [`phil/scheduled-transitions-bundle`](https://github.com/parler-haut-interagir-librement/scheduled-transitions-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/scheduled-transitions-bundle)) — Publish and unpublish on a schedule, with nobody online
 - [`phil/feature-flags-bundle`](https://github.com/parler-haut-interagir-librement/feature-flags-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/feature-flags-bundle)) — Turn features off without a deploy, run A/B tests, stop calling a failing service
 - [`phil/http-cache-tags-bundle`](https://github.com/parler-haut-interagir-librement/http-cache-tags-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/http-cache-tags-bundle)) — Cache whole pages in Varnish or a CDN, purge exactly what an edit changed
+- [`phil/api-contract`](https://github.com/parler-haut-interagir-librement/api-contract) · ✅ released ([Packagist](https://packagist.org/packages/phil/api-contract)) — Problem details, deprecation signals and OpenAPI documents checked for HTTP APIs
+- [`phil/api-contract-bundle`](https://github.com/parler-haut-interagir-librement/api-contract-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/api-contract-bundle)) — Problem details, replayed idempotent requests and deprecation notices in Symfony
 - [`phil/standard-webhooks`](https://github.com/parler-haut-interagir-librement/standard-webhooks) · ✅ released ([Packagist](https://packagist.org/packages/phil/standard-webhooks)) — Sign and verify webhooks to the Standard Webhooks specification
 - [`phil/standard-webhooks-bundle`](https://github.com/parler-haut-interagir-librement/standard-webhooks-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/standard-webhooks-bundle)) — Verified webhook deliveries as controller arguments, and signed webhooks sent
 - [`phil/idempotency`](https://github.com/parler-haut-interagir-librement/idempotency) · ✅ released ([Packagist](https://packagist.org/packages/phil/idempotency)) — Idempotency keys for APIs, Messenger, payment webhooks and double form posts
@@ -168,8 +170,6 @@ showcase continues by small daily groups** of two to four packages, dependencies
 - `phil/doctrine-behaviours-bundle` · 🧪 in incubation — Entity behaviours switched on by configuration in Symfony
 - `phil/tenancy-bundle` · 🧪 in incubation — Which tenant an account acts in, switched instantly and enforced in every query
 - `phil/usage-meter` · 🧪 in incubation — Measure what each subject used and refuse an action past its quota
-- `phil/api-contract` · 🧪 in incubation — Problem details, deprecation signals and idempotency keys for HTTP APIs
-- `phil/api-contract-bundle` · 🧪 in incubation — Problem details, replayed idempotent requests and deprecation notices in Symfony
 - `phil/usage-meter-bundle` · 🧪 in incubation — Usage meters stored with DBAL, rate limiters and purge commands
 - `phil/encrypted-fields` · 🧪 in incubation — Doctrine columns encrypted with libsodium, blind indexes, key rotation
 - `phil/encrypted-fields-bundle` · 🧪 in incubation — Encrypted fields configured in Symfony, keys in Symfony secrets or a KMS
@@ -249,28 +249,28 @@ showcase continues by small daily groups** of two to four packages, dependencies
 </details>
 
 <details>
-<summary><b>Languages, translation &amp; typography</b> — ✅ 4 · 🧪 3</summary>
+<summary><b>Languages, translation &amp; typography</b> — ✅ 5 · 🧪 2</summary>
 
+- [`phil/translation-bundle`](https://github.com/parler-haut-interagir-librement/translation-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/translation-bundle)) — A translation screen: segments that survive edits, a memory and a checking glossary
 - [`phil/translation-memory`](https://github.com/parler-haut-interagir-librement/translation-memory) · ✅ released ([Packagist](https://packagist.org/packages/phil/translation-memory)) — Segment-by-segment translation that reuses past work and keeps terms consistent
 - [`phil/typography`](https://github.com/parler-haut-interagir-librement/typography) · ✅ released ([Packagist](https://packagist.org/packages/phil/typography)) — Real quotes, dashes, French spaces and soft hyphens in your HTML, in every language
 - [`phil/typography-bundle`](https://github.com/parler-haut-interagir-librement/typography-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/typography-bundle)) — Typography everywhere a Symfony application prints text
 - [`phil/locale-dimensions`](https://github.com/parler-haut-interagir-librement/locale-dimensions) · ✅ released ([Packagist](https://packagist.org/packages/phil/locale-dimensions)) — Locales, versions and declared fallback chains, as plain value objects
-- `phil/translation-bundle` · 🧪 in incubation — A translation screen: segments that survive edits, a memory and a checking glossary
 - `phil/machine-translation` · 🧪 in incubation — Machine-suggested translations, always reviewed
 - `phil/translation-ui` · 🧪 in incubation — The screen for translating a site's content and messages
 
 </details>
 
 <details>
-<summary><b>Media, documents &amp; print</b> — ✅ 6 · 🧪 28</summary>
+<summary><b>Media, documents &amp; print</b> — ✅ 7 · 🧪 27</summary>
 
+- [`phil/media-bundle`](https://github.com/parler-haut-interagir-librement/media-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/media-bundle)) — Uploaded files and images, described, versioned and served at signed URLs
 - [`phil/fonts`](https://github.com/parler-haut-interagir-librement/fonts) · ✅ released ([Packagist](https://packagist.org/packages/phil/fonts)) — What a font file says about itself — names, weight, embedding licence — and its `@font-face`
 - [`phil/print-preflight`](https://github.com/parler-haut-interagir-librement/print-preflight) · ✅ released ([Packagist](https://packagist.org/packages/phil/print-preflight)) — Catch what a printer would refuse before the file reaches it
 - [`phil/print-compositor`](https://github.com/parler-haut-interagir-librement/print-compositor) · ✅ released ([Packagist](https://packagist.org/packages/phil/print-compositor)) — Garment mock-ups and print files, one layer per ink
 - [`phil/qr-code`](https://github.com/parler-haut-interagir-librement/qr-code) · ✅ released ([Packagist](https://packagist.org/packages/phil/qr-code)) — QR codes in plain PHP, Reed-Solomon included, in SVG and PNG
 - [`phil/qr-code-bundle`](https://github.com/parler-haut-interagir-librement/qr-code-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/qr-code-bundle)) — QR codes in Twig, routes and typed contents (URL, vCard, Wi-Fi, iCalendar)
 - [`phil/creation-disclosure`](https://github.com/parler-haut-interagir-librement/creation-disclosure) · ✅ released ([Packagist](https://packagist.org/packages/phil/creation-disclosure)) — How a work was made, declared part by part in the IPTC Digital Source Type vocabulary
-- `phil/media-bundle` · 🧪 in incubation — Uploaded files and images, described, versioned and served at signed URLs
 - `phil/document-import` · 🧪 in incubation — Word-processing documents, Markdown and HTML turned into UJO (Universal JSON Output), with a report of what did not fit
 - `phil/epub` · 🧪 in incubation — EPUB 3 books from your HTML, valid for EPUBCheck and readable by assistive technologies
 - `phil/paged-media` · 🧪 in incubation — PDF documents from PHP, with real fonts and paged HTML/CSS engines
@@ -302,19 +302,19 @@ showcase continues by small daily groups** of two to four packages, dependencies
 </details>
 
 <details>
-<summary><b>Search, SEO &amp; the open web</b> — ✅ 8 · 🧪 16</summary>
+<summary><b>Search, SEO &amp; the open web</b> — ✅ 11 · 🧪 13</summary>
 
 - [`phil/search-bundle`](https://github.com/parler-haut-interagir-librement/search-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/search-bundle)) — Full-text search over your own resources, kept up to date at each Doctrine flush
 - [`phil/search-loupe`](https://github.com/parler-haut-interagir-librement/search-loupe) · ✅ released ([Packagist](https://packagist.org/packages/phil/search-loupe)) — Typo-tolerant search in SQLite files, with no server to run
 - [`phil/sitemap`](https://github.com/parler-haut-interagir-librement/sitemap) · ✅ released ([Packagist](https://packagist.org/packages/phil/sitemap)) — Sitemap XML built from checked pages, cut to the protocol's limits
 - [`phil/sitemap-bundle`](https://github.com/parler-haut-interagir-librement/sitemap-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/sitemap-bundle)) — `/sitemap.xml` from route options, URL providers and an event
 - [`phil/search-synonyms`](https://github.com/parler-haut-interagir-librement/search-synonyms) · ✅ released ([Packagist](https://packagist.org/packages/phil/search-synonyms)) — Search synonyms per language: equivalent and one-way rules, validated, kept in files or the application's store
+- [`phil/social-cards`](https://github.com/parler-haut-interagir-librement/social-cards) · ✅ released ([Packagist](https://packagist.org/packages/phil/social-cards)) — Open Graph tags and generated share images
+- [`phil/social-cards-bundle`](https://github.com/parler-haut-interagir-librement/social-cards-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/social-cards-bundle)) — Share metadata and generated cards in Symfony, with a preview of incoming links
 - [`phil/structured-data`](https://github.com/parler-haut-interagir-librement/structured-data) · ✅ released ([Packagist](https://packagist.org/packages/phil/structured-data)) — A page's schema.org graph assembled from JSON-LD pieces
+- [`phil/structured-data-bundle`](https://github.com/parler-haut-interagir-librement/structured-data-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/structured-data-bundle)) — A page's schema.org graph in Symfony, with a command that checks it
 - [`phil/redirects-bundle`](https://github.com/parler-haut-interagir-librement/redirects-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/redirects-bundle)) — Managed 301 redirects, 404 tracking, old domains
 - [`phil/well-known-bundle`](https://github.com/parler-haut-interagir-librement/well-known-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/well-known-bundle)) — `/.well-known/` endpoints: security.txt, change-password, WebFinger, nodeinfo
-- `phil/social-cards` · 🧪 in incubation — Open Graph tags and generated share images
-- `phil/social-cards-bundle` · 🧪 in incubation — Share metadata and generated cards in Symfony, with a preview of incoming links
-- `phil/structured-data-bundle` · 🧪 in incubation — A page's schema.org graph in Symfony, with a command that checks it
 - `phil/feed-bundle` · 🧪 in incubation — RSS, Atom and JSON Feed of any content
 - `phil/indexnow` · 🧪 in incubation — Notify search engines through IndexNow
 - `phil/seo-check` · 🧪 in incubation — SEO checks at publication: title, description, links, structured data
@@ -332,13 +332,14 @@ showcase continues by small daily groups** of two to four packages, dependencies
 </details>
 
 <details>
-<summary><b>Identity, access &amp; security</b> — ✅ 8 · 🧪 16</summary>
+<summary><b>Identity, access &amp; security</b> — ✅ 9 · 🧪 15</summary>
 
 - [`phil/bot-detection-bundle`](https://github.com/parler-haut-interagir-librement/bot-detection-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/bot-detection-bundle)) — Tell a robot from a human in the browser, without a CAPTCHA
 - [`phil/spam-protection`](https://github.com/parler-haut-interagir-librement/spam-protection) · ✅ released ([Packagist](https://packagist.org/packages/phil/spam-protection)) — Spot spam in a form submission without a CAPTCHA, in plain PHP
 - [`phil/spam-protection-bundle`](https://github.com/parler-haut-interagir-librement/spam-protection-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/spam-protection-bundle)) — Keep spam out of Symfony forms without a CAPTCHA, a third party or an identifier
 - [`phil/identity-client-bundle`](https://github.com/parler-haut-interagir-librement/identity-client-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/identity-client-bundle)) — Connect a Symfony site to an OpenID provider, on Symfony 8.2's `oidc_login`
 - [`phil/passwords`](https://github.com/parler-haut-interagir-librement/passwords) · ✅ released ([Packagist](https://packagist.org/packages/phil/passwords)) — A strength meter with its own dictionaries, k-anonymous breach checks, generation
+- [`phil/browser-security-bundle`](https://github.com/parler-haut-interagir-librement/browser-security-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/browser-security-bundle)) — The protections a Symfony application asks of the browser: CSP with nonces, HSTS, signed cookies
 - [`phil/route-access-check`](https://github.com/parler-haut-interagir-librement/route-access-check) · ✅ released ([Packagist](https://packagist.org/packages/phil/route-access-check)) — Fail CI when a route has no access rule
 - [`phil/route-access-check-bundle`](https://github.com/parler-haut-interagir-librement/route-access-check-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/route-access-check-bundle)) — The route access check as a Symfony command, with a baseline and a strict mode
 - [`phil/upload-scan`](https://github.com/parler-haut-interagir-librement/upload-scan) · ✅ released ([Packagist](https://packagist.org/packages/phil/upload-scan)) — Antivirus scanning of uploads behind a port
@@ -348,7 +349,6 @@ showcase continues by small daily groups** of two to four packages, dependencies
 - `phil/organizations-bundle` · 🧪 in incubation — Organisations, roles and invitations
 - `phil/access-bundle` · 🧪 in incubation — Access rights per site
 - `phil/webauthn-step-up` · 🧪 in incubation — Confirm a sensitive action with a passkey
-- `phil/browser-security-bundle` · 🧪 in incubation — The protections a Symfony application asks of the browser: CSP with nonces, HSTS, signed cookies
 - `phil/upload-scan-bundle` · 🧪 in incubation — Upload scanning in Symfony: a file constraint, quarantine and rescans
 - `phil/fraud-signals` · 🧪 in incubation — Fraud signals on orders and sign-ups
 - `phil/trust-levels` · 🧪 in incubation — Trust levels that open rights with activity
@@ -362,16 +362,16 @@ showcase continues by small daily groups** of two to four packages, dependencies
 </details>
 
 <details>
-<summary><b>Privacy, accessibility &amp; compliance</b> — ✅ 5 · 🧪 12</summary>
+<summary><b>Privacy, accessibility &amp; compliance</b> — ✅ 6 · 🧪 11</summary>
 
 - [`phil/analytics-bundle`](https://github.com/parler-haut-interagir-librement/analytics-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/analytics-bundle)) — Visits counted in daily aggregates, never tied to a person
 - [`phil/ip-anonymizer`](https://github.com/parler-haut-interagir-librement/ip-anonymizer) · ✅ released ([Packagist](https://packagist.org/packages/phil/ip-anonymizer)) — Truncate, salt-hash and generalise IP addresses
+- [`phil/legal-notices`](https://github.com/parler-haut-interagir-librement/legal-notices) · ✅ released ([Packagist](https://packagist.org/packages/phil/legal-notices)) — A site's legal notices and privacy policy
 - [`phil/accessibility-check`](https://github.com/parler-haut-interagir-librement/accessibility-check) · ✅ released ([Packagist](https://packagist.org/packages/phil/accessibility-check)) — Accessibility checks at publication: alt texts, heading order, contrast
 - [`phil/accessibility-statement`](https://github.com/parler-haut-interagir-librement/accessibility-statement) · ✅ released ([Packagist](https://packagist.org/packages/phil/accessibility-statement)) — Versioned accessibility statements: conformance claimed, unmet criteria, alternatives and the feedback contact
 - [`phil/indexing-consent`](https://github.com/parler-haut-interagir-librement/indexing-consent) · ✅ released ([Packagist](https://packagist.org/packages/phil/indexing-consent)) — A public record's reach decided by the person it is about: listed, unindexed or unlisted
 - `phil/privacy-bundle` · 🧪 in incubation — Declare personal fields, redact logs, answer access and erasure requests (Loi 25, GDPR)
 - `phil/audit-bundle` · 🧪 in incubation — An append-only, tamper-evident audit trail that still lets you erase personal information
-- `phil/legal-notices` · 🧪 in incubation — A site's legal notices and privacy policy
 - `phil/terms-bundle` · 🧪 in incubation — Versioned terms of use and their acceptance
 - `phil/accessibility-info` · 🧪 in incubation — Accessibility information for a venue or event
 - `phil/easy-read` · 🧪 in incubation — Easy-read versions of content, and their checks
@@ -477,10 +477,11 @@ showcase continues by small daily groups** of two to four packages, dependencies
 </details>
 
 <details>
-<summary><b>Events, calendar &amp; booking</b> — ✅ 2 · 🧪 33</summary>
+<summary><b>Events, calendar &amp; booking</b> — ✅ 3 · 🧪 32</summary>
 
 - [`phil/reservation`](https://github.com/parler-haut-interagir-librement/reservation) · ✅ released ([Packagist](https://packagist.org/packages/phil/reservation)) — The booking core: resources, slots, rules, conflicts and reminders
 - [`phil/checkin`](https://github.com/parler-haut-interagir-librement/checkin) · ✅ released ([Packagist](https://packagist.org/packages/phil/checkin)) — A code read at a door, decided at once, recorded once, online or offline
+- [`phil/calendar-sync`](https://github.com/parler-haut-interagir-librement/calendar-sync) · ✅ released ([Packagist](https://packagist.org/packages/phil/calendar-sync)) — External calendars synced: busy times read from ICS, CalDAV, Google and Microsoft, events written back
 - `phil/calendar-bundle` · 🧪 in incubation — Events, repeating or not, as a month, week, day, list or posters
 - `phil/convention-bundle` · 🧪 in incubation — A convention programme: tables, seats, sign-ups, venues and rooms
 - `phil/reservation-bundle` · 🧪 in incubation — Bookings in Symfony: resources, slots, conflicts and reminders
@@ -503,7 +504,6 @@ showcase continues by small daily groups** of two to four packages, dependencies
 - `phil/digital-signage` · 🧪 in incubation — Digital signage: schedules and announcements on screens
 - `phil/virtual-queue` · 🧪 in incubation — A virtual queue for a booth or an activity
 - `phil/qr-menu` · 🧪 in incubation — A menu read from a QR code
-- `phil/calendar-sync` · 🧪 in incubation — External calendars synced: busy times blocked from ICS and CalDAV
 - `phil/calendar-activitypub` · 🧪 in incubation — Calendar events federated through ActivityPub
 - `phil/availability` · 🧪 in incubation — Absences with handover, date exceptions and holidays imported from ICS
 - `phil/reservation-teams` · 🧪 in incubation — Collective reservations: weighted round robin, groups and reassignment
@@ -566,20 +566,20 @@ showcase continues by small daily groups** of two to four packages, dependencies
 </details>
 
 <details>
-<summary><b>Places, contacts &amp; directories</b> — ✅ 9 · 🧪 7</summary>
+<summary><b>Places, contacts &amp; directories</b> — ✅ 12 · 🧪 4</summary>
 
 - [`phil/address`](https://github.com/parler-haut-interagir-librement/address) · ✅ released ([Packagist](https://packagist.org/packages/phil/address)) — Postal addresses checked and written the way each country writes them
 - [`phil/address-bundle`](https://github.com/parler-haut-interagir-librement/address-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/address-bundle)) — An address form whose fields follow the chosen country
 - [`phil/phone`](https://github.com/parler-haut-interagir-librement/phone) · ✅ released ([Packagist](https://packagist.org/packages/phil/phone)) — Phone numbers read as typed, checked against their country's plan, and formatted
 - [`phil/phone-bundle`](https://github.com/parler-haut-interagir-librement/phone-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/phone-bundle)) — A phone field, a constraint, a column type and Twig filters
+- [`phil/contact`](https://github.com/parler-haut-interagir-librement/contact) · ✅ released ([Packagist](https://packagist.org/packages/phil/contact)) — Contact cards for people and organisations, as vCard or JSON-LD
+- [`phil/contact-bundle`](https://github.com/parler-haut-interagir-librement/contact-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/contact-bundle)) — A contact card form, a JSON column and vCard downloads
 - [`phil/contact-form-bundle`](https://github.com/parler-haut-interagir-librement/contact-form-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/contact-form-bundle)) — A "write to us" page, protected from spam without a CAPTCHA
 - [`phil/geo`](https://github.com/parler-haut-interagir-librement/geo) · ✅ released ([Packagist](https://packagist.org/packages/phil/geo)) — Coordinates, distances and bounding boxes as values, geocoding through the provider you pick
 - [`phil/geo-bundle`](https://github.com/parler-haut-interagir-librement/geo-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/geo-bundle)) — Stored coordinates, distances in Twig, geocoders and nearest-first lists
 - [`phil/opening-hours`](https://github.com/parler-haut-interagir-librement/opening-hours) · ✅ released ([Packagist](https://packagist.org/packages/phil/opening-hours)) — A place's opening hours, and whether it is open right now
 - [`phil/opening-hours-bundle`](https://github.com/parler-haut-interagir-librement/opening-hours-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/opening-hours-bundle)) — An opening-hours form, a JSON column and localised hours in Twig
-- `phil/contact` · 🧪 in incubation — Contact cards for people and organisations, as vCard or JSON-LD
-- `phil/contact-bundle` · 🧪 in incubation — A contact card form, a JSON column and vCard downloads
-- `phil/directory-bundle` · 🧪 in incubation — A directory of listings that members write and administrators publish
+- [`phil/directory-bundle`](https://github.com/parler-haut-interagir-librement/directory-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/directory-bundle)) — A directory of listings that members write and administrators publish
 - `phil/map-bundle` · 🧪 in incubation — Leaflet maps in Stimulus, on tracking-free tiles
 - `phil/contact-sync` · 🧪 in incubation — Contact synchronisation over CardDAV
 - `phil/portfolio-bundle` · 🧪 in incubation — A portfolio, one listing per project
@@ -628,16 +628,16 @@ showcase continues by small daily groups** of two to four packages, dependencies
 </details>
 
 <details>
-<summary><b>UX &amp; interface</b> — ✅ 4 · 🧪 12</summary>
+<summary><b>UX &amp; interface</b> — ✅ 5 · 🧪 11</summary>
 
 - [`phil/ux-bundle`](https://github.com/parler-haut-interagir-librement/ux-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/ux-bundle)) — PHIL UX in a Symfony application: the PHIL UX form theme on every form, and the phil-ux stylesheet in AssetMapper
 - [`phil/ux-css`](https://github.com/parler-haut-interagir-librement/ux-css) · ✅ released ([Packagist](https://packagist.org/packages/phil/ux-css)) — phil-ux, the CSS framework: OKLCH tokens, light and dark themes, classless elements, layout utilities
 - [`phil/ux-kit`](https://github.com/parler-haut-interagir-librement/ux-kit) · ✅ released ([Packagist](https://packagist.org/packages/phil/ux-kit)) — The PHIL UX kit for the Symfony UX Toolkit: the recipes of the Shadcn kit and its own, styled with phil-ux
 - [`phil/menu-bundle`](https://github.com/parler-haut-interagir-librement/menu-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/menu-bundle)) — Navigation menus and breadcrumbs, with the current page marked
+- [`phil/forms-autosave`](https://github.com/parler-haut-interagir-librement/forms-autosave) · ✅ released ([Packagist](https://packagist.org/packages/phil/forms-autosave)) — Form input saved as you go
 - `phil/ux-kit-shadcn` · 🧪 in incubation — Tailwind versions, in the Shadcn style, of the recipes PHIL UX adds
 - `phil/forms-bundle` · 🧪 in incubation — Forms defined in the database, entries kept only as long as needed
 - `phil/data-table-bundle` · 🧪 in incubation — Live Component tables: sorting, filters, inline editing, stacked on mobile
-- `phil/forms-autosave` · 🧪 in incubation — Form input saved as you go
 - `phil/forms-signature` · 🧪 in incubation — A handwritten or electronic signature field
 - `phil/pwa-bundle` · 🧪 in incubation — Installable, offline-readable sites: manifest, service worker, full screen
 - `phil/theme-builder` · 🧪 in incubation — Build a theme from PHIL UX tokens
@@ -700,7 +700,7 @@ Les paquets de jeu et de ludification — dés, générateurs, points, badges, q
 Boutiques, conventions, clubs, éditeurs et communautés en ligne ont sans cesse besoin des mêmes briques : un
 catalogue et une caisse, un calendrier, un forum, une infolettre, une politique de confidentialité vraiment
 appliquée. Nous préférons écrire chaque brique une fois, avec soin et à découvert, plutôt que recoller les mêmes
-morceaux sur chaque site. Et nous préférons vous dire franchement où en est chacune : **aujourd'hui, 112 paquets
+morceaux sur chaque site. Et nous préférons vous dire franchement où en est chacune : **aujourd'hui, 126 paquets
 sont publiés ; les autres sont en incubation et suivent par petits groupes quotidiens.**
 
 ### Principes
@@ -789,14 +789,14 @@ le kit Shadcn : gardez Tailwind si vous l'aimez.
 
 ✅ **publié** · 🧪 **en incubation**
 
-**419 paquets :** 112 publiés, 307 en incubation. Les paquets publiés sont développés dans le monodépôt
+**419 paquets :** 126 publiés, 293 en incubation. Les paquets publiés sont développés dans le monodépôt
 public [`phil`](https://github.com/parler-haut-interagir-librement/phil), scindés chacun dans son propre dépôt en
 lecture seule et publiés sur Packagist ; `phil/enums` poursuit
 [`ph-il/enums`](https://packagist.org/packages/ph-il/enums). **La vitrine se poursuit par petits groupes
 quotidiens** de deux à quatre paquets, les dépendances d'abord.
 
 <details>
-<summary><b>Données et infrastructure</b> — ✅ 27 · 🧪 24</summary>
+<summary><b>Données et infrastructure</b> — ✅ 29 · 🧪 22</summary>
 
 - [`phil/enums`](https://github.com/parler-haut-interagir-librement/enums) · ✅ publié ([Packagist](https://packagist.org/packages/phil/enums)) — Traits et attributs pour lister, comparer, décrire et regrouper les enums PHP (anciennement `ph-il/enums`)
 - [`phil/enums-bundle`](https://github.com/parler-haut-interagir-librement/enums-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/enums-bundle)) — Les enums dans les formulaires, traductions, Twig, la validation, Doctrine et les contrats d'API de Symfony
@@ -816,6 +816,8 @@ quotidiens** de deux à quatre paquets, les dépendances d'abord.
 - [`phil/scheduled-transitions-bundle`](https://github.com/parler-haut-interagir-librement/scheduled-transitions-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/scheduled-transitions-bundle)) — Publier et retirer à heure fixe, sans personne en ligne
 - [`phil/feature-flags-bundle`](https://github.com/parler-haut-interagir-librement/feature-flags-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/feature-flags-bundle)) — Couper une fonction sans déploiement, mener un test A/B, cesser d'appeler un service en panne
 - [`phil/http-cache-tags-bundle`](https://github.com/parler-haut-interagir-librement/http-cache-tags-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/http-cache-tags-bundle)) — Mettre des pages entières en cache Varnish ou CDN, purger exactement ce qu'une modification change
+- [`phil/api-contract`](https://github.com/parler-haut-interagir-librement/api-contract) · ✅ publié ([Packagist](https://packagist.org/packages/phil/api-contract)) — Détails de problème, signaux de dépréciation et documents OpenAPI vérifiés pour les API HTTP
+- [`phil/api-contract-bundle`](https://github.com/parler-haut-interagir-librement/api-contract-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/api-contract-bundle)) — Détails de problème, requêtes idempotentes rejouées et avis de dépréciation dans Symfony
 - [`phil/standard-webhooks`](https://github.com/parler-haut-interagir-librement/standard-webhooks) · ✅ publié ([Packagist](https://packagist.org/packages/phil/standard-webhooks)) — Signer et vérifier des webhooks selon la spécification Standard Webhooks
 - [`phil/standard-webhooks-bundle`](https://github.com/parler-haut-interagir-librement/standard-webhooks-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/standard-webhooks-bundle)) — Les livraisons de webhooks vérifiées en arguments de contrôleur, et l'envoi de webhooks signés
 - [`phil/idempotency`](https://github.com/parler-haut-interagir-librement/idempotency) · ✅ publié ([Packagist](https://packagist.org/packages/phil/idempotency)) — Clés d'idempotence pour les API, Messenger, les webhooks de paiement et les doubles envois
@@ -828,8 +830,6 @@ quotidiens** de deux à quatre paquets, les dépendances d'abord.
 - `phil/doctrine-behaviours-bundle` · 🧪 en incubation — Les comportements d'entité activés par configuration dans Symfony
 - `phil/tenancy-bundle` · 🧪 en incubation — Le locataire où agit un compte, changé à l'instant et appliqué à chaque requête
 - `phil/usage-meter` · 🧪 en incubation — Mesurer ce que chacun a consommé et refuser une action au-delà de son quota
-- `phil/api-contract` · 🧪 en incubation — Détails de problème, signaux de dépréciation et clés d'idempotence pour les API HTTP
-- `phil/api-contract-bundle` · 🧪 en incubation — Détails de problème, requêtes idempotentes rejouées et avis de dépréciation dans Symfony
 - `phil/usage-meter-bundle` · 🧪 en incubation — Compteurs d'usage stockés par DBAL, limiteurs de débit et commandes de purge
 - `phil/encrypted-fields` · 🧪 en incubation — Colonnes Doctrine chiffrées par libsodium, index aveugles, rotation des clés
 - `phil/encrypted-fields-bundle` · 🧪 en incubation — Les champs chiffrés configurés dans Symfony, clés dans les secrets ou un KMS
@@ -909,28 +909,28 @@ quotidiens** de deux à quatre paquets, les dépendances d'abord.
 </details>
 
 <details>
-<summary><b>Langues, traduction et typographie</b> — ✅ 4 · 🧪 3</summary>
+<summary><b>Langues, traduction et typographie</b> — ✅ 5 · 🧪 2</summary>
 
+- [`phil/translation-bundle`](https://github.com/parler-haut-interagir-librement/translation-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/translation-bundle)) — Un écran de traduction : segments qui survivent aux modifications, mémoire et glossaire qui vérifie
 - [`phil/translation-memory`](https://github.com/parler-haut-interagir-librement/translation-memory) · ✅ publié ([Packagist](https://packagist.org/packages/phil/translation-memory)) — Traduction par segments qui réutilise l'acquis et garde les termes constants
 - [`phil/typography`](https://github.com/parler-haut-interagir-librement/typography) · ✅ publié ([Packagist](https://packagist.org/packages/phil/typography)) — Vrais guillemets, tirets, espaces françaises et césure dans votre HTML, dans toutes les langues
 - [`phil/typography-bundle`](https://github.com/parler-haut-interagir-librement/typography-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/typography-bundle)) — La typographie partout où une application Symfony écrit du texte
 - [`phil/locale-dimensions`](https://github.com/parler-haut-interagir-librement/locale-dimensions) · ✅ publié ([Packagist](https://packagist.org/packages/phil/locale-dimensions)) — Les locales, les versions et les chaînes de repli déclarées, en simples objets-valeurs
-- `phil/translation-bundle` · 🧪 en incubation — Un écran de traduction : segments qui survivent aux modifications, mémoire et glossaire qui vérifie
 - `phil/machine-translation` · 🧪 en incubation — Des traductions proposées par la machine, toujours relues
 - `phil/translation-ui` · 🧪 en incubation — L'interface de traduction des contenus et des messages d'un site
 
 </details>
 
 <details>
-<summary><b>Médias, documents et impression</b> — ✅ 6 · 🧪 28</summary>
+<summary><b>Médias, documents et impression</b> — ✅ 7 · 🧪 27</summary>
 
+- [`phil/media-bundle`](https://github.com/parler-haut-interagir-librement/media-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/media-bundle)) — Fichiers et images téléversés, décrits, versionnés et servis à des URL signées
 - [`phil/fonts`](https://github.com/parler-haut-interagir-librement/fonts) · ✅ publié ([Packagist](https://packagist.org/packages/phil/fonts)) — Ce qu'un fichier de police dit de lui-même — noms, graisse, licence d'intégration — et sa règle `@font-face`
 - [`phil/print-preflight`](https://github.com/parler-haut-interagir-librement/print-preflight) · ✅ publié ([Packagist](https://packagist.org/packages/phil/print-preflight)) — Repérer ce qu'un imprimeur refuserait avant que le fichier lui parvienne
 - [`phil/print-compositor`](https://github.com/parler-haut-interagir-librement/print-compositor) · ✅ publié ([Packagist](https://packagist.org/packages/phil/print-compositor)) — Maquettes de vêtements et fichiers d'impression, une couche par encre
 - [`phil/qr-code`](https://github.com/parler-haut-interagir-librement/qr-code) · ✅ publié ([Packagist](https://packagist.org/packages/phil/qr-code)) — Des codes QR en PHP pur, Reed-Solomon compris, en SVG et PNG
 - [`phil/qr-code-bundle`](https://github.com/parler-haut-interagir-librement/qr-code-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/qr-code-bundle)) — Les codes QR dans Twig, les routes et les contenus typés (URL, vCard, Wi-Fi, iCalendar)
 - [`phil/creation-disclosure`](https://github.com/parler-haut-interagir-librement/creation-disclosure) · ✅ publié ([Packagist](https://packagist.org/packages/phil/creation-disclosure)) — La façon dont une œuvre a été faite, déclarée partie par partie dans le vocabulaire Digital Source Type de l'IPTC
-- `phil/media-bundle` · 🧪 en incubation — Fichiers et images téléversés, décrits, versionnés et servis à des URL signées
 - `phil/document-import` · 🧪 en incubation — Documents de traitement de texte, Markdown et HTML convertis en UJO (Universal JSON Output), avec le relevé de ce qui n'a pas passé
 - `phil/epub` · 🧪 en incubation — Des livres EPUB 3 tirés de votre HTML, valides pour EPUBCheck et lisibles par les aides techniques
 - `phil/paged-media` · 🧪 en incubation — Des PDF depuis PHP, avec de vraies polices et des moteurs HTML/CSS paginés
@@ -962,19 +962,19 @@ quotidiens** de deux à quatre paquets, les dépendances d'abord.
 </details>
 
 <details>
-<summary><b>Recherche, référencement et Web ouvert</b> — ✅ 8 · 🧪 16</summary>
+<summary><b>Recherche, référencement et Web ouvert</b> — ✅ 11 · 🧪 13</summary>
 
 - [`phil/search-bundle`](https://github.com/parler-haut-interagir-librement/search-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/search-bundle)) — La recherche plein texte dans vos ressources, tenue à jour à chaque flush de Doctrine
 - [`phil/search-loupe`](https://github.com/parler-haut-interagir-librement/search-loupe) · ✅ publié ([Packagist](https://packagist.org/packages/phil/search-loupe)) — Une recherche tolérante aux fautes dans des fichiers SQLite, sans serveur
 - [`phil/sitemap`](https://github.com/parler-haut-interagir-librement/sitemap) · ✅ publié ([Packagist](https://packagist.org/packages/phil/sitemap)) — Des plans de site XML bâtis de pages vérifiées, coupés aux limites du protocole
 - [`phil/sitemap-bundle`](https://github.com/parler-haut-interagir-librement/sitemap-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/sitemap-bundle)) — `/sitemap.xml` tiré des options de route, de fournisseurs d'URL et d'un événement
 - [`phil/search-synonyms`](https://github.com/parler-haut-interagir-librement/search-synonyms) · ✅ publié ([Packagist](https://packagist.org/packages/phil/search-synonyms)) — Les synonymes de la recherche par langue : règles équivalentes et à sens unique, validées, gardées en fichiers ou dans l'application
+- [`phil/social-cards`](https://github.com/parler-haut-interagir-librement/social-cards) · ✅ publié ([Packagist](https://packagist.org/packages/phil/social-cards)) — Balises Open Graph et images de partage générées
+- [`phil/social-cards-bundle`](https://github.com/parler-haut-interagir-librement/social-cards-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/social-cards-bundle)) — Les métadonnées de partage et les cartes générées dans Symfony, avec l'aperçu des liens entrants
 - [`phil/structured-data`](https://github.com/parler-haut-interagir-librement/structured-data) · ✅ publié ([Packagist](https://packagist.org/packages/phil/structured-data)) — Le graphe schema.org d'une page, assemblé de morceaux JSON-LD
+- [`phil/structured-data-bundle`](https://github.com/parler-haut-interagir-librement/structured-data-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/structured-data-bundle)) — Le graphe schema.org d'une page dans Symfony, avec une commande qui le vérifie
 - [`phil/redirects-bundle`](https://github.com/parler-haut-interagir-librement/redirects-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/redirects-bundle)) — Redirections 301 gérées, suivi des 404, anciens domaines
 - [`phil/well-known-bundle`](https://github.com/parler-haut-interagir-librement/well-known-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/well-known-bundle)) — Les adresses `/.well-known/` : security.txt, change-password, WebFinger, nodeinfo
-- `phil/social-cards` · 🧪 en incubation — Balises Open Graph et images de partage générées
-- `phil/social-cards-bundle` · 🧪 en incubation — Les métadonnées de partage et les cartes générées dans Symfony, avec l'aperçu des liens entrants
-- `phil/structured-data-bundle` · 🧪 en incubation — Le graphe schema.org d'une page dans Symfony, avec une commande qui le vérifie
 - `phil/feed-bundle` · 🧪 en incubation — Flux RSS, Atom et JSON Feed de tout contenu
 - `phil/indexnow` · 🧪 en incubation — Prévenir les moteurs de recherche par IndexNow
 - `phil/seo-check` · 🧪 en incubation — Le contrôle de référencement à la publication : titre, description, liens, données structurées
@@ -992,13 +992,14 @@ quotidiens** de deux à quatre paquets, les dépendances d'abord.
 </details>
 
 <details>
-<summary><b>Identité, accès et sécurité</b> — ✅ 8 · 🧪 16</summary>
+<summary><b>Identité, accès et sécurité</b> — ✅ 9 · 🧪 15</summary>
 
 - [`phil/bot-detection-bundle`](https://github.com/parler-haut-interagir-librement/bot-detection-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/bot-detection-bundle)) — Distinguer un robot d'un humain dans le navigateur, sans CAPTCHA
 - [`phil/spam-protection`](https://github.com/parler-haut-interagir-librement/spam-protection) · ✅ publié ([Packagist](https://packagist.org/packages/phil/spam-protection)) — Repérer le pourriel d'un formulaire sans CAPTCHA, en PHP simple
 - [`phil/spam-protection-bundle`](https://github.com/parler-haut-interagir-librement/spam-protection-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/spam-protection-bundle)) — Garder le pourriel hors des formulaires Symfony sans CAPTCHA, ni tiers, ni identifiant
 - [`phil/identity-client-bundle`](https://github.com/parler-haut-interagir-librement/identity-client-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/identity-client-bundle)) — Brancher un site Symfony à un fournisseur OpenID, sur `oidc_login` de Symfony 8.2
 - [`phil/passwords`](https://github.com/parler-haut-interagir-librement/passwords) · ✅ publié ([Packagist](https://packagist.org/packages/phil/passwords)) — Une jauge de robustesse avec ses propres dictionnaires, vérification des fuites par k-anonymat, génération
+- [`phil/browser-security-bundle`](https://github.com/parler-haut-interagir-librement/browser-security-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/browser-security-bundle)) — Les protections qu'une application Symfony demande au navigateur : CSP avec nonces, HSTS, témoins signés
 - [`phil/route-access-check`](https://github.com/parler-haut-interagir-librement/route-access-check) · ✅ publié ([Packagist](https://packagist.org/packages/phil/route-access-check)) — Faire échouer la CI quand une route n'a pas de règle d'accès
 - [`phil/route-access-check-bundle`](https://github.com/parler-haut-interagir-librement/route-access-check-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/route-access-check-bundle)) — Le contrôle d'accès des routes en commande Symfony, avec baseline et mode strict
 - [`phil/upload-scan`](https://github.com/parler-haut-interagir-librement/upload-scan) · ✅ publié ([Packagist](https://packagist.org/packages/phil/upload-scan)) — L'antivirus des téléversements derrière un port
@@ -1008,7 +1009,6 @@ quotidiens** de deux à quatre paquets, les dépendances d'abord.
 - `phil/organizations-bundle` · 🧪 en incubation — Organisations, rôles et invitations
 - `phil/access-bundle` · 🧪 en incubation — Les droits d'accès par site
 - `phil/webauthn-step-up` · 🧪 en incubation — Confirmer une action sensible par une clé d'accès
-- `phil/browser-security-bundle` · 🧪 en incubation — Les protections qu'une application Symfony demande au navigateur : CSP avec nonces, HSTS, témoins signés
 - `phil/upload-scan-bundle` · 🧪 en incubation — L'analyse des téléversements dans Symfony : contrainte de fichier, quarantaine et nouvelles analyses
 - `phil/fraud-signals` · 🧪 en incubation — Les signaux de fraude d'une commande ou d'une inscription
 - `phil/trust-levels` · 🧪 en incubation — Des niveaux de confiance qui ouvrent des droits avec l'activité
@@ -1022,16 +1022,16 @@ quotidiens** de deux à quatre paquets, les dépendances d'abord.
 </details>
 
 <details>
-<summary><b>Vie privée, accessibilité et conformité</b> — ✅ 5 · 🧪 12</summary>
+<summary><b>Vie privée, accessibilité et conformité</b> — ✅ 6 · 🧪 11</summary>
 
 - [`phil/analytics-bundle`](https://github.com/parler-haut-interagir-librement/analytics-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/analytics-bundle)) — Les visites comptées en agrégats quotidiens, jamais liées à une personne
 - [`phil/ip-anonymizer`](https://github.com/parler-haut-interagir-librement/ip-anonymizer) · ✅ publié ([Packagist](https://packagist.org/packages/phil/ip-anonymizer)) — Tronquer, hacher avec sel et généraliser les adresses IP
+- [`phil/legal-notices`](https://github.com/parler-haut-interagir-librement/legal-notices) · ✅ publié ([Packagist](https://packagist.org/packages/phil/legal-notices)) — Les mentions légales et la politique de confidentialité d'un site
 - [`phil/accessibility-check`](https://github.com/parler-haut-interagir-librement/accessibility-check) · ✅ publié ([Packagist](https://packagist.org/packages/phil/accessibility-check)) — Le contrôle d'accessibilité à la publication : textes de remplacement, ordre des titres, contraste
 - [`phil/accessibility-statement`](https://github.com/parler-haut-interagir-librement/accessibility-statement) · ✅ publié ([Packagist](https://packagist.org/packages/phil/accessibility-statement)) — Des déclarations d'accessibilité versionnées : conformité déclarée, critères non atteints, solutions de rechange et contact
 - [`phil/indexing-consent`](https://github.com/parler-haut-interagir-librement/indexing-consent) · ✅ publié ([Packagist](https://packagist.org/packages/phil/indexing-consent)) — La portée d'une fiche publique décidée par la personne qu'elle concerne : listée, non indexée ou non listée
 - `phil/privacy-bundle` · 🧪 en incubation — Déclarer les champs personnels, caviarder les journaux, répondre aux demandes d'accès et d'effacement (Loi 25, RGPD)
 - `phil/audit-bundle` · 🧪 en incubation — Un journal d'audit en ajout seul, qui montre toute altération et permet quand même d'effacer les renseignements personnels
-- `phil/legal-notices` · 🧪 en incubation — Les mentions légales et la politique de confidentialité d'un site
 - `phil/terms-bundle` · 🧪 en incubation — Des conditions d'utilisation versionnées et leur acceptation
 - `phil/accessibility-info` · 🧪 en incubation — Les renseignements d'accessibilité d'un lieu ou d'un événement
 - `phil/easy-read` · 🧪 en incubation — La version en langage simplifié d'un contenu, et sa vérification
@@ -1137,10 +1137,11 @@ quotidiens** de deux à quatre paquets, les dépendances d'abord.
 </details>
 
 <details>
-<summary><b>Événements, calendrier et réservation</b> — ✅ 2 · 🧪 33</summary>
+<summary><b>Événements, calendrier et réservation</b> — ✅ 3 · 🧪 32</summary>
 
 - [`phil/reservation`](https://github.com/parler-haut-interagir-librement/reservation) · ✅ publié ([Packagist](https://packagist.org/packages/phil/reservation)) — Le noyau de réservation : ressources, créneaux, règles, conflits et rappels
 - [`phil/checkin`](https://github.com/parler-haut-interagir-librement/checkin) · ✅ publié ([Packagist](https://packagist.org/packages/phil/checkin)) — Un code lu à une porte, décidé aussitôt, noté une fois, en ligne ou hors ligne
+- [`phil/calendar-sync`](https://github.com/parler-haut-interagir-librement/calendar-sync) · ✅ publié ([Packagist](https://packagist.org/packages/phil/calendar-sync)) — La synchronisation des calendriers externes : plages occupées lues dans ICS, CalDAV, Google et Microsoft, événements écrits chez eux
 - `phil/calendar-bundle` · 🧪 en incubation — Des événements, répétés ou non, en mois, semaine, jour, liste ou affiches
 - `phil/convention-bundle` · 🧪 en incubation — Le programme d'une convention : tables, places, inscriptions, lieux et salles
 - `phil/reservation-bundle` · 🧪 en incubation — Les réservations dans Symfony : ressources, plages, conflits et rappels
@@ -1163,7 +1164,6 @@ quotidiens** de deux à quatre paquets, les dépendances d'abord.
 - `phil/digital-signage` · 🧪 en incubation — L'affichage dynamique : horaire et annonces sur des écrans
 - `phil/virtual-queue` · 🧪 en incubation — La file d'attente virtuelle d'un kiosque ou d'une activité
 - `phil/qr-menu` · 🧪 en incubation — Un menu consultable par code QR
-- `phil/calendar-sync` · 🧪 en incubation — La synchronisation des calendriers externes : plages occupées bloquées depuis ICS et CalDAV
 - `phil/calendar-activitypub` · 🧪 en incubation — Les événements du calendrier fédérés par ActivityPub
 - `phil/availability` · 🧪 en incubation — Les absences avec transfert, les exceptions de dates et les fériés importés d'ICS
 - `phil/reservation-teams` · 🧪 en incubation — Les réservations collectives : tourniquet pondéré, groupes et réaffectation
@@ -1226,20 +1226,20 @@ quotidiens** de deux à quatre paquets, les dépendances d'abord.
 </details>
 
 <details>
-<summary><b>Lieux, contacts et répertoires</b> — ✅ 9 · 🧪 7</summary>
+<summary><b>Lieux, contacts et répertoires</b> — ✅ 12 · 🧪 4</summary>
 
 - [`phil/address`](https://github.com/parler-haut-interagir-librement/address) · ✅ publié ([Packagist](https://packagist.org/packages/phil/address)) — Des adresses postales vérifiées et écrites comme chaque pays les écrit
 - [`phil/address-bundle`](https://github.com/parler-haut-interagir-librement/address-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/address-bundle)) — Un formulaire d'adresse dont les champs suivent le pays choisi
 - [`phil/phone`](https://github.com/parler-haut-interagir-librement/phone) · ✅ publié ([Packagist](https://packagist.org/packages/phil/phone)) — Des numéros de téléphone lus comme on les tape, vérifiés selon le plan de leur pays, et formatés
 - [`phil/phone-bundle`](https://github.com/parler-haut-interagir-librement/phone-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/phone-bundle)) — Un champ de téléphone, une contrainte, un type de colonne et des filtres Twig
+- [`phil/contact`](https://github.com/parler-haut-interagir-librement/contact) · ✅ publié ([Packagist](https://packagist.org/packages/phil/contact)) — Fiches de contact de personnes et d'organisations, en vCard ou JSON-LD
+- [`phil/contact-bundle`](https://github.com/parler-haut-interagir-librement/contact-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/contact-bundle)) — Un formulaire de fiche de contact, une colonne JSON et le téléchargement en vCard
 - [`phil/contact-form-bundle`](https://github.com/parler-haut-interagir-librement/contact-form-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/contact-form-bundle)) — Une page « écrivez-nous », protégée du pourriel sans CAPTCHA
 - [`phil/geo`](https://github.com/parler-haut-interagir-librement/geo) · ✅ publié ([Packagist](https://packagist.org/packages/phil/geo)) — Coordonnées, distances et boîtes englobantes en valeurs, géocodage par le fournisseur choisi
 - [`phil/geo-bundle`](https://github.com/parler-haut-interagir-librement/geo-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/geo-bundle)) — Coordonnées gardées, distances dans Twig, géocodeurs et listes du plus proche au plus loin
 - [`phil/opening-hours`](https://github.com/parler-haut-interagir-librement/opening-hours) · ✅ publié ([Packagist](https://packagist.org/packages/phil/opening-hours)) — Les heures d'ouverture d'un lieu, et s'il est ouvert en ce moment
 - [`phil/opening-hours-bundle`](https://github.com/parler-haut-interagir-librement/opening-hours-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/opening-hours-bundle)) — Un formulaire d'heures d'ouverture, une colonne JSON et les heures localisées dans Twig
-- `phil/contact` · 🧪 en incubation — Fiches de contact de personnes et d'organisations, en vCard ou JSON-LD
-- `phil/contact-bundle` · 🧪 en incubation — Un formulaire de fiche de contact, une colonne JSON et le téléchargement en vCard
-- `phil/directory-bundle` · 🧪 en incubation — Un répertoire de fiches que les membres écrivent et l'administration publie
+- [`phil/directory-bundle`](https://github.com/parler-haut-interagir-librement/directory-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/directory-bundle)) — Un répertoire de fiches que les membres écrivent et l'administration publie
 - `phil/map-bundle` · 🧪 en incubation — Des cartes Leaflet en Stimulus, sur des tuiles sans pistage
 - `phil/contact-sync` · 🧪 en incubation — La synchronisation des contacts par CardDAV
 - `phil/portfolio-bundle` · 🧪 en incubation — Un portfolio, une fiche par projet
@@ -1288,16 +1288,16 @@ quotidiens** de deux à quatre paquets, les dépendances d'abord.
 </details>
 
 <details>
-<summary><b>UX et interface</b> — ✅ 4 · 🧪 12</summary>
+<summary><b>UX et interface</b> — ✅ 5 · 🧪 11</summary>
 
 - [`phil/ux-bundle`](https://github.com/parler-haut-interagir-librement/ux-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/ux-bundle)) — PHIL UX dans une application Symfony : le thème de formulaire PHIL UX sur chaque formulaire, et la feuille de style phil-ux dans AssetMapper
 - [`phil/ux-css`](https://github.com/parler-haut-interagir-librement/ux-css) · ✅ publié ([Packagist](https://packagist.org/packages/phil/ux-css)) — phil-ux, le cadre CSS : jetons OKLCH, thèmes clair et sombre, éléments sans classe, utilitaires de mise en page
 - [`phil/ux-kit`](https://github.com/parler-haut-interagir-librement/ux-kit) · ✅ publié ([Packagist](https://packagist.org/packages/phil/ux-kit)) — Le kit PHIL UX pour le Toolkit de Symfony UX : les recettes du kit Shadcn et les siennes, habillées par phil-ux
 - [`phil/menu-bundle`](https://github.com/parler-haut-interagir-librement/menu-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/menu-bundle)) — Menus de navigation et fil d'Ariane, avec la page courante marquée
+- [`phil/forms-autosave`](https://github.com/parler-haut-interagir-librement/forms-autosave) · ✅ publié ([Packagist](https://packagist.org/packages/phil/forms-autosave)) — La saisie d'un formulaire gardée en cours de route
 - `phil/ux-kit-shadcn` · 🧪 en incubation — Les versions Tailwind, à la façon de Shadcn, des recettes que PHIL UX ajoute
 - `phil/forms-bundle` · 🧪 en incubation — Des formulaires définis en base, leurs réponses gardées le temps nécessaire seulement
 - `phil/data-table-bundle` · 🧪 en incubation — Des tableaux en Live Component : tri, filtres, édition en ligne, empilés sur mobile
-- `phil/forms-autosave` · 🧪 en incubation — La saisie d'un formulaire gardée en cours de route
 - `phil/forms-signature` · 🧪 en incubation — Un champ de signature manuscrite ou électronique
 - `phil/pwa-bundle` · 🧪 en incubation — Des sites installables et lisibles hors ligne : manifeste, service worker, plein écran
 - `phil/theme-builder` · 🧪 en incubation — Composer un thème à partir des jetons PHIL UX
