@@ -55,8 +55,9 @@ and they follow by small daily groups.**
 - **A modern floor:** PHP 8.5+ and Symfony 8.2+.
 - **The next versions, early.** The next PHP and the next Symfony enter our test matrix at their first release
   candidate (today: PHP 8.6). Our constraints let you install them before we require them; a deprecation on the next
-  PHP fails the build. The floor moves up when the next version reaches its third patch release (x.y.3) — always in
-  a new version of our packages, never in an existing one.
+  PHP fails the build. The floor moves up when the next version reaches its first patch release for a Symfony minor
+  (x.y.1), and its third for a Symfony major or a PHP version (x.0.3, x.y.3) — always in a new version of our
+  packages, never in an existing one.
 - **Strict quality gates.** PHPStan at its maximum level with strict rules, on every PHP of the matrix;
   PHP-CS-Fixer with the Symfony rules and `declare(strict_types=1)` everywhere; Rector; Deptrac and Arkitect for the
   architecture; PHPUnit failing on any deprecation, notice or warning; and every package installed and tested on its
@@ -704,7 +705,8 @@ sont publiés ; les autres sont en incubation et suivent par petits groupes quot
 - **Les versions suivantes, tôt.** Le PHP et le Symfony suivants entrent dans notre matrice de tests dès leur
   première version candidate (aujourd'hui : PHP 8.6). Nos contraintes vous laissent les installer avant que nous les
   exigions ; une dépréciation du PHP suivant fait échouer les tests. Le plancher monte quand la version suivante
-  atteint sa troisième version corrective (x.y.3) — toujours dans une nouvelle version de nos paquets, jamais dans une
+  atteint sa première version corrective pour une mineure de Symfony (x.y.1), et sa troisième pour une majeure de
+  Symfony ou une version de PHP (x.0.3, x.y.3) — toujours dans une nouvelle version de nos paquets, jamais dans une
   version existante.
 - **Des barrières de qualité strictes.** PHPStan au niveau maximal avec les règles strictes, sur chaque PHP de la
   matrice ; PHP-CS-Fixer aux règles de Symfony et `declare(strict_types=1)` partout ; Rector ; Deptrac et Arkitect

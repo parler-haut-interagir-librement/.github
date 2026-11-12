@@ -37,8 +37,9 @@ PHIL packages are written in incubation and released one at a time. Today one pa
   and later will be written here before the first 1.0 release.
 - **PHP and Symfony.** Each package supports two versions of each: the **floor** it requires (today PHP 8.5 and
   Symfony 8.2 for new packages) and the **next** version, tested from its first release candidate (today PHP 8.6).
-  The floor moves up when the next version reaches its third patch release (x.y.3), and always in a new version of
-  our packages, never in an existing one. A released package states its own floor in its `composer.json`.
+  The floor moves up when the next version reaches its first patch release for a Symfony minor (x.y.1), and its
+  third for a Symfony major or a PHP version (x.0.3, x.y.3), always in a new version of our packages, never in an
+  existing one. A released package states its own floor in its `composer.json`.
 
 ## Scope
 
