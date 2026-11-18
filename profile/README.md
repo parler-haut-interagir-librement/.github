@@ -44,7 +44,7 @@ The game and gamification packages — dice, generators, points, badges, quests 
 Shops, conventions, clubs, publishers and online communities keep needing the same bricks: a catalogue and a cash
 register, a calendar, a forum, a newsletter, a privacy policy that is actually applied. We would rather write each
 brick once, carefully, in the open, than glue the same parts together on every site. And we would rather tell you
-plainly how far along each brick is: **today, 186 packages are released; the others are in incubation,
+plainly how far along each brick is: **today, 189 packages are released; the others are in incubation,
 and they follow by small daily groups.**
 
 ## Principles
@@ -130,13 +130,13 @@ Shadcn kit: keep Tailwind if you like it.
 
 ✅ **released** · 🧪 **in incubation**
 
-**424 packages:** 186 released, 238 in incubation. The released packages are developed in the public monorepo
+**426 packages:** 189 released, 237 in incubation. The released packages are developed in the public monorepo
 [`phil`](https://github.com/parler-haut-interagir-librement/phil), each split into its own read-only repository and
 published on Packagist; `phil/enums` continues [`ph-il/enums`](https://packagist.org/packages/ph-il/enums). **The
 showcase continues by small daily groups** of two to four packages, dependencies first.
 
 <details>
-<summary><b>Data &amp; infrastructure</b> — ✅ 33 · 🧪 17</summary>
+<summary><b>Data &amp; infrastructure</b> — ✅ 35 · 🧪 17</summary>
 
 - [`phil/enums`](https://github.com/parler-haut-interagir-librement/enums) · ✅ released ([Packagist](https://packagist.org/packages/phil/enums)) — Traits and attributes to list, compare, describe and group PHP enums (formerly `ph-il/enums`)
 - [`phil/enums-bundle`](https://github.com/parler-haut-interagir-librement/enums-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/enums-bundle)) — Enums in Symfony forms, translations, Twig, validation, Doctrine and API contracts
@@ -171,6 +171,8 @@ showcase continues by small daily groups** of two to four packages, dependencies
 - [`phil/rate-limit`](https://github.com/parler-haut-interagir-librement/rate-limit) · ✅ released ([Packagist](https://packagist.org/packages/phil/rate-limit)) — The production guard of Symfony rate limits: the build fails on a limiter that counts per server
 - [`phil/safe-http`](https://github.com/parler-haut-interagir-librement/safe-http) · ✅ released ([Packagist](https://packagist.org/packages/phil/safe-http)) — A protected HTTP client for packages that read other sites: SSRF protection, size and time limits
 - [`phil/tenancy-database-bundle`](https://github.com/parler-haut-interagir-librement/tenancy-database-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/tenancy-database-bundle)) — A database for each tenant, or the shared one, chosen at each request on one Doctrine connection
+- [`phil/outbox`](https://github.com/parler-haut-interagir-librement/outbox) · ✅ released ([Packagist](https://packagist.org/packages/phil/outbox)) — Never lose an event after a database write: saved in the same transaction, then delivered with retries
+- [`phil/outbox-bundle`](https://github.com/parler-haut-interagir-librement/outbox-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/outbox-bundle)) — phil/outbox in Symfony: events in a Doctrine table, delivered by a command or the Scheduler
 - `phil/usage-meter` · 🧪 in incubation — Measure what each subject used and refuse an action past its quota
 - `phil/usage-meter-bundle` · 🧪 in incubation — Usage meters stored with DBAL, rate limiters and purge commands
 - `phil/api-keys-bundle` · 🧪 in incubation — Personal access tokens for a public API: scopes, expiry, revocation, quotas
@@ -438,13 +440,14 @@ showcase continues by small daily groups** of two to four packages, dependencies
 </details>
 
 <details>
-<summary><b>Learning &amp; credentials</b> — ✅ 5 · 🧪 9</summary>
+<summary><b>Learning &amp; credentials</b> — ✅ 6 · 🧪 8</summary>
 
 - [`phil/open-badges`](https://github.com/parler-haut-interagir-librement/open-badges) · ✅ released ([Packagist](https://packagist.org/packages/phil/open-badges)) — Issue, sign, verify, bake and revoke Open Badges 3.0 credentials
 - [`phil/open-badges-bundle`](https://github.com/parler-haut-interagir-librement/open-badges-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/open-badges-bundle)) — Issuer profile, public key and verification page for Open Badges
 - [`phil/certificates-bundle`](https://github.com/parler-haut-interagir-librement/certificates-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/certificates-bundle)) — Verifiable certificates: criteria, PDF with QR code, public registry
 - [`phil/lti-bundle`](https://github.com/parler-haut-interagir-librement/lti-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/lti-bundle)) — LTI 1.3 in Symfony: a tool, a platform, or both, from one configuration
 - [`phil/lti`](https://github.com/parler-haut-interagir-librement/lti) · ✅ released ([Packagist](https://packagist.org/packages/phil/lti)) — LTI 1.3 in plain PHP, on both sides: a tool that platforms launch, and a platform that launches tools
+- [`phil/elearning-packages`](https://github.com/parler-haut-interagir-librement/elearning-packages) · ✅ released ([Packagist](https://packagist.org/packages/phil/elearning-packages)) — SCORM 1.2, SCORM 2004 and cmi5 packages read safely, without a learning platform
 - `phil/courses-bundle` · 🧪 in incubation — Online courses: modules, lessons, progress
 - `phil/mentoring-bundle` · 🧪 in incubation — Mentoring: matching, sessions, follow-up
 - `phil/assessment` · 🧪 in incubation — Assessment: question types, certainty-based marking, a versioned question bank
@@ -453,7 +456,6 @@ showcase continues by small daily groups** of two to four packages, dependencies
 - `phil/peer-review` · 🧪 in incubation — Peer assessment in phases, with a double grade and optional grader calibration
 - `phil/proposal-review` · 🧪 in incubation — One jury review engine for calls, courses and contests, with pairwise voting
 - `phil/spaced-repetition` · 🧪 in incubation — Generic spaced repetition: the FSRS algorithm, cards and reviews
-- `phil/elearning-packages` · 🧪 in incubation — SCORM 1.2, SCORM 2004 and cmi5 packages read safely, without a learning platform
 
 </details>
 
@@ -705,7 +707,7 @@ Les paquets de jeu et de ludification — dés, générateurs, points, badges, q
 Boutiques, conventions, clubs, éditeurs et communautés en ligne ont sans cesse besoin des mêmes briques : un
 catalogue et une caisse, un calendrier, un forum, une infolettre, une politique de confidentialité vraiment
 appliquée. Nous préférons écrire chaque brique une fois, avec soin et à découvert, plutôt que recoller les mêmes
-morceaux sur chaque site. Et nous préférons vous dire franchement où en est chacune : **aujourd'hui, 186 paquets
+morceaux sur chaque site. Et nous préférons vous dire franchement où en est chacune : **aujourd'hui, 189 paquets
 sont publiés ; les autres sont en incubation et suivent par petits groupes quotidiens.**
 
 ### Principes
@@ -794,14 +796,14 @@ le kit Shadcn : gardez Tailwind si vous l'aimez.
 
 ✅ **publié** · 🧪 **en incubation**
 
-**424 paquets :** 186 publiés, 238 en incubation. Les paquets publiés sont développés dans le monodépôt
+**426 paquets :** 189 publiés, 237 en incubation. Les paquets publiés sont développés dans le monodépôt
 public [`phil`](https://github.com/parler-haut-interagir-librement/phil), scindés chacun dans son propre dépôt en
 lecture seule et publiés sur Packagist ; `phil/enums` poursuit
 [`ph-il/enums`](https://packagist.org/packages/ph-il/enums). **La vitrine se poursuit par petits groupes
 quotidiens** de deux à quatre paquets, les dépendances d'abord.
 
 <details>
-<summary><b>Données et infrastructure</b> — ✅ 33 · 🧪 17</summary>
+<summary><b>Données et infrastructure</b> — ✅ 35 · 🧪 17</summary>
 
 - [`phil/enums`](https://github.com/parler-haut-interagir-librement/enums) · ✅ publié ([Packagist](https://packagist.org/packages/phil/enums)) — Traits et attributs pour lister, comparer, décrire et regrouper les enums PHP (anciennement `ph-il/enums`)
 - [`phil/enums-bundle`](https://github.com/parler-haut-interagir-librement/enums-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/enums-bundle)) — Les enums dans les formulaires, traductions, Twig, la validation, Doctrine et les contrats d'API de Symfony
@@ -836,6 +838,8 @@ quotidiens** de deux à quatre paquets, les dépendances d'abord.
 - [`phil/rate-limit`](https://github.com/parler-haut-interagir-librement/rate-limit) · ✅ publié ([Packagist](https://packagist.org/packages/phil/rate-limit)) — La garde de production des limites de débit de Symfony : la construction échoue si un limiteur compte par serveur
 - [`phil/safe-http`](https://github.com/parler-haut-interagir-librement/safe-http) · ✅ publié ([Packagist](https://packagist.org/packages/phil/safe-http)) — Un client HTTP protégé pour les paquets qui lisent d'autres sites : protection contre le SSRF, limites de taille et de durée
 - [`phil/tenancy-database-bundle`](https://github.com/parler-haut-interagir-librement/tenancy-database-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/tenancy-database-bundle)) — Une base par locataire, ou la base commune, choisie à chaque requête sur une seule connexion Doctrine
+- [`phil/outbox`](https://github.com/parler-haut-interagir-librement/outbox) · ✅ publié ([Packagist](https://packagist.org/packages/phil/outbox)) — Ne plus perdre un événement après une écriture en base : enregistré dans la même transaction, puis livré avec de nouveaux essais
+- [`phil/outbox-bundle`](https://github.com/parler-haut-interagir-librement/outbox-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/outbox-bundle)) — phil/outbox dans Symfony : les événements dans une table Doctrine, livrés par une commande ou le Scheduler
 - `phil/usage-meter` · 🧪 en incubation — Mesurer ce que chacun a consommé et refuser une action au-delà de son quota
 - `phil/usage-meter-bundle` · 🧪 en incubation — Compteurs d'usage stockés par DBAL, limiteurs de débit et commandes de purge
 - `phil/api-keys-bundle` · 🧪 en incubation — Jetons d'accès personnels pour une API publique : portées, expiration, révocation, quotas
@@ -1103,13 +1107,14 @@ quotidiens** de deux à quatre paquets, les dépendances d'abord.
 </details>
 
 <details>
-<summary><b>Apprentissage et attestations</b> — ✅ 5 · 🧪 9</summary>
+<summary><b>Apprentissage et attestations</b> — ✅ 6 · 🧪 8</summary>
 
 - [`phil/open-badges`](https://github.com/parler-haut-interagir-librement/open-badges) · ✅ publié ([Packagist](https://packagist.org/packages/phil/open-badges)) — Émettre, signer, vérifier, cuire et révoquer des justificatifs Open Badges 3.0
 - [`phil/open-badges-bundle`](https://github.com/parler-haut-interagir-librement/open-badges-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/open-badges-bundle)) — Profil de l'émetteur, clé publique et page de vérification des Open Badges
 - [`phil/certificates-bundle`](https://github.com/parler-haut-interagir-librement/certificates-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/certificates-bundle)) — Des certificats vérifiables : critères, PDF à code QR, registre public
 - [`phil/lti-bundle`](https://github.com/parler-haut-interagir-librement/lti-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/lti-bundle)) — LTI 1.3 dans Symfony : un outil, une plateforme, ou les deux, d'une seule configuration
 - [`phil/lti`](https://github.com/parler-haut-interagir-librement/lti) · ✅ publié ([Packagist](https://packagist.org/packages/phil/lti)) — LTI 1.3 en PHP simple, des deux côtés : un outil que les plateformes lancent, et une plateforme qui lance des outils
+- [`phil/elearning-packages`](https://github.com/parler-haut-interagir-librement/elearning-packages) · ✅ publié ([Packagist](https://packagist.org/packages/phil/elearning-packages)) — Les paquets SCORM 1.2, SCORM 2004 et cmi5 lus sans danger, sans plateforme d'apprentissage
 - `phil/courses-bundle` · 🧪 en incubation — Des cours en ligne : modules, leçons, progression
 - `phil/mentoring-bundle` · 🧪 en incubation — Le mentorat : jumelage, séances, suivi
 - `phil/assessment` · 🧪 en incubation — L'évaluation : types de questions, notation selon la certitude, banque de questions versionnée
@@ -1118,7 +1123,6 @@ quotidiens** de deux à quatre paquets, les dépendances d'abord.
 - `phil/peer-review` · 🧪 en incubation — L'évaluation par les pairs en phases, avec une double note et un étalonnage facultatif des correcteurs
 - `phil/proposal-review` · 🧪 en incubation — Un seul moteur d'évaluation par jury pour appels, cours et concours, avec vote par paires
 - `phil/spaced-repetition` · 🧪 en incubation — La répétition espacée générique : l'algorithme FSRS, les cartes et les révisions
-- `phil/elearning-packages` · 🧪 en incubation — Les paquets SCORM 1.2, SCORM 2004 et cmi5 lus sans danger, sans plateforme d'apprentissage
 
 </details>
 
