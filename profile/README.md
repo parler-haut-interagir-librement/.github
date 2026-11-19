@@ -44,7 +44,7 @@ The game and gamification packages — dice, generators, points, badges, quests 
 Shops, conventions, clubs, publishers and online communities keep needing the same bricks: a catalogue and a cash
 register, a calendar, a forum, a newsletter, a privacy policy that is actually applied. We would rather write each
 brick once, carefully, in the open, than glue the same parts together on every site. And we would rather tell you
-plainly how far along each brick is: **today, 217 packages are released; the others are in incubation,
+plainly how far along each brick is: **today, 218 packages are released; the others are in incubation,
 and they follow by small daily groups.**
 
 ## Principles
@@ -130,7 +130,7 @@ Shadcn kit: keep Tailwind if you like it.
 
 ✅ **released** · 🧪 **in incubation**
 
-**431 packages:** 217 released, 214 in incubation. The released packages are developed in the public monorepo
+**431 packages:** 218 released, 213 in incubation. The released packages are developed in the public monorepo
 [`phil`](https://github.com/parler-haut-interagir-librement/phil), each split into its own read-only repository and
 published on Packagist; `phil/enums` continues [`ph-il/enums`](https://packagist.org/packages/ph-il/enums). **The
 showcase continues by small daily groups** of two to four packages, dependencies first.
@@ -264,7 +264,7 @@ showcase continues by small daily groups** of two to four packages, dependencies
 </details>
 
 <details>
-<summary><b>Media, documents &amp; print</b> — ✅ 24 · 🧪 10</summary>
+<summary><b>Media, documents &amp; print</b> — ✅ 25 · 🧪 9</summary>
 
 - [`phil/media-bundle`](https://github.com/parler-haut-interagir-librement/media-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/media-bundle)) — Uploaded files and images, described, versioned and served at signed URLs
 - [`phil/document-import`](https://github.com/parler-haut-interagir-librement/document-import) · ✅ released ([Packagist](https://packagist.org/packages/phil/document-import)) — Word-processing documents, Markdown and HTML turned into UJO (Universal JSON Output), with a report of what did not fit
@@ -289,6 +289,7 @@ showcase continues by small daily groups** of two to four packages, dependencies
 - [`phil/audio`](https://github.com/parler-haut-interagir-librement/audio) · ✅ released ([Packagist](https://packagist.org/packages/phil/audio)) — Audio: optional transcoding, waveform, clips and an accessible player that works without JavaScript
 - [`phil/audio-bundle`](https://github.com/parler-haut-interagir-librement/audio-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/audio-bundle)) — Audio in Symfony: player component, uploads and transcoding jobs
 - [`phil/timed-text`](https://github.com/parler-haut-interagir-librement/timed-text) · ✅ released ([Packagist](https://packagist.org/packages/phil/timed-text)) — Timed text read and written: WebVTT, SRT, chapters and Podcasting 2.0 transcripts
+- [`phil/braille-export-liblouis`](https://github.com/parler-haut-interagir-librement/braille-export-liblouis) · ✅ released ([Packagist](https://packagist.org/packages/phil/braille-export-liblouis)) — The braille export adapter that calls liblouis
 - [`phil/slides`](https://github.com/parler-haut-interagir-librement/slides) · ✅ released ([Packagist](https://packagist.org/packages/phil/slides)) — Slides read from a UJO document, with presenter mode, notes, timer and PDF export
 - `phil/gallery-bundle` · 🧪 in incubation — Photo galleries by album and by event
 - `phil/podcast-bundle` · 🧪 in incubation — Podcasts: episodes, Podcasting 2.0 feeds, chapters, transcripts
@@ -298,7 +299,6 @@ showcase continues by small daily groups** of two to four packages, dependencies
 - `phil/pdf-watermark` · 🧪 in incubation — Personalised watermarks on sold PDFs
 - `phil/demo-videos` · 🧪 in incubation — Demo videos of a product or package
 - `phil/music-bundle` · 🧪 in incubation — An artist's or band's music: albums, tracks, sales and listening without purchase
-- `phil/braille-export-liblouis` · 🧪 in incubation — The braille export adapter that calls liblouis
 - `phil/diagram` · 🧪 in incubation — Diagrams written as text and rendered as SVG on the server, with a text description
 
 </details>
@@ -712,7 +712,7 @@ Les paquets de jeu et de ludification — dés, générateurs, points, badges, q
 Boutiques, conventions, clubs, éditeurs et communautés en ligne ont sans cesse besoin des mêmes briques : un
 catalogue et une caisse, un calendrier, un forum, une infolettre, une politique de confidentialité vraiment
 appliquée. Nous préférons écrire chaque brique une fois, avec soin et à découvert, plutôt que recoller les mêmes
-morceaux sur chaque site. Et nous préférons vous dire franchement où en est chacune : **aujourd'hui, 217 paquets
+morceaux sur chaque site. Et nous préférons vous dire franchement où en est chacune : **aujourd'hui, 218 paquets
 sont publiés ; les autres sont en incubation et suivent par petits groupes quotidiens.**
 
 ### Principes
@@ -801,7 +801,7 @@ le kit Shadcn : gardez Tailwind si vous l'aimez.
 
 ✅ **publié** · 🧪 **en incubation**
 
-**431 paquets :** 217 publiés, 214 en incubation. Les paquets publiés sont développés dans le monodépôt
+**431 paquets :** 218 publiés, 213 en incubation. Les paquets publiés sont développés dans le monodépôt
 public [`phil`](https://github.com/parler-haut-interagir-librement/phil), scindés chacun dans son propre dépôt en
 lecture seule et publiés sur Packagist ; `phil/enums` poursuit
 [`ph-il/enums`](https://packagist.org/packages/ph-il/enums). **La vitrine se poursuit par petits groupes
@@ -936,7 +936,7 @@ quotidiens** de deux à quatre paquets, les dépendances d'abord.
 </details>
 
 <details>
-<summary><b>Médias, documents et impression</b> — ✅ 24 · 🧪 10</summary>
+<summary><b>Médias, documents et impression</b> — ✅ 25 · 🧪 9</summary>
 
 - [`phil/media-bundle`](https://github.com/parler-haut-interagir-librement/media-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/media-bundle)) — Fichiers et images téléversés, décrits, versionnés et servis à des URL signées
 - [`phil/document-import`](https://github.com/parler-haut-interagir-librement/document-import) · ✅ publié ([Packagist](https://packagist.org/packages/phil/document-import)) — Documents de traitement de texte, Markdown et HTML convertis en UJO (Universal JSON Output), avec le relevé de ce qui n'a pas passé
@@ -961,6 +961,7 @@ quotidiens** de deux à quatre paquets, les dépendances d'abord.
 - [`phil/audio`](https://github.com/parler-haut-interagir-librement/audio) · ✅ publié ([Packagist](https://packagist.org/packages/phil/audio)) — L'audio : transcodage facultatif, forme d'onde, extraits et lecteur accessible qui fonctionne sans JavaScript
 - [`phil/audio-bundle`](https://github.com/parler-haut-interagir-librement/audio-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/audio-bundle)) — L'audio dans Symfony : composant de lecteur, téléversements et tâches de transcodage
 - [`phil/timed-text`](https://github.com/parler-haut-interagir-librement/timed-text) · ✅ publié ([Packagist](https://packagist.org/packages/phil/timed-text)) — Le texte minuté lu et écrit : WebVTT, SRT, chapitres et transcriptions Podcasting 2.0
+- [`phil/braille-export-liblouis`](https://github.com/parler-haut-interagir-librement/braille-export-liblouis) · ✅ publié ([Packagist](https://packagist.org/packages/phil/braille-export-liblouis)) — L'adaptateur de l'export braille qui appelle liblouis
 - [`phil/slides`](https://github.com/parler-haut-interagir-librement/slides) · ✅ publié ([Packagist](https://packagist.org/packages/phil/slides)) — Des diapositives lues dans un document UJO, avec mode présentateur, notes, minuterie et export PDF
 - `phil/gallery-bundle` · 🧪 en incubation — Des galeries de photos par album et par événement
 - `phil/podcast-bundle` · 🧪 en incubation — Un balado : épisodes, flux Podcasting 2.0, chapitres, transcriptions
@@ -970,7 +971,6 @@ quotidiens** de deux à quatre paquets, les dépendances d'abord.
 - `phil/pdf-watermark` · 🧪 en incubation — Le filigrane personnalisé d'un PDF vendu
 - `phil/demo-videos` · 🧪 en incubation — Les vidéos de démonstration d'un produit ou d'un paquet
 - `phil/music-bundle` · 🧪 en incubation — La musique d'un artiste ou d'un groupe : albums, pistes, ventes et écoute sans achat
-- `phil/braille-export-liblouis` · 🧪 en incubation — L'adaptateur de l'export braille qui appelle liblouis
 - `phil/diagram` · 🧪 en incubation — Des diagrammes écrits en texte et rendus en SVG au serveur, avec une description textuelle
 
 </details>
