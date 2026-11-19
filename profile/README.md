@@ -44,7 +44,7 @@ The game and gamification packages — dice, generators, points, badges, quests 
 Shops, conventions, clubs, publishers and online communities keep needing the same bricks: a catalogue and a cash
 register, a calendar, a forum, a newsletter, a privacy policy that is actually applied. We would rather write each
 brick once, carefully, in the open, than glue the same parts together on every site. And we would rather tell you
-plainly how far along each brick is: **today, 189 packages are released; the others are in incubation,
+plainly how far along each brick is: **today, 195 packages are released; the others are in incubation,
 and they follow by small daily groups.**
 
 ## Principles
@@ -130,7 +130,7 @@ Shadcn kit: keep Tailwind if you like it.
 
 ✅ **released** · 🧪 **in incubation**
 
-**426 packages:** 189 released, 237 in incubation. The released packages are developed in the public monorepo
+**429 packages:** 195 released, 234 in incubation. The released packages are developed in the public monorepo
 [`phil`](https://github.com/parler-haut-interagir-librement/phil), each split into its own read-only repository and
 published on Packagist; `phil/enums` continues [`ph-il/enums`](https://packagist.org/packages/ph-il/enums). **The
 showcase continues by small daily groups** of two to four packages, dependencies first.
@@ -194,7 +194,7 @@ showcase continues by small daily groups** of two to four packages, dependencies
 </details>
 
 <details>
-<summary><b>Content &amp; text</b> — ✅ 24 · 🧪 26</summary>
+<summary><b>Content &amp; text</b> — ✅ 25 · 🧪 26</summary>
 
 - [`phil/content-bundle`](https://github.com/parler-haut-interagir-librement/content-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/content-bundle)) — Pages and articles stored by locale, stage and version, published from draft to live
 - [`phil/ujo`](https://github.com/parler-haut-interagir-librement/ujo) · ✅ released ([Packagist](https://packagist.org/packages/phil/ujo)) — UJO (Universal JSON Output) documents read strictly, checked block by block, rendered as safe HTML
@@ -220,6 +220,7 @@ showcase continues by small daily groups** of two to four packages, dependencies
 - [`phil/content-warnings-bundle`](https://github.com/parler-haut-interagir-librement/content-warnings-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/content-warnings-bundle)) — Content warnings in forms, pages and filters
 - [`phil/publishing`](https://github.com/parler-haut-interagir-librement/publishing) · ✅ released ([Packagist](https://packagist.org/packages/phil/publishing)) — The PagePublished and PageRetired events and their contract, for what follows a page going online and offline
 - [`phil/form-logic`](https://github.com/parler-haut-interagir-librement/form-logic) · ✅ released ([Packagist](https://packagist.org/packages/phil/form-logic)) — Conditional form logic evaluated the same way in PHP and Stimulus, the server as judge
+- [`phil/profile-editorial`](https://github.com/parler-haut-interagir-librement/profile-editorial) · ✅ released ([Packagist](https://packagist.org/packages/phil/profile-editorial)) — One require for the packages that publish editorial content: safe markup, citations, notes and schema.org data
 - `phil/svg-blocks-bundle` · 🧪 in incubation — Block drawings made on save in Symfony, with Mermaid in a container
 - `phil/wiki-bundle` · 🧪 in incubation — A collaborative wiki: pages, compared revisions, `[[links]]`, block locks
 - `phil/faq-bundle` · 🧪 in incubation — Frequently asked questions by section, searchable, with structured data
@@ -263,7 +264,7 @@ showcase continues by small daily groups** of two to four packages, dependencies
 </details>
 
 <details>
-<summary><b>Media, documents &amp; print</b> — ✅ 19 · 🧪 15</summary>
+<summary><b>Media, documents &amp; print</b> — ✅ 20 · 🧪 14</summary>
 
 - [`phil/media-bundle`](https://github.com/parler-haut-interagir-librement/media-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/media-bundle)) — Uploaded files and images, described, versioned and served at signed URLs
 - [`phil/epub`](https://github.com/parler-haut-interagir-librement/epub) · ✅ released ([Packagist](https://packagist.org/packages/phil/epub)) — EPUB 3 books from your HTML, valid for EPUBCheck and readable by assistive technologies
@@ -284,6 +285,7 @@ showcase continues by small daily groups** of two to four packages, dependencies
 - [`phil/audio`](https://github.com/parler-haut-interagir-librement/audio) · ✅ released ([Packagist](https://packagist.org/packages/phil/audio)) — Audio: optional transcoding, waveform, clips and an accessible player that works without JavaScript
 - [`phil/audio-bundle`](https://github.com/parler-haut-interagir-librement/audio-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/audio-bundle)) — Audio in Symfony: player component, uploads and transcoding jobs
 - [`phil/timed-text`](https://github.com/parler-haut-interagir-librement/timed-text) · ✅ released ([Packagist](https://packagist.org/packages/phil/timed-text)) — Timed text read and written: WebVTT, SRT, chapters and Podcasting 2.0 transcripts
+- [`phil/slides`](https://github.com/parler-haut-interagir-librement/slides) · ✅ released ([Packagist](https://packagist.org/packages/phil/slides)) — Slides read from a UJO document, with presenter mode, notes, timer and PDF export
 - `phil/document-import` · 🧪 in incubation — Word-processing documents, Markdown and HTML turned into UJO (Universal JSON Output), with a report of what did not fit
 - `phil/document-import-bundle` · 🧪 in incubation — Document import wired into the media library
 - `phil/gallery-bundle` · 🧪 in incubation — Photo galleries by album and by event
@@ -297,7 +299,6 @@ showcase continues by small daily groups** of two to four packages, dependencies
 - `phil/demo-videos` · 🧪 in incubation — Demo videos of a product or package
 - `phil/music-bundle` · 🧪 in incubation — An artist's or band's music: albums, tracks, sales and listening without purchase
 - `phil/braille-export-liblouis` · 🧪 in incubation — The braille export adapter that calls liblouis
-- `phil/slides` · 🧪 in incubation — Slides read from a UJO document, with presenter mode, notes, timer and PDF export
 - `phil/diagram` · 🧪 in incubation — Diagrams written as text and rendered as SVG on the server, with a text description
 
 </details>
@@ -333,13 +334,14 @@ showcase continues by small daily groups** of two to four packages, dependencies
 </details>
 
 <details>
-<summary><b>Identity, access &amp; security</b> — ✅ 15 · 🧪 9</summary>
+<summary><b>Identity, access &amp; security</b> — ✅ 18 · 🧪 8</summary>
 
 - [`phil/bot-detection-bundle`](https://github.com/parler-haut-interagir-librement/bot-detection-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/bot-detection-bundle)) — Tell a robot from a human in the browser, without a CAPTCHA
 - [`phil/spam-protection`](https://github.com/parler-haut-interagir-librement/spam-protection) · ✅ released ([Packagist](https://packagist.org/packages/phil/spam-protection)) — Spot spam in a form submission without a CAPTCHA, in plain PHP
 - [`phil/spam-protection-bundle`](https://github.com/parler-haut-interagir-librement/spam-protection-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/spam-protection-bundle)) — Keep spam out of Symfony forms without a CAPTCHA, a third party or an identifier
 - [`phil/identity-provider-bundle`](https://github.com/parler-haut-interagir-librement/identity-provider-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/identity-provider-bundle)) — An OpenID Connect provider for Symfony: passkeys, passwords, TOTP, step-up
 - [`phil/identity-client-bundle`](https://github.com/parler-haut-interagir-librement/identity-client-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/identity-client-bundle)) — Connect a Symfony site to an OpenID provider, on Symfony 8.2's `oidc_login`
+- [`phil/organizations-bundle`](https://github.com/parler-haut-interagir-librement/organizations-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/organizations-bundle)) — Organisations, roles and invitations
 - [`phil/access-bundle`](https://github.com/parler-haut-interagir-librement/access-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/access-bundle)) — Per-item visibility, sharing levels that expire, access groups and a logged “view as this member”
 - [`phil/passwords`](https://github.com/parler-haut-interagir-librement/passwords) · ✅ released ([Packagist](https://packagist.org/packages/phil/passwords)) — A strength meter with its own dictionaries, k-anonymous breach checks, generation
 - [`phil/browser-security-bundle`](https://github.com/parler-haut-interagir-librement/browser-security-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/browser-security-bundle)) — The protections a Symfony application asks of the browser: CSP with nonces, HSTS, signed cookies
@@ -350,9 +352,10 @@ showcase continues by small daily groups** of two to four packages, dependencies
 - [`phil/resource-permissions`](https://github.com/parler-haut-interagir-librement/resource-permissions) · ✅ released ([Packagist](https://packagist.org/packages/phil/resource-permissions)) — Per-resource permissions inherited down a tree, the most specific one winning
 - [`phil/access-codes`](https://github.com/parler-haut-interagir-librement/access-codes) · ✅ released ([Packagist](https://packagist.org/packages/phil/access-codes)) — Single-use codes in named batches, with a redemption page and codes stored hashed
 - [`phil/access-links`](https://github.com/parler-haut-interagir-librement/access-links) · ✅ released ([Packagist](https://packagist.org/packages/phil/access-links)) — Invitations by personal link: token, validity, reminders, editable reply
+- [`phil/incident-mode-bundle`](https://github.com/parler-haut-interagir-librement/incident-mode-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/incident-mode-bundle)) — Pause sign-ups, invitations or forms during an attack, with an honest public notice and lifting at the end
+- [`phil/profile-secure-input`](https://github.com/parler-haut-interagir-librement/profile-secure-input) · ✅ released ([Packagist](https://packagist.org/packages/phil/profile-secure-input)) — One require for the packages that guard what users send: addresses, outgoing fetches, rates, spam and uploads
 - `phil/user-secrets-bundle` · 🧪 in incubation — Keys people lend your application, sealed and theirs alone
 - `phil/identity-provider-google` · 🧪 in incubation — Google sign-in for the identity provider, the first federated sign-in package
-- `phil/organizations-bundle` · 🧪 in incubation — Organisations, roles and invitations
 - `phil/webauthn-step-up` · 🧪 in incubation — Confirm a sensitive action with a passkey
 - `phil/fraud-signals` · 🧪 in incubation — Fraud signals on orders and sign-ups
 - `phil/trust-levels` · 🧪 in incubation — Trust levels that open rights with activity
@@ -440,15 +443,15 @@ showcase continues by small daily groups** of two to four packages, dependencies
 </details>
 
 <details>
-<summary><b>Learning &amp; credentials</b> — ✅ 6 · 🧪 8</summary>
+<summary><b>Learning &amp; credentials</b> — ✅ 7 · 🧪 7</summary>
 
 - [`phil/open-badges`](https://github.com/parler-haut-interagir-librement/open-badges) · ✅ released ([Packagist](https://packagist.org/packages/phil/open-badges)) — Issue, sign, verify, bake and revoke Open Badges 3.0 credentials
 - [`phil/open-badges-bundle`](https://github.com/parler-haut-interagir-librement/open-badges-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/open-badges-bundle)) — Issuer profile, public key and verification page for Open Badges
 - [`phil/certificates-bundle`](https://github.com/parler-haut-interagir-librement/certificates-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/certificates-bundle)) — Verifiable certificates: criteria, PDF with QR code, public registry
+- [`phil/courses-bundle`](https://github.com/parler-haut-interagir-librement/courses-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/courses-bundle)) — Online courses: modules, lessons, progress
 - [`phil/lti-bundle`](https://github.com/parler-haut-interagir-librement/lti-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/lti-bundle)) — LTI 1.3 in Symfony: a tool, a platform, or both, from one configuration
 - [`phil/lti`](https://github.com/parler-haut-interagir-librement/lti) · ✅ released ([Packagist](https://packagist.org/packages/phil/lti)) — LTI 1.3 in plain PHP, on both sides: a tool that platforms launch, and a platform that launches tools
 - [`phil/elearning-packages`](https://github.com/parler-haut-interagir-librement/elearning-packages) · ✅ released ([Packagist](https://packagist.org/packages/phil/elearning-packages)) — SCORM 1.2, SCORM 2004 and cmi5 packages read safely, without a learning platform
-- `phil/courses-bundle` · 🧪 in incubation — Online courses: modules, lessons, progress
 - `phil/mentoring-bundle` · 🧪 in incubation — Mentoring: matching, sessions, follow-up
 - `phil/assessment` · 🧪 in incubation — Assessment: question types, certainty-based marking, a versioned question bank
 - `phil/assessment-bundle` · 🧪 in incubation — Assessment in Symfony: quiz screens, attempts and question bank administration
@@ -707,7 +710,7 @@ Les paquets de jeu et de ludification — dés, générateurs, points, badges, q
 Boutiques, conventions, clubs, éditeurs et communautés en ligne ont sans cesse besoin des mêmes briques : un
 catalogue et une caisse, un calendrier, un forum, une infolettre, une politique de confidentialité vraiment
 appliquée. Nous préférons écrire chaque brique une fois, avec soin et à découvert, plutôt que recoller les mêmes
-morceaux sur chaque site. Et nous préférons vous dire franchement où en est chacune : **aujourd'hui, 189 paquets
+morceaux sur chaque site. Et nous préférons vous dire franchement où en est chacune : **aujourd'hui, 195 paquets
 sont publiés ; les autres sont en incubation et suivent par petits groupes quotidiens.**
 
 ### Principes
@@ -796,7 +799,7 @@ le kit Shadcn : gardez Tailwind si vous l'aimez.
 
 ✅ **publié** · 🧪 **en incubation**
 
-**426 paquets :** 189 publiés, 237 en incubation. Les paquets publiés sont développés dans le monodépôt
+**429 paquets :** 195 publiés, 234 en incubation. Les paquets publiés sont développés dans le monodépôt
 public [`phil`](https://github.com/parler-haut-interagir-librement/phil), scindés chacun dans son propre dépôt en
 lecture seule et publiés sur Packagist ; `phil/enums` poursuit
 [`ph-il/enums`](https://packagist.org/packages/ph-il/enums). **La vitrine se poursuit par petits groupes
@@ -861,7 +864,7 @@ quotidiens** de deux à quatre paquets, les dépendances d'abord.
 </details>
 
 <details>
-<summary><b>Contenu et texte</b> — ✅ 24 · 🧪 26</summary>
+<summary><b>Contenu et texte</b> — ✅ 25 · 🧪 26</summary>
 
 - [`phil/content-bundle`](https://github.com/parler-haut-interagir-librement/content-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/content-bundle)) — Pages et articles gardés par langue, étape et version, publiés du brouillon à la mise en ligne
 - [`phil/ujo`](https://github.com/parler-haut-interagir-librement/ujo) · ✅ publié ([Packagist](https://packagist.org/packages/phil/ujo)) — Des documents UJO (Universal JSON Output) lus strictement, vérifiés bloc par bloc, rendus en HTML sûr
@@ -887,6 +890,7 @@ quotidiens** de deux à quatre paquets, les dépendances d'abord.
 - [`phil/content-warnings-bundle`](https://github.com/parler-haut-interagir-librement/content-warnings-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/content-warnings-bundle)) — Les avertissements de contenu dans les formulaires, les pages et les filtres
 - [`phil/publishing`](https://github.com/parler-haut-interagir-librement/publishing) · ✅ publié ([Packagist](https://packagist.org/packages/phil/publishing)) — Les événements PagePublished et PageRetired et leur contrat, pour ce qui suit une page qui passe en ligne ou hors ligne
 - [`phil/form-logic`](https://github.com/parler-haut-interagir-librement/form-logic) · ✅ publié ([Packagist](https://packagist.org/packages/phil/form-logic)) — La logique conditionnelle des formulaires, évaluée de la même façon en PHP et en Stimulus, le serveur faisant foi
+- [`phil/profile-editorial`](https://github.com/parler-haut-interagir-librement/profile-editorial) · ✅ publié ([Packagist](https://packagist.org/packages/phil/profile-editorial)) — Un seul require pour les paquets qui publient du contenu éditorial : balisage sûr, citations, notes et données schema.org
 - `phil/svg-blocks-bundle` · 🧪 en incubation — Les dessins des blocs faits à l'enregistrement dans Symfony, Mermaid dans un conteneur
 - `phil/wiki-bundle` · 🧪 en incubation — Un wiki collaboratif : pages, révisions comparées, liens `[[ ]]`, verrous par bloc
 - `phil/faq-bundle` · 🧪 en incubation — Les questions fréquentes par section, cherchables, en données structurées
@@ -930,7 +934,7 @@ quotidiens** de deux à quatre paquets, les dépendances d'abord.
 </details>
 
 <details>
-<summary><b>Médias, documents et impression</b> — ✅ 19 · 🧪 15</summary>
+<summary><b>Médias, documents et impression</b> — ✅ 20 · 🧪 14</summary>
 
 - [`phil/media-bundle`](https://github.com/parler-haut-interagir-librement/media-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/media-bundle)) — Fichiers et images téléversés, décrits, versionnés et servis à des URL signées
 - [`phil/epub`](https://github.com/parler-haut-interagir-librement/epub) · ✅ publié ([Packagist](https://packagist.org/packages/phil/epub)) — Des livres EPUB 3 tirés de votre HTML, valides pour EPUBCheck et lisibles par les aides techniques
@@ -951,6 +955,7 @@ quotidiens** de deux à quatre paquets, les dépendances d'abord.
 - [`phil/audio`](https://github.com/parler-haut-interagir-librement/audio) · ✅ publié ([Packagist](https://packagist.org/packages/phil/audio)) — L'audio : transcodage facultatif, forme d'onde, extraits et lecteur accessible qui fonctionne sans JavaScript
 - [`phil/audio-bundle`](https://github.com/parler-haut-interagir-librement/audio-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/audio-bundle)) — L'audio dans Symfony : composant de lecteur, téléversements et tâches de transcodage
 - [`phil/timed-text`](https://github.com/parler-haut-interagir-librement/timed-text) · ✅ publié ([Packagist](https://packagist.org/packages/phil/timed-text)) — Le texte minuté lu et écrit : WebVTT, SRT, chapitres et transcriptions Podcasting 2.0
+- [`phil/slides`](https://github.com/parler-haut-interagir-librement/slides) · ✅ publié ([Packagist](https://packagist.org/packages/phil/slides)) — Des diapositives lues dans un document UJO, avec mode présentateur, notes, minuterie et export PDF
 - `phil/document-import` · 🧪 en incubation — Documents de traitement de texte, Markdown et HTML convertis en UJO (Universal JSON Output), avec le relevé de ce qui n'a pas passé
 - `phil/document-import-bundle` · 🧪 en incubation — L'import de documents branché dans la médiathèque
 - `phil/gallery-bundle` · 🧪 en incubation — Des galeries de photos par album et par événement
@@ -964,7 +969,6 @@ quotidiens** de deux à quatre paquets, les dépendances d'abord.
 - `phil/demo-videos` · 🧪 en incubation — Les vidéos de démonstration d'un produit ou d'un paquet
 - `phil/music-bundle` · 🧪 en incubation — La musique d'un artiste ou d'un groupe : albums, pistes, ventes et écoute sans achat
 - `phil/braille-export-liblouis` · 🧪 en incubation — L'adaptateur de l'export braille qui appelle liblouis
-- `phil/slides` · 🧪 en incubation — Des diapositives lues dans un document UJO, avec mode présentateur, notes, minuterie et export PDF
 - `phil/diagram` · 🧪 en incubation — Des diagrammes écrits en texte et rendus en SVG au serveur, avec une description textuelle
 
 </details>
@@ -1000,13 +1004,14 @@ quotidiens** de deux à quatre paquets, les dépendances d'abord.
 </details>
 
 <details>
-<summary><b>Identité, accès et sécurité</b> — ✅ 15 · 🧪 9</summary>
+<summary><b>Identité, accès et sécurité</b> — ✅ 18 · 🧪 8</summary>
 
 - [`phil/bot-detection-bundle`](https://github.com/parler-haut-interagir-librement/bot-detection-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/bot-detection-bundle)) — Distinguer un robot d'un humain dans le navigateur, sans CAPTCHA
 - [`phil/spam-protection`](https://github.com/parler-haut-interagir-librement/spam-protection) · ✅ publié ([Packagist](https://packagist.org/packages/phil/spam-protection)) — Repérer le pourriel d'un formulaire sans CAPTCHA, en PHP simple
 - [`phil/spam-protection-bundle`](https://github.com/parler-haut-interagir-librement/spam-protection-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/spam-protection-bundle)) — Garder le pourriel hors des formulaires Symfony sans CAPTCHA, ni tiers, ni identifiant
 - [`phil/identity-provider-bundle`](https://github.com/parler-haut-interagir-librement/identity-provider-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/identity-provider-bundle)) — Un fournisseur OpenID Connect pour Symfony : passkeys, mots de passe, TOTP, step-up
 - [`phil/identity-client-bundle`](https://github.com/parler-haut-interagir-librement/identity-client-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/identity-client-bundle)) — Brancher un site Symfony à un fournisseur OpenID, sur `oidc_login` de Symfony 8.2
+- [`phil/organizations-bundle`](https://github.com/parler-haut-interagir-librement/organizations-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/organizations-bundle)) — Organisations, rôles et invitations
 - [`phil/access-bundle`](https://github.com/parler-haut-interagir-librement/access-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/access-bundle)) — La visibilité par élément, des niveaux de partage qui expirent seuls, des groupes d'accès et un « voir comme ce membre » journalisé
 - [`phil/passwords`](https://github.com/parler-haut-interagir-librement/passwords) · ✅ publié ([Packagist](https://packagist.org/packages/phil/passwords)) — Une jauge de robustesse avec ses propres dictionnaires, vérification des fuites par k-anonymat, génération
 - [`phil/browser-security-bundle`](https://github.com/parler-haut-interagir-librement/browser-security-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/browser-security-bundle)) — Les protections qu'une application Symfony demande au navigateur : CSP avec nonces, HSTS, témoins signés
@@ -1017,9 +1022,10 @@ quotidiens** de deux à quatre paquets, les dépendances d'abord.
 - [`phil/resource-permissions`](https://github.com/parler-haut-interagir-librement/resource-permissions) · ✅ publié ([Packagist](https://packagist.org/packages/phil/resource-permissions)) — Des permissions par ressource héritées le long d'un arbre, la plus précise l'emportant
 - [`phil/access-codes`](https://github.com/parler-haut-interagir-librement/access-codes) · ✅ publié ([Packagist](https://packagist.org/packages/phil/access-codes)) — Des codes à usage unique par lots nommés, avec page d'échange et codes stockés sous forme d'empreinte
 - [`phil/access-links`](https://github.com/parler-haut-interagir-librement/access-links) · ✅ publié ([Packagist](https://packagist.org/packages/phil/access-links)) — Les invitations par lien personnel : jeton, validité, rappels, réponse modifiable
+- [`phil/incident-mode-bundle`](https://github.com/parler-haut-interagir-librement/incident-mode-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/incident-mode-bundle)) — Suspendre les inscriptions, les invitations ou des formulaires pendant une attaque, avec un avis public honnête et une levée à la fin
+- [`phil/profile-secure-input`](https://github.com/parler-haut-interagir-librement/profile-secure-input) · ✅ publié ([Packagist](https://packagist.org/packages/phil/profile-secure-input)) — Un seul require pour les paquets qui gardent ce que les usagers envoient : adresses, requêtes sortantes, débit, pourriel et téléversements
 - `phil/user-secrets-bundle` · 🧪 en incubation — Les clés que les gens prêtent à votre application, scellées et à eux seuls
 - `phil/identity-provider-google` · 🧪 en incubation — La connexion Google du fournisseur d'identité, premier paquet de connexion fédérée
-- `phil/organizations-bundle` · 🧪 en incubation — Organisations, rôles et invitations
 - `phil/webauthn-step-up` · 🧪 en incubation — Confirmer une action sensible par une clé d'accès
 - `phil/fraud-signals` · 🧪 en incubation — Les signaux de fraude d'une commande ou d'une inscription
 - `phil/trust-levels` · 🧪 en incubation — Des niveaux de confiance qui ouvrent des droits avec l'activité
@@ -1107,15 +1113,15 @@ quotidiens** de deux à quatre paquets, les dépendances d'abord.
 </details>
 
 <details>
-<summary><b>Apprentissage et attestations</b> — ✅ 6 · 🧪 8</summary>
+<summary><b>Apprentissage et attestations</b> — ✅ 7 · 🧪 7</summary>
 
 - [`phil/open-badges`](https://github.com/parler-haut-interagir-librement/open-badges) · ✅ publié ([Packagist](https://packagist.org/packages/phil/open-badges)) — Émettre, signer, vérifier, cuire et révoquer des justificatifs Open Badges 3.0
 - [`phil/open-badges-bundle`](https://github.com/parler-haut-interagir-librement/open-badges-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/open-badges-bundle)) — Profil de l'émetteur, clé publique et page de vérification des Open Badges
 - [`phil/certificates-bundle`](https://github.com/parler-haut-interagir-librement/certificates-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/certificates-bundle)) — Des certificats vérifiables : critères, PDF à code QR, registre public
+- [`phil/courses-bundle`](https://github.com/parler-haut-interagir-librement/courses-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/courses-bundle)) — Des cours en ligne : modules, leçons, progression
 - [`phil/lti-bundle`](https://github.com/parler-haut-interagir-librement/lti-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/lti-bundle)) — LTI 1.3 dans Symfony : un outil, une plateforme, ou les deux, d'une seule configuration
 - [`phil/lti`](https://github.com/parler-haut-interagir-librement/lti) · ✅ publié ([Packagist](https://packagist.org/packages/phil/lti)) — LTI 1.3 en PHP simple, des deux côtés : un outil que les plateformes lancent, et une plateforme qui lance des outils
 - [`phil/elearning-packages`](https://github.com/parler-haut-interagir-librement/elearning-packages) · ✅ publié ([Packagist](https://packagist.org/packages/phil/elearning-packages)) — Les paquets SCORM 1.2, SCORM 2004 et cmi5 lus sans danger, sans plateforme d'apprentissage
-- `phil/courses-bundle` · 🧪 en incubation — Des cours en ligne : modules, leçons, progression
 - `phil/mentoring-bundle` · 🧪 en incubation — Le mentorat : jumelage, séances, suivi
 - `phil/assessment` · 🧪 en incubation — L'évaluation : types de questions, notation selon la certitude, banque de questions versionnée
 - `phil/assessment-bundle` · 🧪 en incubation — L'évaluation dans Symfony : écrans de questionnaire, tentatives et administration de la banque de questions
