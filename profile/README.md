@@ -44,7 +44,7 @@ The game and gamification packages — dice, generators, points, badges, quests 
 Shops, conventions, clubs, publishers and online communities keep needing the same bricks: a catalogue and a cash
 register, a calendar, a forum, a newsletter, a privacy policy that is actually applied. We would rather write each
 brick once, carefully, in the open, than glue the same parts together on every site. And we would rather tell you
-plainly how far along each brick is: **today, 252 packages are released; the others are in incubation,
+plainly how far along each brick is: **today, 253 packages are released; the others are in incubation,
 and they follow by small daily groups.**
 
 ## Principles
@@ -123,14 +123,21 @@ Shadcn kit: keep Tailwind if you like it.
   Gotenberg servers in Docker for integration tests; replayable HTTP recordings; the PHP and Symfony version matrix;
   and the scaffolding of a new package. Published under the MIT licence:
   [dev-tools](https://github.com/parler-haut-interagir-librement/dev-tools), and listed with [the packages](#the-packages) under *Tooling*.
-- **Project templates** — [MicroSymfony](https://github.com/parler-haut-interagir-librement/MicroSymfony) (based on
-  `strangebuzz/MicroSymfony`) and [WebSymfony](https://github.com/parler-haut-interagir-librement/WebSymfony).
+- **Project templates**, released as 8.2.0-RC1 and installed with `composer create-project phil/<name>`:
+  - [MicroSymfony](https://github.com/parler-haut-interagir-librement/MicroSymfony) (based on `strangebuzz/MicroSymfony`):
+    a Symfony app without a database, on FrankenPHP, with Castor tasks and every quality gate;
+  - [WebSymfony](https://github.com/parler-haut-interagir-librement/WebSymfony): MicroSymfony with Doctrine, accounts,
+    EasyAdmin and security headers;
+  - [WebSkeleton](https://github.com/parler-haut-interagir-librement/WebSkeleton): a bilingual website base in a DDD
+    layout, with PHIL UX and the PHIL bundles;
+  - [ApiSymfony](https://github.com/parler-haut-interagir-librement/ApiSymfony): a REST API on API Platform with
+    OpenAPI, problem+json errors and API keys.
 
 ## The packages
 
 ✅ **released** · 🧪 **in incubation**
 
-**440 packages:** 252 released, 188 in incubation. The released packages are developed in the public monorepo
+**440 packages:** 253 released, 187 in incubation. The released packages are developed in the public monorepo
 [`phil`](https://github.com/parler-haut-interagir-librement/phil), each split into its own read-only repository and
 published on Packagist; `phil/enums` continues [`ph-il/enums`](https://packagist.org/packages/ph-il/enums). **The
 showcase continues by small daily groups** of two to four packages, dependencies first.
@@ -334,13 +341,14 @@ showcase continues by small daily groups** of two to four packages, dependencies
 </details>
 
 <details>
-<summary><b>Identity, access &amp; security</b> — ✅ 21 · 🧪 7</summary>
+<summary><b>Identity, access &amp; security</b> — ✅ 22 · 🧪 6</summary>
 
 - [`phil/user-secrets-bundle`](https://github.com/parler-haut-interagir-librement/user-secrets-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/user-secrets-bundle)) — Keys people lend your application, sealed and theirs alone
 - [`phil/bot-detection-bundle`](https://github.com/parler-haut-interagir-librement/bot-detection-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/bot-detection-bundle)) — Tell a robot from a human in the browser, without a CAPTCHA
 - [`phil/spam-protection`](https://github.com/parler-haut-interagir-librement/spam-protection) · ✅ released ([Packagist](https://packagist.org/packages/phil/spam-protection)) — Spot spam in a form submission without a CAPTCHA, in plain PHP
 - [`phil/spam-protection-bundle`](https://github.com/parler-haut-interagir-librement/spam-protection-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/spam-protection-bundle)) — Keep spam out of Symfony forms without a CAPTCHA, a third party or an identifier
 - [`phil/identity-provider-bundle`](https://github.com/parler-haut-interagir-librement/identity-provider-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/identity-provider-bundle)) — An OpenID Connect provider for Symfony: passkeys, passwords, TOTP, step-up
+- [`phil/identity-provider-google`](https://github.com/parler-haut-interagir-librement/identity-provider-google) · ✅ released ([Packagist](https://packagist.org/packages/phil/identity-provider-google)) — Google sign-in for the identity provider, the first federated sign-in package
 - [`phil/identity-client-bundle`](https://github.com/parler-haut-interagir-librement/identity-client-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/identity-client-bundle)) — Connect a Symfony site to an OpenID provider, on Symfony 8.2's `oidc_login`
 - [`phil/saml-sp`](https://github.com/parler-haut-interagir-librement/saml-sp) · ✅ released ([Packagist](https://packagist.org/packages/phil/saml-sp)) — Sign people in with their organisation's account: a SAML 2.0 service provider in pure PHP
 - [`phil/saml-sp-bundle`](https://github.com/parler-haut-interagir-librement/saml-sp-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/saml-sp-bundle)) — SAML 2.0 sign-on in Symfony, one identity provider per organisation, accounts created on first login
@@ -357,7 +365,6 @@ showcase continues by small daily groups** of two to four packages, dependencies
 - [`phil/access-links`](https://github.com/parler-haut-interagir-librement/access-links) · ✅ released ([Packagist](https://packagist.org/packages/phil/access-links)) — Invitations by personal link: token, validity, reminders, editable reply
 - [`phil/incident-mode-bundle`](https://github.com/parler-haut-interagir-librement/incident-mode-bundle) · ✅ released ([Packagist](https://packagist.org/packages/phil/incident-mode-bundle)) — Pause sign-ups, invitations or forms during an attack, with an honest public notice and lifting at the end
 - [`phil/profile-secure-input`](https://github.com/parler-haut-interagir-librement/profile-secure-input) · ✅ released ([Packagist](https://packagist.org/packages/phil/profile-secure-input)) — One require for the packages that guard what users send: addresses, outgoing fetches, rates, spam and uploads
-- `phil/identity-provider-google` · 🧪 in incubation — Google sign-in for the identity provider, the first federated sign-in package
 - `phil/webauthn-step-up` · 🧪 in incubation — Confirm a sensitive action with a passkey
 - `phil/fraud-signals` · 🧪 in incubation — Fraud signals on orders and sign-ups
 - `phil/trust-levels` · 🧪 in incubation — Trust levels that open rights with activity
@@ -721,7 +728,7 @@ Les paquets de jeu et de ludification — dés, générateurs, points, badges, q
 Boutiques, conventions, clubs, éditeurs et communautés en ligne ont sans cesse besoin des mêmes briques : un
 catalogue et une caisse, un calendrier, un forum, une infolettre, une politique de confidentialité vraiment
 appliquée. Nous préférons écrire chaque brique une fois, avec soin et à découvert, plutôt que recoller les mêmes
-morceaux sur chaque site. Et nous préférons vous dire franchement où en est chacune : **aujourd'hui, 252 paquets
+morceaux sur chaque site. Et nous préférons vous dire franchement où en est chacune : **aujourd'hui, 253 paquets
 sont publiés ; les autres sont en incubation et suivent par petits groupes quotidiens.**
 
 ### Principes
@@ -810,7 +817,7 @@ le kit Shadcn : gardez Tailwind si vous l'aimez.
 
 ✅ **publié** · 🧪 **en incubation**
 
-**440 paquets :** 252 publiés, 188 en incubation. Les paquets publiés sont développés dans le monodépôt
+**440 paquets :** 253 publiés, 187 en incubation. Les paquets publiés sont développés dans le monodépôt
 public [`phil`](https://github.com/parler-haut-interagir-librement/phil), scindés chacun dans son propre dépôt en
 lecture seule et publiés sur Packagist ; `phil/enums` poursuit
 [`ph-il/enums`](https://packagist.org/packages/ph-il/enums). **La vitrine se poursuit par petits groupes
@@ -1015,13 +1022,14 @@ quotidiens** de deux à quatre paquets, les dépendances d'abord.
 </details>
 
 <details>
-<summary><b>Identité, accès et sécurité</b> — ✅ 21 · 🧪 7</summary>
+<summary><b>Identité, accès et sécurité</b> — ✅ 22 · 🧪 6</summary>
 
 - [`phil/user-secrets-bundle`](https://github.com/parler-haut-interagir-librement/user-secrets-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/user-secrets-bundle)) — Les clés que les gens prêtent à votre application, scellées et à eux seuls
 - [`phil/bot-detection-bundle`](https://github.com/parler-haut-interagir-librement/bot-detection-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/bot-detection-bundle)) — Distinguer un robot d'un humain dans le navigateur, sans CAPTCHA
 - [`phil/spam-protection`](https://github.com/parler-haut-interagir-librement/spam-protection) · ✅ publié ([Packagist](https://packagist.org/packages/phil/spam-protection)) — Repérer le pourriel d'un formulaire sans CAPTCHA, en PHP simple
 - [`phil/spam-protection-bundle`](https://github.com/parler-haut-interagir-librement/spam-protection-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/spam-protection-bundle)) — Garder le pourriel hors des formulaires Symfony sans CAPTCHA, ni tiers, ni identifiant
 - [`phil/identity-provider-bundle`](https://github.com/parler-haut-interagir-librement/identity-provider-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/identity-provider-bundle)) — Un fournisseur OpenID Connect pour Symfony : passkeys, mots de passe, TOTP, step-up
+- [`phil/identity-provider-google`](https://github.com/parler-haut-interagir-librement/identity-provider-google) · ✅ publié ([Packagist](https://packagist.org/packages/phil/identity-provider-google)) — La connexion Google du fournisseur d'identité, premier paquet de connexion fédérée
 - [`phil/identity-client-bundle`](https://github.com/parler-haut-interagir-librement/identity-client-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/identity-client-bundle)) — Brancher un site Symfony à un fournisseur OpenID, sur `oidc_login` de Symfony 8.2
 - [`phil/saml-sp`](https://github.com/parler-haut-interagir-librement/saml-sp) · ✅ publié ([Packagist](https://packagist.org/packages/phil/saml-sp)) — Connecter les gens avec le compte de leur organisation : un fournisseur de service SAML 2.0 en PHP pur
 - [`phil/saml-sp-bundle`](https://github.com/parler-haut-interagir-librement/saml-sp-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/saml-sp-bundle)) — La connexion SAML 2.0 dans Symfony, un fournisseur d'identité par organisation, comptes créés à la première connexion
@@ -1038,7 +1046,6 @@ quotidiens** de deux à quatre paquets, les dépendances d'abord.
 - [`phil/access-links`](https://github.com/parler-haut-interagir-librement/access-links) · ✅ publié ([Packagist](https://packagist.org/packages/phil/access-links)) — Les invitations par lien personnel : jeton, validité, rappels, réponse modifiable
 - [`phil/incident-mode-bundle`](https://github.com/parler-haut-interagir-librement/incident-mode-bundle) · ✅ publié ([Packagist](https://packagist.org/packages/phil/incident-mode-bundle)) — Suspendre les inscriptions, les invitations ou des formulaires pendant une attaque, avec un avis public honnête et une levée à la fin
 - [`phil/profile-secure-input`](https://github.com/parler-haut-interagir-librement/profile-secure-input) · ✅ publié ([Packagist](https://packagist.org/packages/phil/profile-secure-input)) — Un seul require pour les paquets qui gardent ce que les usagers envoient : adresses, requêtes sortantes, débit, pourriel et téléversements
-- `phil/identity-provider-google` · 🧪 en incubation — La connexion Google du fournisseur d'identité, premier paquet de connexion fédérée
 - `phil/webauthn-step-up` · 🧪 en incubation — Confirmer une action sensible par une clé d'accès
 - `phil/fraud-signals` · 🧪 en incubation — Les signaux de fraude d'une commande ou d'une inscription
 - `phil/trust-levels` · 🧪 en incubation — Des niveaux de confiance qui ouvrent des droits avec l'activité
